@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export', // Enables static HTML export
   images: { unoptimized: true },
-  assetPrefix: "/",
+  assetPrefix: "",
   basePath: "",
 };
 
