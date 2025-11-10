@@ -1,6 +1,15 @@
 "use client";
 
-import { FileText, BookOpen, FileBarChart, Layers, CreditCard, Building2, Briefcase } from "lucide-react";
+import Link from "next/link";
+import {
+  FileText,
+  BookOpen,
+  FileBarChart,
+  Layers,
+  CreditCard,
+  Building2,
+  Briefcase,
+} from "lucide-react";
 import data from "@/app/data.json";
 
 interface Service {
@@ -8,6 +17,10 @@ interface Service {
   text: string;
   highlights: string[];
 }
+
+// Utility: slugify service name to generate clean URL
+const slugify = (name: string) =>
+  name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
 
 // Map service names to icons
 const iconMap: Record<string, any> = {
@@ -17,7 +30,7 @@ const iconMap: Record<string, any> = {
   "Marketplace Reconciliation": Layers,
   "Payment Gateway Integration": CreditCard,
   "Business Registration": Building2,
-  "Small Business": Briefcase,
+  "Small Business Advisory": Briefcase,
 };
 
 export default function Services() {
@@ -30,6 +43,7 @@ export default function Services() {
       aria-label="Accounting and tax services offered by the firm"
     >
       <div className="container mx-auto px-6 md:px-12">
+        {/* --- Section Header --- */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
             Our Services
@@ -39,10 +53,11 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Grid of service cards */}
+        {/* --- Service Cards Grid --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service) => {
             const Icon = iconMap[service.name] || FileText;
+            const slug = slugify(service.name);
 
             return (
               <div
@@ -59,13 +74,15 @@ export default function Services() {
                     {service.name}
                   </h3>
                   {service.text && (
-                    <p className="text-gray-600 mb-4">{service.text}</p>
+                    <p className="text-gray-600 mb-4 line-clamp-3">
+                      {service.text}
+                    </p>
                   )}
                 </div>
 
                 {/* --- Highlights --- */}
                 <div className="space-y-2">
-                  {service.highlights.map((item, i) => (
+                  {service.highlights.slice(0, 3).map((item, i) => (
                     <div key={i} className="flex items-center space-x-2">
                       <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                       <span className="text-sm text-gray-700">{item}</span>
@@ -73,11 +90,14 @@ export default function Services() {
                   ))}
                 </div>
 
-                {/* --- CTA --- */}
+                {/* --- CTA (Link) --- */}
                 <div className="mt-6">
-                  <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+                  <Link
+                    href={`/services/${slug}`}
+                    className="block  py-2 px-4 rounded-lg  transition-colors"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             );
