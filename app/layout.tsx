@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
-  title: "Your CA Firm | Professional Accounting & Tax Services",
+  title: "eCom Accounting | Professional Accounting & Tax Services",
   description:
     "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
   keywords: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "business registration",
     "tax filing",
   ],
-  authors: [{ name: "Your CA Firm" }],  
+  authors: [{ name: "eCom Accounting" }],  
 };
 
 export const viewport: Viewport = {
@@ -55,7 +55,7 @@ export default function RootLayout({
       {/* Theme can be swapped: theme-blue | theme-gray | theme-warm */}
       <body
         className={`theme-blue ${geistSans.variable} ${geistMono.variable} antialiased 
-                    flex flex-col min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors`}
+                    flex flex-col min-h-screen transition-colors`}
       >
         {/* Sticky Navbar */}
         <header className="sticky top-0 z-50 shadow-sm">
@@ -63,7 +63,7 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow container mx-auto p-6 bg-[var(--color-background)]">
+        <main className="flex-grow container mx-auto p-6 ">
           {children}
         </main>
 

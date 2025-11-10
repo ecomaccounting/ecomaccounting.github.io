@@ -1,5 +1,5 @@
 import Image from "next/image";
-import data from "@/app/data.json";
+import data from "@/app/Data/data.json";
 
 interface TeamMember {
   memberName: string;

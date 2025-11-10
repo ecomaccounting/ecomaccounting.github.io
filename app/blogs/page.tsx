@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import blogsData from "@/app/blogs.json";
+import blogsData from "@/app/Data/blogs.json";
 
 interface Blog {
   id: number;

@@ -41,7 +41,7 @@ export default function CareersPage() {
 
         {/* --- Hiring Highlight Banner --- */}
         <div className="bg-blue-700 text-white rounded-2xl p-8 text-center mb-16 shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+          <h2 className="text-2xl md:text-3xl !text-white font-semibold mb-2">
             ✨ We Are Hiring! ✨
           </h2>
           <p className="text-lg">
@@ -130,7 +130,7 @@ export default function CareersPage() {
 
             <Link
               href="mailto:support@ecomaccounting.com?subject=Articleship Application - GPMJ & Associates"
-              className="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+              className="inline-block  px-8 py-3 rounded-lg transition-colors"
             >
               Apply Now
             </Link>

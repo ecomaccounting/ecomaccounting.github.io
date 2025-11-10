@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "tailwindcss/utilities";
+
 
 /* ===============================
    🌐 GLOBAL VARIABLES
@@ -23,7 +25,9 @@
   --bg-dark: #212529;
   --bg-blue: #e7f1ff;
 
-  /* Highlight (Invert or Contract style) */
+  /* Highlight (Inver@import "tailwindcss";
+@import "tailwindcss/utilities";
+t or Contract style) */
   --highlight-bg: var(--primary);
   --highlight-text: #ffffff;
 }
