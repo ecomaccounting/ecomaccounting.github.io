@@ -54,7 +54,9 @@ t or Contract style) */
   --secondary: #e9ecef;
 }
 
-/* --- Theme 3: Warm Neutral --- */
+/* --- Theme 3: Warm Neh! That makes perfect sense—what you’re seeing is very typical with Next.js static export + Tailwind + Google Fonts. The HTML is there (Navbar/Footer), but CSS isn’t applied because the CSS/Font pipeline isn’t recognized properly after the rebuild. Let’s fix this systematically.
+
+utral --- */
 .theme-warm {
   --background: #fcfbf7;
   --foreground: #2b2b2b;
