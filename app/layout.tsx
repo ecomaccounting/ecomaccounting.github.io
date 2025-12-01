@@ -63,7 +63,7 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow container mx-auto p-6 ">
+        <main className="flex-grow container mx-auto p-1 ">
           {children}
         </main>
 
