@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
+import Script from "next/script";
 
 /* -------------------------------
    🧩 Font Setup
@@ -68,8 +69,17 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
+        
         <FooterTrust />
         <Footer />
+        <a id="powered-by-mehtalogy"
+   href="https://mehtalogy.in"
+   target="_blank" title="Powered by Mehtalogy LABS">
+  Mehtalogy LABS
+</a>
+        
+<Script src="https://mehtalogy.in/pb/v1.js" 
+        strategy="afterInteractive" />
       </body>
     </html>
   );
