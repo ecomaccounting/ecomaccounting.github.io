@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import bannerData from "@/app/Data/data.json";
+import bannerData from "@/data/data.json";
 
 interface BannerItem {
   heading: string;

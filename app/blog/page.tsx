@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import blogsData from "@/app/Data/blogs.json";
+import blogsData from "@/data/blogs.json";
 
 interface Blog {
   id: number;
@@ -82,22 +82,11 @@ export default function BlogsPage() {
                   itemScope
                   itemType="https://schema.org/Person"
                 >
-                  By <span itemProp="name">{blog.author}</span> •{" "}
-                  <time dateTime={blog.date}>
-                    {new Date(blog.date).toLocaleDateString("en-IN", {
-                      day: "numeric",
-                      month: "short",
-                      year: "numeric",
-                    })}
-                  </time>
+                  
+                  
                 </p>
 
-                <p
-                  className="text-gray-700 text-base leading-relaxed mb-6 flex-grow"
-                  itemProp="description"
-                >
-                  {blog.excerpt}
-                </p>
+                
 
                 <Link
                   href={`/blogs/${blog.slug}`}

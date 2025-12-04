@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import servicesData from "@/app/Data/services.json";
+import servicesData from "@/data/services.json";
 
 interface Service {
   name: string;

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import blogsData from "@/app/Data/blogs.json";
+import blogsData from "@/data/blogs.json";
 import { notFound } from "next/navigation";
 
 interface Blog {

@@ -79,11 +79,7 @@ export default function FooterTrust() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 text-sm text-blue-100 text-center">
-          © {new Date().getFullYear()} GPMJ & Associates — Chartered Accountants. All Rights Reserved.
-        </div>
+        </div>        
       </div>
     </footer>
   );

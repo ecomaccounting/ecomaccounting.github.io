@@ -10,7 +10,7 @@ import {
   Building2,
   Briefcase,
 } from "lucide-react";
-import data from "@/app/Data/data.json";
+import data from "@/data/data.json";
 
 interface Service {
   name: string;

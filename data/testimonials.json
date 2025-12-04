@@ -1,0 +1,94 @@
+{
+  "testimonials": [
+    {
+      "name": "Naman Naredi",
+      "title": "Paper Industry",
+      "feedback": "A good man and a great professionalist person in his work.",
+      "rating": 4
+    },
+    {
+      "name": "Praneet Sisodiya",
+      "title": "HR / Sales / Growth - Coaching | Mentoring (Client since 2017)",
+      "feedback": "We are associated with CA Arpit Paliwal since 2017. His invaluable contribution, knowledge, and implementation make it all easy for us. Highly approachable and easy to work with. Strongly recommended!",
+      "rating": 4.5
+    },
+    {
+      "name": "Ruchi Jain",
+      "title": "Founder, CraftHive",
+      "feedback": "Exceptional service with deep domain expertise. Arpit ji helped streamline all our compliances effortlessly.",
+      "rating": 5
+    },
+    {
+      "name": "Mohit Choudhary",
+      "title": "Ecommerce Seller",
+      "feedback": "Highly reliable and very responsive. He simplified GST and monthly accounting for us.",
+      "rating": 4.5
+    },
+    {
+      "name": "Ankit Meena",
+      "title": "MSME Owner",
+      "feedback": "His guidance transformed the way we manage our finances. Transparent, supportive, and extremely knowledgeable.",
+      "rating": 5
+    },
+    {
+      "name": "Shubham Sharma",
+      "title": "IT Consultant",
+      "feedback": "Very professional and detail-oriented. I always get clarity on even the most complex topics.",
+      "rating": 4.5
+    },
+    {
+      "name": "Karishma Purohit",
+      "title": "Boutique Business",
+      "feedback": "I was new to compliance. He patiently explained everything and ensured smooth registration and filing. Loved the experience!",
+      "rating": 4.5
+    },
+    {
+      "name": "Deepak Rathore",
+      "title": "Logistics Business",
+      "feedback": "Excellent financial insights and problem-solving mindset. Our accounts are finally structured the right way.",
+      "rating": 4.5
+    },
+    {
+      "name": "Ayush Tiwari",
+      "title": "Startup Founder",
+      "feedback": "Quick turnaround, clear communication, and solid expertise. Perfect partner for early-stage companies.",
+      "rating": 5
+    },
+    {
+      "name": "Sakshi Bhargava",
+      "title": "Digital Marketer",
+      "feedback": "Trustworthy advice every single time. The team takes complete ownership of the process.",
+      "rating": 4.5
+    },
+    {
+      "name": "Rohan Patidar",
+      "title": "Trader & Distributor",
+      "feedback": "Before working with him, compliance used to be a headache. Now everything runs like clockwork.",
+      "rating": 4.5
+    },
+    {
+      "name": "Priyanka Lodha",
+      "title": "Yoga Studio Owner",
+      "feedback": "Very humble and dedicated. Helped us understand our finances better and plan ahead.",
+      "rating": 4.5
+    },
+    {
+      "name": "Harshit Paliwal",
+      "title": "Freelancer",
+      "feedback": "Transparent pricing, timely updates, and excellent service. Highly recommended for freelancers like me.",
+      "rating": 5
+    },
+    {
+      "name": "Chirag Jain",
+      "title": "Retail Store Owner",
+      "feedback": "Smooth GST filing and accounting experience. The team is always available for queries.",
+      "rating": 4
+    },
+    {
+      "name": "Abhilasha Singh",
+      "title": "Interior Designer",
+      "feedback": "Extremely supportive and professional. Helped me restructure my tax planning and save time and money.",
+      "rating": 4.5
+    }
+  ]
+}

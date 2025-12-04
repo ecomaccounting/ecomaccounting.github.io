@@ -35,7 +35,32 @@ export const metadata: Metadata = {
     "business registration",
     "tax filing",
   ],
-  authors: [{ name: "eCom Accounting" }],  
+  authors: [{ name: "eCom Accounting" }],
+  manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", type: "image/png" },
+      { url: "/favicon-16x16.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+    shortcut: ["/favicon.ico"],
+  },
+  openGraph: {
+    type: "website",
+    description: "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
+    title: "eCom Accounting | Professional Accounting & Tax Services",
+    url: "https://ecomaccounting.github.io",
+    images: [
+      {
+        url: "https://ecomaccounting.github.io/android-chrome-512x512.png",
+        width: 200,
+        height: 200,
+        type: "image/png",
+        alt: "eCom Accounting Services",
+      }
+    ]
+  },
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
@@ -69,17 +94,17 @@ export default function RootLayout({
         </main>
 
         {/* Footer */}
-        
+
         <FooterTrust />
         <Footer />
         <a id="powered-by-mehtalogy"
-   href="https://mehtalogy.in"
-   target="_blank" title="Powered by Mehtalogy LABS">
-  Mehtalogy LABS
-</a>
-        
-<Script src="https://mehtalogy.in/pb/v1.js" 
-        strategy="afterInteractive" />
+          href="https://mehtalogy.in"
+          target="_blank" title="Powered by Mehtalogy LABS">
+          Mehtalogy LABS
+        </a>
+
+        <Script src="https://mehtalogy.in/pb/v1.js"
+          strategy="afterInteractive" />
       </body>
     </html>
   );

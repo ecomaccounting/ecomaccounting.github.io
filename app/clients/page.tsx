@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import ClientData from "@/app/Data/data.json";
+import ClientData from "@/data/data.json";
 
 export const metadata: Metadata = {
   title: "Our Clients | GPMJ & Associates",
