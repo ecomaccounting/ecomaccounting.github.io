@@ -61,7 +61,7 @@ export default async function ServiceDetailPage({
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
         {/* --- Header --- */}
         <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
+          <h1 className="text-5xl md:text-5xl  mb-4">
             {service.name}
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">

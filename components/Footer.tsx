@@ -60,8 +60,8 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-muted text-lg" />
-              <a href="mailto:vipul@mehtalogy.in" className="transition">
-                vipul@mehtalogy.in
+              <a href="mailto:support@ecomaccounting.io" className="transition">
+                support@ecomaccounting.io
               </a>
             </li>
 
