@@ -18,7 +18,7 @@ export default function ContactPage() {
   const contactInfo = {
     phone: "+91 9876543210",
     email: "support@ecomaccounting.com",
-    address: "186 Goyal Nagar, Indore, MP, India 452018",
+    address: "186 Goyal Nagar, Near Shani Mandir, Kanadia Road, Indore, MP, India 452018",
     hours: "Mon - Sat: 9:00 AM - 7:00 PM",
   };
 

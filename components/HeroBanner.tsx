@@ -15,7 +15,7 @@ export default function HeroBanner() {
         <section className="w-full">
             <div className="w-full">
                 <Image
-                    src="/img/hero/hero-bg.png"
+                    src="/img/hero/hero-bg.jpg"
                     alt="Hero"
                     width={1920}
                     height={1080}

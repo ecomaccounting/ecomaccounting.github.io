@@ -70,7 +70,7 @@ export default function FooterTrust() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={stat.label} className="flex flex-col items-center">
-              <div className="text-4xl md:text-5xl font-extrabold  drop-shadow-md">
+              <div className="text-4xl md:text-5xl drop-shadow-md">
                 {counts[index]}
                 {stat.suffix}
               </div>

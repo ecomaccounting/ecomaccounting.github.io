@@ -39,7 +39,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 "
+      className="py-5 "
       aria-label="Accounting and tax services offered by the firm"
     >
       <div className="container mx-auto px-6 md:px-12">
@@ -70,7 +70,7 @@ export default function Services() {
                     <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-3">
+                  <h3 className="text-xl  mb-3">
                     {service.name}
                   </h3>
                   {service.text && (

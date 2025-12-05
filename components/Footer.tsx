@@ -10,15 +10,15 @@ export default function Footer() {
 
         {/* Brand + Description */}
         <div className="space-y-4">
-          <Link href="/" className="text-light flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/ecom.svg"
-              alt="Mehtalogy LABS Logo"
+              alt="eCom Accounting Logo"
               width={45}
               height={45}
               className="object-contain"
             />
-            <h1>eCom Accounting</h1>
+            <h1 className="text-3xl text-dark">eCom Accounting</h1>
           </Link>
 
           <p className="text-sm leading-relaxed">

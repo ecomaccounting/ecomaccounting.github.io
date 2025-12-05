@@ -13,21 +13,21 @@ export default function TopReads() {
         Reads
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-2">
         {topThree.map((post) => (
           <Link
             key={post.id}
-            href={`/blogs/${post.slug}`}
+            href={`/blog/${post.slug}`}
             className="group block"
           >
-            <div className="bg-white/5 rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-blue-500/30 transition-all">
+            <div className="bg-accent rounded-2xl overflow-hidden  transition-all">
               <div className="overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}
                   width={500}
-                  height={320}
-                  className="w-full h-48 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  height={350}
+                  className="w-full h-60 object-cover transform transition-transform duration-500 group-hover:scale-120"
                 />
               </div>
 

@@ -14,18 +14,20 @@ export default function Navbar() {
   const headerHeight = 64;
   return (
 
-    <nav className="bg-white border-b border-gray-200 shadow-sm">
+    <nav className="bg-light ">
       <div className="container mx-auto flex justify-between items-center p-4 gap-3">
         {/* Logo / Firm Name */}
-        <div className="flex flex-col1 gap-3">
-          <Image
-            src="/ecom.svg"
-            height="30"
-            width="30"
-            alt="eCom Accounting Logo" />
-          <Link href="/" className="text-xl text-blue-700 tracking-wide">eCom&nbsp;Accounting</Link>
+        <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 text-2xl tracking-wide">
+            <Image
+              src="/ecom.svg"
+              height={30}
+              width={30}
+              alt="eCom Accounting Logo"
+            />
+            eCom&nbsp;Accounting
+          </Link>
         </div>
-
         {/* Desktop */}
         <div className="hidden md:flex container mx-auto max-w-content px-6 gap-8 py-4 justify-end">
           {topThree.map((item, idx) => (
@@ -34,7 +36,7 @@ export default function Navbar() {
               onMouseEnter={() => setActive(idx)}
               onMouseLeave={() => setActive(null)}
             >
-              <Link href={item.link} className="font-medium tracking-tight hover:opacity-70 whitespace-nowrap">
+              <Link href={item.link} className="font-medium tracking-tight whitespace-nowrap p-2">
                 {item.title}
               </Link>
 
@@ -46,11 +48,12 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.2 }}
-                    className={`fixed left-0 top-[${headerHeight}px] w-full px-10 md:px-20 bg-white/70 backdrop-blur-md grid grid-cols-1 md:grid-cols-3 gap-8 min-w-[650px] max-w-[100vw] z-50 pt-6`}
+                    className={`fixed right-0 top-[${headerHeight}px] w-full p-10 md:px-20 bg-light 
+                    grid grid-cols-1 md:grid-cols-3 gap-8 min-w-[650px] max-w-[850px] z-50 pt-6 justify-end`}
                   >
                     {item.children?.map((child: NavItem, cIdx) => (
                       <div key={cIdx}>
-                        <Link href={child.link} className="font-semibold mb-2 block">
+                        <Link href={child.link} className="text-lg mb-2 block">
                           {child.title}
                         </Link>
 
@@ -93,7 +96,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-white z-50 p-6 overflow-y-auto"
+              className="fixed inset-0 bg-light z-50 p-6 overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-6">
                 <span className="font-semibold text-lg">Menu</span>
@@ -117,7 +120,7 @@ export default function Navbar() {
 
                     {item.children && (
                       <div className="pl-4 flex flex-col gap-1">
-                        {item.children.map((child:NavItem, cIdx) => (
+                        {item.children.map((child: NavItem, cIdx) => (
                           <div key={cIdx}>
                             <Link
                               href={child.link}
