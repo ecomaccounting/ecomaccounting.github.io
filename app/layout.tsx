@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
-import Script from "next/script";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+
+
 
 /* -------------------------------
    🧩 Font Setup
@@ -83,6 +86,9 @@ export default function RootLayout({
         className={`theme-blue ${geistSans.variable} ${geistMono.variable} antialiased 
                     flex flex-col min-h-screen transition-colors`}
       >
+        {/* Floating WhatsApp Button */}
+        <FloatingWhatsAppButton />
+
         {/* Sticky Navbar */}
         <header className="sticky top-0 z-50 shadow-sm">
           <Navbar />
