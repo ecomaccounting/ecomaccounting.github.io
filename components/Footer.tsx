@@ -68,7 +68,7 @@ export default function Footer() {
             <li className="flex items-center gap-3">
               <FaPhone className="text-muted text-lg" />
               <a href="tel:+919424932197" className="transition">
-                +91 9XXXX-XXXXX
+                +91 89894-59947
               </a>
             </li>
 

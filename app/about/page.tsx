@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import TestimonialsTicker from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "About Us | GPMJ & Associates",
@@ -56,7 +57,7 @@ export default function AboutPage() {
   return (
     <section
       id="about"
-      className="bg-gray-50 py-20"
+      className="py-20"
       aria-label="About GPMJ & Associates firm"
       itemScope
       itemType="https://schema.org/AboutPage"
@@ -65,7 +66,7 @@ export default function AboutPage() {
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1
-            className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 transition-all duration-500"
+            className="text-4xl md:text-5xl font-bold mb-6 transition-all duration-500"
             itemProp="headline"
           >
             {aboutData.heading}
@@ -73,7 +74,7 @@ export default function AboutPage() {
           {aboutData.text.map((p, i) => (
             <p
               key={i}
-              className="text-gray-700 text-lg max-w-3xl mx-auto mb-4 leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-500"
+              className="text-lg max-w-3xl mx-auto mb-4 leading-relaxed opacity-90 hover:opacity-100 transition-opacity duration-500"
               itemProp="description"
             >
               {p}
@@ -86,43 +87,17 @@ export default function AboutPage() {
           {aboutData.highlights.map((h, i) => (
             <div
               key={i}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:-translate-y-1"
+              className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center transform hover:-translate-y-1"
             >
-              <h3 className="text-xl font-semibold text-blue-700 mb-3">
+              <h3 className="text-xl font-semibold  mb-3">
                 {h.text}
               </h3>
-              <p className="text-gray-600">{h.description}</p>
+              <p className="">{h.description}</p>
             </div>
           ))}
         </div>
+        <TestimonialsTicker />
 
-        {/* --- Testimonials --- */}
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-blue-700 mb-10">
-            Testimonials
-          </h2>
-          <div className="space-y-10">
-            {aboutData.testimonials.map((t, i) => (
-              <blockquote
-                key={i}
-                className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition-all duration-500"
-                itemScope
-                itemType="https://schema.org/Review"
-              >
-                <p
-                  className="text-gray-700 text-lg italic mb-4"
-                  itemProp="reviewBody"
-                >
-                  “{t.feedback}”
-                </p>
-                <footer className="text-blue-700 font-semibold" itemProp="author">
-                  — {t.name}{" "}
-                  <span className="text-gray-500 text-sm">· {t.title}</span>
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

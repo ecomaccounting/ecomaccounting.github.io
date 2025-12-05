@@ -83,7 +83,7 @@ export default function RootLayout({
     <html lang="en">
       {/* Theme can be swapped: theme-blue | theme-gray | theme-warm */}
       <body
-        className={`theme-blue ${geistSans.variable} ${geistMono.variable} antialiased 
+        className={`${geistSans.variable} ${geistMono.variable} antialiased 
                     flex flex-col min-h-screen transition-colors`}
       >
         {/* Floating WhatsApp Button */}

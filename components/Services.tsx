@@ -39,16 +39,16 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-20 bg-gray-50 text-gray-900"
+      className="py-20 "
       aria-label="Accounting and tax services offered by the firm"
     >
       <div className="container mx-auto px-6 md:px-12">
         {/* --- Section Header --- */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+          <h2 className="text-4xl mb-4 ">
             Our Services
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className=" text-lg max-w-2xl mx-auto">
             Comprehensive accounting and tax solutions designed for eCommerce and small businesses.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function Services() {
             return (
               <div
                 key={service.name}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
+                className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
               >
                 {/* --- Icon and title --- */}
                 <div className="mb-6">
@@ -70,11 +70,11 @@ export default function Services() {
                     <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                   </div>
 
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  <h3 className="text-xl font-semibold mb-3">
                     {service.name}
                   </h3>
                   {service.text && (
-                    <p className="text-gray-600 mb-4 line-clamp-3">
+                    <p className="mb-4 line-clamp-3">
                       {service.text}
                     </p>
                   )}
@@ -82,12 +82,13 @@ export default function Services() {
 
                 {/* --- Highlights --- */}
                 <div className="space-y-2">
-                  {service.highlights.slice(0, 3).map((item, i) => (
-                    <div key={i} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                      <span className="text-sm text-gray-700">{item}</span>
-                    </div>
-                  ))}
+                  <ul className="list-disc pl-5 marker:text-accent">
+                    {service.highlights.slice(0, 3).map((item, i) => (
+                      <li key={i} className="leading-relaxed">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 {/* --- CTA (Link) --- */}

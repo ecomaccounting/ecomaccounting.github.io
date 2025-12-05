@@ -19,13 +19,13 @@ const testimonials = testimonialsData.testimonials;
   };
 
   return (
-    <div className="w-full bg-gray-50 py-14">
+    <div className="w-full  py-14">
       {/* Heading */}
       <div className="text-center mb-10 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-4xl ">
           Real Feedback. Real Results
         </h2>
-        <p className="text-gray-600 mt-2 text-base md:text-lg">
+        <p className="mt-2 text-base md:text-lg">
           See why businesses rely on us for GST, accounting, and tax excellence.
         </p>
       </div>
@@ -39,15 +39,15 @@ const testimonials = testimonialsData.testimonials;
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-xs bg-white border border-gray-200 rounded-xl shadow-sm p-5 flex flex-col justify-between ticket-card whitespace-normal"
+              className="min-w-[300px] max-w-xs bg-accent  rounded-xl shadow-sm p-5 flex flex-col justify-between ticket-card whitespace-normal"
             >
-              <div className="text-gray-700 text-sm italic whitespace-normal break-words">
+              <div className="italic whitespace-normal break-words">
                 “{item.feedback}”
               </div>
 
               <div className="mt-4 whitespace-normal">
-                <div className="font-semibold text-gray-900">{item.name}</div>
-                <div className="text-xs text-gray-500">{item.title}</div>
+                <div className="font-semibold ">{item.name}</div>
+                <div className="text-xs">{item.title}</div>
 
                 <div className="flex mt-1">
                   {Array.from({ length: 5 }).map((_, i) => (

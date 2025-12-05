@@ -45,7 +45,7 @@ export default function HeroBanner() {
                         ))}
                     </span>
                 </h1>
-                <p className="mt-4 text-lg md:text-xl text-gray-700">
+                <p className="mt-4 text-lg md:text-xl ">
                     Specialized services for Amazon, Flipkart, and other marketplace sellers.
                 </p>
             </div>

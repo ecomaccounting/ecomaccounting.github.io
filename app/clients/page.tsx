@@ -21,7 +21,7 @@ export default function ClientsPage() {
   return (
     <section
       id="clients"
-      className="bg-gray-50 py-20"
+      className="py-20"
       aria-label="Our Clients"
       itemScope
       itemType="https://schema.org/CollectionPage"
@@ -30,12 +30,12 @@ export default function ClientsPage() {
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1
-            className="text-4xl md:text-5xl font-bold text-blue-700 mb-4"
+            className="text-5xl mb-4"
             itemProp="headline"
           >
             Our Clients
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto">
             Trusted by eCommerce entrepreneurs, startups, and established
             businesses across India.
           </p>
@@ -46,7 +46,7 @@ export default function ClientsPage() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center group"
+              className="bg-accent rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center group"
               itemScope
               itemType="https://schema.org/Organization"
             >
@@ -63,7 +63,7 @@ export default function ClientsPage() {
               </div>
 
               {/* Name + Industry */}
-              <h3 className="text-xl font-semibold text-gray-800 mb-1" itemProp="name">
+              <h3 className="text-xl font-semibold  mb-1" itemProp="name">
                 {client.name}
               </h3>
               <p className="text-sm text-blue-600 font-medium mb-3">
@@ -71,7 +71,7 @@ export default function ClientsPage() {
               </p>
 
               {/* Description */}
-              <p className="text-gray-600 text-sm" itemProp="description">
+              <p className="text-sm" itemProp="description">
                 {client.description}
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function ClientsPage() {
         </div>
 
         {/* --- Footer line --- */}
-        <div className="text-center mt-16 text-gray-600 text-sm">
+        <div className="text-center mt-16 ">
           <p>
             Want to join our growing list of happy clients?{" "}
             <a

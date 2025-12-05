@@ -3,7 +3,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function FloatingWhatsAppButton() {
-  const MY_PHONE_NUMBER = "919424932197";
+  const MY_PHONE_NUMBER = "918989459947";
   const whatsappUrl = `https://wa.me/${MY_PHONE_NUMBER}?text=Hello!%20I%20have%20a%20question%20about%20your%20service.`;
 
   const handleClick = () => {

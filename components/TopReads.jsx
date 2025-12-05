@@ -9,7 +9,7 @@ export default function TopReads() {
 
   return (
     <section className="py-12">
-      <h2 className="text-3xl font-bold mb-6 text-center tracking-tight">
+      <h2 className="text-4xl mb-6 text-center tracking-tight">
         Reads
       </h2>
 

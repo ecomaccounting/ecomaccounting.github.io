@@ -19,16 +19,16 @@ export default function OurTeamPage() {
   return (
     <section
       id="our-team"
-      className="bg-gray-50 py-20"
+      className="py-20"
       aria-label="Meet our Chartered Accountants and team members"
     >
       <div className="container mx-auto px-6 md:px-12">
         {/* --- Page Header --- */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Our Team
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto">
             Experienced professionals committed to simplifying finance, taxation,
             and compliance for businesses across India.
           </p>
@@ -39,7 +39,7 @@ export default function OurTeamPage() {
           {team.map((member) => (
             <article
               key={member.memberName}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col overflow-hidden"
+              className="bg-accent rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col overflow-hidden"
               itemScope
               itemType="https://schema.org/Person"
             >
@@ -58,13 +58,13 @@ export default function OurTeamPage() {
               {/* --- Content --- */}
               <div className="flex flex-col flex-grow p-6 text-center md:text-left">
                 <h2
-                  className="text-2xl font-semibold text-blue-700 mb-3"
+                  className="text-2xl font-semibold mb-3"
                   itemProp="name"
                 >
                   {member.memberName}
                 </h2>
                 <p
-                  className="text-gray-700 text-base leading-relaxed"
+                  className="text-base leading-relaxed"
                   itemProp="description"
                 >
                   {member.description.length > 400

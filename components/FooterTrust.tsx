@@ -63,18 +63,18 @@ export default function FooterTrust() {
   return (
     <footer
       ref={footerRef}
-      className="bg-blue-700 text-white py-16 px-6 md:px-12 text-center md:text-left"
+      className="bg-light py-16 px-6 md:px-12 text-center md:text-left"
       aria-label="Firm achievements and client trust metrics"
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={stat.label} className="flex flex-col items-center">
-              <div className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">
+              <div className="text-4xl md:text-5xl font-extrabold  drop-shadow-md">
                 {counts[index]}
                 {stat.suffix}
               </div>
-              <div className="text-lg md:text-xl text-blue-100 mt-2">
+              <div className="text-lg md:text-xl mt-2">
                 {stat.label}
               </div>
             </div>

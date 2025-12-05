@@ -19,7 +19,7 @@ export default function CareersPage() {
   return (
     <section
       id="careers"
-      className="bg-gray-50 py-20"
+      className="py-20"
       aria-label="Career Opportunities at GPMJ & Associates"
       itemScope
       itemType="https://schema.org/JobPosting"
@@ -28,20 +28,20 @@ export default function CareersPage() {
         {/* --- Header --- */}
         <div className="text-center mb-16">
           <h1
-            className="text-4xl md:text-5xl font-bold text-blue-700 mb-4"
+            className="text-5xl   mb-4"
             itemProp="title"
           >
             Careers at GPMJ & Associates
           </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto">
             Join our dynamic team of professionals and gain real-world exposure
             across audit, taxation, compliance, and advisory.
           </p>
         </div>
 
         {/* --- Hiring Highlight Banner --- */}
-        <div className="bg-blue-700 text-white rounded-2xl p-8 text-center mb-16 shadow-lg">
-          <h2 className="text-2xl md:text-3xl !text-white font-semibold mb-2">
+        <div className="bg-accent rounded-2xl p-8 text-center mb-16 shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-2">
             ✨ We Are Hiring! ✨
           </h2>
           <p className="text-lg">
@@ -54,10 +54,10 @@ export default function CareersPage() {
         </div>
 
         {/* --- Job Description --- */}
-        <article className="bg-white rounded-2xl shadow-md p-8 md:p-12 leading-relaxed text-gray-800 space-y-8">
+        <article className="bg-accent rounded-2xl shadow-md p-8 md:p-12 leading-relaxed text-gray-800 space-y-8">
           {/* Section: Overview */}
           <section>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h2 className="text-2xl font-semibold  mb-3">
               About the Role
             </h2>
             <p>
@@ -69,7 +69,7 @@ export default function CareersPage() {
 
           {/* Section: What We Offer */}
           <section>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h2 className="text-2xl font-semibold mb-3">
               What We Offer
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -85,7 +85,7 @@ export default function CareersPage() {
 
           {/* Section: What Makes Us Different */}
           <section>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h2 className="text-2xl font-semibold  mb-3">
               What Makes Us Different
             </h2>
             <p>
@@ -99,7 +99,7 @@ export default function CareersPage() {
 
           {/* Section: Requirements */}
           <section>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h2 className="text-2xl font-semibold  mb-3">
               What We're Looking For
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -112,7 +112,7 @@ export default function CareersPage() {
 
           {/* Section: Duration */}
           <section>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-3">
+            <h2 className="text-2xl font-semibold  mb-3">
               Duration
             </h2>
             <p>
