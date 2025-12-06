@@ -151,41 +151,83 @@
     "clients": [
         {
             "id": 1,
-            "name": "TechKart Solutions",
+            "name": "TrustnRoute.com",
             "industry": "eCommerce SaaS",
             "logo": "/img/clients/c1.png",
             "description": "Partnered for GST compliance, bookkeeping, and business registration."
         },
         {
             "id": 2,
-            "name": "Urban Threads",
+            "name": "EcomBooksHQ.com",
             "industry": "Fashion Retail",
             "logo": "/img/clients/c2.png",
             "description": "Handled complete marketplace reconciliation and tax compliance."
         },
         {
             "id": 3,
-            "name": "FitFuel Nutrition",
+            "name": "MarketOpsHub.com",
             "industry": "Health & Nutrition",
             "logo": "/img/clients/c3.png",
             "description": "Supported with financial structuring, accounting, and GST management."
         },
         {
             "id": 4,
-            "name": "ClickMart",
+            "name": "Backlance.com",
             "industry": "Online Marketplace",
             "logo": "/img/clients/c4.png",
             "description": "End-to-end accounting and compliance solutions for multi-channel sales."
         },
         {
             "id": 5,
-            "name": "Craftopia",
+            "name": "EcomFlow.in",
             "industry": "Artisan Goods",
             "logo": "/img/clients/c5.png",
             "description": "Optimized tax filing and bookkeeping for a handmade goods startup."
         },
         {
             "id": 6,
+            "name": "BackofficeForSellers.com",
+            "industry": "Digital Marketing",
+            "logo": "/img/clients/c6.png",
+            "description": "Advised on company registration, invoicing automation, and tax filing."
+        },
+        {
+            "id": 7,
+            "name": "TechKart Solutions",
+            "industry": "eCommerce SaaS",
+            "logo": "/img/clients/c1.png",
+            "description": "Partnered for GST compliance, bookkeeping, and business registration."
+        },
+        {
+            "id": 8,
+            "name": "Urban Threads",
+            "industry": "Fashion Retail",
+            "logo": "/img/clients/c2.png",
+            "description": "Handled complete marketplace reconciliation and tax compliance."
+        },
+        {
+            "id": 9,
+            "name": "FitFuel Nutrition",
+            "industry": "Health & Nutrition",
+            "logo": "/img/clients/c3.png",
+            "description": "Supported with financial structuring, accounting, and GST management."
+        },
+        {
+            "id": 10,
+            "name": "ClickMart",
+            "industry": "Online Marketplace",
+            "logo": "/img/clients/c4.png",
+            "description": "End-to-end accounting and compliance solutions for multi-channel sales."
+        },
+        {
+            "id": 11,
+            "name": "Craftopia",
+            "industry": "Artisan Goods",
+            "logo": "/img/clients/c5.png",
+            "description": "Optimized tax filing and bookkeeping for a handmade goods startup."
+        },
+        {
+            "id": 12,
             "name": "NeoPrint Media",
             "industry": "Digital Marketing",
             "logo": "/img/clients/c6.png",
