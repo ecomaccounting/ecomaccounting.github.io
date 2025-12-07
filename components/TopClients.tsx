@@ -1,10 +1,14 @@
 "use client";
 import Image from "next/image";
 import clientData from "@/data/data.json";
-
+interface Client {
+  logo: string;
+  name: string;
+}
 export default function TopClients() {
-  const clients = clientData.clients.slice(0, 6);
 
+
+  const clients = clientData.clients.slice(0, 6);
   const repeated = [...clients, ...clients, ...clients]; // ⭐ triple repeat
 
   return (
@@ -43,7 +47,7 @@ export default function TopClients() {
   );
 }
 
-function ClientItem({ client }) {
+function ClientItem({ client }: { client: Client }) {
   return (
     <div className="inline-flex flex-col items-center justify-center w-40">
       <div className="relative w-28 h-20">
