@@ -2,6 +2,17 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import servicesData from "@/data/servicesData.json";
 import {ServiceItem} from "@/data/types";
+import Link from "next/link";
+import {
+  FileText,
+  BookOpen,
+  FileBarChart,
+  Layers,
+  CreditCard,
+  Building2,
+  Briefcase,
+} from "lucide-react";
+
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {
@@ -45,7 +56,7 @@ export default async function ServiceDetailPage({
   );
 
   if (!service) return notFound();
-
+const services = servicesData.services.filter(s => s.parentId===service.id);
   return (
     <section className="py-20">
       <div className="container mx-auto px-6 md:px-12 max-w-4xl">
@@ -75,8 +86,62 @@ export default async function ServiceDetailPage({
               </li>
             ))}
           </ul>
-        </div>
+        </div>        
       </div>
+
+      {/* --- Service Cards Grid --- */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-20">
+          {services.map((service) => {
+            //const Icon = iconMap[service.name] || FileText;
+            //const slug = slugify(service.name);
+
+            return (
+              <div
+                key={service.name}
+                className="bg-light p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
+              >
+                {/* --- Icon and title --- */}
+                <div className="mb-6">
+                  <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                    {/* // <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" /> */}
+                  </div>
+
+                  <h3 className="text-xl  mb-3">
+                    {service.name}
+                  </h3>
+                  {service.shortDescription && (
+                    <p className="mb-4 line-clamp-3">
+                      {service.shortDescription}
+                    </p>
+                  )}
+                </div>
+
+                {/* --- Highlights --- */}
+                <div className="space-y-2">
+                  <ul className="list-disc pl-5 marker:text-accent">
+                    {service.highlights?.slice(0, 3).map((item, i) => (
+                      <li key={i} className="leading-relaxed">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* --- CTA (Link) --- */}
+                <div className="mt-6">
+                  <Link
+                    href={`/services/${service.id}`}
+                    className="block  py-2 px-4 rounded-lg  transition-colors"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+
     </section>
   );
 }
