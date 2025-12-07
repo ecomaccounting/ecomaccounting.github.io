@@ -11,7 +11,7 @@ export default function FloatingWhatsAppButton() {
   };
 
   return (
-    <div className="fixed bottom-10 right-5 ">
+    <div className="fixed bottom-10 right-5 z-50 ">
       <button
   className="w-12 h-12 flex items-center justify-center rounded-full shadow-2xl 
              transition-all duration-300 transform hover:scale-105 active:scale-95 
