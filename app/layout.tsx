@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
-  title: "eCom Accounting | Professional Accounting & Tax Services",
+  title: "Task360 | Professional Accounting & Tax Services",
   description:
     "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "business registration",
     "tax filing",
   ],
-  authors: [{ name: "eCom Accounting" }],
+  authors: [{ name: "Task360" }],
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     description: "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
-    title: "eCom Accounting | Professional Accounting & Tax Services",
+    title: "Task360 | Professional Accounting & Tax Services",
     url: "https://ecomaccounting.github.io",
     images: [
       {
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
         width: 200,
         height: 200,
         type: "image/png",
-        alt: "eCom Accounting Services",
+        alt: "Task360 Services",
       }
     ]
   },
@@ -95,7 +95,7 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow container mx-auto p-1 ">
+        <main className="flex-grow w-full ">
           {children}
         </main>
 

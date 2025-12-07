@@ -20,12 +20,12 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2 text-2xl tracking-wide">
             <Image
-              src="/ecom.svg"
+              src="/task360.svg"
               height={30}
               width={30}
-              alt="eCom Accounting Logo"
+              alt="Task360 Logo"
             />
-            eCom&nbsp;Accounting
+            Task360
           </Link>
         </div>
         {/* Desktop */}

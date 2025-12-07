@@ -12,13 +12,13 @@ export default function Footer() {
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/ecom.svg"
-              alt="eCom Accounting Logo"
+              src="/task360.svg"
+              alt="Task360 Logo"
               width={45}
               height={45}
               className="object-contain"
             />
-            <h1 className="text-3xl text-dark">eCom Accounting</h1>
+            <h1 className="text-3xl text-dark">Task360</h1>
           </Link>
 
           <p className="text-sm leading-relaxed">
@@ -107,7 +107,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-xs text-muted mt-8 pt-6">
-        © {new Date().getFullYear()} eCom Accounting. All rights reserved.
+        © {new Date().getFullYear()}Task360. All rights reserved.
       </div>
     </footer>
   );

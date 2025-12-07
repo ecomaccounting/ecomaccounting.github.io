@@ -1,22 +1,12 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import servicesData from "@/data/services.json";
-
-interface Service {
-  name: string;
-  text: string;
-  highlights: string[];
-}
-
-// Utility to generate a slug from the service name
-function slugify(name: string) {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
-}
+import servicesData from "@/data/servicesData.json";
+import {ServiceItem} from "@/data/types";
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {
-  return servicesData.services.map((service: Service) => ({
-    slug: slugify(service.name),
+  return servicesData.services.map((service: ServiceItem) => ({
+    slug: service.id
   }));
 }
 
@@ -24,7 +14,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = servicesData.services.find(
-    (s: Service) => slugify(s.name) === slug
+    (s:ServiceItem) => s.id=== slug
   );
 
   if (!service) {
@@ -32,12 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${service.name} | GPMJ & Associates`,
-    description: service.text.substring(0, 160),
-    keywords: [...service.highlights, service.name, "CA Services", "Accounting", "GST", "Tax"],
+    title: `${service.name}`,
+    description: service.shortDescription?.substring(0, 160),
+    keywords: [service.name],
     openGraph: {
       title: service.name,
-      description: service.text,
+      description: service.name,
       type: "article",
     },
   };
@@ -51,7 +41,7 @@ export default async function ServiceDetailPage({
 }) {
   const { slug } = await params;
   const service = servicesData.services.find(
-    (s: Service) => slugify(s.name) === slug
+    (s: ServiceItem) => s.id === slug
   );
 
   if (!service) return notFound();
@@ -65,7 +55,7 @@ export default async function ServiceDetailPage({
             {service.name}
           </h1>
           <p className="text-lg max-w-3xl mx-auto">
-            {service.text}
+            {service.longDescription}
           </p>
         </header>
 
@@ -76,7 +66,7 @@ export default async function ServiceDetailPage({
           </h2>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {service.highlights.map((item, i) => (
+            {service.highlights?.map((item, i) => (
               <li
                 key={i}
                 className="flex items-center gap-3 font-medium"
