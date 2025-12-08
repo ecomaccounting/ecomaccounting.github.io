@@ -1,742 +1,685 @@
 {
-"services": [
-{
-"id": "launch",
-"parentId": "",
-"name": "Launch",
-"icon": "Rocket",
-"shortDescription": "Embark on your entrepreneurial journey with Startup Movers by your side. We're more than just a compliance partner; we’re champions of your cause, turning visions into realities.",
-"longDescription": "Embark on your entrepreneurial journey with Startup Movers by your side. We redefine the launch phase, moving far beyond mere compliance to act as champions of your cause. Starting a business is complex, but our holistic \"Launch\" service simplifies the process, turning ambitious visions into operational realities swiftly and securely. We handle the critical initial setup—from selecting the ideal legal structure (like PLC or LLP) to securing necessary registrations and documentation. Our experts ensure you meet all regulatory requirements with zero stress, allowing you to focus purely on product development and market strategy. Partner with us to establish a strong, compliant, and scalable foundation for enduring success. We're the catalyst for your vision.",
-"highlights": [
-"Holistic Startup Strategy: Beyond compliance, we help structure your entire initial business plan.",
-"Legal Structure Selection: Expert guidance to choose the ideal entity (PLC, LLP, etc.) for growth and liability protection.",
-"Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing.",
-"Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared.",
-"Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
-],
-"footer": false,
-"banner": "launch.png"
-},
-{
-"id": "incorporation",
-"parentId": "launch",
-"name": "Incorporation",
-"icon": "Building2",
-"shortDescription": "End-to-end company formation services designed to help you launch your business legally, smoothly, and with complete compliance.",
-"longDescription": "Starting a business is exciting—but choosing the right legal structure and ensuring complete compliance can be overwhelming. Our Incorporation Services make the entire process seamless, fast, and fully guided by experts. Whether you’re forming a Private Limited Company, LLP, OPC, Partnership Firm, Sole Proprietorship, Section 8 Company, or setting up a Foreign Subsidiary in India, we handle documentation, registration, approvals, and post-incorporation compliance for you.\n\nFrom selecting the ideal business structure to managing every legal and financial obligation, we simplify your business launch so you can focus on building and scaling with confidence.",
-"highlights": [
-"Expert guidance on choosing the right business structure",
-"Complete documentation & compliance handling (no paperwork hassle)",
-"Fast & seamless incorporation with MCA, GST, PAN & other registrations",
-"Dedicated support from start to finish",
-"Post-incorporation compliance assistance (board meetings, filings, updates)",
-"Ideal for startups, SMEs, and international founders entering India"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "private-limited-company",
-"parentId": "incorporation",
-"name": "Private Limited Company",
-"icon": "Building2",
-"shortDescription": "Private Limited Company (PLC) registration helps entrepreneurs form a company with limited liability, separate legal identity, and the ability to raise capital efficiently.",
-"longDescription": "Forming a Private Limited Company involves drafting a company name, preparing MOA and AOA, applying for DSC and DIN for directors, and filing incorporation forms with the Registrar of Companies. This structure allows you to limit liability, attract investors, and build credibility in the market. It is ideal for startups and businesses aiming for growth, ensuring proper compliance with corporate laws while providing flexibility in ownership and management.",
-"highlights": [
-"Legal Structure Selection: Expert guidance to choose the ideal entity (PLC, LLP, etc.) for growth and liability protection."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "limited-liability-partnership-llp",
-"parentId": "incorporation",
-"name": "Limited Liability Partnership LLP",
-"icon": "Landmark",
-"shortDescription": "LLP registration combines the benefits of a partnership and a company, offering limited liability to partners and simplified compliance.",
-"longDescription": "Limited Liability Partnership (LLP) registration is suited for professionals and small businesses. It provides a legal entity separate from its partners, limiting personal liability. The process includes obtaining DSCs, DINs, naming the LLP, filing incorporation forms with the MCA, and executing the LLP agreement. LLPs enjoy operational flexibility, simplified taxation, and credibility with clients. This structure ensures both partners are protected from business debts while maintaining an easy governance model compared to traditional companies.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "one-person-company-opc",
-"parentId": "incorporation",
-"name": "One Person Company OPC",
-"icon": "UserRound",
-"shortDescription": "OPC allows a single entrepreneur to start a company with limited liability and full control over management.",
-"longDescription": "OPC registration enables a sole entrepreneur to create a company with limited liability, combining the benefits of a private company with the simplicity of sole proprietorship. The registration process includes obtaining DSC, DIN, reserving a unique company name, and filing incorporation documents with the Registrar of Companies. OPCs are ideal for solo entrepreneurs looking for a formal business structure, easier access to funding, and compliance advantages. This structure allows scaling the business later by converting to a private limited company while protecting personal assets.",
-"highlights": [
-"Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "foreign-subsidiary",
-"parentId": "incorporation",
-"name": "Foreign Subsidiary",
-"icon": "Globe2",
-"shortDescription": "A Foreign Subsidiary registration allows international companies to establish an Indian legal entity for business operations.",
-"longDescription": "Establishing a Foreign Subsidiary in India requires compliance with the Companies Act and RBI regulations. The process includes approval of the company name, filing incorporation forms with the Registrar of Companies, and meeting foreign investment regulations. This structure allows foreign companies to operate locally, manage finances efficiently, comply with Indian laws, and expand market presence. It provides limited liability protection and credibility among local clients and partners.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "section-8-company",
-"parentId": "incorporation",
-"name": "Section 8 Company",
-"icon": "HeartHandshake",
-"shortDescription": "Section 8 Company registration helps create non-profit organizations with legal status and credibility.",
-"longDescription": "Section 8 Company registration is designed for charitable, social, or non-profit initiatives. It involves drafting MOA and AOA, applying for DSC and DIN for directors, obtaining licenses under Section 8 of the Companies Act, and filing incorporation documents with the Registrar of Companies. This structure allows the organization to operate legally, receive donations, enjoy tax exemptions, and demonstrate transparency and credibility to stakeholders while pursuing non-profit objectives.",
-"highlights": [
-"Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "partnership-registration",
-"parentId": "incorporation",
-"name": "Partnership Registration",
-"icon": "Users",
-"shortDescription": "Partnership registration formalizes a business partnership, providing legal recognition and clarity in roles.",
-"longDescription": "Registering a partnership involves drafting a partnership deed outlining rights, responsibilities, profit sharing, and management roles among partners. Filing the deed with the Registrar of Firms ensures legal recognition and enables the partnership to operate formally. Registration provides credibility, protects partners’ interests, facilitates opening business accounts, and helps resolve disputes efficiently. This process ensures structured governance and smooth operation of the partnership business.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "sole-propreitorship",
-"parentId": "incorporation",
-"name": "Sole Propreitorship",
-"icon": "User",
-"shortDescription": "Sole proprietorship registration allows an individual to operate a business with minimal compliance and full control.",
-"longDescription": "A sole proprietorship is the simplest form of business registration, where a single owner manages all operations. Registration is optional but can include GST, local licenses, or trade permits. This structure offers full control, quick setup, and minimal compliance requirements. It is ideal for small businesses or startups, enabling the proprietor to handle operations, finances, and taxation while benefiting from direct decision-making and easy management of business activities.",
-"highlights": [
-"Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "registrations",
-"parentId": "launch",
-"name": "Registrations",
-"icon": "FileCheck",
-"shortDescription": "Fast, hassle-free business registrations to ensure your company stays compliant, credible, and ready to operate anywhere in India.",
-"longDescription": "Every business in India must complete the right registrations to operate legally, access government benefits, and build trust with customers, banks, and marketplaces. Our Registration Services simplify this entire process with expert-backed guidance and end-to-end documentation support.\n\nWhether it's GST Registration, MSME, Startup India, PF/ESIC, Professional Tax, IEC, or Shop & Establishment registration, we manage everything—from eligibility checks and paperwork preparation to filing, approvals, and follow-up with relevant authorities. With our structured, reliable approach, your business gets registered quickly and correctly, without delays or confusion.",
-"highlights": [
-"One-stop solution for all business, tax, and compliance registrations",
-"Complete documentation & filing support with zero paperwork burden",
-"Fast approvals through expert handling and accurate submissions",
-"Guidance on eligibility & required documents for each registration",
-"PAN-India coverage for all major business registration requirements",
-"Ideal for startups, eCommerce sellers, SMEs, and new entrepreneurs",
-"End-to-end assistance including post-registration updates and amendments"
-],
-"footer": true,
-"banner": ""
-},
-{
-"id": "gst-registration",
-"parentId": "registrations",
-"name": "GST Registration",
-"icon": "FileSpreadsheet",
-"shortDescription": "GST Registration helps businesses comply with tax laws and claim input credits efficiently.",
-"longDescription": "GST Registration involves obtaining a unique GSTIN, understanding applicable tax rates, and filing regular returns to the government. Compliance ensures businesses can legally charge and collect GST, claim input tax credits, and avoid penalties. This process is crucial for eCommerce sellers, enabling smooth financial operations, proper accounting, and maintaining legal and tax compliance across multiple states and marketplaces. Professional guidance ensures timely filing, reconciliation, and accurate tax reporting.",
-"highlights": [],
-"footer": true,
-"banner": ""
-},
-{
-"id": "startup-india-recognition",
-"parentId": "registrations",
-"name": "Startup India Recognition",
-"icon": "Award",
-"shortDescription": "Startup India Recognition provides benefits and incentives to registered startups under government schemes.",
-"longDescription": "Obtaining Startup India Recognition involves applying through the official portal, providing business details, innovation descriptions, and incorporation documents. Recognized startups gain access to government benefits such as tax exemptions, funding support, easier compliance procedures, and mentorship opportunities. This status increases credibility with investors, partners, and customers, helping the startup grow efficiently while enjoying regulatory and financial support.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "msme-registrations",
-"parentId": "registrations",
-"name": "MSME Registrations",
-"icon": "BadgeCheck",
-"shortDescription": "MSME registration enables small businesses to access government schemes and financial benefits.",
-"longDescription": "MSME Registration involves submitting business details to the Udyam portal, including ownership, activity, and investment information. Once registered, businesses can avail benefits like easier access to loans, subsidies, tax incentives, and credit support. The process ensures legal recognition, enhances credibility with clients and lenders, and provides support for growth, technology adoption, and competitive advantage in the market.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "pf-registration",
-"parentId": "registrations",
-"name": "PF Registration",
-"icon": "IdCard",
-"shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
-"longDescription": "PF registration involves enrolling the business with the Employees' Provident Fund Organization (EPFO), maintaining employee records, contributing monthly to the fund, and filing returns. This ensures employees receive retirement benefits, tax savings, and social security while the employer maintains compliance with labor laws. Professional handling guarantees accurate calculations, timely deposits, and adherence to statutory requirements, providing financial security and trust for employees.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "esic-registration",
-"parentId": "registrations",
-"name": "ESIC Registration",
-"icon": "ShieldCheck",
-"shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
-"longDescription": "ESIC registration involves applying to the Employees' State Insurance Corporation, submitting employee and business details, contributing monthly premiums, and filing returns. This enables employees to access health and social security benefits such as medical care, maternity, and sickness allowances. Businesses comply with labor laws and enhance employee satisfaction and retention by providing statutory benefits efficiently through structured processes and regular reporting.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "shop-establishment-registration",
-"parentId": "registrations",
-"name": "Shop & Establishment Registration",
-"icon": "Store",
-"shortDescription": "Shop & Establishment registration legally recognizes a business for commercial operations.",
-"longDescription": "Registration under the Shops & Establishment Act involves submitting business details, owner information, and operational hours to the local municipal authority. Once registered, the business complies with labor laws, maintains proper employee records, and avoids legal penalties. This formal recognition helps eCommerce and retail operations establish credibility, manage workforce effectively, and ensures adherence to statutory requirements for smooth commercial functioning.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "professional-tax",
-"parentId": "registrations",
-"name": "Professional Tax",
-"icon": "FileSignature",
-"shortDescription": "Professional Tax registration ensures proper tax deduction for employees according to state laws.",
-"longDescription": "Professional Tax registration involves enrolling the business under the relevant state authority, calculating monthly deductions from employees' salaries, submitting returns, and depositing taxes. Compliance ensures employees' professional tax obligations are met, avoiding penalties, and maintaining smooth payroll management. Businesses benefit from structured deduction processes and accurate reporting, supporting statutory compliance and operational efficiency.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "fssai-registration",
-"parentId": "registrations",
-"name": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
-"icon": "Ship",
-"shortDescription": "FSSAI registration certifies food businesses to comply with safety and hygiene standards.",
-"longDescription": "FSSAI Registration involves applying through the Food Safety Authority, submitting business and product details, meeting hygiene and operational standards, and obtaining the license. This certification ensures food safety, builds customer trust, and allows legal operation. Compliance helps avoid penalties, ensures periodic inspections, and facilitates expansion into multiple regions or eCommerce platforms, establishing credibility and adherence to food regulations.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "import-export-code",
-"parentId": "registrations",
-"name": "Import Export Code",
-"icon": "Ship",
-"shortDescription": "IEC registration is mandatory for businesses engaging in international trade.",
-"longDescription": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "trademark-application",
-"parentId": "launch",
-"name": "Trademark Application",
-"icon": "PenTool",
-"shortDescription": "Secure your brand identity and distinguish your products or services legally.",
-"longDescription": "Trademark registration provides legal protection for your brand name, logo, or slogan, preventing unauthorized use by competitors. The process involves conducting a comprehensive search, preparing and filing the application with the Trade Marks Registry, responding to official objections (if any), and finally, securing the registration certificate. A registered trademark is a valuable asset that offers exclusive rights across India, enhancing brand equity, building consumer trust, and enabling you to take legal action against infringement. It is a critical step for any business focused on long-term growth and brand recognition.",
-"highlights": [
-"Exclusive brand rights",
-"Legal protection from infringement",
-"Increased brand equity",
-"National validity."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "trademark-registration",
-"parentId": "trademark-application",
-"name": "Trademark Registration",
-"icon": "BadgeTrademark",
-"shortDescription": "Secure your brand identity and distinguish your products or services legally.",
-"longDescription": "Trademark registration provides legal protection for your brand name, logo, or slogan, preventing unauthorized use by competitors. The process involves conducting a comprehensive search, preparing and filing the application with the Trade Marks Registry, responding to official objections (if any), and finally, securing the registration certificate. A registered trademark is a valuable asset that offers exclusive rights across India, enhancing brand equity, building consumer trust, and enabling you to take legal action against infringement. It is a critical step for any business focused on long-term growth and brand recognition.",
-"highlights": [
-"Exclusive brand rights",
-"Legal protection from infringement",
-"Increased brand equity",
-"National validity."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "operate",
-"parentId": "",
-"name": "Operate",
-"icon": "Settings2",
-"shortDescription": "Channel your energy into growth while we manage the intricacies of operational efficiency. At Startup Movers, our approach is tailored for startups, ensuring compliance is straightforward and aligned with your growth trajectory.",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": "operate.png"
-},
-{
-"id": "accounting-taxation",
-"parentId": "operate",
-"name": "Accounting & Taxation",
-"icon": "Calculator",
-"shortDescription": "Accurate accounting and timely tax compliance to keep your business financially healthy, audit-ready, and fully compliant.",
-"longDescription": "Strong financial management is the backbone of every successful business. Our Accounting & Taxation Services ensure your books are always accurate, your taxes are filed on time, and your business remains compliant with all statutory requirements.\n\nFrom day-to-day bookkeeping and monthly GST filings to TDS compliance and income tax returns, we manage everything with precision. Our team ensures correct reporting, error-free documentation, and proactive tax planning—giving you complete visibility into your finances while reducing compliance risks.\n\nWhether you’re a growing startup, eCommerce seller, or established SME, we help you maintain clean books, meet every deadline, and stay focused on scaling your business.",
-"highlights": [
-"Accurate bookkeeping and monthly/quarterly financial updates",
-"End-to-end GST compliance including return filings & reconciliation",
-"TDS management with proper deductions, challans, and filings",
-"Income Tax Return (ITR) preparation & filing for individuals and businesses",
-"Error-free documentation and compliance with latest regulations",
-"Timely reminders for filings & payments to avoid penalties",
-"Clear financial insights to support decision-making and business planning",
-"Ideal for eCommerce sellers, startups, freelancers & SMEs"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "accounting-book-keeping",
-"parentId": "accounting-taxation",
-"name": "Accounting & Book Keeping",
-"icon": "NotebookText",
-"shortDescription": "Systematic management of all financial records to ensure compliance and accurate reporting.",
-"longDescription": "Professional Accounting and Book Keeping services involve recording all financial transactions, maintaining ledgers, reconciling bank statements, managing accounts payable and receivable, and preparing periodic financial statements (Profit & Loss, Balance Sheet). Our services ensure your records are accurate, up-to-date, and fully compliant with generally accepted accounting principles (GAAP). This service is essential for effective financial analysis, budgeting, managing cash flow, and providing accurate data needed for tax filings and investor reporting.",
-"highlights": [
-"Accurate financial records; Statutory compliance; Cash flow visibility; Audit readiness."
-],
-"footer": true,
-"banner": ""
-},
-{
-"id": "gst-filings",
-"parentId": "accounting-taxation",
-"name": "GST Filings",
-"icon": "FileSpreadsheet",
-"shortDescription": "Timely and accurate filing of Goods and Services Tax returns to ensure compliance and avoid penalties.",
-"longDescription": "GST Filings services cover the preparation and submission of various mandated GST returns (e.g., GSTR-1, GSTR-3B, annual returns) based on your business transactions. This involves meticulous reconciliation of sales and purchase data, proper classification of goods and services, and correct calculation of tax liabilities and input tax credits (ITC). Outsourcing this ensures adherence to frequent regulatory deadlines, minimizes the risk of compliance errors, and maximizes eligible ITC claims, helping you avoid penalties and maintain a clean compliance record with the tax authorities.",
-"highlights": [
-"Penalty avoidance; Maximized Input Tax Credit (ITC); Timely submission; Error-free compliance."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "tds-with-holding-tax",
-"parentId": "accounting-taxation",
-"name": "TDS / With Holding Tax",
-"icon": "Receipt",
-"shortDescription": "Comprehensive management and deposit of Tax Deducted at Source (TDS) and related filings.",
-"longDescription": "This service covers the statutory requirements of TDS/TCS (Tax Collected at Source) compliance, including calculating the correct amount to be withheld, timely deposit of the tax with the government, and filing of quarterly TDS returns (e.g., Form 24Q, 26Q). We manage the issuance of TDS certificates (Form 16/16A) to deductees. Proper management of TDS is crucial for businesses to avoid penalties and interest, ensuring they fulfill their obligations as a tax deductor/collector under the Income Tax Act.",
-"highlights": [
-"Statutory compliance; Accurate calculation; Timely deposits; Error-free return filing."
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "income-tax-returns",
-"parentId": "accounting-taxation",
-"name": "Income Tax Returns",
-"icon": "FileBarChart",
-"shortDescription": "Expert preparation and filing of corporate and individual income tax returns for full compliance.",
-"longDescription": "Income Tax Return (ITR) filing involves calculating taxable income, claiming all eligible deductions and exemptions, and submitting the appropriate ITR form (e.g., ITR-6 for companies) to the Income Tax Department. Our service ensures maximum tax efficiency, minimizes tax liability within legal bounds, and guarantees timely filing to avoid penalties. This is critical for maintaining financial compliance, facilitating loan applications, and completing business audits.",
-"highlights": [
-"Optimized tax liability; Maximum deductions/exemptions; Penalty avoidance; Quick processing."
-],
-"footer": true,
-"banner": ""
-},
-{
-"id": "virtual-cfo",
-"parentId": "operate",
-"name": "Virtual CFO",
-"icon": "BriefcaseBusiness",
-"shortDescription": "Strategic financial leadership, budgeting, compliance, and performance insights—delivered by your dedicated Virtual CFO at a fraction of the cost.",
-"longDescription": "Growing businesses need more than accounting—they need financial strategy, clarity, and control. Our Virtual CFO Services give you access to an experienced finance professional who oversees your complete financial ecosystem, without the cost or complexity of hiring in-house.\n\nFrom cash-flow planning and budgeting to KPI dashboards, compliance monitoring, tax planning, and board-ready financial reports, we handle everything necessary to strengthen your financial foundation. You get real-time insights, smarter decision-making support, and proactive financial guidance tailored to your business goals.\n\nWhether you're a fast-growing startup, an ecommerce brand, or an established SME, our Virtual CFO becomes your long-term partner in profitability, compliance, and scalable growth.",
-"highlights": [
-"Strategic financial planning including budgeting & forecasting",
-"Cash flow management to maintain stability & growth",
-"Monthly financial reviews with clear performance insights",
-"KPI dashboards tailored for eCommerce, D2C & service businesses",
-"Profitability analysis & cost-optimization strategies",
-"Tax planning & compliance oversight",
-"Investor/board-ready financial reports",
-"Dedicated expert guidance without hiring a full-time CFO",
-"Ideal for startups, high-growth brands, and SMEs"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "secretarial-compliances",
-"parentId": "operate",
-"name": "Secretarial Compliances",
-"icon": "ClipboardList",
-"shortDescription": "Comprehensive ROC and corporate secretarial services to help your company stay legally compliant, structured, and investor-ready.",
-"longDescription": "Corporate compliance is essential for maintaining legal standing, investor trust, and smooth business operations. Our Secretarial Compliance Services ensure your company meets all MCA/ROC requirements while staying aligned with corporate governance best practices.\n\nFrom drafting and managing ESOP structures, Stock Appreciation Rights (SAR), and board resolutions to handling company closure formalities, we provide expert guidance across every stage. Our team ensures accurate documentation, timely filings, and complete end-to-end execution, allowing you to focus on growth while we handle the complexities of corporate law.\n\nWhether you're issuing startup ESOPs to attract top talent, implementing SAR for strategic incentives, or closing a company legally and cleanly, we deliver fast, compliant, and reliable secretarial support.",
-"highlights": [
-"End-to-end secretarial compliance with MCA, ROC & Companies Act requirements",
-"Expert drafting & implementation of ESOP schemes",
-"Stock Appreciation Rights (SAR) structuring & documentation",
-"Company closure services including strike-off, filings & final documentation",
-"Accurate preparation of board resolutions, notices & minutes",
-"Timely reminders & compliance tracking to avoid penalties",
-"Ideal for startups, growing private limited companies & funded businesses",
-"Confidential, expert handling of all statutory paperwork"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "startup-esops",
-"parentId": "secretarial-compliances",
-"name": "Startup ESOPs",
-"icon": "Layers3",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "stock-appreciation-rights",
-"parentId": "secretarial-compliances",
-"name": "Stock Appreciation Rights",
-"icon": "TrendingUp",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "company-closure",
-"parentId": "secretarial-compliances",
-"name": "Company Closure",
-"icon": "FolderX",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "legal-drafting",
-"parentId": "operate",
-"name": "Legal Drafting",
-"icon": "FileEdit",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "cofounders-agreement",
-"parentId": "legal-drafting",
-"name": "Cofounders Agreement",
-"icon": "Handshake",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "reverse-vesting",
-"parentId": "legal-drafting",
-"name": "Reverse Vesting",
-"icon": "RefreshCcw",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "share-purchase-agreement",
-"parentId": "legal-drafting",
-"name": "Share Purchase Agreement",
-"icon": "FileCheck2",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "employment-contract",
-"parentId": "legal-drafting",
-"name": "Employment Contract",
-"icon": "FileSignature",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "gst-indirect-taxes",
-"parentId": "operate",
-"name": "GST/Indirect Taxes",
-"icon": "FileSpreadsheet",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "gst-services",
-"parentId": "gst-indirect-taxes",
-"name": "GST Services",
-"icon": "FileSpreadsheet",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "litigation-support-services",
-"parentId": "gst-indirect-taxes",
-"name": "Litigation Support Services",
-"icon": "Gavel",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "international-trade",
-"parentId": "gst-indirect-taxes",
-"name": "International Trade",
-"icon": "Globe",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "training-awareness-program",
-"parentId": "gst-indirect-taxes",
-"name": "Training & Awareness Program",
-"icon": "GraduationCap",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "grow",
-"parentId": "",
-"name": "Grow",
-"icon": "Sprout",
-"shortDescription": "We're committed to propelling startups towards enduring success. Let's navigate the growth journey together, ensuring your rise is both strategic and sustainable.",
-"longDescription": "Growth isn’t just about scaling fast—it’s about scaling right. Our Grow services are designed to help startups and eCommerce businesses navigate their expansion journey with clarity, structure, and strategy. From strengthening financial systems to optimizing operations, improving compliance, and unlocking new opportunities, we partner with you at every stage of your scale-up journey.\n\nWe bring a blend of financial intelligence, operational expertise, and forward-looking advisory to help you make confident decisions. Whether you're expanding teams, raising funds, entering new markets, or preparing for sustained long-term growth, we ensure every step is backed by solid planning and powerful execution.\n\nWe're committed to propelling startups toward enduring success—helping you rise with purpose, precision, and sustainable momentum.",
-"highlights": [
-"Strategic growth planning tailored to your business model and scale-up goals",
-"Operational & financial optimization to improve efficiency and profitability",
-"Support for fundraising, investor readiness & expansion planning",
-"Data-driven insights through structured reporting and KPI tracking",
-"Risk and compliance oversight to keep growth stable and sustainable",
-"Scalable systems setup including accounting, processes, and controls",
-"Guidance for new market entry, team expansion & business restructuring",
-"Ideal for startups, D2C/eCommerce brands, and fast-growing SMEs"
-],
-"footer": false,
-"banner": "grow.png"
-},
-{
-"id": "startup-fundraise",
-"parentId": "grow",
-"name": "Startup Fundraise",
-"icon": "LineChart",
-"shortDescription": "End-to-end fundraising support—from valuation and due diligence to investor-ready pitch decks—to help startups raise capital with confidence.",
-"longDescription": "Raising capital is one of the most critical milestones for any startup. Investors expect clarity, precision, and strong financial fundamentals before committing funds. Our Start-up Fundraise Services provide complete support across valuation, financial due diligence, and pitch preparation to ensure you meet those expectations with confidence.\n\nWe help you determine an accurate, defensible valuation using industry benchmarks and financial models. Our due diligence team reviews your financials, compliance, and business processes to ensure everything is investor-ready. Finally, we craft compelling, data-driven pitch decks that clearly communicate your story, traction, financials, and growth potential.\n\nWhether you're approaching angel investors, VCs, accelerators, or institutional funds, we ensure your startup stands out with strong numbers, clean compliance, and a powerful narrative.",
-"highlights": [
-"Startup valuation support using advanced financial models & industry benchmarks",
-"Comprehensive financial & compliance due diligence",
-"Investor-ready pitch deck creation with strong storytelling & data insights",
-"Clear documentation for investors, VCs & funding institutions",
-"Clean-up of books, reports & compliance gaps before fundraising",
-"Support with projections, unit economics & financial modelling",
-"Designed for early-stage & growth-stage startups",
-"Faster, more structured fundraising with expert guidance"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "valuation-advisory",
-"parentId": "startup-fundraise",
-"name": "Valuation Advisory",
-"icon": "Scale",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "due-diligence",
-"parentId": "startup-fundraise",
-"name": "Due Diligence",
-"icon": "SearchCheck",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "pitch-deck",
-"parentId": "startup-fundraise",
-"name": "Pitch Deck",
-"icon": "Presentation",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "legal-services",
-"parentId": "grow",
-"name": "Legal Services",
-"icon": "Scale",
-"shortDescription": "Reliable legal drafting, advisory, and compliance support to protect your business, reduce risks, and ensure smooth operations.",
-"longDescription": "Every business—whether a startup, SME, or fast-growing eCommerce brand—needs strong legal support to operate safely and confidently. Our Legal Services provide expert assistance across drafting, reviewing, and managing essential business documents, contracts, and compliance requirements.\n\nWe help you stay protected through legally sound agreements, structured policies, and precise documentation tailored to your business model. From founders’ agreements and vendor contracts to privacy policies, terms of service, and general legal advisory, we ensure your business remains secure, compliant, and risk-free.\n\nOur team works closely with startups and growing businesses to simplify complex legal requirements, prevent disputes, and create a robust legal foundation that supports long-term growth.",
-"highlights": [
-"Contract drafting & review for vendors, partners, employees, freelancers",
-"Founders’ agreements, shareholder agreements & MoUs",
-"Policies & documentation such as Terms of Service, Privacy Policy, NDAs, etc.",
-"Legal advisory for startups, SMEs & eCommerce businesses",
-"Risk assessment & compliance checks to prevent legal disputes",
-"Support for registrations, licenses & statutory requirements",
-"Easy, reliable and confidential legal assistance",
-"Tailored for digital-first, online, and service-based businesses"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "fdi-compliances-under-fema",
-"parentId": "legal-services",
-"name": "FDI Compliances Under Fema",
-"icon": "GlobeLock",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "business-consultancy",
-"parentId": "grow",
-"name": "Business Consultancy",
-"icon": "Lightbulb",
-"shortDescription": "Strategic business consulting powered by financial modeling and expert tax advisory to help you make smarter, data-driven decisions.",
-"longDescription": "Building a scalable business requires clarity—clarity in numbers, strategy, tax planning, and long-term decision making. Our Business Consultancy Services are designed to give founders and business owners the insights they need to plan effectively and grow sustainably.\n\nWe create detailed, dynamic financial models that help you understand revenue forecasts, cost structures, profitability, and cash flow scenarios. Our income tax consultancy ensures you're fully compliant while optimizing your tax position with smart, lawful planning.\n\nWhether you're evaluating new business opportunities, planning investments, or preparing for fundraising, we provide the strategic guidance, financial intelligence, and tax clarity you need to move forward confidently.",
-"highlights": [
-"Detailed financial modeling for forecasting, planning & decision making",
-"Scenario analysis to evaluate new projects, pricing & investments",
-"Expert income tax consultancy for businesses & founders",
-"Tax optimization strategies to reduce liabilities legally",
-"Profitability & cost structure analysis for better financial control",
-"Business planning support with data-driven insights",
-"Ideal for startups, eCommerce brands & growing SMEs",
-"Clear, actionable recommendations from experienced consultants"
-],
-"footer": false,
-"banner": ""
-},
-{
-"id": "financial-modeling",
-"parentId": "business-consultancy",
-"name": "Financial Modeling",
-"icon": "ChartSpline",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "income-tax-consultancy",
-"parentId": "business-consultancy",
-"name": "Income Tax Consultancy",
-"icon": "FileBarChart",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "transaction-advisory-service",
-"parentId": "grow",
-"name": "Transaction Advisory Service",
-"icon": "Shuffle",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "merger-and-acquisition",
-"parentId": "transaction-advisory-service",
-"name": "Merger and Acquisition",
-"icon": "Layers",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "reverse-flip",
-"parentId": "transaction-advisory-service",
-"name": "Reverse Flip",
-"icon": "RefreshCcw",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "sme-ipo",
-"parentId": "transaction-advisory-service",
-"name": "SME IPO",
-"icon": "BarChart3",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-},
-{
-"id": "flip",
-"parentId": "transaction-advisory-service",
-"name": "Flip",
-"icon": "Repeat",
-"shortDescription": "",
-"longDescription": "",
-"highlights": [],
-"footer": false,
-"banner": ""
-}
-]
+    "services": [
+        {
+            "id": "launch",
+            "parentId": "",
+            "name": "Launch",
+            "icon": "Rocket",
+            "shortDescription": "Embark on your entrepreneurial journey with Startup Movers by your side. We're more than just a compliance partner; we’re champions of your cause, turning visions into realities.",
+            "longDescription": "Embark on your entrepreneurial journey with Startup Movers by your side. We redefine the launch phase, moving far beyond mere compliance to act as champions of your cause. Starting a business is complex, but our holistic \"Launch\" service simplifies the process, turning ambitious visions into operational realities swiftly and securely. We handle the critical initial setup—from selecting the ideal legal structure (like PLC or LLP) to securing necessary registrations and documentation. Our experts ensure you meet all regulatory requirements with zero stress, allowing you to focus purely on product development and market strategy. Partner with us to establish a strong, compliant, and scalable foundation for enduring success. We're the catalyst for your vision.",
+            "highlights": [
+                "Holistic Startup Strategy: Beyond compliance, we help structure your entire initial business plan.",
+                "Legal Structure Selection: Expert guidance to choose the ideal entity (PLC, LLP, etc.) for growth and liability protection.",
+                "Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing.",
+                "Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared.",
+                "Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
+            ],
+            "footer": false
+        },
+        {
+            "id": "incorporation",
+            "parentId": "launch",
+            "name": "Incorporation",
+            "icon": "Building2",
+            "shortDescription": "End-to-end company formation services designed to help you launch your business legally, smoothly, and with complete compliance.",
+            "longDescription": "Starting a business is exciting—but choosing the right legal structure and ensuring complete compliance can be overwhelming. Our Incorporation Services make the entire process seamless, fast, and fully guided by experts. Whether you’re forming a Private Limited Company, LLP, OPC, Partnership Firm, Sole Proprietorship, Section 8 Company, or setting up a Foreign Subsidiary in India, we handle documentation, registration, approvals, and post-incorporation compliance for you.\n\nFrom selecting the ideal business structure to managing every legal and financial obligation, we simplify your business launch so you can focus on building and scaling with confidence.",
+            "highlights": [
+                "Expert guidance on choosing the right business structure",
+                "Complete documentation & compliance handling (no paperwork hassle)",
+                "Fast & seamless incorporation with MCA, GST, PAN & other registrations",
+                "Dedicated support from start to finish",
+                "Post-incorporation compliance assistance (board meetings, filings, updates)",
+                "Ideal for startups, SMEs, and international founders entering India"
+            ],
+            "footer": false
+        },
+        {
+            "id": "private-limited-company",
+            "parentId": "incorporation",
+            "name": "Private Limited Company",
+            "icon": "Building2",
+            "shortDescription": "Private Limited Company (PLC) registration helps entrepreneurs form a company with limited liability, separate legal identity, and the ability to raise capital efficiently.",
+            "longDescription": "Forming a Private Limited Company involves drafting a company name, preparing MOA and AOA, applying for DSC and DIN for directors, and filing incorporation forms with the Registrar of Companies. This structure allows you to limit liability, attract investors, and build credibility in the market. It is ideal for startups and businesses aiming for growth, ensuring proper compliance with corporate laws while providing flexibility in ownership and management.",
+            "highlights": [
+                "Legal Structure Selection: Expert guidance to choose the ideal entity (PLC, LLP, etc.) for growth and liability protection."
+            ],
+            "footer": false
+        },
+        {
+            "id": "limited-liability-partnership-llp",
+            "parentId": "incorporation",
+            "name": "Limited Liability Partnership LLP",
+            "icon": "Landmark",
+            "shortDescription": "LLP registration combines the benefits of a partnership and a company, offering limited liability to partners and simplified compliance.",
+            "longDescription": "Limited Liability Partnership (LLP) registration is suited for professionals and small businesses. It provides a legal entity separate from its partners, limiting personal liability. The process includes obtaining DSCs, DINs, naming the LLP, filing incorporation forms with the MCA, and executing the LLP agreement. LLPs enjoy operational flexibility, simplified taxation, and credibility with clients. This structure ensures both partners are protected from business debts while maintaining an easy governance model compared to traditional companies.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "one-person-company-opc",
+            "parentId": "incorporation",
+            "name": "One Person Company OPC",
+            "icon": "UserRound",
+            "shortDescription": "OPC allows a single entrepreneur to start a company with limited liability and full control over management.",
+            "longDescription": "OPC registration enables a sole entrepreneur to create a company with limited liability, combining the benefits of a private company with the simplicity of sole proprietorship. The registration process includes obtaining DSC, DIN, reserving a unique company name, and filing incorporation documents with the Registrar of Companies. OPCs are ideal for solo entrepreneurs looking for a formal business structure, easier access to funding, and compliance advantages. This structure allows scaling the business later by converting to a private limited company while protecting personal assets.",
+            "highlights": [
+                "Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing."
+            ],
+            "footer": false
+        },
+        {
+            "id": "foreign-subsidiary",
+            "parentId": "incorporation",
+            "name": "Foreign Subsidiary",
+            "icon": "Globe2",
+            "shortDescription": "A Foreign Subsidiary registration allows international companies to establish an Indian legal entity for business operations.",
+            "longDescription": "Establishing a Foreign Subsidiary in India requires compliance with the Companies Act and RBI regulations. The process includes approval of the company name, filing incorporation forms with the Registrar of Companies, and meeting foreign investment regulations. This structure allows foreign companies to operate locally, manage finances efficiently, comply with Indian laws, and expand market presence. It provides limited liability protection and credibility among local clients and partners.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "section-8-company",
+            "parentId": "incorporation",
+            "name": "Section 8 Company",
+            "icon": "HeartHandshake",
+            "shortDescription": "Section 8 Company registration helps create non-profit organizations with legal status and credibility.",
+            "longDescription": "Section 8 Company registration is designed for charitable, social, or non-profit initiatives. It involves drafting MOA and AOA, applying for DSC and DIN for directors, obtaining licenses under Section 8 of the Companies Act, and filing incorporation documents with the Registrar of Companies. This structure allows the organization to operate legally, receive donations, enjoy tax exemptions, and demonstrate transparency and credibility to stakeholders while pursuing non-profit objectives.",
+            "highlights": [
+                "Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared."
+            ],
+            "footer": false
+        },
+        {
+            "id": "partnership-registration",
+            "parentId": "incorporation",
+            "name": "Partnership Registration",
+            "icon": "Users",
+            "shortDescription": "Partnership registration formalizes a business partnership, providing legal recognition and clarity in roles.",
+            "longDescription": "Registering a partnership involves drafting a partnership deed outlining rights, responsibilities, profit sharing, and management roles among partners. Filing the deed with the Registrar of Firms ensures legal recognition and enables the partnership to operate formally. Registration provides credibility, protects partners’ interests, facilitates opening business accounts, and helps resolve disputes efficiently. This process ensures structured governance and smooth operation of the partnership business.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "sole-propreitorship",
+            "parentId": "incorporation",
+            "name": "Sole Propreitorship",
+            "icon": "User",
+            "shortDescription": "Sole proprietorship registration allows an individual to operate a business with minimal compliance and full control.",
+            "longDescription": "A sole proprietorship is the simplest form of business registration, where a single owner manages all operations. Registration is optional but can include GST, local licenses, or trade permits. This structure offers full control, quick setup, and minimal compliance requirements. It is ideal for small businesses or startups, enabling the proprietor to handle operations, finances, and taxation while benefiting from direct decision-making and easy management of business activities.",
+            "highlights": [
+                "Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
+            ],
+            "footer": false
+        },
+        {
+            "id": "registrations",
+            "parentId": "launch",
+            "name": "Registrations",
+            "icon": "FileCheck",
+            "shortDescription": "Fast, hassle-free business registrations to ensure your company stays compliant, credible, and ready to operate anywhere in India.",
+            "longDescription": "Every business in India must complete the right registrations to operate legally, access government benefits, and build trust with customers, banks, and marketplaces. Our Registration Services simplify this entire process with expert-backed guidance and end-to-end documentation support.\n\nWhether it's GST Registration, MSME, Startup India, PF/ESIC, Professional Tax, IEC, or Shop & Establishment registration, we manage everything—from eligibility checks and paperwork preparation to filing, approvals, and follow-up with relevant authorities. With our structured, reliable approach, your business gets registered quickly and correctly, without delays or confusion.",
+            "highlights": [
+                "One-stop solution for all business, tax, and compliance registrations",
+                "Complete documentation & filing support with zero paperwork burden",
+                "Fast approvals through expert handling and accurate submissions",
+                "Guidance on eligibility & required documents for each registration",
+                "PAN-India coverage for all major business registration requirements",
+                "Ideal for startups, eCommerce sellers, SMEs, and new entrepreneurs",
+                "End-to-end assistance including post-registration updates and amendments"
+            ],
+            "footer": true
+        },
+        {
+            "id": "gst-registration",
+            "parentId": "registrations",
+            "name": "GST Registration",
+            "icon": "FileSpreadsheet",
+            "shortDescription": "GST Registration helps businesses comply with tax laws and claim input credits efficiently.",
+            "longDescription": "GST Registration involves obtaining a unique GSTIN, understanding applicable tax rates, and filing regular returns to the government. Compliance ensures businesses can legally charge and collect GST, claim input tax credits, and avoid penalties. This process is crucial for eCommerce sellers, enabling smooth financial operations, proper accounting, and maintaining legal and tax compliance across multiple states and marketplaces. Professional guidance ensures timely filing, reconciliation, and accurate tax reporting.",
+            "highlights": [],
+            "footer": true
+        },
+        {
+            "id": "startup-india-recognition",
+            "parentId": "registrations",
+            "name": "Startup India Recognition",
+            "icon": "Award",
+            "shortDescription": "Startup India Recognition provides benefits and incentives to registered startups under government schemes.",
+            "longDescription": "Obtaining Startup India Recognition involves applying through the official portal, providing business details, innovation descriptions, and incorporation documents. Recognized startups gain access to government benefits such as tax exemptions, funding support, easier compliance procedures, and mentorship opportunities. This status increases credibility with investors, partners, and customers, helping the startup grow efficiently while enjoying regulatory and financial support.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "msme-registrations",
+            "parentId": "registrations",
+            "name": "MSME Registrations",
+            "icon": "BadgeCheck",
+            "shortDescription": "MSME registration enables small businesses to access government schemes and financial benefits.",
+            "longDescription": "MSME Registration involves submitting business details to the Udyam portal, including ownership, activity, and investment information. Once registered, businesses can avail benefits like easier access to loans, subsidies, tax incentives, and credit support. The process ensures legal recognition, enhances credibility with clients and lenders, and provides support for growth, technology adoption, and competitive advantage in the market.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "pf-registration",
+            "parentId": "registrations",
+            "name": "PF Registration",
+            "icon": "IdCard",
+            "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
+            "longDescription": "PF registration involves enrolling the business with the Employees' Provident Fund Organization (EPFO), maintaining employee records, contributing monthly to the fund, and filing returns. This ensures employees receive retirement benefits, tax savings, and social security while the employer maintains compliance with labor laws. Professional handling guarantees accurate calculations, timely deposits, and adherence to statutory requirements, providing financial security and trust for employees.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "esic-registration",
+            "parentId": "registrations",
+            "name": "ESIC Registration",
+            "icon": "ShieldCheck",
+            "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
+            "longDescription": "ESIC registration involves applying to the Employees' State Insurance Corporation, submitting employee and business details, contributing monthly premiums, and filing returns. This enables employees to access health and social security benefits such as medical care, maternity, and sickness allowances. Businesses comply with labor laws and enhance employee satisfaction and retention by providing statutory benefits efficiently through structured processes and regular reporting.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "shop-establishment-registration",
+            "parentId": "registrations",
+            "name": "Shop & Establishment Registration",
+            "icon": "Store",
+            "shortDescription": "Shop & Establishment registration legally recognizes a business for commercial operations.",
+            "longDescription": "Registration under the Shops & Establishment Act involves submitting business details, owner information, and operational hours to the local municipal authority. Once registered, the business complies with labor laws, maintains proper employee records, and avoids legal penalties. This formal recognition helps eCommerce and retail operations establish credibility, manage workforce effectively, and ensures adherence to statutory requirements for smooth commercial functioning.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "professional-tax",
+            "parentId": "registrations",
+            "name": "Professional Tax",
+            "icon": "FileSignature",
+            "shortDescription": "Professional Tax registration ensures proper tax deduction for employees according to state laws.",
+            "longDescription": "Professional Tax registration involves enrolling the business under the relevant state authority, calculating monthly deductions from employees' salaries, submitting returns, and depositing taxes. Compliance ensures employees' professional tax obligations are met, avoiding penalties, and maintaining smooth payroll management. Businesses benefit from structured deduction processes and accurate reporting, supporting statutory compliance and operational efficiency.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "fssai-registration",
+            "parentId": "registrations",
+            "name": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
+            "icon": "Ship",
+            "shortDescription": "FSSAI registration certifies food businesses to comply with safety and hygiene standards.",
+            "longDescription": "FSSAI Registration involves applying through the Food Safety Authority, submitting business and product details, meeting hygiene and operational standards, and obtaining the license. This certification ensures food safety, builds customer trust, and allows legal operation. Compliance helps avoid penalties, ensures periodic inspections, and facilitates expansion into multiple regions or eCommerce platforms, establishing credibility and adherence to food regulations.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "import-export-code",
+            "parentId": "registrations",
+            "name": "Import Export Code",
+            "icon": "Ship",
+            "shortDescription": "IEC registration is mandatory for businesses engaging in international trade.",
+            "longDescription": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "trademark-application",
+            "parentId": "launch",
+            "name": "Trademark Application",
+            "icon": "PenTool",
+            "shortDescription": "Secure your brand identity and distinguish your products or services legally.",
+            "longDescription": "Trademark registration provides legal protection for your brand name, logo, or slogan, preventing unauthorized use by competitors. The process involves conducting a comprehensive search, preparing and filing the application with the Trade Marks Registry, responding to official objections (if any), and finally, securing the registration certificate. A registered trademark is a valuable asset that offers exclusive rights across India, enhancing brand equity, building consumer trust, and enabling you to take legal action against infringement. It is a critical step for any business focused on long-term growth and brand recognition.",
+            "highlights": [
+                "Exclusive brand rights",
+                "Legal protection from infringement",
+                "Increased brand equity",
+                "National validity."
+            ],
+            "footer": false
+        },
+        {
+            "id": "trademark-registration",
+            "parentId": "trademark-application",
+            "name": "Trademark Registration",
+            "icon": "BadgeTrademark",
+            "shortDescription": "Secure your brand identity and distinguish your products or services legally.",
+            "longDescription": "Trademark registration provides legal protection for your brand name, logo, or slogan, preventing unauthorized use by competitors. The process involves conducting a comprehensive search, preparing and filing the application with the Trade Marks Registry, responding to official objections (if any), and finally, securing the registration certificate. A registered trademark is a valuable asset that offers exclusive rights across India, enhancing brand equity, building consumer trust, and enabling you to take legal action against infringement. It is a critical step for any business focused on long-term growth and brand recognition.",
+            "highlights": [
+                "Exclusive brand rights",
+                "Legal protection from infringement",
+                "Increased brand equity",
+                "National validity."
+            ],
+            "footer": false
+        },
+        {
+            "id": "operate",
+            "parentId": "",
+            "name": "Operate",
+            "icon": "Settings2",
+            "shortDescription": "Channel your energy into growth while we manage the intricacies of operational efficiency. At Startup Movers, our approach is tailored for startups, ensuring compliance is straightforward and aligned with your growth trajectory.",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "accounting-taxation",
+            "parentId": "operate",
+            "name": "Accounting & Taxation",
+            "icon": "Calculator",
+            "shortDescription": "Accurate accounting and timely tax compliance to keep your business financially healthy, audit-ready, and fully compliant.",
+            "longDescription": "Strong financial management is the backbone of every successful business. Our Accounting & Taxation Services ensure your books are always accurate, your taxes are filed on time, and your business remains compliant with all statutory requirements.\n\nFrom day-to-day bookkeeping and monthly GST filings to TDS compliance and income tax returns, we manage everything with precision. Our team ensures correct reporting, error-free documentation, and proactive tax planning—giving you complete visibility into your finances while reducing compliance risks.\n\nWhether you’re a growing startup, eCommerce seller, or established SME, we help you maintain clean books, meet every deadline, and stay focused on scaling your business.",
+            "highlights": [
+                "Accurate bookkeeping and monthly/quarterly financial updates",
+                "End-to-end GST compliance including return filings & reconciliation",
+                "TDS management with proper deductions, challans, and filings",
+                "Income Tax Return (ITR) preparation & filing for individuals and businesses",
+                "Error-free documentation and compliance with latest regulations",
+                "Timely reminders for filings & payments to avoid penalties",
+                "Clear financial insights to support decision-making and business planning",
+                "Ideal for eCommerce sellers, startups, freelancers & SMEs"
+            ],
+            "footer": false
+        },
+        {
+            "id": "accounting-book-keeping",
+            "parentId": "accounting-taxation",
+            "name": "Accounting & Book Keeping",
+            "icon": "NotebookText",
+            "shortDescription": "Systematic management of all financial records to ensure compliance and accurate reporting.",
+            "longDescription": "Professional Accounting and Book Keeping services involve recording all financial transactions, maintaining ledgers, reconciling bank statements, managing accounts payable and receivable, and preparing periodic financial statements (Profit & Loss, Balance Sheet). Our services ensure your records are accurate, up-to-date, and fully compliant with generally accepted accounting principles (GAAP). This service is essential for effective financial analysis, budgeting, managing cash flow, and providing accurate data needed for tax filings and investor reporting.",
+            "highlights": [
+                "Accurate financial records; Statutory compliance; Cash flow visibility; Audit readiness."
+            ],
+            "footer": true
+        },
+        {
+            "id": "gst-filings",
+            "parentId": "accounting-taxation",
+            "name": "GST Filings",
+            "icon": "FileSpreadsheet",
+            "shortDescription": "Timely and accurate filing of Goods and Services Tax returns to ensure compliance and avoid penalties.",
+            "longDescription": "GST Filings services cover the preparation and submission of various mandated GST returns (e.g., GSTR-1, GSTR-3B, annual returns) based on your business transactions. This involves meticulous reconciliation of sales and purchase data, proper classification of goods and services, and correct calculation of tax liabilities and input tax credits (ITC). Outsourcing this ensures adherence to frequent regulatory deadlines, minimizes the risk of compliance errors, and maximizes eligible ITC claims, helping you avoid penalties and maintain a clean compliance record with the tax authorities.",
+            "highlights": [
+                "Penalty avoidance; Maximized Input Tax Credit (ITC); Timely submission; Error-free compliance."
+            ],
+            "footer": false
+        },
+        {
+            "id": "tds-with-holding-tax",
+            "parentId": "accounting-taxation",
+            "name": "TDS / With Holding Tax",
+            "icon": "Receipt",
+            "shortDescription": "Comprehensive management and deposit of Tax Deducted at Source (TDS) and related filings.",
+            "longDescription": "This service covers the statutory requirements of TDS/TCS (Tax Collected at Source) compliance, including calculating the correct amount to be withheld, timely deposit of the tax with the government, and filing of quarterly TDS returns (e.g., Form 24Q, 26Q). We manage the issuance of TDS certificates (Form 16/16A) to deductees. Proper management of TDS is crucial for businesses to avoid penalties and interest, ensuring they fulfill their obligations as a tax deductor/collector under the Income Tax Act.",
+            "highlights": [
+                "Statutory compliance; Accurate calculation; Timely deposits; Error-free return filing."
+            ],
+            "footer": false
+        },
+        {
+            "id": "income-tax-returns",
+            "parentId": "accounting-taxation",
+            "name": "Income Tax Returns",
+            "icon": "FileBarChart",
+            "shortDescription": "Expert preparation and filing of corporate and individual income tax returns for full compliance.",
+            "longDescription": "Income Tax Return (ITR) filing involves calculating taxable income, claiming all eligible deductions and exemptions, and submitting the appropriate ITR form (e.g., ITR-6 for companies) to the Income Tax Department. Our service ensures maximum tax efficiency, minimizes tax liability within legal bounds, and guarantees timely filing to avoid penalties. This is critical for maintaining financial compliance, facilitating loan applications, and completing business audits.",
+            "highlights": [
+                "Optimized tax liability; Maximum deductions/exemptions; Penalty avoidance; Quick processing."
+            ],
+            "footer": true
+        },
+        {
+            "id": "virtual-cfo",
+            "parentId": "operate",
+            "name": "Virtual CFO",
+            "icon": "BriefcaseBusiness",
+            "shortDescription": "Strategic financial leadership, budgeting, compliance, and performance insights—delivered by your dedicated Virtual CFO at a fraction of the cost.",
+            "longDescription": "Growing businesses need more than accounting—they need financial strategy, clarity, and control. Our Virtual CFO Services give you access to an experienced finance professional who oversees your complete financial ecosystem, without the cost or complexity of hiring in-house.\n\nFrom cash-flow planning and budgeting to KPI dashboards, compliance monitoring, tax planning, and board-ready financial reports, we handle everything necessary to strengthen your financial foundation. You get real-time insights, smarter decision-making support, and proactive financial guidance tailored to your business goals.\n\nWhether you're a fast-growing startup, an ecommerce brand, or an established SME, our Virtual CFO becomes your long-term partner in profitability, compliance, and scalable growth.",
+            "highlights": [
+                "Strategic financial planning including budgeting & forecasting",
+                "Cash flow management to maintain stability & growth",
+                "Monthly financial reviews with clear performance insights",
+                "KPI dashboards tailored for eCommerce, D2C & service businesses",
+                "Profitability analysis & cost-optimization strategies",
+                "Tax planning & compliance oversight",
+                "Investor/board-ready financial reports",
+                "Dedicated expert guidance without hiring a full-time CFO",
+                "Ideal for startups, high-growth brands, and SMEs"
+            ],
+            "footer": false
+        },
+        {
+            "id": "secretarial-compliances",
+            "parentId": "operate",
+            "name": "Secretarial Compliances",
+            "icon": "ClipboardList",
+            "shortDescription": "Comprehensive ROC and corporate secretarial services to help your company stay legally compliant, structured, and investor-ready.",
+            "longDescription": "Corporate compliance is essential for maintaining legal standing, investor trust, and smooth business operations. Our Secretarial Compliance Services ensure your company meets all MCA/ROC requirements while staying aligned with corporate governance best practices.\n\nFrom drafting and managing ESOP structures, Stock Appreciation Rights (SAR), and board resolutions to handling company closure formalities, we provide expert guidance across every stage. Our team ensures accurate documentation, timely filings, and complete end-to-end execution, allowing you to focus on growth while we handle the complexities of corporate law.\n\nWhether you're issuing startup ESOPs to attract top talent, implementing SAR for strategic incentives, or closing a company legally and cleanly, we deliver fast, compliant, and reliable secretarial support.",
+            "highlights": [
+                "End-to-end secretarial compliance with MCA, ROC & Companies Act requirements",
+                "Expert drafting & implementation of ESOP schemes",
+                "Stock Appreciation Rights (SAR) structuring & documentation",
+                "Company closure services including strike-off, filings & final documentation",
+                "Accurate preparation of board resolutions, notices & minutes",
+                "Timely reminders & compliance tracking to avoid penalties",
+                "Ideal for startups, growing private limited companies & funded businesses",
+                "Confidential, expert handling of all statutory paperwork"
+            ],
+            "footer": false
+        },
+        {
+            "id": "startup-esops",
+            "parentId": "secretarial-compliances",
+            "name": "Startup ESOPs",
+            "icon": "Layers3",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "stock-appreciation-rights",
+            "parentId": "secretarial-compliances",
+            "name": "Stock Appreciation Rights",
+            "icon": "TrendingUp",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "company-closure",
+            "parentId": "secretarial-compliances",
+            "name": "Company Closure",
+            "icon": "FolderX",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "legal-drafting",
+            "parentId": "operate",
+            "name": "Legal Drafting",
+            "icon": "FileEdit",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "cofounders-agreement",
+            "parentId": "legal-drafting",
+            "name": "Cofounders Agreement",
+            "icon": "Handshake",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "reverse-vesting",
+            "parentId": "legal-drafting",
+            "name": "Reverse Vesting",
+            "icon": "RefreshCcw",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "share-purchase-agreement",
+            "parentId": "legal-drafting",
+            "name": "Share Purchase Agreement",
+            "icon": "FileCheck2",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "employment-contract",
+            "parentId": "legal-drafting",
+            "name": "Employment Contract",
+            "icon": "FileSignature",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "gst-indirect-taxes",
+            "parentId": "operate",
+            "name": "GST/Indirect Taxes",
+            "icon": "FileSpreadsheet",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "gst-services",
+            "parentId": "gst-indirect-taxes",
+            "name": "GST Services",
+            "icon": "FileSpreadsheet",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "litigation-support-services",
+            "parentId": "gst-indirect-taxes",
+            "name": "Litigation Support Services",
+            "icon": "Gavel",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "international-trade",
+            "parentId": "gst-indirect-taxes",
+            "name": "International Trade",
+            "icon": "Globe",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "training-awareness-program",
+            "parentId": "gst-indirect-taxes",
+            "name": "Training & Awareness Program",
+            "icon": "GraduationCap",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "grow",
+            "parentId": "",
+            "name": "Grow",
+            "icon": "Sprout",
+            "shortDescription": "We're committed to propelling startups towards enduring success. Let's navigate the growth journey together, ensuring your rise is both strategic and sustainable.",
+            "longDescription": "Growth isn’t just about scaling fast—it’s about scaling right. Our Grow services are designed to help startups and eCommerce businesses navigate their expansion journey with clarity, structure, and strategy. From strengthening financial systems to optimizing operations, improving compliance, and unlocking new opportunities, we partner with you at every stage of your scale-up journey.\n\nWe bring a blend of financial intelligence, operational expertise, and forward-looking advisory to help you make confident decisions. Whether you're expanding teams, raising funds, entering new markets, or preparing for sustained long-term growth, we ensure every step is backed by solid planning and powerful execution.\n\nWe're committed to propelling startups toward enduring success—helping you rise with purpose, precision, and sustainable momentum.",
+            "highlights": [
+                "Strategic growth planning tailored to your business model and scale-up goals",
+                "Operational & financial optimization to improve efficiency and profitability",
+                "Support for fundraising, investor readiness & expansion planning",
+                "Data-driven insights through structured reporting and KPI tracking",
+                "Risk and compliance oversight to keep growth stable and sustainable",
+                "Scalable systems setup including accounting, processes, and controls",
+                "Guidance for new market entry, team expansion & business restructuring",
+                "Ideal for startups, D2C/eCommerce brands, and fast-growing SMEs"
+            ],
+            "footer": false
+        },
+        {
+            "id": "startup-fundraise",
+            "parentId": "grow",
+            "name": "Startup Fundraise",
+            "icon": "LineChart",
+            "shortDescription": "End-to-end fundraising support—from valuation and due diligence to investor-ready pitch decks—to help startups raise capital with confidence.",
+            "longDescription": "Raising capital is one of the most critical milestones for any startup. Investors expect clarity, precision, and strong financial fundamentals before committing funds. Our Start-up Fundraise Services provide complete support across valuation, financial due diligence, and pitch preparation to ensure you meet those expectations with confidence.\n\nWe help you determine an accurate, defensible valuation using industry benchmarks and financial models. Our due diligence team reviews your financials, compliance, and business processes to ensure everything is investor-ready. Finally, we craft compelling, data-driven pitch decks that clearly communicate your story, traction, financials, and growth potential.\n\nWhether you're approaching angel investors, VCs, accelerators, or institutional funds, we ensure your startup stands out with strong numbers, clean compliance, and a powerful narrative.",
+            "highlights": [
+                "Startup valuation support using advanced financial models & industry benchmarks",
+                "Comprehensive financial & compliance due diligence",
+                "Investor-ready pitch deck creation with strong storytelling & data insights",
+                "Clear documentation for investors, VCs & funding institutions",
+                "Clean-up of books, reports & compliance gaps before fundraising",
+                "Support with projections, unit economics & financial modelling",
+                "Designed for early-stage & growth-stage startups",
+                "Faster, more structured fundraising with expert guidance"
+            ],
+            "footer": false
+        },
+        {
+            "id": "valuation-advisory",
+            "parentId": "startup-fundraise",
+            "name": "Valuation Advisory",
+            "icon": "Scale",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "due-diligence",
+            "parentId": "startup-fundraise",
+            "name": "Due Diligence",
+            "icon": "SearchCheck",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "pitch-deck",
+            "parentId": "startup-fundraise",
+            "name": "Pitch Deck",
+            "icon": "Presentation",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "legal-services",
+            "parentId": "grow",
+            "name": "Legal Services",
+            "icon": "Scale",
+            "shortDescription": "Reliable legal drafting, advisory, and compliance support to protect your business, reduce risks, and ensure smooth operations.",
+            "longDescription": "Every business—whether a startup, SME, or fast-growing eCommerce brand—needs strong legal support to operate safely and confidently. Our Legal Services provide expert assistance across drafting, reviewing, and managing essential business documents, contracts, and compliance requirements.\n\nWe help you stay protected through legally sound agreements, structured policies, and precise documentation tailored to your business model. From founders’ agreements and vendor contracts to privacy policies, terms of service, and general legal advisory, we ensure your business remains secure, compliant, and risk-free.\n\nOur team works closely with startups and growing businesses to simplify complex legal requirements, prevent disputes, and create a robust legal foundation that supports long-term growth.",
+            "highlights": [
+                "Contract drafting & review for vendors, partners, employees, freelancers",
+                "Founders’ agreements, shareholder agreements & MoUs",
+                "Policies & documentation such as Terms of Service, Privacy Policy, NDAs, etc.",
+                "Legal advisory for startups, SMEs & eCommerce businesses",
+                "Risk assessment & compliance checks to prevent legal disputes",
+                "Support for registrations, licenses & statutory requirements",
+                "Easy, reliable and confidential legal assistance",
+                "Tailored for digital-first, online, and service-based businesses"
+            ],
+            "footer": false
+        },
+        {
+            "id": "fdi-compliances-under-fema",
+            "parentId": "legal-services",
+            "name": "FDI Compliances Under Fema",
+            "icon": "GlobeLock",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "business-consultancy",
+            "parentId": "grow",
+            "name": "Business Consultancy",
+            "icon": "Lightbulb",
+            "shortDescription": "Strategic business consulting powered by financial modeling and expert tax advisory to help you make smarter, data-driven decisions.",
+            "longDescription": "Building a scalable business requires clarity—clarity in numbers, strategy, tax planning, and long-term decision making. Our Business Consultancy Services are designed to give founders and business owners the insights they need to plan effectively and grow sustainably.\n\nWe create detailed, dynamic financial models that help you understand revenue forecasts, cost structures, profitability, and cash flow scenarios. Our income tax consultancy ensures you're fully compliant while optimizing your tax position with smart, lawful planning.\n\nWhether you're evaluating new business opportunities, planning investments, or preparing for fundraising, we provide the strategic guidance, financial intelligence, and tax clarity you need to move forward confidently.",
+            "highlights": [
+                "Detailed financial modeling for forecasting, planning & decision making",
+                "Scenario analysis to evaluate new projects, pricing & investments",
+                "Expert income tax consultancy for businesses & founders",
+                "Tax optimization strategies to reduce liabilities legally",
+                "Profitability & cost structure analysis for better financial control",
+                "Business planning support with data-driven insights",
+                "Ideal for startups, eCommerce brands & growing SMEs",
+                "Clear, actionable recommendations from experienced consultants"
+            ],
+            "footer": false
+        },
+        {
+            "id": "financial-modeling",
+            "parentId": "business-consultancy",
+            "name": "Financial Modeling",
+            "icon": "ChartSpline",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "income-tax-consultancy",
+            "parentId": "business-consultancy",
+            "name": "Income Tax Consultancy",
+            "icon": "FileBarChart",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "transaction-advisory-service",
+            "parentId": "grow",
+            "name": "Transaction Advisory Service",
+            "icon": "Shuffle",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "merger-and-acquisition",
+            "parentId": "transaction-advisory-service",
+            "name": "Merger and Acquisition",
+            "icon": "Layers",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "reverse-flip",
+            "parentId": "transaction-advisory-service",
+            "name": "Reverse Flip",
+            "icon": "RefreshCcw",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "sme-ipo",
+            "parentId": "transaction-advisory-service",
+            "name": "SME IPO",
+            "icon": "BarChart3",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        },
+        {
+            "id": "flip",
+            "parentId": "transaction-advisory-service",
+            "name": "Flip",
+            "icon": "Repeat",
+            "shortDescription": "",
+            "longDescription": "",
+            "highlights": [],
+            "footer": false
+        }
+    ]
 }
