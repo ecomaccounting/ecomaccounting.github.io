@@ -226,7 +226,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               Let's discuss how our {service.name.toLowerCase()} services can help your business grow
             </p>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
             >
               Contact Us Today
