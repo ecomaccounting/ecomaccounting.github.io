@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import blogsData from "@/data/blogs.json";
 import TopReads from "@/components/TopReads"
-
+import Breadcrumb from "@/components/BreadcrumbItem";
+        
 interface Blog {
   id: number;
   title: string;
@@ -17,11 +18,10 @@ interface Blog {
 export const metadata: Metadata = {
   title: "Blogs | Insights on eCommerce Accounting, GST & Compliance",
   description:
-    "Explore expert blogs from GPMJ & Associates on accounting, GST, reconciliation, and financial best practices for eCommerce sellers in India.",
+    "Explore expert blogs from Task360 on accounting, GST, reconciliation, and financial best practices for eCommerce sellers in India.",
   keywords: [
     "eCommerce accounting",
     "GST compliance",
-    "CA blog",
     "online seller finance",
     "tax filing",
     "bookkeeping",
@@ -34,10 +34,11 @@ export default function BlogsPage() {
   return (
     <section
       id="blogs"
-      className="py-20"
+      className=""
       aria-label="Blog articles on eCommerce accounting and taxation"
-    >
-      <div className="container mx-auto px-6 md:px-12">
+    >      
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Blog" }]} />
         {/* --- Page Header --- */}
         <div className="text-center mb-16">
           <h1 className="text-5xl mb-4">

@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Breadcrumb from "@/components/BreadcrumbItem";
+        
 
 export const metadata: Metadata = {
   title: "Contact Us | GPMJ & Associates",
@@ -25,12 +27,13 @@ export default function ContactPage() {
   return (
     <section
       id="contact"
-      className="py-20"
+      className=""
       aria-label="Contact GPMJ & Associates"
       itemScope
       itemType="https://schema.org/ContactPage"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Contact" }]} />
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1

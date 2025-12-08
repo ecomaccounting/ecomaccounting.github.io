@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import TestimonialsTicker from "@/components/Testimonials";
-
+import Breadcrumb from "@/components/BreadcrumbItem";
 export const metadata: Metadata = {
   title: "About Us | GPMJ & Associates",
   description:
@@ -57,12 +57,14 @@ export default function AboutPage() {
   return (
     <section
       id="about"
-      className="py-20"
-      aria-label="About GPMJ & Associates firm"
+      className=""
+      aria-label="About Task360"
       itemScope
       itemType="https://schema.org/AboutPage"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
+        
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "About" }]} />
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1

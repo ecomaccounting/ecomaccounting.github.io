@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import ClientData from "@/data/data.json";
+import Breadcrumb from "@/components/BreadcrumbItem";
+        
 
 export const metadata: Metadata = {
   title: "Our Clients | GPMJ & Associates",
@@ -21,12 +23,13 @@ export default function ClientsPage() {
   return (
     <section
       id="clients"
-      className="py-20"
+      className=""
       aria-label="Our Clients"
       itemScope
       itemType="https://schema.org/CollectionPage"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Clients" }]} />
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1

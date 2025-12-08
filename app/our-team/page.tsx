@@ -1,6 +1,7 @@
 import Image from "next/image";
 import data from "@/data/data.json";
-
+import Breadcrumb from "@/components/BreadcrumbItem";
+        
 interface TeamMember {
   memberName: string;
   description: string;
@@ -19,10 +20,11 @@ export default function OurTeamPage() {
   return (
     <section
       id="our-team"
-      className="py-20"
+      className=""
       aria-label="Meet our Chartered Accountants and team members"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Our Team" }]} />
         {/* --- Page Header --- */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">

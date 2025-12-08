@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/BreadcrumbItem";
 
 export const metadata: Metadata = {
   title: "Careers | GPMJ & Associates",
@@ -15,16 +16,18 @@ export const metadata: Metadata = {
   ],
 };
 
+
 export default function CareersPage() {
   return (
     <section
       id="careers"
-      className="py-20"
+      className=""
       aria-label="Career Opportunities at GPMJ & Associates"
       itemScope
       itemType="https://schema.org/JobPosting"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Careers" }]} />
         {/* --- Header --- */}
         <div className="text-center mb-16">
           <h1

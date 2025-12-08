@@ -8,8 +8,8 @@ export interface ServiceItem {
     id: string;
     parentId: string | null;
     name: string;    
-    shortDescription: string | null; 
-    longDescription: string | null;
+    shortDescription: string; 
+    longDescription: string;
     highlights: string[] | null;    
     banner: string | null; 
 }

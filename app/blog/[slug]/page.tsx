@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import blogsData from "@/data/blogs.json";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/BreadcrumbItem";
+        
 
 interface Blog {
   id: number;
@@ -56,11 +58,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <article
-      className="bg-gray-50 py-20"
+      className=""
       itemScope
       itemType="https://schema.org/BlogPosting"
     >
-      <div className="container mx-auto px-6 md:px-12 max-w-4xl">
+      <div className="container mx-auto">
+        <Breadcrumb items={[{ name: "Home", href: "/" }, 
+          { name: "Blog", href:"/blog" },
+          { name: blog.title },
+          ]} />
         {/* --- Header Section --- */}
         <header className="text-center mb-12">
           <h1

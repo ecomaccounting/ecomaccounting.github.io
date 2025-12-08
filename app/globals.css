@@ -87,7 +87,7 @@ a {
   transition: color 0.2s ease;
 }
 a:hover {
-  /* color: var(--accent); */
+  color: var(--accent);
 }
 
 
