@@ -543,8 +543,17 @@
 "name": "Grow",
 "icon": "Sprout",
 "shortDescription": "We're committed to propelling startups towards enduring success. Let's navigate the growth journey together, ensuring your rise is both strategic and sustainable.",
-"longDescription": "",
-"highlights": [],
+"longDescription": "Growth isn’t just about scaling fast—it’s about scaling right. Our Grow services are designed to help startups and eCommerce businesses navigate their expansion journey with clarity, structure, and strategy. From strengthening financial systems to optimizing operations, improving compliance, and unlocking new opportunities, we partner with you at every stage of your scale-up journey.\n\nWe bring a blend of financial intelligence, operational expertise, and forward-looking advisory to help you make confident decisions. Whether you're expanding teams, raising funds, entering new markets, or preparing for sustained long-term growth, we ensure every step is backed by solid planning and powerful execution.\n\nWe're committed to propelling startups toward enduring success—helping you rise with purpose, precision, and sustainable momentum.",
+"highlights": [
+"Strategic growth planning tailored to your business model and scale-up goals",
+"Operational & financial optimization to improve efficiency and profitability",
+"Support for fundraising, investor readiness & expansion planning",
+"Data-driven insights through structured reporting and KPI tracking",
+"Risk and compliance oversight to keep growth stable and sustainable",
+"Scalable systems setup including accounting, processes, and controls",
+"Guidance for new market entry, team expansion & business restructuring",
+"Ideal for startups, D2C/eCommerce brands, and fast-growing SMEs"
+],
 "footer": false,
 "banner": "grow.png"
 },

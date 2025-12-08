@@ -28,7 +28,7 @@ export default function ServiceStacks() {
 
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="services" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -42,19 +42,19 @@ export default function ServiceStacks() {
 
         {/* Main Carousel Card */}
         <div className="relative">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-light rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
               {/* Left: Image */}
               <div className="relative h-64 md:h-auto">
                 <Image
-                  src={`/img/services/${activeService.banner}`}
+                  src={`/img/services/${activeService.id}.png`}
                   alt={activeService.name}
                   width={1200}
                   height={600}
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-6 left-6 text-white">
+                <div className="absolute bottom-6 left-6 ">
                   <div className="flex items-center gap-3 mb-2">
                     {IconComp && <IconComp className="w-8 h-8" />}
                     <h3 className="text-4xl font-bold">{activeService.name}</h3>
@@ -64,7 +64,7 @@ export default function ServiceStacks() {
 
               {/* Right: Content */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                <p className="text-lg mb-8 leading-relaxed">
                   {activeService.shortDescription}
                 </p>
 
