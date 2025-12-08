@@ -17,7 +17,9 @@ export default function ServiceStacks() {
       {/* Horizontal scroll container with snap */}
       <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory w-full px-4 py-10 scroll-smooth [&>*]:snap-start">
         {sections.map((section, index) => {
-          const IconComp = section.icon ? LucideIcons[section.icon as keyof typeof LucideIcons] : null;
+          const IconComp = section.icon
+            ? (LucideIcons[section.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
+            : null;
 
           return (
             <div key={index} className="min-w-[85%] md:min-w-[45%] lg:min-w-[32%] p-6 bg-accent rounded-lg shadow-sm">
@@ -35,7 +37,9 @@ export default function ServiceStacks() {
                   .filter(child => child.parentId === section.id)
                   .slice(0, 3)
                   .map((child, idx) => {
-                    const ChildIcon = child.icon ? LucideIcons[child.icon as keyof typeof LucideIcons] : null;
+                    const ChildIcon = child.icon
+                      ? (LucideIcons[child.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
+                      : null;
 
                     return (
                       <div key={idx} className="border-l-4 border-primary pl-4 py-2">

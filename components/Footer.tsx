@@ -2,10 +2,11 @@ import Link from "next/link";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 import Image from "next/image";
 import { navLinks } from "@/data/data.json";
+import servicesData from "@/data/servicesData.json";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 px-4 py-12 bg-accent">
+    <footer className="px-4 py-12 bg-accent">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_2fr] gap-10 p-2">
 
         {/* Brand + Description */}
@@ -38,19 +39,27 @@ export default function Footer() {
             ))}
           </ul>
         </nav>
-
         {/* Services Column */}
         <div>
           <h4 className="text-lg mb-4 pb-2">Services</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/services/gst" className="transition">GST Registration & Filing</Link></li>
-            <li><Link href="/services/accounting" className="transition">Bookkeeping & Accounting</Link></li>
-            <li><Link href="/services/itr" className="transition">Income Tax Returns</Link></li>
-            <li><Link href="/services/reconciliation" className="transition">Marketplace Reconciliation</Link></li>
-            <li><Link href="/services/payment-gateway" className="transition">Payment Gateway Integration</Link></li>
-            <li><Link href="/services/business-registration" className="transition">Business Registration</Link></li>
+
+            {
+              servicesData.services
+                .filter(srv => srv.footer===true)
+                .map((child, idx) => {
+                  return (
+                    <div className="flex items-center gap-3" key={idx}>
+                      <li>
+                        <Link href="/services/gst" className="transition">
+                          {child.name}
+                        </Link>
+                      </li>
+                    </div>
+                  );
+                })}
           </ul>
-        </div>
+        </div>            
 
         {/* Contact Us — now includes Locations */}
         <address className="not-italic">

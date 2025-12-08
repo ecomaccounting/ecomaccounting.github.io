@@ -4,7 +4,8 @@ export const dynamic = "force-static";
 
 import type { ServiceItem } from "@/data/types";
 import data from "@/data/servicesData.json";
-import blogsData from "@/data/blogs.json";
+import blogData from "@/data/blog.json";
+import {BlogPost} from "@/data/types";
 
 export default async function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -18,7 +19,7 @@ export default async function sitemap() {
   }));  
   
   // --- Blogs URLs ---
-  const blogsUrls = blogsData.blogs.map((b: Blog) => ({
+  const blogsUrls = blogData.blogPosts.map((b: BlogPost) => ({
     url: `${baseUrl}/blog/${b.slug}`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",

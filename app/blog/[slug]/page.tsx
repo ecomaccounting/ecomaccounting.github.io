@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import blogsData from "@/data/blogs.json";
+import blogsData from "@/data/blog.json";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/BreadcrumbItem";
         
@@ -18,7 +18,7 @@ interface Blog {
 
 // --- Generate static paths for SSG ---
 export async function generateStaticParams() {
-  return blogsData.blogs.map((blog: Blog) => ({
+  return blogsData.blogPosts.map((blog: Blog) => ({
     slug: blog.slug,
   }));
 }
@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 // --- Generate metadata for SEO ---
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const blog = blogsData.blogs.find((b: Blog) => b.slug === slug);
+  const blog = blogsData.blogPosts.find((b: Blog) => b.slug === slug);
   if (!blog) return { title: "Blog Not Found | GPMJ & Associates" };
 
   return {
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // --- Main Page Component ---
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; // ✅ Unwrap the async params
-  const blog = blogsData.blogs.find((b: Blog) => b.slug === slug);
+  const blog = blogsData.blogPosts.find((b: Blog) => b.slug === slug);
 
   if (!blog) return notFound();
 
@@ -70,12 +70,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* --- Header Section --- */}
         <header className="text-center mb-12">
           <h1
-            className="text-4xl md:text-5xl font-bold text-blue-700 mb-4"
+            className="text-4xl md:text-5xl font-bold mb-4"
             itemProp="headline"
           >
             {blog.title}
           </h1>
-          <p className="text-gray-500 text-sm">
+          <p className="text-sm">
             By{" "}
             <span
               itemProp="author"
@@ -110,7 +110,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {/* --- Blog Content --- */}
         <div
-          className="prose lg:prose-lg mx-auto text-gray-800 leading-relaxed"
+          className="prose lg:prose-lg mx-auto leading-relaxed"
           itemProp="articleBody"
         >
           {blog.content.split("\n").map((para, i) => (

@@ -14,7 +14,8 @@
 "Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared.",
 "Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
 ],
-"banner": ""
+"footer": false,
+"banner": "launch.png"
 },
 {
 "id": "incorporation",
@@ -31,6 +32,7 @@
 "Post-incorporation compliance assistance (board meetings, filings, updates)",
 "Ideal for startups, SMEs, and international founders entering India"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -43,6 +45,7 @@
 "highlights": [
 "Legal Structure Selection: Expert guidance to choose the ideal entity (PLC, LLP, etc.) for growth and liability protection."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -53,6 +56,7 @@
 "shortDescription": "LLP registration combines the benefits of a partnership and a company, offering limited liability to partners and simplified compliance.",
 "longDescription": "Limited Liability Partnership (LLP) registration is suited for professionals and small businesses. It provides a legal entity separate from its partners, limiting personal liability. The process includes obtaining DSCs, DINs, naming the LLP, filing incorporation forms with the MCA, and executing the LLP agreement. LLPs enjoy operational flexibility, simplified taxation, and credibility with clients. This structure ensures both partners are protected from business debts while maintaining an easy governance model compared to traditional companies.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -65,6 +69,7 @@
 "highlights": [
 "Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -75,6 +80,7 @@
 "shortDescription": "A Foreign Subsidiary registration allows international companies to establish an Indian legal entity for business operations.",
 "longDescription": "Establishing a Foreign Subsidiary in India requires compliance with the Companies Act and RBI regulations. The process includes approval of the company name, filing incorporation forms with the Registrar of Companies, and meeting foreign investment regulations. This structure allows foreign companies to operate locally, manage finances efficiently, comply with Indian laws, and expand market presence. It provides limited liability protection and credibility among local clients and partners.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -87,6 +93,7 @@
 "highlights": [
 "Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -97,6 +104,7 @@
 "shortDescription": "Partnership registration formalizes a business partnership, providing legal recognition and clarity in roles.",
 "longDescription": "Registering a partnership involves drafting a partnership deed outlining rights, responsibilities, profit sharing, and management roles among partners. Filing the deed with the Registrar of Firms ensures legal recognition and enables the partnership to operate formally. Registration provides credibility, protects partners’ interests, facilitates opening business accounts, and helps resolve disputes efficiently. This process ensures structured governance and smooth operation of the partnership business.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -109,6 +117,7 @@
 "highlights": [
 "Vision-to-Reality Partner: We are champions dedicated to transforming your idea into a tangible, compliant business."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -127,6 +136,7 @@
 "Ideal for startups, eCommerce sellers, SMEs, and new entrepreneurs",
 "End-to-end assistance including post-registration updates and amendments"
 ],
+"footer": true,
 "banner": ""
 },
 {
@@ -137,6 +147,7 @@
 "shortDescription": "GST Registration helps businesses comply with tax laws and claim input credits efficiently.",
 "longDescription": "GST Registration involves obtaining a unique GSTIN, understanding applicable tax rates, and filing regular returns to the government. Compliance ensures businesses can legally charge and collect GST, claim input tax credits, and avoid penalties. This process is crucial for eCommerce sellers, enabling smooth financial operations, proper accounting, and maintaining legal and tax compliance across multiple states and marketplaces. Professional guidance ensures timely filing, reconciliation, and accurate tax reporting.",
 "highlights": [],
+"footer": true,
 "banner": ""
 },
 {
@@ -147,6 +158,7 @@
 "shortDescription": "Startup India Recognition provides benefits and incentives to registered startups under government schemes.",
 "longDescription": "Obtaining Startup India Recognition involves applying through the official portal, providing business details, innovation descriptions, and incorporation documents. Recognized startups gain access to government benefits such as tax exemptions, funding support, easier compliance procedures, and mentorship opportunities. This status increases credibility with investors, partners, and customers, helping the startup grow efficiently while enjoying regulatory and financial support.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -157,6 +169,7 @@
 "shortDescription": "MSME registration enables small businesses to access government schemes and financial benefits.",
 "longDescription": "MSME Registration involves submitting business details to the Udyam portal, including ownership, activity, and investment information. Once registered, businesses can avail benefits like easier access to loans, subsidies, tax incentives, and credit support. The process ensures legal recognition, enhances credibility with clients and lenders, and provides support for growth, technology adoption, and competitive advantage in the market.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -167,6 +180,7 @@
 "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
 "longDescription": "PF registration involves enrolling the business with the Employees' Provident Fund Organization (EPFO), maintaining employee records, contributing monthly to the fund, and filing returns. This ensures employees receive retirement benefits, tax savings, and social security while the employer maintains compliance with labor laws. Professional handling guarantees accurate calculations, timely deposits, and adherence to statutory requirements, providing financial security and trust for employees.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -177,6 +191,7 @@
 "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
 "longDescription": "ESIC registration involves applying to the Employees' State Insurance Corporation, submitting employee and business details, contributing monthly premiums, and filing returns. This enables employees to access health and social security benefits such as medical care, maternity, and sickness allowances. Businesses comply with labor laws and enhance employee satisfaction and retention by providing statutory benefits efficiently through structured processes and regular reporting.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -187,6 +202,7 @@
 "shortDescription": "Shop & Establishment registration legally recognizes a business for commercial operations.",
 "longDescription": "Registration under the Shops & Establishment Act involves submitting business details, owner information, and operational hours to the local municipal authority. Once registered, the business complies with labor laws, maintains proper employee records, and avoids legal penalties. This formal recognition helps eCommerce and retail operations establish credibility, manage workforce effectively, and ensures adherence to statutory requirements for smooth commercial functioning.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -197,6 +213,7 @@
 "shortDescription": "Professional Tax registration ensures proper tax deduction for employees according to state laws.",
 "longDescription": "Professional Tax registration involves enrolling the business under the relevant state authority, calculating monthly deductions from employees' salaries, submitting returns, and depositing taxes. Compliance ensures employees' professional tax obligations are met, avoiding penalties, and maintaining smooth payroll management. Businesses benefit from structured deduction processes and accurate reporting, supporting statutory compliance and operational efficiency.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -207,6 +224,7 @@
 "shortDescription": "FSSAI registration certifies food businesses to comply with safety and hygiene standards.",
 "longDescription": "FSSAI Registration involves applying through the Food Safety Authority, submitting business and product details, meeting hygiene and operational standards, and obtaining the license. This certification ensures food safety, builds customer trust, and allows legal operation. Compliance helps avoid penalties, ensures periodic inspections, and facilitates expansion into multiple regions or eCommerce platforms, establishing credibility and adherence to food regulations.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -217,6 +235,7 @@
 "shortDescription": "IEC registration is mandatory for businesses engaging in international trade.",
 "longDescription": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -232,6 +251,7 @@
 "Increased brand equity",
 "National validity."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -247,6 +267,7 @@
 "Increased brand equity",
 "National validity."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -257,7 +278,8 @@
 "shortDescription": "Channel your energy into growth while we manage the intricacies of operational efficiency. At Startup Movers, our approach is tailored for startups, ensuring compliance is straightforward and aligned with your growth trajectory.",
 "longDescription": "",
 "highlights": [],
-"banner": ""
+"footer": false,
+"banner": "operate.png"
 },
 {
 "id": "accounting-taxation",
@@ -276,6 +298,7 @@
 "Clear financial insights to support decision-making and business planning",
 "Ideal for eCommerce sellers, startups, freelancers & SMEs"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -288,6 +311,7 @@
 "highlights": [
 "Accurate financial records; Statutory compliance; Cash flow visibility; Audit readiness."
 ],
+"footer": true,
 "banner": ""
 },
 {
@@ -300,6 +324,7 @@
 "highlights": [
 "Penalty avoidance; Maximized Input Tax Credit (ITC); Timely submission; Error-free compliance."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -312,6 +337,7 @@
 "highlights": [
 "Statutory compliance; Accurate calculation; Timely deposits; Error-free return filing."
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -324,6 +350,7 @@
 "highlights": [
 "Optimized tax liability; Maximum deductions/exemptions; Penalty avoidance; Quick processing."
 ],
+"footer": true,
 "banner": ""
 },
 {
@@ -344,6 +371,7 @@
 "Dedicated expert guidance without hiring a full-time CFO",
 "Ideal for startups, high-growth brands, and SMEs"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -363,6 +391,7 @@
 "Ideal for startups, growing private limited companies & funded businesses",
 "Confidential, expert handling of all statutory paperwork"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -373,6 +402,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -383,6 +413,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -393,6 +424,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -403,6 +435,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -413,6 +446,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -423,6 +457,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -433,6 +468,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -443,6 +479,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -453,6 +490,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -463,6 +501,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -473,6 +512,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -483,6 +523,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -493,6 +534,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -503,7 +545,8 @@
 "shortDescription": "We're committed to propelling startups towards enduring success. Let's navigate the growth journey together, ensuring your rise is both strategic and sustainable.",
 "longDescription": "",
 "highlights": [],
-"banner": ""
+"footer": false,
+"banner": "grow.png"
 },
 {
 "id": "startup-fundraise",
@@ -522,6 +565,7 @@
 "Designed for early-stage & growth-stage startups",
 "Faster, more structured fundraising with expert guidance"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -532,6 +576,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -542,6 +587,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -552,6 +598,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -571,6 +618,7 @@
 "Easy, reliable and confidential legal assistance",
 "Tailored for digital-first, online, and service-based businesses"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -581,6 +629,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -600,6 +649,7 @@
 "Ideal for startups, eCommerce brands & growing SMEs",
 "Clear, actionable recommendations from experienced consultants"
 ],
+"footer": false,
 "banner": ""
 },
 {
@@ -610,6 +660,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -620,6 +671,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -630,6 +682,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -640,6 +693,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -650,6 +704,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -660,6 +715,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 },
 {
@@ -670,6 +726,7 @@
 "shortDescription": "",
 "longDescription": "",
 "highlights": [],
+"footer": false,
 "banner": ""
 }
 ]

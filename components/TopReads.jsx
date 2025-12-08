@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import blogPosts from "@/data/blogs.json"; // adjust based on your file location
+import blogPosts from "@/data/blog.json"; // adjust based on your file location
 
 export default function TopReads() {
   // Take top 3 from your list
-  const blogs = blogPosts.blogs;
-  const topThree = blogs.slice(0, 3);
+  const posts = blogPosts.blogPosts;
+  const topThree = posts.slice(0, 3);
 
   return (
     <section className="py-12">

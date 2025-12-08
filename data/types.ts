@@ -13,3 +13,12 @@ export interface ServiceItem {
     highlights: string[] | null;    
     banner: string | null; 
 }
+export interface BlogPost {
+  id: number;
+  title: string;
+  slug: string;
+  date: string;
+  author: string;
+  image: string;
+  excerpt: string;
+}

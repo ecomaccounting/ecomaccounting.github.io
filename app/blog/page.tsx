@@ -1,19 +1,12 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import blogsData from "@/data/blogs.json";
+import blogData from "@/data/blog.json";
 import TopReads from "@/components/TopReads"
 import Breadcrumb from "@/components/BreadcrumbItem";
+import {BlogPost} from "@/data/types"
         
-interface Blog {
-  id: number;
-  title: string;
-  slug: string;
-  date: string;
-  author: string;
-  image: string;
-  excerpt: string;
-}
+
 
 export const metadata: Metadata = {
   title: "Blogs | Insights on eCommerce Accounting, GST & Compliance",
@@ -29,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogsPage() {
-  const blogs: Blog[] = blogsData.blogs;
+  const blogPosts: BlogPost[] = blogData.blogPosts;
 
   return (
     <section

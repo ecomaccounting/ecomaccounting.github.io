@@ -44,7 +44,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const childrenServices = servicesData.services.filter(s => s.parentId === service.id);
 
   return (
-    <section className="py-16">
+    <section className="">
       <div className="container mx-auto">
         {/* Breadcrumb */}
         <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
@@ -75,7 +75,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         {childrenServices.length > 0 && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {childrenServices.map(child => {
-              const ChildIcon = child.icon ? LucideIcons[child.icon as keyof typeof LucideIcons] : null;
+              const ChildIcon = child.icon
+                ? (LucideIcons[child.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
+                : null;
 
               return (
                 <div

@@ -63,7 +63,7 @@ export default function FooterTrust() {
   return (
     <footer
       ref={footerRef}
-      className="bg-light py-16 px-6 md:px-12 text-center md:text-left"
+      className="bg-light py-16 px-6 md:px-12 text-center md:text-left mt-10"
       aria-label="Firm achievements and client trust metrics"
     >
       <div className="container mx-auto">
