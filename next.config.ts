@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   assetPrefix: "",
   basePath: "",
+  env: {
+    NEXT_PUBLIC_BASE_URL: 'https://task360.co',
+  },
 };
 
 export default nextConfig;
