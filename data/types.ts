@@ -6,12 +6,12 @@ export type NavItem = {
 
 export interface ServiceItem {
     id: string;
-    parentId: string | null;
+    parentId: string;
     name: string;    
     shortDescription: string; 
     longDescription: string;
-    highlights: string[] | null;    
-    banner: string | null; 
+    highlights: string[] ;        
+    footer: boolean ;
 }
 export interface BlogPost {
   id: number;

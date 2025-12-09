@@ -55,13 +55,14 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
 
         {/* Hero Banner Section */}
-        <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+        <div className="relative w-full aspect-[21/9] md:aspect-[21/9] rounded-3xl overflow-hidden mb-16 shadow-2xl">
           <Image
             src={`/img/services/${service.id}.png`}
             alt={service.name}
             fill
             className="object-cover"
             priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
           
@@ -81,11 +82,11 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     </h1>
   </div>
 
-  {service.shortDescription && (
+  {/* {service.shortDescription && (
     <p className="text-xl max-w-2xl text-white">
       {service.shortDescription}
     </p>
-  )}
+  )} */}
 </div>
           </div>
         </div>
@@ -146,14 +147,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                     <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}>
                       {/* Image Section */}
                       <div className="w-full lg:w-1/2">
-                        <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
                           <Image
                             src={`/img/services/${child.id}.png`}
                             alt={child.name}
-                            //width={1200}
-                            //height={600}
                             fill
-                  className="w-full h-auto object-center group-hover:scale-105 transition-transform duration-500"
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                         </div>

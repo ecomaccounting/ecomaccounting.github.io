@@ -45,14 +45,22 @@ export default function ServiceStacks() {
           <div className="bg-light rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
               {/* Left: Image */}
-              <div className="relative h-64 md:h-auto">
+              <div className="relative w-full aspect-[3/2] md:rounded-l-2xl rounded-2xl  overflow-hidden shadow-xl">
+                <Image
+                  src={`/img/services/${activeService.id}.png`}
+                  alt={activeService.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                {/* <div className="relative h-64 md:h-auto">
                 <Image
                   src={`/img/services/${activeService.id}.png`}
                   alt={activeService.name}
                   width={1200}
                   height={600}
                   className="w-full h-auto object-cover"
-                />
+                /> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 ">
                   <div className="flex items-center gap-3 mb-2">
@@ -63,7 +71,7 @@ export default function ServiceStacks() {
               </div>
 
               {/* Right: Content */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="p-4 md:px-10 flex flex-col justify-start">
                 <p className="text-lg mb-8 leading-relaxed">
                   {activeService.shortDescription}
                 </p>
