@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import clientData from "@/data/data.json";
+import clientData from "@/data/data1.json";
 interface Client {
   logo: string;
   name: string;
@@ -8,7 +8,7 @@ interface Client {
 export default function TopClients() {
 
 
-  const clients = clientData.clients.slice(0, 6);
+  const clients = clientData.clients.filter((c): c is Client => c.home);
   const repeated = [...clients, ...clients, ...clients]; // ⭐ triple repeat
 
   return (
@@ -52,7 +52,7 @@ function ClientItem({ client }: { client: Client }) {
     <div className="inline-flex flex-col items-center justify-center w-40">
       <div className="relative w-28 h-20">
         <Image
-          src={client.logo}
+          src={`/img/clients/${client.logo}`}
           alt={client.name}
           fill
           className="object-contain transition-transform duration-300 hover:scale-110"

@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "co.task360.twa",
+      "sha256_cert_fingerprints":
+        ["8C:AA:61:60:06:12:FD:07:DA:78:C8:98:07:8C:C1:8E:43:18:86:BF:29:E3:D0:C9:45:CD:63:69:15:B4:2A:6E"]
+    }
+  }
+]

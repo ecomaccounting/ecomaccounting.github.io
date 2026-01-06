@@ -1,11 +1,11 @@
 "use client";
 import { useRef } from "react";
-import { FaStar } from "react-icons/fa";
-import testimonialsData from "@/data/testimonials.json" 
+import data from "@/data/data1.json" 
 
 export default function TestimonialsTicker() {
+const testimonials = data.clients.filter(t=>t.home && t.shortFeedback.length>10);
   const containerRef = useRef<HTMLDivElement>(null);
-const testimonials = testimonialsData.testimonials;
+
   const handleMouseEnter = () => {
     if (containerRef.current) {
       containerRef.current.style.animationPlayState = "paused";
@@ -42,25 +42,13 @@ const testimonials = testimonialsData.testimonials;
               className="min-w-[300px] max-w-xs bg-accent  rounded-xl shadow-sm p-5 flex flex-col justify-between ticket-card whitespace-normal"
             >
               <div className="italic whitespace-normal break-words">
-                “{item.feedback}”
+                “{item.shortFeedback}”
               </div>
 
               <div className="mt-4 whitespace-normal">
                 <div className="font-semibold ">{item.name}</div>
                 <div className="text-xs">{item.title}</div>
-
-                <div className="flex mt-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <FaStar
-                      key={i}
-                      className={`h-4 w-4 ${
-                        i < item.rating
-                          ? "text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
-                </div>
+                
               </div>
             </div>
           ))}

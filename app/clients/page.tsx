@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import ClientData from "@/data/data.json";
+import ClientData from "@/data/data1.json";
 import Breadcrumb from "@/components/BreadcrumbItem";
         
 
@@ -56,7 +56,7 @@ export default function ClientsPage() {
               {/* Logo */}
               <div className="w-24 h-24 mx-auto mb-5 relative">
                 <Image
-                  src={client.logo}
+                  src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}` }
                   alt={`${client.name} logo`}
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-110"

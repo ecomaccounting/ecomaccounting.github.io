@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import blogData from "@/data/blog.json";
+import blogData from "@/data/data1.json";
 import TopReads from "@/components/TopReads"
 import Breadcrumb from "@/components/BreadcrumbItem";
-import {BlogPost} from "@/data/types"
+
         
 
 
@@ -22,8 +22,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogsPage() {
-  const blogPosts: BlogPost[] = blogData.blogPosts;
-
   return (
     <section
       id="blogs"

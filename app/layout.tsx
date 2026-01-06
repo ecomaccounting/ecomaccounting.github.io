@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar1";
 import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
@@ -75,7 +75,7 @@ export const viewport: Viewport = {
    🌐 Root Layout Component
 --------------------------------*/
 export default function RootLayout({
-  children,
+  children,SearchBar
 }: Readonly<{
   children: React.ReactNode;
 }>) {

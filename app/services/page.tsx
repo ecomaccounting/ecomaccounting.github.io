@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Services from "@/components/Services"
+import data from "@/data/data1.json";
 
 export const metadata: Metadata = {
   title: "Contact Us | GPMJ & Associates",
@@ -17,6 +18,6 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-   <Services></Services>
+   <Services services={data.services} />
   );
 }

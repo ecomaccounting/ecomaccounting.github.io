@@ -1,0 +1,24 @@
+{
+    "navLinks": [
+        {
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "text": "Services",
+            "link": "/services"
+        },        
+        {
+            "text": "Our Story",
+            "link": "/our-story"
+        },
+        {
+            "text": "Contact Us",
+            "link": "/contact-us"
+        },        
+        {
+            "text": "Clients",
+            "link": "/clients"
+        }        
+    ]    
+}

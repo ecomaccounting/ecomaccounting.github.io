@@ -95,8 +95,7 @@ a:hover {
 /* ===============================
    🎨 BUTTONS
    =============================== */
-button {
-  border: none;
+button {  
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
 }

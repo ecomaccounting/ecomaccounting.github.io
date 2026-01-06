@@ -1,48 +1,20 @@
 "use client";
-
+import {ServiceItem} from "@/data/types";
 import Link from "next/link";
-import {
-  FileText,
-  BookOpen,
-  FileBarChart,
-  Layers,
-  CreditCard,
-  Building2,
-  Briefcase,
-} from "lucide-react";
-import data from "@/data/data.json";
+import {  FileText} from "lucide-react";
+import { iconMap } from "@/data/types";
 
-interface Service {
-  name: string;
-  text: string;
-  highlights: string[];
-}
+export default function Services({ services }: { services: ServiceItem[] }) {  
 
-// Utility: slugify service name to generate clean URL
-const slugify = (name: string) =>
-  name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
-
-// Map service names to icons
-const iconMap: Record<string, any> = {
-  "GST Registration & Filing": FileText,
-  "Bookkeeping & Accounting": BookOpen,
-  "Income Tax Returns": FileBarChart,
-  "Marketplace Reconciliation": Layers,
-  "Payment Gateway Integration": CreditCard,
-  "Business Registration": Building2,
-  "Small Business Advisory": Briefcase,
-};
-
-export default function Services() {
-  const services: Service[] = data.services;
+  // Map service names to icons
 
   return (
     <section
       id="services"
-      className="py-5 "
+      className="py-5"
       aria-label="Accounting and tax services offered by the firm"
     >
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto">
         {/* --- Section Header --- */}
         <div className="text-center mb-14">
           <h2 className="text-4xl mb-4 ">
@@ -57,8 +29,6 @@ export default function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service) => {
             const Icon = iconMap[service.name] || FileText;
-            const slug = slugify(service.name);
-
             return (
               <div
                 key={service.name}
@@ -73,9 +43,9 @@ export default function Services() {
                   <h3 className="text-xl  mb-3">
                     {service.name}
                   </h3>
-                  {service.text && (
+                  {service.shortDescription && (
                     <p className="mb-4 line-clamp-3">
-                      {service.text}
+                      {service.shortDescription}
                     </p>
                   )}
                 </div>
@@ -83,7 +53,7 @@ export default function Services() {
                 {/* --- Highlights --- */}
                 <div className="space-y-2">
                   <ul className="list-disc pl-5 marker:text-accent">
-                    {service.highlights.slice(0, 3).map((item, i) => (
+                    {service.highlights.slice(0, 3).map((item:string, i:number) => (
                       <li key={i} className="leading-relaxed">
                         {item}
                       </li>
@@ -94,7 +64,7 @@ export default function Services() {
                 {/* --- CTA (Link) --- */}
                 <div className="mt-6">
                   <Link
-                    href={`/services/${slug}`}
+                    href={`/services/${service.id}`}
                     className="block  py-2 px-4 rounded-lg  transition-colors"
                   >
                     Learn More

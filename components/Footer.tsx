@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
-import { navLinks } from "@/data/data.json";
+import { navLinks } from "@/data/navLinks.json";
 import servicesData from "@/data/servicesData.json";
+import data from "@/data/data1.json";
 
 export default function Footer() {
   return (
@@ -26,6 +27,21 @@ export default function Footer() {
             Focus on growing your online business while we handle your books, taxes, and compliance.
             Specialized services for Amazon, Flipkart, and other marketplace sellers.
           </p>
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-5">
+            <Link href="https://linkedin.com" target="_blank">
+              <FaLinkedin className="text-xl transition" size={30} />
+            </Link>
+            <Link href="https://facebook.com" target="_blank">
+              <FaFacebook className="text-xl transition" size={30} />
+            </Link>
+            <Link href="https://instagram.com" target="_blank">
+              <FaInstagram className="text-xl transition" size={30} />
+            </Link>
+            <Link href="https://youtube.com" target="_blank">
+              <FaYoutube className="text-xl transition" size={30} />
+            </Link>
+          </div>
         </div>
 
         {/* Quick Links */}
@@ -51,7 +67,7 @@ export default function Footer() {
                   return (
                     <div className="flex items-center gap-3" key={idx}>
                       <li>
-                        <Link href="/services/gst" className="transition">
+                        <Link href={`/services/${child.id}`} className="transition">
                           {child.name}
                         </Link>
                       </li>
@@ -69,14 +85,14 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-muted text-lg" />
-              <a href="mailto:support@ecomaccounting.io" className="transition">
-                support@ecomaccounting.io
+              <a href="mailto:support@task360.co" className="transition">
+                support@task360.co
               </a>
             </li>
 
             <li className="flex items-center gap-3">
               <FaPhone className="text-muted text-lg" />
-              <a href="tel:+919424932197" className="transition">
+              <a href="tel:+918989459947" className="transition">
                 +91 89894-59947
               </a>
             </li>
@@ -94,23 +110,18 @@ export default function Footer() {
           <div className="mt-6">
             <h5 className="text-sm font-semibold mb-2">Our Locations</h5>
             <ul className="space-y-1 text-sm">
-              <li><Link href="/locations/indore" className="transition">Indore</Link></li>
-              <li><Link href="/locations/neemuch" className="transition">Neemuch</Link></li>
-              <li><Link href="/locations/jaipur" className="transition">Jaipur</Link></li>
+              {
+              data.locations.map((child, idx) => {
+                  return (
+                    <li key={idx}>
+                      <Link href={`${child.locationURL}`} className="transition">
+                        {child.city}
+                      </Link>
+                    </li>
+                  );
+                })              
+              }
             </ul>
-          </div>
-
-          {/* Social Icons */}
-          <div className="flex gap-4 mt-5">
-            <Link href="https://linkedin.com" target="_blank">
-              <FaLinkedin className="text-xl transition" />
-            </Link>
-            <Link href="https://github.com" target="_blank">
-              <FaGithub className="text-xl transition" />
-            </Link>
-            <Link href="/" target="_blank">
-              <FaGlobe className="text-xl transition" />
-            </Link>
           </div>
         </address>
       </div>

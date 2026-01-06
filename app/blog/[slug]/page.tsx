@@ -1,24 +1,14 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import blogsData from "@/data/blog.json";
+import blogsData from "@/data/data1.json";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/BreadcrumbItem";
-        
+import {BlogPost} from "@/data/types"        
 
-interface Blog {
-  id: number;
-  title: string;
-  slug: string;
-  date: string;
-  author: string;
-  image: string;
-  excerpt: string;
-  content: string;
-}
 
 // --- Generate static paths for SSG ---
 export async function generateStaticParams() {
-  return blogsData.blogPosts.map((blog: Blog) => ({
+  return blogsData.blog.map((blog: BlogPost) => ({
     slug: blog.slug,
   }));
 }
@@ -26,7 +16,7 @@ export async function generateStaticParams() {
 // --- Generate metadata for SEO ---
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const blog = blogsData.blogPosts.find((b: Blog) => b.slug === slug);
+  const blog = blogsData.blog.find((b: BlogPost) => b.slug === slug);
   if (!blog) return { title: "Blog Not Found | GPMJ & Associates" };
 
   return {
@@ -37,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: blog.title,
       description: blog.excerpt,
       images: [{ url: blog.image }],
-      type: "article",
-      publishedTime: blog.date,
+      type: "article"
+      
     },
     twitter: {
       card: "summary_large_image",
@@ -52,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // --- Main Page Component ---
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; // ✅ Unwrap the async params
-  const blog = blogsData.blogPosts.find((b: Blog) => b.slug === slug);
+  const blog = blogsData.blog.find((b: BlogPost) => b.slug === slug);
 
   if (!blog) return notFound();
 
@@ -85,15 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <span itemProp="name" className="font-semibold">
                 {blog.author}
               </span>
-            </span>{" "}
-            •{" "}
-            <time dateTime={blog.date}>
-              {new Date(blog.date).toLocaleDateString("en-IN", {
-                day: "numeric",
-                month: "short",
-                year: "numeric",
-              })}
-            </time>
+            </span>            
           </p>
         </header>
 
@@ -120,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           ))}
         </div>
 
-        <meta itemProp="datePublished" content={blog.date} />
+        
         <meta itemProp="image" content={blog.image} />
       </div>
     </article>
