@@ -11,14 +11,17 @@
 
   --primary: #0a58ca;
   --secondary: #f8f9fa;
-  --accent: #0056b3;         /* Accent for hover & emphasis */
+  --accent: #0056b3;
+  /* Accent for hover & emphasis */
   --muted: #6c757d;
   --border-color: #dee2e6;
 
   /* Extra: Accent backgrounds & text */
-  --accent-bg: #e7f1ff;      /* Light blue background */
+  --accent-bg: #e7f1ff;
+  /* Light blue background */
   --accent-bg-light: #f0f7ff;
-  --accent-text: #0d6efd;    /* Blue text */
+  --accent-text: #0d6efd;
+  /* Blue text */
   --accent-text-light: #0056b3;
 
   /* Text variants */
@@ -50,7 +53,8 @@
 
     /* Dark-mode accents */
     --accent: #3b82f6;
-    --accent-bg: #0f172a;          /* Slate / Navy tone */
+    --accent-bg: #0f172a;
+    /* Slate / Navy tone */
     --accent-bg-light: #1e293b;
     --accent-text: #60a5fa;
     --accent-text-light: #93c5fd;
@@ -77,7 +81,8 @@ body {
   transition: all 0.3s ease;
 }
 
-html, body {
+html,
+body {
   scroll-snap-type: y mandatory;
 }
 
@@ -86,6 +91,7 @@ a {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 a:hover {
   color: var(--accent);
 }
@@ -95,40 +101,55 @@ a:hover {
 /* ===============================
    🎨 BUTTONS
    =============================== */
-button {  
+button {
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
-button:hover { transform: translateY(-1px); }
+button:hover {
+  transform: translateY(-1px);
+}
 
-button.ok {
+a.ok {
   background: var(--primary);
   color: #fff;
 }
-button.ok:hover { background: var(--accent); }
 
-button.cancel {
+a.ok:hover {
+  background: var(--accent);
+}
+
+a.cancel {
   background: #dee2e6;
   color: #000;
 }
-button.cancel:hover { background: #cbd3da; }
 
-button.submit {
+a.cancel:hover {
+  background: #cbd3da;
+}
+
+submit {
   background: #007bff;
   color: #fff;
 }
-button.submit:hover { background: #0056b3; }
 
-button.success {
+submit:hover {
+  background: #0056b3;
+}
+
+success {
   background: #198754;
   color: #fff;
 }
-button.success:hover { background: #157347; }
+
+success:hover {
+  background: #157347;
+}
 
 footer a {
   color: var(--muted);
 }
+
 footer a:hover {
   color: var(--muted);
 }
@@ -146,18 +167,45 @@ footer a:hover {
 /* ===============================
    🧭 UTILITY CLASSES
    =============================== */
-.bg-light { background-color: var(--bg-light); }
-.bg-dark { background-color: var(--bg-dark); color: #fff; }
-.bg-blue { background-color: var(--bg-blue); }
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: var(--bg-blue);
+}
 
 /* NEW: Accent background utilities */
-.bg-accent { background-color: var(--accent-bg); }
-.bg-accent-light { background-color: var(--accent-bg-light); }
+.bg-accent {
+  background-color: var(--accent-bg);
+}
+
+.bg-accent-light {
+  background-color: var(--accent-bg-light);
+}
 
 /* Accent text utilities */
-.text-accent { color: var(--accent-text); }
-.text-accent-light { color: var(--accent-text-light); }
+.text-accent {
+  color: var(--accent-text);
+}
 
-.text-light { color: var(--text-light); }
-.text-dark { color: var(--text-dark); }
-.text-blue { color: var(--text-blue); }
+.text-accent-light {
+  color: var(--accent-text-light);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-blue {
+  color: var(--text-blue);
+}

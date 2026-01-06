@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import {
   CheckCircle2,
   ArrowRight,
@@ -62,14 +63,20 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="ok px-8 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-accent transition">
-              Start Free Consultation
-              <ArrowRight className="h-5 w-5" />
-            </button>
+            <Link 
+  href="/contact-us" 
+  className="ok px-8 py-3 rounded-lg flex items-center justify-center gap-2 bg-primary text-white hover:bg-accent transition"
+>
+  Start Free Consultation
+  <ArrowRight className="h-5 w-5" />
+</Link>
 
-            <button className="cancel border border-primary text-primary px-8 py-3 rounded-lg hover:bg-accent-light transition">
-              View Services
-            </button>
+<Link 
+  href="/services" 
+  className="cancel border border-primary text-primary px-8 py-3 rounded-lg hover:bg-accent-light transition text-center"
+>
+  View Services
+</Link>
           </div>
 
           
