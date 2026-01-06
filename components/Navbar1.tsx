@@ -2,27 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import SearchBar from "@/components/SearchBar";
-import { useSearchParams, useRouter } from "next/navigation";
+// import SearchBar from "@/components/SearchBar";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import dynamic from "next/dynamic";
 
 export default function Navbar() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const rawQuery = decodeURIComponent(searchParams.get("q") || "");
-  const initialQuery = rawQuery.replace(/^web\+ssj:(\/\/)?/i, "");
-
-  const [inputQuery, setInputQuery] = useState(initialQuery);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const handleSearchSubmit = () => {
-    const q = inputQuery.trim();
-    if (!q) return;
-    router.push(`/search?q=${encodeURIComponent(q)}`);
-  };
-
+  const SearchBar = dynamic(() => import("@/components/SearchBar"), {
+  ssr: false,
+});
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
   return (
     <nav className="bg-light border-b">
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
@@ -44,9 +33,7 @@ export default function Navbar() {
 
         {/* 🔹 Search */}
         <div className="flex-1 min-w-0 sm:max-w-xl">
-          <SearchBar
-            initialQuery={inputQuery}
-          />
+          <SearchBar />
         </div>
 
         {/* 🔹 Desktop Nav */}

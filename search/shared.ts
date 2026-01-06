@@ -6,19 +6,20 @@ import {
 export const miniSearchIndexOptions: MiniSearchIndexOptions = {
   fields: [
     "name",
-        "shortDescription",
-        "longDescription",        
-        "highlights",        
-        "keywords"    
+    "shortDescription",
+    "longDescription",
+    "highlights",
+    "keywords"
   ],
 
   storeFields: [
-    "id",        
-        "name",
-        "shortDescription",
-        "longDescription",        
-        "highlights",        
-        "keywords" 
+    "id",
+    "name",
+    "icon",
+    "shortDescription",
+    "longDescription",
+    "highlights",
+    "keywords"
   ],
 
   tokenize(text: string) {
@@ -43,10 +44,10 @@ export const miniSearchQueryOptions: MiniSearchSearchOptions = {
 
   boost: {
     name: 5,
-        highlights: 3.5,
-        shortDescription: 3,
-        longDescription: 3,        
-        keywords: 2.5,
+    highlights: 3.5,
+    shortDescription: 3,
+    longDescription: 2.5,
+    keywords: 2,
   },
 
   boostDocument: (doc: any, term: string) =>
@@ -56,34 +57,8 @@ export const miniSearchQueryOptions: MiniSearchSearchOptions = {
 
 function normalizeTerm(term: string) {
   if (!term) return ''
-
-  let t = term.normalize('NFKC').toLowerCase().trim()
-  t = t.replace(/\u093C/g, '') // nukta removal
-
-  const map: Record<string, string> = {
-    bangles: 'bangle',
-    bracelets: 'bracelet',
-    chains: 'chain',
-    rings: 'ring',
-    earrings: 'earring',
-    pendants: 'pendant',
-    necklaces: 'necklace',
-    haar: 'necklace',
-    anklets: 'anklet',
-    chudiya: 'bangle',
-    chudi: 'bangle',
-    chudiyao: 'bangle',
-
-    'चूड़ियाँ': 'चूड़ी',
-    'चूड़ियों': 'चूड़ी',
-    'अंगूठियाँ': 'अंगूठी',
-    'अंगूठियों': 'अंगूठी',
-    'बिछियाँ': 'बिछिया',
-    'बिछियों': 'बिछिया'
-  }
-
-  if (map[t]) return map[t]
-
+  const t = term.normalize('NFKC').toLowerCase().trim()
+  
   if (/^[a-z]+$/.test(t)) {
     if (t.endsWith('ies') && t.length > 4) return t.slice(0, -3) + 'y'
     if (t.endsWith('es') && t.length > 4) return t.slice(0, -2)
@@ -97,6 +72,5 @@ export const normalize = (s = '') =>
   s
     .toString()
     .normalize('NFC')
-    .toLowerCase()
-    //.replace(/[^0-9a-zA-Z\u0900-\u097F]+/gu, ' ')
+    .toLowerCase()    
     .trim()

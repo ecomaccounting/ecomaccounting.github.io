@@ -37,16 +37,16 @@ export function useSearch(
 
     items = results.map(p => ({
       id: p.id,
+      icon:p.icon,
       name: (p.name),      
-      highlights: [],      
-      keywords: "",      
-      shortDescription: "",
+      highlights: p.highlights,      
+      shortDescription: p.shortDescription,      
+      keywords: "",            
       longDescription: "",
       parentId: "",
       footer:true,
       home:true,
-      metaDescription:"",
-      icon:p.icon
+      metaDescription:""      
     }));
   } 
   

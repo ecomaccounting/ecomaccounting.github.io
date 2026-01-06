@@ -36,21 +36,16 @@ exports.miniSearchQueryOptions = {
         name: 5,
         highlights: 3.5,
         shortDescription: 3,
-        longDescription: 3,        
-        keywords: 2.5,
+        longDescription: 2.5,        
+        keywords: 2,
     },
     boostDocument: (doc, term) => doc.keywords?.includes(term) ? 1.5 : 1
 };
 function normalizeTerm(term) {
     if (!term)
         return '';
-    let t = term.normalize('NFKC').toLowerCase().trim();
-    t = t.replace(/\u093C/g, ''); // nukta removal
-    const map = {
-        
-    };
-    if (map[t])
-        return map[t];
+    const t = term.normalize('NFKC').toLowerCase().trim();
+    
     if (/^[a-z]+$/.test(t)) {
         if (t.endsWith('ies') && t.length > 4)
             return t.slice(0, -3) + 'y';
@@ -64,7 +59,6 @@ function normalizeTerm(term) {
 const normalize = (s = '') => s
     .toString()
     .normalize('NFC')
-    .toLowerCase()
-    //.replace(/[^0-9a-zA-Z\u0900-\u097F]+/gu, ' ')
+    .toLowerCase()    
     .trim();
 exports.normalize = normalize;
