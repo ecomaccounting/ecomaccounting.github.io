@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FAQItem } from "@/data/types";
 
 
-export default function FAQPage({faqs}: { faqs: FAQItem[] }   ) {
+export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     
     const faqSchema = {

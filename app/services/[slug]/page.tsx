@@ -6,6 +6,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import * as LucideIcons from "lucide-react";
 import Image from "next/image";
+import FAQ from "@/components/FAQ";
 
 
 // --- Generate static params for SSG ---
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: service.name,
-    description: service.shortDescription?.substring(0, 160),
-    keywords: [service.name],
+    description: service.metaDescription,
+    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),
     openGraph: {
       title: service.name,
       description: service.shortDescription,
@@ -40,7 +41,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const service = data.services.find((s: ServiceItem) => s.id === slug);
 
   if (!service) return notFound();
-
+  const faqs = data.faqs.filter(faq => faq.serviceIds.includes(service.id));
   // Children services
   const childrenServices = data.services.filter(s => s.parentId === service.id);
 
@@ -218,6 +219,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             </div>
           </div>
         )}
+        <FAQ faqs={faqs} />
 
         {/* CTA Section */}
         <div className="max-w-4xl mx-auto mb-20">
