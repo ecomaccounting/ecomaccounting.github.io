@@ -14,13 +14,13 @@ export default function Footer() {
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/task360.svg"
+              src="/img/logo/logor.png"
               alt="Task360 Logo"
-              width={45}
-              height={45}
+              width={160}
+              height={60}
               className="object-contain"
             />
-            <h1 className="text-3xl text-dark">Task360</h1>
+            
           </Link>
 
           <p className="text-sm leading-relaxed">

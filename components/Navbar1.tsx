@@ -9,26 +9,34 @@ import dynamic from "next/dynamic";
 
 export default function Navbar() {
   const SearchBar = dynamic(() => import("@/components/SearchBar"), {
-  ssr: false,
-});
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
+    ssr: false,
+  });
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <nav className="bg-light border-b">
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
 
         {/* 🔹 Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
+          {/* Mobile Logo: Shown by default, hidden from 'md' upwards */}
           <Image
-            src="/task360.svg"
-            height={32}
-            width={32}
+            src="/img/logo/logos.png"
+            height={40} // Adjusted height for mobile if needed
+            width={40}  // Adjusted width for mobile if needed
             alt="Task360"
             priority
+            className="block md:hidden"
           />
-          {/* Text hidden only on mobile */}
-          <span className="hidden sm:inline text-xl tracking-wide">
-            task360
-          </span>
+
+          {/* Desktop Logo: Hidden by default, shown from 'md' upwards */}
+          <Image
+            src="/img/logo/logor.png"
+            height={48}
+            width={128}
+            alt="Task360"
+            priority
+            className="hidden md:block"
+          />
         </Link>
 
         {/* 🔹 Search */}
