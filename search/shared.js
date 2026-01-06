@@ -5,17 +5,12 @@ exports.miniSearchIndexOptions = {
     fields: [
         "name",
         "shortDescription",
-        "longDescription",        
-        "highlights",        
-        "keywords"        
+        "longDescription",
+        "highlights",
+        "keywords"
     ],
     storeFields: [
-        "id",        
-        "name",
-        "shortDescription",
-        "longDescription",        
-        "highlights",        
-        "keywords"        
+        "id",
     ],
     tokenize(text) {
         return (text
@@ -34,10 +29,10 @@ exports.miniSearchQueryOptions = {
     combineWith: "OR",
     boost: {
         name: 5,
-        highlights: 3.5,
-        shortDescription: 3,
-        longDescription: 2.5,        
-        keywords: 2,
+        keywords: 3,
+        highlights: 4,
+        shortDescription: 2,
+        longDescription: 1,
     },
     boostDocument: (doc, term) => doc.keywords?.includes(term) ? 1.5 : 1
 };
@@ -45,7 +40,6 @@ function normalizeTerm(term) {
     if (!term)
         return '';
     const t = term.normalize('NFKC').toLowerCase().trim();
-    
     if (/^[a-z]+$/.test(t)) {
         if (t.endsWith('ies') && t.length > 4)
             return t.slice(0, -3) + 'y';
@@ -59,6 +53,6 @@ function normalizeTerm(term) {
 const normalize = (s = '') => s
     .toString()
     .normalize('NFC')
-    .toLowerCase()    
+    .toLowerCase()
     .trim();
 exports.normalize = normalize;

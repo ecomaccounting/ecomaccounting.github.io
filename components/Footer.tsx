@@ -2,10 +2,10 @@ import Link from "next/link";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import { navLinks } from "@/data/navLinks.json";
-import servicesData from "@/data/servicesData.json";
 import data from "@/data/data1.json";
 
 export default function Footer() {
+  
   return (
     <footer className="px-4 py-12 bg-accent">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_2fr] gap-10 p-2">
@@ -61,7 +61,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
 
             {
-              servicesData.services
+              data.services
                 .filter(srv => srv.footer===true)
                 .map((child, idx) => {
                   return (

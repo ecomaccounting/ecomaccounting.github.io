@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import servicesData from "@/data/servicesData.json";
+import servicesData from "@/data/data1.json";
 import { ServiceItem } from "@/data/types";
 import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import * as LucideIcons from "lucide-react";
 import Image from "next/image";
+
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {

@@ -14,12 +14,7 @@ export const miniSearchIndexOptions: MiniSearchIndexOptions = {
 
   storeFields: [
     "id",
-    "name",
-    "icon",
-    "shortDescription",
-    "longDescription",
-    "highlights",
-    "keywords"
+   
   ],
 
   tokenize(text: string) {
@@ -43,12 +38,12 @@ export const miniSearchQueryOptions: MiniSearchSearchOptions = {
   combineWith: "OR",
 
   boost: {
-    name: 5,
-    highlights: 3.5,
-    shortDescription: 3,
-    longDescription: 2.5,
-    keywords: 2,
-  },
+      name: 5,
+      keywords: 3,
+      highlights: 4,
+      shortDescription: 2,
+      longDescription: 1,
+    },
 
   boostDocument: (doc: any, term: string) =>
     doc.keywords?.includes(term) ? 1.5 : 1

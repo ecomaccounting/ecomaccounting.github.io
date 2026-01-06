@@ -1,90 +1,104 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import MiniSearch from "minisearch";
 import Service from "@/components/Services";
-import { useSearch } from "@/search/useSearch";
-import { miniSearchIndexOptions } from "@/search/shared";
 import Breadcrumb from "@/components/BreadcrumbItem";
-
+import { miniSearchIndexOptions, miniSearchQueryOptions } from "@/search/shared";
+import data from "@/data/data1.json";
+import { ServiceItem } from "@/data/types";
 
 export default function ServiceSearch() {
+  const allServices: ServiceItem[] = data.services;
   const searchParams = useSearchParams();
-const rawQuery = searchParams.get("q") || "";
-const queryFromUrl = decodeURIComponent(rawQuery).replace(
-  /^web\+ssj:(\/\/)?/i,
-  ""
-);
+  const rawQuery = searchParams.get("q") || "";
+  const queryFromUrl = decodeURIComponent(rawQuery).replace(/^web\+ssj:(\/\/)?/i, "");
 
-  // 🔹 Submitted (actual search) state
   const [submittedQuery, setSubmittedQuery] = useState(queryFromUrl);
-  useEffect(() => {
-  setSubmittedQuery(queryFromUrl);
-}, [queryFromUrl]);
-
-
   const [searchIndex, setSearchIndex] = useState<MiniSearch<any> | null>(null);
+  
   const [isLoading, setIsLoading] = useState(true);
+  const [searchResults, setSearchResults] = useState<{ id: string; score: number }[] | null>(null);
 
-  /* ----------------------------
-     Load MiniSearch index
-  ----------------------------- */
+  useEffect(() => {
+    setSubmittedQuery(queryFromUrl);
+  }, [queryFromUrl]);
+
   useEffect(() => {
     let cancelled = false;
 
     async function loadIndex() {
-      setIsLoading(true);
-      const res = await fetch("/data/search-index.json");
-      const indexJSON = await res.text();
-      if (cancelled) return;
+      try {
+        const res = await fetch("/data/search-index.json");
+        const json = await res.text();
+        if (cancelled) return;
 
-      setSearchIndex(
-        MiniSearch.loadJSON(indexJSON, miniSearchIndexOptions)
-      );
-      setIsLoading(false);
+        const index = MiniSearch.loadJSON(json, miniSearchIndexOptions);
+        setSearchIndex(index);
+        // FIX: Set loading to false here
+        setIsLoading(false); 
+      } catch (error) {
+        console.error("Failed to load search index:", error);
+        setIsLoading(false);
+      }
     }
 
     loadIndex();
-    return () => { cancelled = true };
+    return () => { cancelled = true; };
   }, []);
 
-  /* ----------------------------
-     Search runs ONLY on submit
-  ----------------------------- */
-  const results = useSearch(
-    searchIndex,
-    submittedQuery
-  );
+  useEffect(() => {
+    // If there is no query, we set results to null to indicate "show all"
+    if (!searchIndex || !submittedQuery.trim()) {
+      setSearchResults(null);
+      return;
+    }
 
+    const cleanedQuery = submittedQuery
+      .toLowerCase()
+      .trim()
+      .split(/\s+/)
+      .join(" ");
 
+    const results = searchIndex.search(cleanedQuery, miniSearchQueryOptions);
+    const normalizedResults = results.map(r => ({ id: r.id.toString().toLowerCase(), score: r.score }));
+    setSearchResults(normalizedResults);
+  }, [searchIndex, submittedQuery]);
+
+  const hydratedServices = useMemo(() => {
+    // PRELOAD LOGIC: If no search results (null), show all services
+    if (searchResults === null) {
+      return allServices as ServiceItem[];
+    }
+
+    const map = new Map(allServices.map(s => [s.id.toLowerCase(), s]));
+    return searchResults
+      .map(r => map.get(r.id))
+      .filter(Boolean) as ServiceItem[];
+  }, [searchResults]);
 
   return (
     <div className="container mx-auto">
-      <Breadcrumb items={[
-        { name: "Home", href: "/" },
-        { name: "Search" }
-      ]} />
+      <Breadcrumb
+        items={[{ name: "Home", href: "/" }, { name: "Search" }]}
+      />
 
-      <div className="flex items-center gap-3 m-4">
-        {/* LEFT: takes remaining space */}
-        <div className="flex-1 font-medium truncate">
-          {submittedQuery && (
-            <span className="text-primary">
-              {" "}
-            </span>
-          )}
-          {results.length} services found
-        </div>
-
-
+      <div className="m-4 font-medium">
+        {isLoading ? (
+          "Loading services..."
+        ) : (
+          `${hydratedServices.length} services ${submittedQuery ? 'found' : 'available'}`
+        )}
       </div>
-      <div className="p-4">
-        <Service services={results} />
-      </div>
-      {!isLoading && results.length === 0 && (
-        <div className="text-center py-20">
-          No results found.
+
+      {!isLoading && hydratedServices.length > 0 && (
+        <Service services={hydratedServices} />
+      )}
+
+      {!isLoading && hydratedServices.length === 0 && (
+        <div className="text-center py-20 text-muted">
+          No services found for "{submittedQuery}".
         </div>
       )}
     </div>
