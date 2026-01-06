@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import faqs from "@/data/faqs.json";
+import { FAQItem } from "@/data/types";
 
-export default function FAQPage() {
+
+export default function FAQPage({faqs}: { faqs: FAQItem[] }   ) {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+    
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": faqs.map((faq) => ({
+        "mainEntity": faqs.map((faq:FAQItem) => ({
             "@type": "Question",
             "name": faq.question,
             "acceptedAnswer": {
@@ -38,7 +39,7 @@ export default function FAQPage() {
                 </header>
 
                 <div className="space-y-4">
-                    {faqs.map((faq, index) => (
+                    {faqs.map((faq: FAQItem, index:number) => (
                         <div
                             key={index}
                             className="border border-[var(--border-color)] rounded-2xl overflow-hidden bg-light"

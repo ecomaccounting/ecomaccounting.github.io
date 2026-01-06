@@ -19,6 +19,10 @@
         {
             "text": "Clients",
             "link": "/clients"
+        },
+        {
+            "text": "FAQ",
+            "link": "/faq"
         }        
     ]    
 }

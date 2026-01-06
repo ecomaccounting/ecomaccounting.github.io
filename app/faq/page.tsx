@@ -2,49 +2,8 @@
 
 import { useState } from "react";
 import Head from "next/head";
-
-const faqs = [
-  {
-    question: "What services do you provide specifically for eCommerce sellers?",
-    answer:
-      "We provide end-to-end services for eCommerce sellers including bookkeeping & accounting, GST registration and filing, TDS/TCS compliance, income tax returns, marketplace reconciliation, MIS & P&L analysis, Virtual CFO services, and business registrations. We work with sellers on Amazon, Flipkart, Meesho, Myntra, and other platforms.",
-  },
-  {
-    question: "I'm just starting my eCommerce business. What registrations do I need?",
-    answer:
-      "You typically need business entity registration, GST registration, a current bank account, PAN, MSME registration (optional), and trademark registration. We handle the complete process for you seamlessly.",
-  },
-  {
-    question: "Is GST registration mandatory for selling on Amazon or Flipkart?",
-    answer:
-      "Yes. GST registration is mandatory for inter-state sales and for selling on most eCommerce marketplaces, irrespective of turnover. It also allows you to claim input tax credit and stay compliant.",
-  },
-  {
-    question: "What GST returns are applicable to eCommerce sellers?",
-    answer:
-      "ECommerce sellers generally file GSTR-1, GSTR-3B, annual GSTR-9, and if applicable GSTR-9C. Marketplaces file GSTR-8 for TCS. We manage all filings and reconciliations for you.",
-  },
-  {
-    question: "Why is marketplace reconciliation important?",
-    answer:
-      "Reconciliation ensures that sales, returns, commissions, TCS, and actual bank receipts match marketplace reports and GST data. This prevents notices, missed credits, and incorrect profitability reporting.",
-  },
-  {
-    question: "Do small eCommerce sellers also need professional bookkeeping?",
-    answer:
-      "Yes. Even small sellers benefit from proper bookkeeping for GST compliance, income tax filing, loan eligibility, and understanding real profitability. We offer affordable plans for every growth stage.",
-  },
-  {
-    question: "Can you help if my past books or GST filings are pending?",
-    answer:
-      "Absolutely. We specialize in financial clean-up projects including reconstruction of books, reconciliation, and filing of pending GST returns and ITRs to bring you back to full compliance.",
-  },
-  {
-    question: "How do I get started with your services?",
-    answer:
-      "You can start with a free consultation call. After understanding your needs, we share a proposal, onboard you, set up systems, and start managing your accounting and compliance end-to-end.",
-  },
-];
+import data from "@/data/data1.json";
+const faqs = data.faqs;
 
 export default function FAQPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

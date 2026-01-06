@@ -66,29 +66,29 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-          
+
           {/* Hero Content */}
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
             <div className="relative max-w-4xl">
-  <div className="absolute inset-0 bg-black/40 dark:bg-black/60 backdrop-blur-sm rounded-lg -z-10"></div>
+              <div className="absolute inset-0 bg-black/40 dark:bg-black/60 backdrop-blur-sm rounded-lg -z-10"></div>
 
-  <div className="flex items-center gap-4 mb-4">
-    {ParentIcon && (
-      <div className="p-3 bg-white/20 dark:bg-white/10 backdrop-blur-sm rounded-xl">
-        <ParentIcon className="w-8 h-8 text-white" />
-      </div>
-    )}
-    <h1 className="text-4xl md:text-6xl font-bold text-white">
-      {service.name}
-    </h1>
-  </div>
+              <div className="flex items-center gap-4 mb-4">
+                {ParentIcon && (
+                  <div className="p-3 bg-white/20 dark:bg-white/10 backdrop-blur-sm rounded-xl">
+                    <ParentIcon className="w-8 h-8 text-white" />
+                  </div>
+                )}
+                <h1 className="text-4xl md:text-6xl font-bold text-white">
+                  {service.name}
+                </h1>
+              </div>
 
-  {/* {service.shortDescription && (
+              {/* {service.shortDescription && (
     <p className="text-xl max-w-2xl text-white">
       {service.shortDescription}
     </p>
   )} */}
-</div>
+            </div>
           </div>
         </div>
 
@@ -107,9 +107,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           <div className="max-w-5xl mx-auto mb-20">
             <h2 className="text-3xl font-bold mb-8 text-center">Key Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {service.highlights.map((item, i) => (
-                <div 
-                  key={i} 
+              {service.longHighlights.map((item, i) => (
+                <div
+                  key={i}
                   className="flex items-start gap-4 p-6 bg-accent rounded-xl shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

@@ -20,7 +20,7 @@ export interface ServiceItem {
     shortDescription: string; 
     longDescription: string;
     highlights: string[];
-    longHighlights: string;
+    longHighlights: string[];
     keywords: string;
     metaDescription: string;
     footer: boolean;
@@ -67,4 +67,9 @@ export interface Client {
   shortFeedback: string;   
   description: string; 
   home: boolean;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
 }
