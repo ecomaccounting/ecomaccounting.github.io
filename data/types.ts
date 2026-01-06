@@ -20,7 +20,7 @@ export interface ServiceItem {
     shortDescription: string; 
     longDescription: string;
     highlights: string[];
-    shortHighlights: string[];
+    longHighlights: string;
     keywords: string;
     metaDescription: string;
     footer: boolean;

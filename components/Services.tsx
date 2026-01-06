@@ -1,10 +1,12 @@
 "use client";
-import {ServiceItem} from "@/data/types";
+import { ServiceItem } from "@/data/types";
 import Link from "next/link";
-import {  FileText} from "lucide-react";
+import { FileText } from "lucide-react";
 import { iconMap } from "@/data/types";
+import { FileEdit } from "lucide-react";
+import * as LucideIcons from "lucide-react";
 
-export default function Services({ services }: { services: ServiceItem[] }) {  
+export default function Services({ services }: { services: ServiceItem[] }) {
 
   // Map service names to icons
 
@@ -27,8 +29,11 @@ export default function Services({ services }: { services: ServiceItem[] }) {
 
         {/* --- Service Cards Grid --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.map((service) => {
-            const Icon = iconMap[service.name] || FileText;
+          {services.filter((service) => service.id.length > 2).map((service) => {
+            //const Icon = iconMap[service.name] || FileText;
+            const Icon = service.icon
+              ? (LucideIcons[service.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
+              : FileText;
             return (
               <div
                 key={service.name}
@@ -37,7 +42,12 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                 {/* --- Icon and title --- */}
                 <div className="mb-6">
                   <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-                    <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+                    {/* <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" /> */}
+                    {Icon ? (
+                      <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+                    ) : (
+                      <FileText className="h-8 w-8 text-blue-600" /> // Standard fallback
+                    )}
                   </div>
 
                   <h3 className="text-xl  mb-3">
@@ -53,7 +63,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                 {/* --- Highlights --- */}
                 <div className="space-y-2">
                   <ul className="list-disc pl-5 marker:text-accent">
-                    {service.highlights.slice(0, 3).map((item:string, i:number) => (
+                    {service.highlights.slice(0, 3).map((item: string, i: number) => (
                       <li key={i} className="leading-relaxed">
                         {item}
                       </li>

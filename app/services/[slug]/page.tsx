@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import servicesData from "@/data/data1.json";
+import data from "@/data/data1.json";
 import { ServiceItem } from "@/data/types";
 import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
@@ -10,7 +10,7 @@ import Image from "next/image";
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {
-  return servicesData.services.map((service: ServiceItem) => ({
+  return data.services.map((service: ServiceItem) => ({
     slug: service.id,
   }));
 }
@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 // --- Generate SEO metadata dynamically ---
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const service = servicesData.services.find((s: ServiceItem) => s.id === slug);
+  const service = data.services.find((s: ServiceItem) => s.id === slug);
 
   if (!service) return { title: "Service Not Found" };
 
@@ -37,12 +37,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // --- Page Component ---
 export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const service = servicesData.services.find((s: ServiceItem) => s.id === slug);
+  const service = data.services.find((s: ServiceItem) => s.id === slug);
 
   if (!service) return notFound();
 
   // Children services
-  const childrenServices = servicesData.services.filter(s => s.parentId === service.id);
+  const childrenServices = data.services.filter(s => s.parentId === service.id);
 
   // Get parent icon
   const ParentIcon = service.icon
