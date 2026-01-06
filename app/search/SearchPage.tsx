@@ -11,11 +11,17 @@ import Breadcrumb from "@/components/BreadcrumbItem";
 
 export default function ServiceSearch() {
   const searchParams = useSearchParams();
-  const rawQuery = decodeURIComponent(searchParams.get("q") || "");
-  const initialQuery = rawQuery.replace(/^web\+ssj:(\/\/)?/i, "");
+const rawQuery = searchParams.get("q") || "";
+const queryFromUrl = decodeURIComponent(rawQuery).replace(
+  /^web\+ssj:(\/\/)?/i,
+  ""
+);
 
   // 🔹 Submitted (actual search) state
-  const [submittedQuery, setSubmittedQuery] = useState(initialQuery);
+  const [submittedQuery, setSubmittedQuery] = useState(queryFromUrl);
+  useEffect(() => {
+  setSubmittedQuery(queryFromUrl);
+}, [queryFromUrl]);
 
 
   const [searchIndex, setSearchIndex] = useState<MiniSearch<any> | null>(null);

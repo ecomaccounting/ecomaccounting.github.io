@@ -21,7 +21,7 @@ export interface ServiceItem {
     longDescription: string;
     highlights: string[];
     footer: boolean;
-    home: boolean;
+    
 }
 export interface BlogPost {
   id: string;
@@ -51,3 +51,17 @@ export const iconMap: Record<string, any> = {
   "Business Registration": Building2,
   "Small Business Advisory": Briefcase,
 };
+
+export interface Client {
+  id: string; 
+  logo: string;
+  name: string;  
+  industry: string; 
+  brandName: string; 
+  title: string; 
+  position: string; 
+  feedback: string; 
+  shortFeedback: string;   
+  description: string; 
+  home: boolean;
+}

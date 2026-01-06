@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import clientData from "@/data/data1.json";
-interface Client {
-  logo: string;
-  name: string;
-}
+import type { Client } from "@/data/types";
+
 export default function TopClients() {
 
 

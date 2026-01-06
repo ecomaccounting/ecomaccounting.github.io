@@ -19,7 +19,7 @@ export default function ServiceStacks() {
     const Icon = section.icon
                 ? (LucideIcons[section.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
                 : null;
-    const bg = section.banner; // add to JSON
+    const bg = section.id; // add to JSON
 
     return (
       <div

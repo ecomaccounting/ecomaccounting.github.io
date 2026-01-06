@@ -19,12 +19,12 @@ export default async function sitemap() {
   }));  
   
   // --- Blogs URLs ---
-  const blogsUrls = blogData.blogPosts.map((b: BlogPost) => ({
-    url: `${baseUrl}/blog/${b.slug}`,
-    lastModified: new Date().toISOString(),
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  // const blogsUrls = blogData.blogPosts.map((b: BlogPost) => ({
+  //   url: `${baseUrl}/blog/${b.slug}`,
+  //   lastModified: new Date().toISOString(),
+  //   changeFrequency: "weekly",
+  //   priority: 0.7,
+  // }));
 
   // --- Static pages ---
   const staticUrls = [
@@ -45,5 +45,5 @@ export default async function sitemap() {
   }));
 
   // --- Combine all ---
-  return [...staticUrls, ...serviceUrls,  ...blogsUrls];
+  return [...staticUrls, ...serviceUrls];
 }

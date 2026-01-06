@@ -45,9 +45,7 @@ export default function Navbar() {
         {/* 🔹 Search */}
         <div className="flex-1 min-w-0 sm:max-w-xl">
           <SearchBar
-            query={inputQuery}
-            onQueryChange={setInputQuery}
-            onSearch={handleSearchSubmit}
+            initialQuery={inputQuery}
           />
         </div>
 
