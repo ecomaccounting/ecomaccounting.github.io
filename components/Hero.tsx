@@ -68,7 +68,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/contact-us"
+              href="/book-consultation"
               className="button primary flex items-center justify-center gap-2 ">
               Start Free Consultation
               <ArrowRight className="h-5 w-5" />
