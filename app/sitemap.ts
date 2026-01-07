@@ -3,7 +3,7 @@ export const dynamic = "force-static";
 // app/sitemap.ts
 
 import type { ServiceItem } from "@/data/types";
-import data from "@/data/servicesData.json";
+import data from "@/data/data1.json";
 import blogData from "@/data/blog.json";
 import {BlogPost} from "@/data/types";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import servicesData from "@/data/servicesData.json";
+import servicesData from "@/data/data1.json";
 import Link from "next/link";
 import * as LucideIcons from "lucide-react"; // import all icons dynamically
 
