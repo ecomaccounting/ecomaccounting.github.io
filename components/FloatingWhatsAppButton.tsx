@@ -13,13 +13,13 @@ export default function FloatingWhatsAppButton() {
   return (
     <div className="fixed bottom-10 right-5 z-50 ">
       <button
-  className="w-12 h-12 flex items-center justify-center rounded-full shadow-2xl 
+  className="w-16 h-16 flex items-center justify-center rounded-full! shadow-2xl cursor-pointer
              transition-all duration-300 transform hover:scale-105 active:scale-95 
              bg-green-500 hover:bg-green-600 text-white"
   title={`Chat on WhatsApp: +${MY_PHONE_NUMBER}`}
   onClick={handleClick}
 >
-  <FaWhatsapp size={36} />
+  <FaWhatsapp size={40} />
 </button>
     </div>
   );

@@ -1,21 +1,53 @@
-import { Metadata } from "next";
+
 import Image from "next/image";
 import ClientData from "@/data/data1.json";
 import Breadcrumb from "@/components/BreadcrumbItem";
-        
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Clients | GPMJ & Associates",
+  title: "Our Clients | task360 – Simple Finance for eCommerce Businesses",
+
   description:
     "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
+
   keywords: [
     "clients",
-    "GPMJ & Associates",
+    "task360",
     "accounting clients",
     "eCommerce accounting",
     "tax clients",
     "business partners",
   ],
+
+  openGraph: {
+    title: "Our Clients | task360",
+    description:
+      "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
+    url: "https://task360.co/clients",
+    siteName: "task360",
+    images: [
+      {
+        url: "https://task360.co/img/or/og-book-free-consultation.png",
+        width: 1200,
+        height: 630,
+        alt: "Our Clients – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Clients | task360",
+    description:
+      "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
+    images: ["https://task360.in/og/og-book-consultation.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 const clients = ClientData.clients;
 
@@ -56,7 +88,7 @@ export default function ClientsPage() {
               {/* Logo */}
               <div className="w-24 h-24 mx-auto mb-5 relative">
                 <Image
-                  src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}` }
+                  src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}`}
                   alt={`${client.name} logo`}
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-110"

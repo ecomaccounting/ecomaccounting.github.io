@@ -54,6 +54,7 @@ function ClientItem({ client }: { client: Client }) {
           alt={client.name}
           fill
           className="object-contain transition-transform duration-300 hover:scale-110"
+          title={client.name}
         />
       </div>
       <div className="mt-2 text-sm text-center">{client.name}</div>

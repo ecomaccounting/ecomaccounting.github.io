@@ -1,20 +1,53 @@
-import { Metadata } from "next";
 import Services from "@/components/Services"
 import data from "@/data/data1.json";
 import Breadcrumb from "@/components/BreadcrumbItem";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | GPMJ & Associates",
+  title: "Explore Services | task360 – Simple Finance for eCommerce Businesses",
+
   description:
-    "Get in touch with GPMJ & Associates for accounting, GST, and compliance services. Call, email, or visit our Mumbai office.",
+    "Explore services to simplify accounting, GST, compliance, and financial management for your eCommerce business. Trusted finance experts for online sellers.",
+
   keywords: [
-    "contact GPMJ",
-    "CA firm Mumbai",
-    "accounting support",
-    "GST help",
-    "tax filing contact",
-    "bookkeeping services",
+    "book consultation",
+    "free finance consultation",
+    "ecommerce accounting",
+    "gst compliance for ecommerce",
+    "online seller accounting",
+    "virtual cfo ecommerce",
+    "task360",
   ],
+
+  openGraph: {
+    title: "Explore task360 Services | task360",
+    description:
+      "Talk to trusted finance & compliance experts for eCommerce businesses. Get clarity on GST, accounting, reconciliation, and growth strategy.",
+    url: "https://task360.co/services",
+    siteName: "task360",
+    images: [
+      {
+        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        width: 1200,
+        height: 630,
+        alt: "Book Free Consultation – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Explore task360 Services | task360",
+    description:
+      "Simplify finance, GST, and compliance for your eCommerce business. Explore task360 services.",
+    images: ["https://task360.in/og/og-book-consultation.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ServicesPage() {

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+
 import { notFound } from "next/navigation";
 import data from "@/data/data1.json";
 import { ServiceItem } from "@/data/types";
@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/BreadcrumbItem";
 import FAQ from "@/components/FAQ";
 import ServiceHero from "@/components/ServiceHero";
 import { ArrowRight } from "lucide-react";
-
+import type { Metadata } from "next";
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {
@@ -24,13 +24,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!service) return { title: "Service Not Found" };
 
   return {
-    title: service.name,
+    title: `Explore ${service.name} | task360 – Simple Finance for eCommerce Businesses`,
     description: service.metaDescription,
-    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),
+    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),       
+
     openGraph: {
-      title: service.name,
+      title: `Explore ${service.name} | task360`,
       description: service.shortDescription,
-      type: "article",
+      url: `https://task360.co/services/${service.id}`,
+      siteName: "task360",
+      images: [
+        {
+          url: "https://task360.co/img/og/og-book-free-consultation.png",
+          width: 1200,
+          height: 630,
+          alt: "Book Free Consultation – task360",
+        },
+      ],
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `Explore ${service.name} | task360`,
+      description: service.shortDescription,
+      images: ["https://task360.in/og/og-book-consultation.png"],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }

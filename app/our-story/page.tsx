@@ -1,27 +1,65 @@
-import { Metadata } from "next";
+
 import TestimonialsTicker from "@/components/Testimonials";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import Image from "next/image";
 import data from "@/data/data1.json"
 import { TeamMember } from "@/data/types";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "About Us | GPMJ & Associates",
+  title: "Our Story | task360 – Simple Finance for eCommerce Businesses",
+
   description:
-    "Your trusted partner for eCommerce success. We specialize in accounting, taxation, and compliance services tailored for online businesses.",
+    "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
+
   keywords: [
-    "About GPMJ",
-    "CA firm for eCommerce",
+    "clients",
+    "task360",
+    "accounting clients",
     "eCommerce accounting",
-    "GST compliance",
-    "tax filing",
-    "online seller bookkeeping",
+    "tax clients",
+    "business partners",
   ],
+
+  openGraph: {
+    title: "Our Story | task360",
+    description:
+      "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
+    url: "https://task360.co/our-story",
+    siteName: "task360",  
+    images: [
+      {
+        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Us – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | task360",
+    description:
+      "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
+    images: ["https://task360.in/og/og-book-consultation.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
+
 
 export default function OurStoryPage() {
   const team: TeamMember[] = data.ourTeam;
   return (
     <div>
+      <LocalBusinessSchema />
       <section
         id="about"
         className=""
@@ -181,15 +219,21 @@ export default function OurStoryPage() {
                 itemType="https://schema.org/Person"
               >
                 {/* --- Image --- */}
-                <div className="relative w-full h-72">
+                <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
                   <Image
                     src={member.image}
                     alt={`Photo of ${member.memberName}`}
                     fill
-                    className="object-cover"
+                    className="
+      object-cover
+      object-top
+      scale-[1.02]
+    "
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    priority
                   />
+
+                  {/* subtle edge softener */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/5 pointer-events-none" />
                 </div>
 
                 {/* --- Content --- */}

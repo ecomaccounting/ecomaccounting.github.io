@@ -31,6 +31,7 @@ export default function Navbar() {
             alt="Task360"
             priority
             className="block md:hidden"
+            title="task360"
           />
 
           {/* Desktop Logo: Hidden by default, shown from 'md' upwards */}
@@ -41,6 +42,7 @@ export default function Navbar() {
             alt="Task360"
             priority
             className="hidden md:block"
+            title="task360"
           />
         </Link>
 

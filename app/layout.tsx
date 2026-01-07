@@ -9,6 +9,12 @@ import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import RegisterSW from "@/components/sw";
 
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 
 /* -------------------------------
    🧩 Font Setup
@@ -27,50 +33,83 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
-  title: "Task360 | Professional Accounting & Tax Services",
-  description:
-    "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
-  keywords: [
-    "CA services",
-    "accounting",
-    "bookkeeping",
-    "ITR filing",
-    "GST registration",
-    "business registration",
-    "tax filing",
-  ],
-  authors: [{ name: "Task360" }],
-  manifest: "/site.webmanifest",
-  icons: {
-    icon: [
-      { url: "/favicon-32x32.png", type: "image/png" },
-      { url: "/favicon-16x16.png", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png" }],
-    shortcut: ["/favicon.ico"],
+  metadataBase: new URL("https://task360.co"),
+  title: {
+    default: "task360 – Simple Finance for eCommerce & Growing Businesses",
+    template: "%s | task360",
   },
+
+  description:
+    "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",
+
+  applicationName: "task360",
+
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+
+  keywords: [
+    "eCommerce accounting",
+    "GST services",
+    "CA for online sellers",
+    "bookkeeping services",
+    "tax compliance India",
+    "startup finance",
+  ],
+
+  authors: [{ name: "task360" }],
+  creator: "task360",
+  publisher: "task360",
+
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  manifest: "/manifest.webmanifest",
+  themeColor: "#0a58ca",
+  appleWebApp: {
+    capable: true,
+    title: "task360",
+    statusBarStyle: "default",
+  },
+
   openGraph: {
     type: "website",
-    description: "Expert CA services for small and medium businesses: GST registration, ITR filing, bookkeeping, accounting, and business setup assistance.",
-    title: "Task360 | Professional Accounting & Tax Services",
-    url: "https://ecomaccounting.github.io",
+    siteName: "task360",
+    title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+    description:
+      "Professional accounting, GST, tax & compliance services for eCommerce sellers and startups.",
+    url: "https://task360.co",
     images: [
       {
-        url: "https://ecomaccounting.github.io/android-chrome-512x512.png",
-        width: 200,
-        height: 200,
-        type: "image/png",
-        alt: "Task360 Services",
-      }
-    ]
+        url: "/img/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "task360 – Finance & Compliance Made Simple",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+    description:
+      "Accounting, GST, tax & compliance services for eCommerce sellers and startups.",
+    images: ["/og-image.png"],
+  },
+
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   robots: { index: true, follow: true },
 };
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+
 
 /* -------------------------------
    🌐 Root Layout Component

@@ -35,8 +35,7 @@ export default function ServiceSearch() {
         if (cancelled) return;
 
         const index = MiniSearch.loadJSON(json, miniSearchIndexOptions);
-        setSearchIndex(index);
-        // FIX: Set loading to false here
+        setSearchIndex(index);        
         setIsLoading(false); 
       } catch (error) {
         console.error("Failed to load search index:", error);

@@ -1,19 +1,51 @@
-import { Metadata } from "next";
+
 import Breadcrumb from "@/components/BreadcrumbItem";
-        
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | GPMJ & Associates",
+  title: "Contact Us | task360 – Simple Finance for eCommerce Businesses",
+
   description:
-    "Get in touch with GPMJ & Associates for accounting, GST, and compliance services. Call, email, or visit our Mumbai office.",
+    "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",
+
   keywords: [
-    "contact GPMJ",
-    "CA firm Mumbai",
-    "accounting support",
-    "GST help",
-    "tax filing contact",
-    "bookkeeping services",
+    "clients",
+    "task360",
+    "accounting clients",
+    "eCommerce accounting",
+    "tax clients",
+    "business partners",
   ],
+
+  openGraph: {
+    title: "Contact Us | task360",
+    description:
+      "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",
+    url: "https://task360.co/contact-us",
+    siteName: "task360",
+    images: [
+      {
+        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Us – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | task360",
+    description:
+      "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",
+    images: ["https://task360.in/og/og-book-consultation.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function ContactPage() {

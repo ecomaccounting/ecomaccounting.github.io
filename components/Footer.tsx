@@ -19,6 +19,7 @@ export default function Footer() {
               width={160}
               height={60}
               className="object-contain"
+              title="task360"
             />
             
           </Link>
@@ -85,8 +86,8 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-muted text-lg" />
-              <a href="mailto:support@task360.co" className="transition">
-                support@task360.co
+              <a href="mailto:info@task360.co" className="transition">
+                info@task360.co
               </a>
             </li>
 

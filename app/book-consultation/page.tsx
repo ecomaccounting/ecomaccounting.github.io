@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+
+
 export default function BookConsultationPage() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -161,7 +163,7 @@ ${message}
             {/* CTA */}
             <button
               type="submit"
-              className="w-full bg-accent text-accent-foreground rounded-lg px-6 py-3 font-semibold hover:opacity-90 transition"
+              className="button primary w-full  text-accent-foreground rounded-lg px-6 py-3 font-semibold hover:opacity-90 transition"
             >
               Start WhatsApp Consultation
             </button>

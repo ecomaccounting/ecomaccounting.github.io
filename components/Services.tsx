@@ -65,6 +65,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                   <Link
                     href={`/services/${service.id}`}
                     className="primary text-center block py-2 px-4 rounded-lg transition-colors"
+                    title={`Click to learn more about ${service.name} service`}
                   >
                     Learn More
                   </Link>

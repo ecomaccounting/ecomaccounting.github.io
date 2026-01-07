@@ -1,19 +1,52 @@
-import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers | GPMJ & Associates",
+  title: "Book Free Consultation | task360 – Simple Finance for eCommerce Businesses",
+
   description:
-    "Join GPMJ & Associates — a boutique Chartered Accountancy firm that values hands-on learning, professional growth, and client-focused excellence.",
+    "Book a free consultation with task360 to simplify accounting, GST, compliance, and financial management for your eCommerce business. Trusted finance experts for online sellers.",
+
   keywords: [
-    "CA articleship",
-    "CA internship",
-    "GPMJ careers",
-    "CA firm hiring",
-    "CA Intermediate jobs",
-    "articleship training",
+    "book consultation",
+    "free finance consultation",
+    "ecommerce accounting",
+    "gst compliance for ecommerce",
+    "online seller accounting",
+    "virtual cfo ecommerce",
+    "task360",
   ],
+
+  openGraph: {
+    title: "Book Free Consultation | task360",
+    description:
+      "Talk to trusted finance & compliance experts for eCommerce businesses. Get clarity on GST, accounting, reconciliation, and growth strategy.",
+    url: "https://task360.co/book-consultation",
+    siteName: "task360",
+    images: [
+      {
+        url: "https://task360.co/img/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Book Free Consultation – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Book Free Consultation | task360",
+    description:
+      "Simplify finance, GST, and compliance for your eCommerce business. Book a free consultation with task360.",
+    images: ["https://task360.in/og/og-book-consultation.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 
