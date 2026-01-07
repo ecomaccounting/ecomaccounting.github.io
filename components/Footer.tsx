@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="space-y-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/img/logo/logor.png"
+              src="/img/logo/task360-logo-r.png"
               alt="Task360 Logo"
               width={160}
               height={60}

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function AboutPage() {
+export default function OurStoryPage() {
   const team: TeamMember[] = data.ourTeam;
   return (
     <div>

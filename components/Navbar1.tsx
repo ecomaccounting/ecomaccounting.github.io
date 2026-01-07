@@ -25,7 +25,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 shrink-0">
           {/* Mobile Logo: Shown by default, hidden from 'md' upwards */}
           <Image
-            src="/img/logo/logos.png"
+            src="/img/logo/task360-logo-s.png"
             height={40} // Adjusted height for mobile if needed
             width={40}  // Adjusted width for mobile if needed
             alt="Task360"
@@ -35,7 +35,7 @@ export default function Navbar() {
 
           {/* Desktop Logo: Hidden by default, shown from 'md' upwards */}
           <Image
-            src="/img/logo/logor.png"
+            src="/img/logo/task360-logo-r.png"
             height={48}
             width={128}
             alt="Task360"

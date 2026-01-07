@@ -23,7 +23,11 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative py-8 max-w-7xl mx-auto">
+    <section className="relative py-8 max-w-7xl mx-auto " 
+    style={{
+                    backgroundImage: "url('/img/hero/hero-bg-new.png')",
+                }}
+    >
       <h1 className="leading-tight ">
         Simple Finance for eCommerce & Growing Businesses
       </h1>

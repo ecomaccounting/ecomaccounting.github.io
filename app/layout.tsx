@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar1";
 import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import RegisterSW from "@/components/sw";
 
 
 
@@ -111,6 +112,7 @@ export default function RootLayout({
 
         <Script src="https://mehtalogy.in/pb/v1.js"
           strategy="afterInteractive" />
+          <RegisterSW />
       </body>
     </html>
   );
