@@ -85,9 +85,9 @@ useEffect(() => {
     <div className="relative min-w-0">
       <div
         className="
-          flex items-center gap-2
+          flex items-center gap-0
           rounded-xl bg-highlight
-          px-2 py-1 min-w-0
+          px-1 py-1 min-w-0
           ring-1 ring-black/10
           focus-within:ring-2 focus-within:ring-primary
           transition
@@ -104,7 +104,7 @@ useEffect(() => {
             flex-1 min-w-0
             bg-transparent outline-none
             text-normal placeholder:text-normal
-            px-2 py-2
+            p-1
           "
         />
 
@@ -112,7 +112,7 @@ useEffect(() => {
           type="button"
           onClick={startSpeechRecognition}
           aria-label="Voice search"
-          className="ssj-btn w-9 h-9 shrink-0 flex items-center justify-center"
+          className="button cursor-pointer w-14 h-9 shrink-0 flex items-center justify-center"
         >
           <Mic size={18} />
         </button>
@@ -121,7 +121,7 @@ useEffect(() => {
           type="button"
           onClick={executeSearch}
           aria-label="Search"
-          className="ssj-btn w-9 h-9 shrink-0 flex items-center justify-center"
+          className="button cursor-pointer w-14 h-9 shrink-0 flex items-center justify-center"
         >
           <Search size={18} />
         </button>

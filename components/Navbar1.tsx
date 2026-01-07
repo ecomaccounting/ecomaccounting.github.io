@@ -13,7 +13,12 @@ export default function Navbar() {
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <nav className="bg-light relative sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 w-full 
+  bg-white/[0.65] dark:bg-slate-900/80 
+  backdrop-blur-xl backdrop-saturate-150
+  border-b border-slate-200/50 dark:border-white/10 
+  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
+  transition-all duration-300">
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
 
         {/* 🔹 Logo */}

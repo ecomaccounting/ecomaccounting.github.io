@@ -16,7 +16,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
       <div className="container mx-auto">
         {/* --- Section Header --- */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl mb-4 font-semibold">
+          <h2 className="">
             Services for eCommerce Sellers & Growing Businesses
           </h2>
           <p className=" text-lg max-w-2xl mx-auto">
@@ -46,7 +46,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                     )}
                   </div>
 
-                  <h3 className="text-xl mb-3">{service.name}</h3>
+                  <h3 className="">{service.name}</h3>
                   {service.shortDescription && (
                     <p className="mb-4 line-clamp-3">{service.shortDescription}</p>
                   )}
@@ -64,7 +64,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                 <div className="mt-auto pt-6">
                   <Link
                     href={`/services/${service.id}`}
-                    className="ok text-center block py-2 px-4 rounded-lg transition-colors"
+                    className="primary text-center block py-2 px-4 rounded-lg transition-colors"
                   >
                     Learn More
                   </Link>

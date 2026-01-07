@@ -22,7 +22,7 @@ const testimonials = data.clients.filter(t=>t.home && t.shortFeedback.length>10)
     <div className="w-full  py-14">
       {/* Heading */}
       <div className="text-center mb-10 px-4">
-        <h2 className="text-4xl font-semibold">
+        <h2 className="">
           Real Feedback. Real Results
         </h2>
         <p className="mt-2 text-base md:text-lg">

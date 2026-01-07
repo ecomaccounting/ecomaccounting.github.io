@@ -27,9 +27,9 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-            <section className="max-w-5xl mx-auto px-4 py-12">
+            <section className="max-w-5xl mx-auto p-4 ">
                 <header className="text-center mb-10">
-                    <h1 className="text-3xl md:text-4xl font-bold text-dark mb-3">
+                    <h1 className="">
                         Frequently Asked Questions
                     </h1>
                     <p className=" max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                             className="border border-[var(--border-color)] rounded-2xl overflow-hidden bg-light"
                         >
                             <button
-                                className="w-full flex justify-between items-center text-left px-6 py-5 font-medium text-dark"
+                                className="w-full flex justify-between items-center text-left px-6 py-5 font-medium cursor-pointer "
                                 onClick={() =>
                                     setActiveIndex(activeIndex === index ? null : index)
                                 }
@@ -65,7 +65,6 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                         </div>
                     ))}
                 </div>
-
             </section>
         </>
     );

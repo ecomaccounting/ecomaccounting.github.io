@@ -66,15 +66,15 @@ export default function ClientsPage() {
               </div>
 
               {/* Name + Industry */}
-              <h3 className="text-xl font-semibold  mb-1" itemProp="name">
+              <h3 className="" itemProp="name">
                 {client.name}
               </h3>
-              <p className="text-sm text-blue-600 font-medium mb-3">
+              <p className="text-blue-600 font-medium mb-3">
                 {client.industry}
               </p>
 
               {/* Description */}
-              <p className="text-sm" itemProp="description">
+              <p className="" itemProp="description">
                 {client.description}
               </p>
             </div>

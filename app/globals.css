@@ -1,94 +1,96 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
-/* ===============================
-   🌐 GLOBAL VARIABLES (LIGHT MODE DEFAULT)
-   =============================== */
+/* =================================================
+   🌐 DESIGN TOKENS (MINIMAL & INTENTIONAL)
+   ================================================= */
 :root {
-  /* Base Colors (Light Theme) */
-  --background: #ffffff;
-  --foreground: #1a1a1a;
+  --bg: #ffffff;
+  --fg: #0f172a;
 
-  --primary: #0a58ca;
-  --secondary: #f8f9fa;
-  --accent: #0056b3;
-  /* Accent for hover & emphasis */
-  --muted: #6c757d;
-  --border-color: #dee2e6;
+  --primary: #1e40af;
+  /* Trustworthy finance blue */
+  --accent: #2563eb;
+  /* CTA / hover */
+  --accent-soft: #f4f8ff;
+  /* Soft professional blue bg */
 
-  /* Extra: Accent backgrounds & text */
-  --accent-bg: #e7f1ff;
-  /* Light blue background */
-  --accent-bg-light: #f0f7ff;
-  --accent-text: #0d6efd;
-  /* Blue text */
-  --accent-text-light: #0056b3;
-
-  /* Text variants */
-  --text-light: #6c757d;
-  --text-dark: #212529;
-  --text-blue: #0d6efd;
-
-  /* Background variants */
-  --bg-light: #f8f9fa;
-  --bg-dark: #212529;
-  --bg-blue: #e7f1ff;
-
-  /* Highlights */
-  --highlight-bg: var(--primary);
-  --highlight-text: #ffffff;
+  --muted: #64748b;
+  --border: #e2e8f0;
 }
 
 /* ===============================
-   🌗 DARK MODE (SYSTEM DEFAULT)
+   🌗 DARK MODE (SYSTEM)
    =============================== */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #f5f5f5;
-    --secondary: #1c1c1c;
+    --bg: #020617;
+    --fg: #e5e7eb;
+
+    --primary: #60a5fa;
+    --accent: #3b82f6;
+    --accent-soft: #0b1a33;
 
     --muted: #9ca3af;
-    --border-color: #2d2d2d;
-
-    /* Dark-mode accents */
-    --accent: #3b82f6;
-    --accent-bg: #0f172a;
-    /* Slate / Navy tone */
-    --accent-bg-light: #1e293b;
-    --accent-text: #60a5fa;
-    --accent-text-light: #93c5fd;
-
-    /* Dark mode text */
-    --text-light: #9ca3af;
-    --text-dark: #f5f5f5;
-
-    /* Dark variants */
-    --bg-light: #1c1c1c;
-    --bg-dark: #000000;
-    --bg-blue: #1e3a8a;
+    --border: #1f2933;
   }
 }
 
 /* ===============================
    🧱 BASE ELEMENTS
    =============================== */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
-  transition: all 0.3s ease;
-}
-
 html,
 body {
-  scroll-snap-type: y mandatory;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+  scroll-behavior: smooth;
 }
 
+/* ===============================
+   🔠 TYPOGRAPHY SYSTEM
+   Same hierarchy, responsive scaling
+   =============================== */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.3;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+
+p {
+  /* color: var(--muted); */
+}
+
+/* ===============================
+   🔗 LINKS
+   =============================== */
 a {
-  /* color: var(--primary); */
   text-decoration: none;
+  color: var(--primary);
   transition: color 0.2s ease;
 }
 
@@ -96,116 +98,87 @@ a:hover {
   color: var(--accent);
 }
 
-
-
 /* ===============================
-   🎨 BUTTONS
+   🎨 BUTTONS (GLOBAL CONTROL)
    =============================== */
-button {
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.1s ease;
+button,
+.button,
+a.primary,
+a.secondary {
+  padding: 0.5rem 1rem;
+  /* py-2 px-4 */
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
 }
 
-button:hover {
-  transform: translateY(-1px);
-}
-
-a.ok {
+button.primary,
+a.primary {
   background: var(--primary);
   color: #fff;
 }
 
-a.ok:hover {
+button.primary:hover,
+a.primary:hover {
   background: var(--accent);
 }
 
-a.cancel {
-  background: #dee2e6;
-  color: #000;
+button.secondary,
+a.secondary {
+  background: var(--accent-soft);
+  color: var(--primary);
+  border: 1px solid var(--border);
 }
 
-a.cancel:hover {
-  background: #cbd3da;
+button.secondary:hover,
+a.secondary:hover {
+  background: #e9f0ff;
 }
 
-submit {
-  background: #007bff;
+/* ===============================
+   🧭 UTILITY HELPERS
+   =============================== */
+.bg-accent {
+  background-color: var(--accent-soft);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.border-default {
+  border-color: var(--border);
+}
+
+/* ===============================
+   ✨ HIGHLIGHT
+   =============================== */
+.highlight {
+  background: var(--primary);
   color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
 }
 
-submit:hover {
-  background: #0056b3;
+.navbar-glass {
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(12px);
 }
 
-success {
-  background: #198754;
-  color: #fff;
+.navbar-frosted {
+  background: var(--bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--border);
 }
 
-success:hover {
-  background: #157347;
-}
-
+/* ===============================
+   🦶 FOOTER
+   =============================== */
 footer a {
   color: var(--muted);
 }
 
 footer a:hover {
-  color: var(--muted);
-}
-
-/* ===============================
-   ✨ HIGHLIGHT CLASS
-   =============================== */
-.highlight {
-  background: var(--highlight-bg);
-  color: var(--highlight-text);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-
-/* ===============================
-   🧭 UTILITY CLASSES
-   =============================== */
-.bg-light {
-  background-color: var(--bg-light);
-}
-
-.bg-dark {
-  background-color: var(--bg-dark);
-  color: #fff;
-}
-
-.bg-blue {
-  background-color: var(--bg-blue);
-}
-
-/* NEW: Accent background utilities */
-.bg-accent {
-  background-color: var(--accent-bg);
-}
-
-.bg-accent-light {
-  background-color: var(--accent-bg-light);
-}
-
-/* Accent text utilities */
-.text-accent {
-  color: var(--accent-text);
-}
-
-.text-accent-light {
-  color: var(--accent-text-light);
-}
-
-.text-light {
-  color: var(--text-light);
-}
-
-.text-dark {
-  color: var(--text-dark);
-}
-
-.text-blue {
-  color: var(--text-blue);
+  color: var(--fg);
 }

@@ -9,7 +9,7 @@ export default function ServiceStacks() {
 
   return (
     <section id="services" className="py-16">
-      <h2 className="text-4xl mb-8 text-center">Our Services</h2>
+      <h2 className="text-center">Our Services</h2>
       <p className="text-lg max-w-2xl mx-auto text-center">
         Comprehensive accounting and tax solutions designed for eCommerce and small businesses.
       </p>
@@ -26,7 +26,7 @@ export default function ServiceStacks() {
               <Link href={`/services/${section.id}`} className="group flex items-center gap-2 mb-3">
                 {/* Section Icon */}
                 {IconComp && <IconComp className="w-5 h-5 transition" />}
-                <h2 className="text-2xl">{section.name}</h2>
+                <h2 className="">{section.name}</h2>
               </Link>
 
               <p className="max-w-2xl text-base mb-6">{section.shortDescription}</p>
@@ -51,11 +51,11 @@ export default function ServiceStacks() {
                           {ChildIcon && (
                             <ChildIcon className="w-4 h-4  transition" />
                           )}
-                          <h3 className="text-lg transition">{child.name}</h3>
+                          <h3 className="transition">{child.name}</h3>
                         </Link>
 
                         {/* Short description outside the link */}
-                        <p className="text-sm text-gray-600 mt-1">{child.shortDescription}</p>
+                        <p className="text-sm mt-1">{child.shortDescription}</p>
                       </div>
                     );
                   })}

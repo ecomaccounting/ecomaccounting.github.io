@@ -9,7 +9,7 @@ export default function ServiceStacks() {
 
   return (
     <section id="services" className="py-16">
-      <h2 className="text-4xl mb-8 text-center">Our Services</h2>
+      <h2 className="text-center">Our Services</h2>
       <p className="text-lg max-w-2xl mx-auto text-center">
         Comprehensive accounting and tax solutions designed for eCommerce and small businesses.
       </p>
@@ -36,7 +36,7 @@ export default function ServiceStacks() {
         <div className="relative p-10 text-white max-w-xl">
           <div className="flex items-center gap-3 mb-4">
             {Icon && <Icon className="w-7 h-7" />}
-            <h2 className="text-3xl font-semibold">{section.name}</h2>
+            <h2 className="">{section.name}</h2>
           </div>
 
           <p className="text-lg opacity-90 mb-6">{section.shortDescription}</p>

@@ -33,9 +33,9 @@ export default function AboutPage() {
 
           <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Our Story" }]} />
           {/* Hero Section */}
-          <section className="bg-accent-light py-20">
+          <section className="bg-accent py-20">
             <div className="max-w-5xl mx-auto px-6 text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="">
                 Our Story
               </h1>
               <p className="text-lg md:text-xl  max-w-3xl mx-auto">
@@ -47,7 +47,7 @@ export default function AboutPage() {
           {/* Why We Chose to Specialize */}
           <section className="py-16">
             <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-3xl font-semibold mb-6">Why We Chose to Specialize</h2>
+              <h2 className="">Why We Chose to Specialize</h2>
               <p className="mb-4">
                 We saw an opportunity. <span className="highlight">We went all in.</span>
               </p>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           {/* Why Specialization */}
           <section className="bg-light py-16">
             <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-3xl font-semibold mb-6">Why Specialization?</h2>
+              <h2 className="">Why Specialization?</h2>
               <p className="mb-4">
                 The world rewards depth. We could serve every industry adequately — or serve eCommerce sellers exceptionally.
               </p>
@@ -89,22 +89,22 @@ export default function AboutPage() {
           {/* Our Edge */}
           <section className="py-16">
             <div className="max-w-5xl mx-auto px-6">
-              <h2 className="text-3xl font-semibold mb-10 text-center">Our Edge: Focused Expertise</h2>
+              <h2 className="text-center">Our Edge: Focused Expertise</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="p-6 bg-accent rounded-2xl">
-                  <h3 className="text-xl font-semibold mb-2">Pure eCommerce Focus</h3>
+                  <h3 className="">Pure eCommerce Focus</h3>
                   <p className="">
                     100% of our practice is dedicated to online sellers. Every system, process, and team member is optimized for eCommerce.
                   </p>
                 </div>
                 <div className="p-6 bg-accent rounded-2xl">
-                  <h3 className="text-xl font-semibold mb-2">Deep Platform Knowledge</h3>
+                  <h3 className="">Deep Platform Knowledge</h3>
                   <p className="">
                     Amazon fee changes. Flipkart payment cycles. Meesho commission structures. We track it all.
                   </p>
                 </div>
                 <div className="p-6 bg-accent rounded-2xl">
-                  <h3 className="text-xl font-semibold mb-2">Technology Integration</h3>
+                  <h3 className="">Technology Integration</h3>
                   <p className="">
                     Automated marketplace integrations, real‑time dashboards, and cloud‑based access across platforms.
                   </p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
           {/* What We Built */}
           <section className="bg-light py-16">
             <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-3xl font-semibold mb-6">What We Built</h2>
+              <h2 className="">What We Built</h2>
               <p className="mb-4">
                 Task360 is more than accounting services. It’s a complete financial ecosystem for eCommerce sellers.
               </p>
@@ -139,7 +139,7 @@ export default function AboutPage() {
           {/* Closing */}
           <section className="py-20">
             <div className="max-w-4xl mx-auto px-6 text-center">
-              <h2 className="text-3xl font-semibold mb-6">The Task360 Difference</h2>
+              <h2 className="">The Task360 Difference</h2>
               <p className="mb-4">We transform complexity into clarity.</p>
               <p className="mb-4">We turn compliance into competitive advantage.</p>
               <p className="mb-8">We partner with you from launch to leadership.</p>
@@ -162,7 +162,7 @@ export default function AboutPage() {
         <div className="container mx-auto">
 
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="">
               Our Team
             </h1>
             <p className="text-lg max-w-2xl mx-auto">

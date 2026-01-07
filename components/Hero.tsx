@@ -24,7 +24,7 @@ export default function Hero() {
 
   return (
     <section className="relative py-8 max-w-7xl mx-auto">
-      <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-dark">
+      <h1 className="leading-tight ">
         Simple Finance for eCommerce & Growing Businesses
       </h1>
       <div className="max-w-7xl mx-auto grid sm:grid-cols-2 gap-14 items-center">
@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Heading */}
           <div className="space-y-4">
-            <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold leading-tight text-dark">
+            <h2 className="leading-tight ">
               Focus on growing your online business while we handle your{" "}
               <span className="highlight inline-block min-w-[140px] text-center">
                 {words[wordIndex]}
@@ -56,7 +56,7 @@ export default function Hero() {
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
-                <span className="text-dark">{item}</span>
+                <span className="">{item}</span>
               </div>
             ))}
           </div>
@@ -65,14 +65,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact-us"
-              className="ok px-8 py-3 rounded-lg flex items-center justify-center gap-2 bg-primary text-white hover:bg-accent transition">
+              className="button primary flex items-center justify-center gap-2 ">
               Start Free Consultation
               <ArrowRight className="h-5 w-5" />
             </Link>
 
             <Link
               href="/services"
-              className="cancel border border-primary text-primary px-8 py-3 rounded-lg hover:bg-accent-light transition text-center"            >
+              className="button secondary text-center"            >
               View Services
             </Link>
           </div>
@@ -91,10 +91,10 @@ export default function Hero() {
                   href={`#${tab}`}
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition button
                     ${activeTab === tab
-                      ? "ok"
-                      : "cancel"
+                      ? "primary"
+                      : "secondary"
                     }`}
                 >
                   {tab}
@@ -153,7 +153,7 @@ function DashboardContent({ activeTab }: { activeTab: string }) {
       {data[activeTab].map((row) => (
         <div key={row.label} className="flex justify-between">
           <span className="">{row.label}</span>
-          <span className="font-semibold text-dark">{row.value}</span>
+          <span className="font-semibold ">{row.value}</span>
         </div>
       ))}
     </div>

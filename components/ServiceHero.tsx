@@ -72,7 +72,7 @@ export default function ServiceHero({
                     {/* Title */}
                     <h1
                         className={cn(
-                            "font-semibold leading-tight",
+                            "leading-tight",
                             isPrimary ? "text-3xl md:text-4xl" : "text-2xl"
                         )}
                     >

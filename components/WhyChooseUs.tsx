@@ -30,11 +30,11 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-accent p-8 md:p-12">
+    <section className="bg-light p-8 md:p-12">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10">
-          <h2 className="text-2xl md:text-3xl font-semibold text-dark mb-3">
+          <h2 className="">
             Why Choose Task360
           </h2>
           <p className="max-w-2xl">
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
               <div className="flex items-start gap-4">
                 <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
                 <div>
-                  <h3 className="font-medium mb-1  text-accent">
+                  <h3 className="text-accent">
                     {item.title}
                   </h3>
                   <p className="">

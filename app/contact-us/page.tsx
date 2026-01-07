@@ -53,7 +53,7 @@ export default function ContactPage() {
           {/* --- Info Cards --- */}
           <div className="space-y-8" itemScope itemType="https://schema.org/Organization">
             <div className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="">
                 Contact Information
               </h3>
               <ul className="space-y-3 text-base">

@@ -32,7 +32,7 @@ export default function BlogsPage() {
         <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Blog" }]} />
         {/* --- Page Header --- */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl mb-4">
+          <h1 className="">
             Our Blog
           </h1>
           <p className="text-lg max-w-2xl mx-auto">

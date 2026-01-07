@@ -32,7 +32,7 @@ export default function ServiceStacks() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl mb-4 bg-gradient-to-r">
+          <h2 className="bg-gradient-to-r">
             Our Services
           </h2>
           <p className="text-lg max-w-2xl mx-auto">
@@ -65,7 +65,7 @@ export default function ServiceStacks() {
                 <div className="absolute bottom-6 left-6 ">
                   <div className="flex items-center gap-3 mb-2">
                     {IconComp && <IconComp className="w-8 h-8" />}
-                    <h3 className="text-4xl font-bold">{activeService.name}</h3>
+                    <h3 className="">{activeService.name}</h3>
                   </div>
                 </div>
               </div>

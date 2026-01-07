@@ -44,7 +44,7 @@ export default function CareersPage() {
 
         {/* --- Hiring Highlight Banner --- */}
         <div className="bg-accent rounded-2xl p-8 text-center mb-16 shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+          <h2 className="">
             ✨ We Are Hiring! ✨
           </h2>
           <p className="text-lg">
@@ -60,7 +60,7 @@ export default function CareersPage() {
         <article className="bg-accent rounded-2xl shadow-md p-8 md:p-12 leading-relaxed text-gray-800 space-y-8">
           {/* Section: Overview */}
           <section>
-            <h2 className="text-2xl font-semibold  mb-3">
+            <h2 className="">
               About the Role
             </h2>
             <p>
@@ -72,7 +72,7 @@ export default function CareersPage() {
 
           {/* Section: What We Offer */}
           <section>
-            <h2 className="text-2xl font-semibold mb-3">
+            <h2 className="">
               What We Offer
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -88,7 +88,7 @@ export default function CareersPage() {
 
           {/* Section: What Makes Us Different */}
           <section>
-            <h2 className="text-2xl font-semibold  mb-3">
+            <h2 className="">
               What Makes Us Different
             </h2>
             <p>
@@ -102,7 +102,7 @@ export default function CareersPage() {
 
           {/* Section: Requirements */}
           <section>
-            <h2 className="text-2xl font-semibold  mb-3">
+            <h2 className="">
               What We're Looking For
             </h2>
             <ul className="list-disc list-inside space-y-2">
@@ -115,7 +115,7 @@ export default function CareersPage() {
 
           {/* Section: Duration */}
           <section>
-            <h2 className="text-2xl font-semibold  mb-3">
+            <h2 className="">
               Duration
             </h2>
             <p>
@@ -125,7 +125,7 @@ export default function CareersPage() {
 
           {/* CTA */}
           <div className="text-center mt-10">
-            <p className="text-gray-700 mb-4 text-lg">
+            <p className="mb-4 text-lg">
               If you're looking for articleship training that goes beyond the
               routine and prepares you for a successful career in practice or
               industry, we'd love to hear from you.

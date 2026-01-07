@@ -65,7 +65,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           <div className="py-10">
             <div className="max-w-4xl mx-auto">
               <div className="bg-light rounded-3xl p-8 md:p-12 shadow-md">
-                <h2 className="text-3xl font-bold mb-6">Overview</h2>
+                <h2 className="">Overview</h2>
                 <p className="text-lg leading-relaxed opacity-90">
                   {service.longDescription}
                 </p>
@@ -77,7 +77,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         {/* Highlights Section */}
         {service.highlights?.length > 0 && (
           <div className="max-w-5xl mx-auto mb-20">
-            <h2 className="text-3xl font-bold mb-8 text-center">Key Highlights</h2>
+            <h2 className="text-center">Key Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {service.longHighlights.map((item, i) => (
                 <div
@@ -98,7 +98,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         {childrenServices.length > 0 && (
           <div className="mb-20">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Our {service.name} Services</h2>
+              <h2 className="">Our {service.name} Services</h2>
               <p className="text-lg opacity-75 max-w-2xl mx-auto">
                 Explore our comprehensive range of services tailored to your needs
               </p>
@@ -134,9 +134,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                             {child.highlights.slice(0, 4).map((item, i) => (
                               <div key={i} className="flex items-start gap-3">
                                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
-                                  <span className="text-sm text-primary">✓</span>
+                                  <span className="text-primary">✓</span>
                                 </div>
-                                <p className="text-sm opacity-80">{item}</p>
+                                <p className="">{item}</p>
                               </div>
                             ))}
                           </div>
@@ -145,7 +145,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                         {/* CTA */}
                         <Link
                           href={`/services/${child.id}`}
-                          className="ok inline-flex items-center gap-2 mt-6 px-6 py-3  hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+                          className="primary inline-flex items-center gap-2 mt-6 px-6 py-3  hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
                         >
                           Learn More
                           <ArrowRight className="w-4 h-4" />
@@ -165,13 +165,13 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         {/* CTA Section */}
         <div className="max-w-4xl mx-auto mb-20">
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-transparent rounded-2xl p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+            <h2 className="">Ready to Get Started?</h2>
             <p className="text-lg opacity-80 mb-6 max-w-2xl mx-auto">
               Let's discuss how our {service.name.toLowerCase()} services can help your business grow
             </p>
             <Link
               href="/contact-us"
-              className="ok inline-flex items-center gap-2 px-8 py-4 bg-primary rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              className="primary inline-flex items-center gap-2 px-8 py-4 bg-primary rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
             >
               Contact Us Today
               <ArrowRight className="w-5 h-5" />
