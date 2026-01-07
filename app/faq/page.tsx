@@ -38,10 +38,10 @@ export default function FAQPage() {
 
       <section className="max-w-5xl mx-auto px-4 py-12">
         <header className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-dark mb-3">
+          <h1 className="text-3xl md:text-4xl font-bold mb-3">
             Frequently Asked Questions
           </h1>
-          <p className="text-light max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto">
             Answers to common questions eCommerce sellers ask about accounting, GST,
             compliance, and business growth.
           </p>
@@ -51,7 +51,7 @@ export default function FAQPage() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-[var(--border-color)] rounded-2xl overflow-hidden bg-light"
+              className="border border-(--border-color) rounded-2xl overflow-hidden bg-light"
             >
               <button
                 className="w-full flex justify-between items-center text-left px-6 py-5 font-medium text-dark"
@@ -67,7 +67,7 @@ export default function FAQPage() {
               </button>
 
               {activeIndex === index && (
-                <div className="px-6 pb-6 text-light leading-relaxed">
+                <div className="px-6 pb-6  leading-relaxed">
                   {faq.answer}
                 </div>
               )}
@@ -79,13 +79,13 @@ export default function FAQPage() {
           <h2 className="text-2xl font-semibold text-dark mb-3">
             Still have questions?
           </h2>
-          <p className="text-light mb-5">
+          <p className="mb-5">
             Book a free consultation and get expert guidance tailored to your
             eCommerce business.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[var(--primary)] text-white px-6 py-3 rounded-xl font-medium hover:bg-[var(--accent)]"
+            className="inline-block bg-[var(--primary)]  px-6 py-3 rounded-xl font-medium hover:bg-[var(--accent)]"
           >
             Book Free Consultation
           </a>

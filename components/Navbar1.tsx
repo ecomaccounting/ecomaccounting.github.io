@@ -13,7 +13,7 @@ export default function Navbar() {
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <nav className="bg-light border-b">
+    <nav className="bg-light relative sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
 
         {/* 🔹 Logo */}
@@ -85,6 +85,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-blue-200 to-transparent opacity-50" />
     </nav>
   );
 }

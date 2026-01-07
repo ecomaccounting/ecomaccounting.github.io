@@ -38,7 +38,7 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Our Story
               </h1>
-              <p className="text-lg md:text-xl text-light max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl  max-w-3xl mx-auto">
                 Why we chose to specialize — and why that decision changed everything.
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
               <p className="mb-4">
                 eCommerce was transforming India. Entrepreneurs were building remarkable businesses online. But the financial complexity was real.
               </p>
-              <ul className="list-disc pl-6 space-y-2 text-light">
+              <ul className="list-disc pl-6 space-y-2 ">
                 <li>GST returns with marketplace‑specific TCS calculations</li>
                 <li>Multi‑platform reconciliation across Amazon, Flipkart, Meesho</li>
                 <li>Complex fee structures varying by category and platform</li>
@@ -93,25 +93,25 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="p-6 bg-accent rounded-2xl">
                   <h3 className="text-xl font-semibold mb-2">Pure eCommerce Focus</h3>
-                  <p className="text-light">
+                  <p className="">
                     100% of our practice is dedicated to online sellers. Every system, process, and team member is optimized for eCommerce.
                   </p>
                 </div>
                 <div className="p-6 bg-accent rounded-2xl">
                   <h3 className="text-xl font-semibold mb-2">Deep Platform Knowledge</h3>
-                  <p className="text-light">
+                  <p className="">
                     Amazon fee changes. Flipkart payment cycles. Meesho commission structures. We track it all.
                   </p>
                 </div>
                 <div className="p-6 bg-accent rounded-2xl">
                   <h3 className="text-xl font-semibold mb-2">Technology Integration</h3>
-                  <p className="text-light">
+                  <p className="">
                     Automated marketplace integrations, real‑time dashboards, and cloud‑based access across platforms.
                   </p>
                 </div>
                 <div className="p-6 bg-accent rounded-2xl">
                   <h3 className="text-xl font-semibold mb-2">Proactive Partnership</h3>
-                  <p className="text-light">
+                  <p className="">
                     We identify opportunities early, flag compliance risks in advance, and plan growth before you ask.
                   </p>
                 </div>

@@ -2,80 +2,69 @@
 import { ServiceItem } from "@/data/types";
 import Link from "next/link";
 import { FileText } from "lucide-react";
-import { iconMap } from "@/data/types";
-import { FileEdit } from "lucide-react";
 import * as LucideIcons from "lucide-react";
 
 export default function Services({ services }: { services: ServiceItem[] }) {
 
-  // Map service names to icons
+
 
   return (
     <section
       id="services"
       className="py-5"
-      aria-label="Accounting and tax services offered by the firm"
-    >
+      aria-label="Accounting and tax services offered by the firm">
       <div className="container mx-auto">
         {/* --- Section Header --- */}
         <div className="text-center mb-14">
           <h2 className="text-4xl mb-4 ">
-            Our Services
+            Services for eCommerce Sellers & Growing Businesses
           </h2>
           <p className=" text-lg max-w-2xl mx-auto">
-            Comprehensive accounting and tax solutions designed for eCommerce and small businesses.
+            From startup to scale-up, we handle accounting, GST, compliance, and advisory—so you can focus on growing your business.
           </p>
         </div>
 
         {/* --- Service Cards Grid --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.filter((service) => service.id.length > 2).map((service) => {
-            //const Icon = iconMap[service.name] || FileText;
             const Icon = service.icon
               ? (LucideIcons[service.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
               : FileText;
+
             return (
               <div
                 key={service.name}
-                className="bg-accent p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group"
+                // ADDED: flex flex-col
+                className="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group flex flex-col h-full"
               >
-                {/* --- Icon and title --- */}
                 <div className="mb-6">
                   <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-                    {/* <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" /> */}
                     {Icon ? (
                       <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                     ) : (
-                      <FileText className="h-8 w-8 text-blue-600" /> // Standard fallback
+                      <FileText className="h-8 w-8 text-blue-600" />
                     )}
                   </div>
 
-                  <h3 className="text-xl  mb-3">
-                    {service.name}
-                  </h3>
+                  <h3 className="text-xl mb-3">{service.name}</h3>
                   {service.shortDescription && (
-                    <p className="mb-4 line-clamp-3">
-                      {service.shortDescription}
-                    </p>
+                    <p className="mb-4 line-clamp-3">{service.shortDescription}</p>
                   )}
                 </div>
 
-                {/* --- Highlights --- */}
                 <div className="space-y-2">
                   <ul className="list-disc pl-5 marker:text-accent">
                     {service.highlights.slice(0, 3).map((item: string, i: number) => (
-                      <li key={i} className="leading-relaxed">
-                        {item}
-                      </li>
+                      <li key={i} className="leading-relaxed">{item}</li>
                     ))}
                   </ul>
                 </div>
 
-                {/* --- CTA (Link) --- */}
-                <div className="mt-6">
+                {/* MODIFIED: mt-auto pushes this div to the bottom */}
+                <div className="mt-auto pt-6">
                   <Link
                     href={`/services/${service.id}`}
-                    className="block  py-2 px-4 rounded-lg  transition-colors"
+                    className="ok text-center block py-2 px-4 rounded-lg transition-colors"
                   >
                     Learn More
                   </Link>

@@ -336,8 +336,8 @@
     {
       "id": "fssai-registration",
       "parentId": "registrations",
-      "name": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
-      "icon": "Ship",
+      "name": "FSSAI Registration",
+      "icon": "ShieldCheck",
       "shortDescription": "FSSAI registration certifies food businesses to comply with safety and hygiene standards.",
       "longDescription": "FSSAI Registration involves applying through the Food Safety Authority, submitting business and product details, meeting hygiene and operational standards, and obtaining the license. This certification ensures food safety, builds customer trust, and allows legal operation. Compliance helps avoid penalties, ensures periodic inspections, and facilitates expansion into multiple regions or eCommerce platforms, establishing credibility and adherence to food regulations.",
       "longHighlights": [],
@@ -1506,12 +1506,12 @@
     {
       "memberName": "Arpit Paliwal",
       "description": "CA Arpit Paliwal, Partner at GPMJ & Associates, brings 14+ years of expertise in auditing, taxation, and startup advisory. He helps businesses scale through financial structuring, compliance, and strategic consulting.",
-      "image": "/img/ot/arpit.png"
+      "image": "/img/ot/arpit.jpeg"
     },
     {
       "memberName": "Praneet Sisodiya",
       "description": "Experienced Sales and Management Professional . Co-Founder & Director of Bwise , which deals in Recruitment , Training , Sales and Management Consultancy .\nSkilled in Startup, Recruitment, Hiring, Sales, Management, Profit & Loss Management , Account Management, and Business Relationship Management. Strong business development professional with a MDP from Indian Institute of Management, Kozhikode & MBA from DAVV University.",
-      "image": "/img/ot/tm1.png"
+      "image": "/img/ot/praneet.jpeg"
     }
   ],
   "clients": [

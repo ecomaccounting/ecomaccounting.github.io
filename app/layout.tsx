@@ -95,7 +95,7 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="flex-grow w-full ">
+        <main className="flex-grow w-full p-4 mx-auto">
           {children}
         </main>
 

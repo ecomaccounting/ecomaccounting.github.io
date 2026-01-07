@@ -30,7 +30,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-accent-light p-8 md:p-12">
+    <section className="bg-accent p-8 md:p-12">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10">
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
           {reasons.map((item, index) => (
             <div
               key={index}
-              className="bg-background border border-[var(--border-color)] rounded-xl p-6 hover:shadow-sm transition"
+              className="bg-light border border-[var(--border-color)] rounded-xl p-6 hover:shadow-sm transition"
             >
               <div className="flex items-start gap-4">
                 <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-accent" />

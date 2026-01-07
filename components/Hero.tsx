@@ -23,17 +23,17 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative p-4 max-w-7xl mx-auto">
-<h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-dark">
-                Accounting Made Simple for eCommerce Sellers
-                </h1>
+    <section className="relative py-8 max-w-7xl mx-auto">
+      <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-dark">
+        Simple Finance for eCommerce & Growing Businesses
+      </h1>
       <div className="max-w-7xl mx-auto grid sm:grid-cols-2 gap-14 items-center">
 
         {/* LEFT: TEXT FIRST */}
         <div className="space-y-10">
 
           {/* Heading */}
-          <div className="space-y-4">            
+          <div className="space-y-4">
             <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold leading-tight text-dark">
               Focus on growing your online business while we handle your{" "}
               <span className="highlight inline-block min-w-[140px] text-center">
@@ -63,23 +63,21 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
-  href="/contact-us" 
-  className="ok px-8 py-3 rounded-lg flex items-center justify-center gap-2 bg-primary text-white hover:bg-accent transition"
->
-  Start Free Consultation
-  <ArrowRight className="h-5 w-5" />
-</Link>
+            <Link
+              href="/contact-us"
+              className="ok px-8 py-3 rounded-lg flex items-center justify-center gap-2 bg-primary text-white hover:bg-accent transition">
+              Start Free Consultation
+              <ArrowRight className="h-5 w-5" />
+            </Link>
 
-<Link 
-  href="/services" 
-  className="cancel border border-primary text-primary px-8 py-3 rounded-lg hover:bg-accent-light transition text-center"
->
-  View Services
-</Link>
+            <Link
+              href="/services"
+              className="cancel border border-primary text-primary px-8 py-3 rounded-lg hover:bg-accent-light transition text-center"            >
+              View Services
+            </Link>
           </div>
 
-          
+
         </div>
 
         {/* RIGHT: INTERACTIVE DASHBOARD */}
@@ -89,18 +87,18 @@ export default function Hero() {
             {/* Tabs */}
             <div className="flex gap-4 mb-6">
               {tabs.map((tab) => (
-                <button
+                <a
+                  href={`#${tab}`}
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition
-                    ${
-                      activeTab === tab
-                        ? "ok"
-                        : "cancel"
+                    ${activeTab === tab
+                      ? "ok"
+                      : "cancel"
                     }`}
                 >
                   {tab}
-                </button>
+                </a>
               ))}
             </div>
 
@@ -125,8 +123,8 @@ export default function Hero() {
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div className="text-center">
-      <div className="text-2xl font-bold text-dark">{value}</div>
-      <div className="text-sm text-light">{label}</div>
+      <div className="text-2xl font-bold ">{value}</div>
+      <div className="text-sm ">{label}</div>
     </div>
   );
 }

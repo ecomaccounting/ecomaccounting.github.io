@@ -32,7 +32,7 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                     <h1 className="text-3xl md:text-4xl font-bold text-dark mb-3">
                         Frequently Asked Questions
                     </h1>
-                    <p className="text-light max-w-2xl mx-auto">
+                    <p className=" max-w-2xl mx-auto">
                         Answers to common questions eCommerce sellers ask about accounting, GST,
                         compliance, and business growth.
                     </p>
@@ -58,7 +58,7 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                             </button>
 
                             {activeIndex === index && (
-                                <div className="px-6 pb-6 text-light leading-relaxed">
+                                <div className="px-6 pb-6 leading-relaxed">
                                     {faq.answer}
                                 </div>
                             )}
