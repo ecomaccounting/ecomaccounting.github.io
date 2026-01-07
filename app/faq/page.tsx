@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import data from "@/data/data1.json";
+import Breadcrumb from "@/components/BreadcrumbItem";
 const faqs = data.faqs;
 
 export default function FAQPage() {
@@ -35,6 +36,7 @@ export default function FAQPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "FAQs" }]} />
 
       <section className="max-w-5xl mx-auto px-4 py-12">
         <header className="text-center mb-10">
@@ -85,7 +87,7 @@ export default function FAQPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[var(--primary)]  px-6 py-3 rounded-xl font-medium hover:bg-[var(--accent)]"
+            className="ok inline-block   px-6 py-3 rounded-xl font-medium"
           >
             Book Free Consultation
           </a>

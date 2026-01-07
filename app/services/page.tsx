@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Services from "@/components/Services"
 import data from "@/data/data1.json";
+import Breadcrumb from "@/components/BreadcrumbItem";
 
 export const metadata: Metadata = {
   title: "Contact Us | GPMJ & Associates",
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
+    <div className="container mx-auto">
+    <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
    <Services services={data.services} />
+   </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
       <div className="container mx-auto">
         {/* --- Section Header --- */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl mb-4 ">
+          <h2 className="text-4xl mb-4 font-semibold">
             Services for eCommerce Sellers & Growing Businesses
           </h2>
           <p className=" text-lg max-w-2xl mx-auto">

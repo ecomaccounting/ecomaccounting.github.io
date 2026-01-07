@@ -33,7 +33,7 @@ export default function ClientsPage() {
         {/* --- Heading --- */}
         <div className="text-center mb-16">
           <h1
-            className="text-5xl mb-4"
+            className="text-5xl mb-4 font-semibold"
             itemProp="headline"
           >
             Our Clients

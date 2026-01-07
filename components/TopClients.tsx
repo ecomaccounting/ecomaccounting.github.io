@@ -12,7 +12,7 @@ export default function TopClients() {
   return (
     <div className="w-full py-14">
       <div className="text-center mb-10 px-4">
-        <h2 className="text-4xl">Trusted by 500+ Fast-Growing Businesses & Founders</h2>
+        <h2 className="text-4xl font-semibold">Trusted by 500+ Fast-Growing Businesses & Founders</h2>
         <p className="mt-2 text-base md:text-lg">
           Helping businesses stay compliant, organized, and ready to scale
         </p>

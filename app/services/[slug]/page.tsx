@@ -45,22 +45,21 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   // Children services
   const childrenServices = data.services.filter(s => s.parentId === service.id);
 
-
-
   return (
     <section className="relative">
       <div className="container mx-auto px-4">
         {/* Breadcrumb */}
-        <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
+        <Breadcrumb items={[{ name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: service.name }]} />
 
-        {/* Hero Banner Section */}        
+        {/* Hero Banner Section */}
         <div className="py-5">
           <ServiceHero
             service={service}
             variant="primary"
           />
         </div>
-
 
         {service.longDescription && (
           <div className="py-10">
