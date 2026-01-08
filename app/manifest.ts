@@ -102,37 +102,78 @@ export default function manifest(): MetadataRoute.Manifest {
 
     screenshots: [
       {
-        src: "/screenshots/homepage.png",
-        sizes: "1476x3200",
+        src: "/screenshots/home1.png",
+        sizes: "412x915",
         type: "image/png",
         label: "Homepage",
         form_factor: "narrow",
       },
       {
-        src: "/screenshots/services.png",
-        sizes: "1476x3200",
+        src: "/screenshots/homew1.png",
+        sizes: "1920x1080",
         type: "image/png",
-        label: "Product Detail Page",
+        label: "Homepage",
         form_factor: "narrow",
       },
       {
-        src: "/screenshots/homepage-wide.png",
-        sizes: "2560x1440",
+        src: "/screenshots/home2.png",
+        sizes: "412x915",
         type: "image/png",
-        label: "Homepage",
-        form_factor: "wide",
+        label: "Personalize",
+        form_factor: "narrow",
       },
       {
-        src: "/screenshots/services-wide.png",
-        sizes: "2560x1440",
+        src: "/screenshots/os.png",
+        sizes: "412x915",
         type: "image/png",
-        label: "Product Detail Page",
-        form_factor: "wide",
+        label: "Our Story",
+        form_factor: "narrow",
+      }, 
+      {
+        src: "/screenshots/osw.png",
+        sizes: "1920x1080",
+        type: "image/png",
+        label: "Our Story",
+        form_factor: "narrow",
       },
-    ],
-
-    prefer_related_applications: false,
-
-    
+      {
+        src: "/screenshots/home3.png",
+        sizes: "412x915",
+        type: "image/png",
+        label: "Why task360",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshots/home4.png",
+        sizes: "412x915",
+        type: "image/png",
+        label: "Services",
+        form_factor: "narrow",
+      },
+      
+      
+      {
+        src: "/screenshots/homew2.png",
+        sizes: "1920x1080",
+        type: "image/png",
+        label: "How it works",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshots/homew3.png",
+        sizes: "1920x1080",
+        type: "image/png",
+        label: "Personalize",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshots/homew4.png",
+        sizes: "1920x1080",
+        type: "image/png",
+        label: "Services",
+        form_factor: "narrow",
+      },
+      
+    ]
   };
 }
