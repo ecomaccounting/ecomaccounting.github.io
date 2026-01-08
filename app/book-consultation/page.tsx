@@ -163,7 +163,7 @@ ${message}
             {/* CTA */}
             <button
               type="submit"
-              className="button primary w-full  text-accent-foreground rounded-lg px-6 py-3 font-semibold hover:opacity-90 transition"
+              className="button success w-full  text-accent-foreground rounded-lg px-6 py-3 font-semibold hover:opacity-90 transition"
             >
               Start WhatsApp Consultation
             </button>

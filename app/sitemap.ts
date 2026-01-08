@@ -1,11 +1,6 @@
 export const dynamic = "force-static";
-
-// app/sitemap.ts
-
 import type { ServiceItem } from "@/data/types";
 import data from "@/data/data1.json";
-import blogData from "@/data/blog.json";
-import {BlogPost} from "@/data/types";
 
 export default async function sitemap() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -17,25 +12,24 @@ export default async function sitemap() {
     changeFrequency: "weekly",
     priority: 0.8,
   }));  
-  
-  // --- Blogs URLs ---
-  // const blogsUrls = blogData.blogPosts.map((b: BlogPost) => ({
-  //   url: `${baseUrl}/blog/${b.slug}`,
-  //   lastModified: new Date().toISOString(),
-  //   changeFrequency: "weekly",
-  //   priority: 0.7,
-  // }));
+
+    const userTypeUrls = data.mapping.map((srv) => ({
+    url: `${baseUrl}/guided/${srv.slug}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));  
+ 
 
   // --- Static pages ---
   const staticUrls = [
     "/",
-    "/about",
-    "/blog",
-    "/contact-us",
-    "/career",
+    "/our-team",    
+    "/contact-us",    
     "/clients",
     "/our-team",
     "/services",
+    "/faq"
 
   ].map((path) => ({
     url: `${baseUrl}${path}`,
@@ -45,5 +39,5 @@ export default async function sitemap() {
   }));
 
   // --- Combine all ---
-  return [...staticUrls, ...serviceUrls];
+  return [...staticUrls, ...serviceUrls, ...userTypeUrls];
 }

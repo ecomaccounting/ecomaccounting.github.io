@@ -76,7 +76,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/book-consultation"
-                className="button success font-semibold flex items-center justify-center gap-2"
+                className="button success px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
               >
                 <MessageCircle className="h-5 w-5" />
                 Check What You Need (2 mins)
@@ -85,7 +85,7 @@ export default function Hero() {
 
               <Link
                 href="/services"
-                className="button secondary flex items-center justify-center gap-2"
+                className="button secondary px-6 py-4 rounded-2xl flex items-center justify-center gap-2"
               >
                 <List className="h-5 w-5" />
                 View Services

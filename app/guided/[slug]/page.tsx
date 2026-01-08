@@ -25,7 +25,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
   );
   if (!mapping) notFound();
 
-  const label = mapping.userType;
+  const label = mapping.title;
 
   
 

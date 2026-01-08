@@ -133,11 +133,6 @@ export default function manifest(): MetadataRoute.Manifest {
 
     prefer_related_applications: false,
 
-    "protocol_handlers": [
-      {
-        "protocol": "web+task360",
-        "url": "/search?q=%s"
-      }
-    ]
+    
   };
 }

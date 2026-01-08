@@ -47,10 +47,13 @@ export default function HowItWorksStrip() {
 
   // Auto play
   useEffect(() => {
-    if (paused) return;
+    if (paused) {
+      return; // allowed only if effect ALWAYS returns void or cleanup
+    }
 
-    timerRef.current = setTimeout(next, AUTO_DELAY);
-    return () => timerRef.current && clearTimeout(timerRef.current);
+    const id = setTimeout(next, AUTO_DELAY);
+
+    return () => clearTimeout(id);
   }, [active, paused]);
 
   const onUserAction = () => {
@@ -89,19 +92,17 @@ export default function HowItWorksStrip() {
                   setActive(index);
                 }}
                 className={`group relative rounded-2xl border p-6 text-left transition-all duration-300
-                  ${
-                    isActive
-                      ? "bg-accent shadow-xl border-accent scale-[1.02]"
-                      : "bg-light hover:bg-accent hover:shadow-md"
+                  ${isActive
+                    ? "bg-accent shadow-xl border-accent scale-[1.02]"
+                    : "bg-light hover:bg-accent hover:shadow-md"
                   }`}
               >
                 {/* Step number */}
                 <span
                   className={`absolute right-4 top-4 text-sm font-semibold transition
-                    ${
-                      isActive
-                        ? "text-accent"
-                        : "text-muted group-hover:text-accent"
+                    ${isActive
+                      ? "text-accent"
+                      : "text-muted group-hover:text-accent"
                     }`}
                 >
                   Step {index + 1}
@@ -110,10 +111,9 @@ export default function HowItWorksStrip() {
                 {/* Icon */}
                 <div
                   className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl transition
-                    ${
-                      isActive
-                        ? "bg-accent text-blue"
-                        : "bg-accent-light text-accent"
+                    ${isActive
+                      ? "bg-accent text-blue"
+                      : "bg-accent-light text-accent"
                     }`}
                 >
                   <Icon className="h-6 w-6" />
@@ -130,9 +130,8 @@ export default function HowItWorksStrip() {
                 {/* Progress bar */}
                 <div className="mt-4 h-1 w-full overflow-hidden rounded bg-border-color">
                   <div
-                    className={`h-full bg-accent transition-all duration-500 ${
-                      isActive ? "w-full" : "w-0"
-                    }`}
+                    className={`h-full bg-accent transition-all duration-500 ${isActive ? "w-full" : "w-0"
+                      }`}
                   />
                 </div>
               </button>

@@ -221,7 +221,7 @@ export default function OurStoryPage() {
                 {/* --- Image --- */}
                 <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
                   <Image
-                    src={member.image}
+                    src={`/img/ot/${member.image}`}
                     alt={`Photo of ${member.memberName}`}
                     fill
                     className="

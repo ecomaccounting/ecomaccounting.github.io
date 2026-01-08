@@ -112,7 +112,7 @@ useEffect(() => {
           type="button"
           onClick={startSpeechRecognition}
           aria-label="Voice search"
-          className="button cursor-pointer w-14 h-9 shrink-0 flex items-center justify-center"
+          className="cursor-pointer w-8 h-9 shrink-0 flex items-center justify-center p-0"
         >
           <Mic size={18} />
         </button>
@@ -121,7 +121,7 @@ useEffect(() => {
           type="button"
           onClick={executeSearch}
           aria-label="Search"
-          className="button cursor-pointer w-14 h-9 shrink-0 flex items-center justify-center"
+          className="cursor-pointer w-8 h-9 shrink-0 flex items-center justify-center p-0"
         >
           <Search size={18} />
         </button>

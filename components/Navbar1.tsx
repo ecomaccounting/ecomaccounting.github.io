@@ -2,97 +2,71 @@
 
 import Link from "next/link";
 import Image from "next/image";
-// import SearchBar from "@/components/SearchBar";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import dynamic from "next/dynamic";
 
+const SearchBar = dynamic(() => import("@/components/SearchBar"), {
+  ssr: false,
+});
+
 export default function Navbar() {
-  const SearchBar = dynamic(() => import("@/components/SearchBar"), {
-    ssr: false,
-  });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <nav className="sticky top-0 z-50 w-full 
-  bg-white/[0.65] dark:bg-slate-900/80 
-  backdrop-blur-xl backdrop-saturate-150
-  border-b border-slate-200/50 dark:border-white/10 
-  shadow-[0_4px_30px_rgba(0,0,0,0.1)] 
-  transition-all duration-300">
+    <nav className="sticky top-0 z-50 w-full navbar-frosted shadow-2xl  transition-all duration-300">
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
 
-        {/* 🔹 Logo */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          {/* Mobile Logo: Shown by default, hidden from 'md' upwards */}
-          <Image
-            src="/img/logo/task360-logo-s.png"
-            height={40} // Adjusted height for mobile if needed
-            width={40}  // Adjusted width for mobile if needed
-            alt="Task360"
-            priority
-            className="block md:hidden"
-            title="task360"
-          />
-
-          {/* Desktop Logo: Hidden by default, shown from 'md' upwards */}
           <Image
             src="/img/logo/task360-logo-r.png"
-            height={48}
             width={128}
+            height={48}
             alt="Task360"
             priority
-            className="hidden md:block"
+            className="h-10 w-auto md:h-12"
             title="task360"
           />
         </Link>
 
-        {/* 🔹 Search */}
+        {/* Search */}
         <div className="flex-1 min-w-0 sm:max-w-xl">
           <SearchBar />
         </div>
 
-        {/* 🔹 Desktop Nav */}
+        {/* Desktop Nav */}
         <div className="hidden sm:flex items-center gap-6">
-          <Link href="/our-story" className="font-medium whitespace-nowrap">
+          <Link href="/our-story" className="font-medium">
             Our Story
           </Link>
-          <Link href="/services" className="font-medium whitespace-nowrap">
+          <Link href="/services" className="font-medium">
             Services
           </Link>
         </div>
 
-        {/* 🔹 Mobile Hamburger */}
+        {/* Mobile Toggle */}
         <button
           className="sm:hidden p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen(v => !v)}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {/* 🔹 Mobile Menu */}
       {mobileMenuOpen && (
         <div className="sm:hidden border-t bg-light">
           <div className="flex flex-col p-4 gap-4">
-            <Link
-              href="/our-story"
-              onClick={() => setMobileMenuOpen(false)}
-              className="font-medium"
-            >
+            <Link href="/our-story" onClick={() => setMobileMenuOpen(false)}>
               Our Story
             </Link>
-            <Link
-              href="/services"
-              onClick={() => setMobileMenuOpen(false)}
-              className="font-medium"
-            >
+            <Link href="/services" onClick={() => setMobileMenuOpen(false)}>
               Services
             </Link>
           </div>
         </div>
       )}
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-blue-200 to-transparent opacity-50" />
     </nav>
   );
 }

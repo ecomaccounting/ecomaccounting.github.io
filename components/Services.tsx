@@ -42,7 +42,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                 {/* HEADER */}
                 <button
                   onClick={() => setOpen(!open)}
-                  className="w-full text-left flex items-start gap-4"
+                  className="cursor-pointer w-full text-left flex items-start gap-4"
                 >
                   <div className="bg-accent-light w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
                     {Icon ? (
