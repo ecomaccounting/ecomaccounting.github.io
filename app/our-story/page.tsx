@@ -87,7 +87,7 @@ export default function OurStoryPage() {
             <div className="max-w-4xl mx-auto px-6">
               <h2 className="">Why We Chose to Specialize</h2>
               <p className="mb-4">
-                We saw an opportunity. <span className="highlight">We went all in.</span>
+                We saw an opportunity. <span className="text-highlight font-semibold">We went all in.</span>
               </p>
               <p className="mb-4">
                 eCommerce was transforming India. Entrepreneurs were building remarkable businesses online. But the financial complexity was real.
