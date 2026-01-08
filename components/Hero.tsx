@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative py-12">
+      className="relative py-12 px-4">
       <h1 className="leading-tight">
         Simple Finance for eCommerce Sellers
       </h1>
@@ -41,7 +41,7 @@ export default function Hero() {
 
             <h2 className="text-xl md:text-2xl">
               Focus on growth — we handle your{" "}
-              <span className="highlight inline-block min-w-[140px] text-center">
+              <span className="text-highlight underline inline-block min-w-[140px] text-left font-semibold">
                 {words[wordIndex]}
               </span>
             </h2>
@@ -77,7 +77,7 @@ export default function Hero() {
                 href="/book-consultation"
                 className="button success px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
               >
-                <MessageCircle className="h-5 w-5" />
+                <MessageCircle className="h-7 w-7" />
                 Check What You Need (2 mins)
                 <ArrowRight className="h-4 w-4" />
               </Link>
@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative mr-4 ">
+        <div className="relative mr-4">
           <div className="bg-background border border-[var(--border-color)] rounded-2xl shadow-xl p-6 sm:p-8">
             {/* Context header */}
             <div className="mb-6 space-y-1">

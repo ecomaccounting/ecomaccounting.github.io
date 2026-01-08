@@ -25,7 +25,16 @@ export default function Navbar() {
             height={48}
             alt="Task360"
             priority
-            className="h-10 w-auto md:h-12"
+            className=" hidden md:inline h-auto"
+            title="task360"
+          />
+          <Image
+            src="/img/logo/task360-logo-s.png"
+            width={40}
+            height={40}
+            alt="Task360"
+            priority
+            className="inline md:hidden h-auto"
             title="task360"
           />
         </Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import {
   UploadCloud,
   FileCheck2,
@@ -35,51 +35,35 @@ const AUTO_DELAY = 3000;
 export default function HowItWorksStrip() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  const next = () => {
-    setActive((prev) => (prev + 1) % STEPS.length);
-  };
+  const next = () => setActive((a) => (a + 1) % STEPS.length);
+  const prev = () => setActive((a) => (a - 1 + STEPS.length) % STEPS.length);
 
-  const prev = () => {
-    setActive((prev) => (prev - 1 + STEPS.length) % STEPS.length);
-  };
-
-  // Auto play
   useEffect(() => {
-    if (paused) {
-      return; // allowed only if effect ALWAYS returns void or cleanup
-    }
-
+    if (paused) return;
     const id = setTimeout(next, AUTO_DELAY);
-
     return () => clearTimeout(id);
   }, [active, paused]);
 
-  const onUserAction = () => {
-    setPaused(true);
-    timerRef.current && clearTimeout(timerRef.current);
-  };
+  const onUserAction = () => setPaused(true);
 
   return (
     <section
-      className="relative bg-accent-light py-16 md:py-20 max-w-7xl mx-auto"
-      onMouseEnter={onUserAction}
+      className="bg-accent-light py-16 md:py-20 px-4"
       onTouchStart={onUserAction}
+      onMouseEnter={onUserAction}
     >
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-12 text-center">
           <p className="text-sm font-medium text-accent uppercase tracking-wide">
             Simple Process
           </p>
-          <h2 className="mt-2">
-            How It Works
-          </h2>
+          <h2 className="mt-2">How It Works</h2>
         </div>
 
-        {/* Steps */}
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* DESKTOP GRID */}
+        <div className="hidden md:grid grid-cols-3 gap-6">
           {STEPS.map((step, index) => {
             const Icon = step.icon;
             const isActive = index === active;
@@ -87,78 +71,72 @@ export default function HowItWorksStrip() {
             return (
               <button
                 key={step.title}
-                onClick={() => {
-                  onUserAction();
-                  setActive(index);
-                }}
-                className={`group relative rounded-2xl border p-6 text-left transition-all duration-300
-                  ${isActive
-                    ? "bg-accent shadow-xl border-accent scale-[1.02]"
-                    : "bg-light hover:bg-accent hover:shadow-md"
+                onClick={() => setActive(index)}
+                className={`rounded-2xl border p-6 text-left transition-all
+                  ${
+                    isActive
+                      ? "bg-accent shadow-xl border-accent scale-[1.02]"
+                      : "bg-light hover:bg-accent"
                   }`}
               >
-                {/* Step number */}
-                <span
-                  className={`absolute right-4 top-4 text-sm font-semibold transition
-                    ${isActive
-                      ? "text-accent"
-                      : "text-muted group-hover:text-accent"
-                    }`}
-                >
-                  Step {index + 1}
-                </span>
-
-                {/* Icon */}
-                <div
-                  className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl transition
-                    ${isActive
-                      ? "bg-accent text-blue"
-                      : "bg-accent-light text-accent"
-                    }`}
-                >
-                  <Icon className="h-6 w-6" />
-                </div>
-
-                {/* Content */}
-                <h3 className="mb-2 text-lg font-semibold text-dark">
-                  {step.title}
-                </h3>
-                <p className="text-sm text-light leading-relaxed">
-                  {step.description}
-                </p>
-
-                {/* Progress bar */}
-                <div className="mt-4 h-1 w-full overflow-hidden rounded bg-border-color">
-                  <div
-                    className={`h-full bg-accent transition-all duration-500 ${isActive ? "w-full" : "w-0"
-                      }`}
-                  />
-                </div>
+                <span className={`absolute right-4 top-4 text-sm font-semibold transition`} > Step {index + 1} </span>
+                <Icon className="mb-4 h-6 w-6 text-accent" />
+                <h3 className="mb-2 font-semibold">{step.title}</h3>
+                <p className="text-sm text-light">{step.description}</p>
               </button>
             );
           })}
         </div>
 
-        {/* Controls */}
-        <div className="mt-10 flex items-center justify-center gap-4">
+        {/* MOBILE STACKED DECK */}
+        <div className="relative md:hidden h-[260px]">
+          {STEPS.map((step, index) => {
+            const Icon = step.icon;
+            const offset = (index - active + STEPS.length) % STEPS.length;
+
+            if (offset > 2) return null;
+
+            return (
+              <button
+                key={step.title}
+                onClick={() => setActive(index)}
+                className={`absolute inset-0 rounded-2xl border bg-light p-6 text-left transition-all duration-500 bg-accent                  `}
+                style={{
+                  transform: `
+                    translateY(${offset * 14}px)
+                    scale(${1 - offset * 0.05})
+                  `,
+                  zIndex: 10 - offset,
+                  opacity: offset === 2 ? 0.5 : 1,
+                }}
+              >
+                <span className={`absolute right-4 top-4 text-sm font-semibold transition`} > Step {index + 1} </span>
+                <Icon className="mb-4 h-6 w-6 text-accent" />
+                <h3 className="mb-2 font-semibold">{step.title}</h3>
+                <p className="text-sm text-light">{step.description}</p>
+
+                {/* Progress */}
+                {offset === 0 && (
+                  <div className="mt-4 h-1 w-full overflow-hidden rounded bg-border-color">
+                    <div className="h-full w-full bg-accent" />
+                  </div>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* MOBILE CONTROLS ONLY */}
+        <div className="mt-8 flex justify-center gap-4 md:hidden">
           <button
-            onClick={() => {
-              onUserAction();
-              prev();
-            }}
-            aria-label="Previous step"
-            className="rounded-full border bg-light p-2 hover:bg-accent hover:text-highlight transition"
+            onClick={prev}
+            className="rounded-full border bg-light p-2"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
-
           <button
-            onClick={() => {
-              onUserAction();
-              next();
-            }}
-            aria-label="Next step"
-            className="rounded-full border bg-light p-2 hover:bg-accent hover:highlight transition"
+            onClick={next}
+            className="rounded-full border bg-light p-2"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

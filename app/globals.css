@@ -148,6 +148,9 @@ a.secondary:hover {
 .text-muted {
   color: var(--muted);
 }
+.text-highlight {
+  color: var(--primary);
+}
 
 .border-default {
   border-color: var(--border);
