@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Explore task360 Services | task360",
     description:
       "Simplify finance, GST, and compliance for your eCommerce business. Explore task360 services.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
   },
 
   robots: {

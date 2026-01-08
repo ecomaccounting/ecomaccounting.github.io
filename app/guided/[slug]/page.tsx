@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   ArrowRight,
   Sparkles,
@@ -26,10 +27,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Explore ${guide.title} | task360 – Simple Finance for eCommerce Businesses`,
     description: guide.description,
-    keywords: guide.keywords.split(",").map((kw: string) => kw.trim()),       
+    keywords: guide.keywords.split(",").map((kw: string) => kw.trim()),
 
     openGraph: {
-      title: `Explore ${guide.heading} | task360`,
+      title: `${guide.heading} | task360`,
       description: guide.description,
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${guide.slug}`,
       siteName: "task360",
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     twitter: {
       card: "summary_large_image",
-      title: `Explore ${guide.heading} | task360`,
+      title: `${guide.heading} | task360`,
       description: guide.description,
       images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
     },
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function GuidedUserPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;  
+  const { slug } = await params;
   console.log(slug);
 
   const mapping = data.mapping.find(
@@ -69,7 +70,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
 
   const label = mapping.title;
 
-  
+
 
   const faqIds = mapping.faqIds.split(",").map((id) => id.trim());
   const serviceIds = mapping.serviceIds.split(",").map((id) => id.trim());
@@ -88,25 +89,18 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
     <main className="pb-24">
       {/* HERO */}
       <section
-        className={`py-20 px-4 ${
-          isUrgent ? "bg-red-50" : "bg-accent-light"
-        }`}
+        className={`py-20 px-4`}
       >
         <div className="max-w-5xl mx-auto text-center">
           <div
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm mb-6
-              ${isUrgent ? "bg-red-100 text-red-700" : "bg-accent text-accent"}
-            `}
+              ${isUrgent ? "bg-red-100 text-red-700" : "bg-accent text-accent"}`}
           >
-            {isUrgent ? (
-              <ShieldAlert className="w-4 h-4" />
-            ) : (
-              <Sparkles className="w-4 h-4" />
-            )}
+            <Sparkles className="w-4 h-4" />
             Personalized for you
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">
+          <h1 className={`text-3xl md:text-5xl font-semibold tracking-tight ${isUrgent ? "text-red-700" : ""}`}>
             {mapping.heading}
           </h1>
 
@@ -118,7 +112,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
             <Link
               href="/book-consultation"
-              className={`primary inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white font-medium
+              className={`primary inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium
                 ${isUrgent ? "bg-red-600 hover:bg-red-700" : "bg-primary hover:bg-accent"}
               `}
             >
@@ -159,9 +153,8 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
 
       {/* FINAL CTA STRIP */}
       <section
-        className={`mt-24 py-16 px-4 ${
-          isUrgent ? "bg-red-600" : "bg-primary"
-        }`}
+        className={`mt-24 py-16 px-4 ${isUrgent ? "bg-red-100" : "bg-primary"
+          }`}
       >
         <div className="max-w-4xl mx-auto text-center ">
           <h3 className="text-2xl md:text-3xl font-semibold">

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: service.keywords.split(",").map((kw: string) => kw.trim()),       
 
     openGraph: {
-      title: `Explore ${service.name} | task360`,
+      title: `Explore ${service.name} services | task360`,
       description: service.shortDescription,
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${service.id}`,
       siteName: "task360",
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     twitter: {
       card: "summary_large_image",
-      title: `Explore ${service.name} | task360`,
+      title: `Explore ${service.name} services | task360`,
       description: service.shortDescription,
       images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
     },

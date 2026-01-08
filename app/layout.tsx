@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     title: "task360 – Simple Finance for eCommerce & Growing Businesses",
     description:
       "Accounting, GST, tax & compliance services for eCommerce sellers and startups.",
-    images: ["/og-image.png"],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
   },
 
   icons: {

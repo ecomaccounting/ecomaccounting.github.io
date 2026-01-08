@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Contact Us | task360",
     description:
       "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
   },
 
   robots: {
