@@ -371,7 +371,7 @@
     },
     {
       "parentId": "trademark-application",
-      "icon": "BadgeTrademark",
+      "icon": "BadgeCheck",
       "id": "trademark-registration",
       "name": "Trademark Registration",
       "shortDescription": "Secure your brand identity and distinguish your products or services legally.",

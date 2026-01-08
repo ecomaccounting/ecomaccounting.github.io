@@ -41,7 +41,7 @@ export default function ServiceSearch() {
 
     async function loadServices() {
       try {
-        const res = await fetch("/data/serviceData.json");
+        const res = await fetch("/data/servicesData.json");
         const json = await res.json();
 
         if (!cancelled) {
@@ -122,18 +122,19 @@ export default function ServiceSearch() {
    Hydrate services from search results
   ------------------------------------------ */
   const hydratedServices = useMemo(() => {
-    console.log(searchResults)
+
     if (searchResults === null) {
       return allServices;
     }
 
-    const map = new Map(
-      allServices.map((s) => [s.id.toLowerCase(), s])
-    );
+    const serviceMap = new Map(
+    allServices.map((s) => [s.id.toLowerCase(), s])
+  );
+  
+  return searchResults
+    .map((result) => serviceMap.get(result.id))
+    .filter((service): service is ServiceItem => !!service);     
 
-    return searchResults
-      .map((r) => map.get(r.id))
-      .filter(Boolean) as ServiceItem[];
   }, [searchResults, allServices]);
 
   /* -----------------------------------------
@@ -151,9 +152,8 @@ export default function ServiceSearch() {
       <div className="m-4 font-medium">
         {isLoading
           ? "Loading services..."
-          : `${hydratedServices.length} services ${
-              submittedQuery ? "found" : "available"
-            }`}
+          : `${hydratedServices.length} services ${submittedQuery ? "found" : "available"
+          }`}
       </div>
 
       {!isLoading && hydratedServices.length > 0 && (
