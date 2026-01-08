@@ -13,6 +13,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#0a58ca",
 };
 
 
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   manifest: "/manifest.webmanifest",
-  themeColor: "#0a58ca",
+  
   appleWebApp: {
     capable: true,
     title: "task360",

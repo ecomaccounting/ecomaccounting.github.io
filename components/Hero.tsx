@@ -3,9 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
-  CheckCircle2,
   ArrowRight,
+  ShieldCheck,
+  Users,
   TrendingUp,
+  IndianRupee,
+  MessageCircle,
+  List,
 } from "lucide-react";
 
 const words = ["books", "taxes", "compliance"];
@@ -23,94 +27,110 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative py-8 max-w-7xl mx-auto " 
-    style={{
-                    backgroundImage: "url('/img/hero/hero-bg-new.png')",
-                }}
-    >
-      <h1 className="leading-tight ">
-        Simple Finance for eCommerce & Growing Businesses
-      </h1>
+    <section
+      className="relative py-12"
+      style={{ backgroundImage: "url('/img/hero/hero-bg-new.png')" }}
+    ><h1 className="leading-tight">
+              Simple Finance for eCommerce Sellers
+            </h1>
       <div className="max-w-7xl mx-auto grid sm:grid-cols-2 gap-14 items-center">
-
-        {/* LEFT: TEXT FIRST */}
+        {/* LEFT */}
+        
         <div className="space-y-10">
-
-          {/* Heading */}
           <div className="space-y-4">
-            <h2 className="leading-tight ">
-              Focus on growing your online business while we handle your{" "}
+            
+
+            <h2 className="text-xl md:text-2xl">
+              Focus on growth — we handle your{" "}
               <span className="highlight inline-block min-w-[140px] text-center">
                 {words[wordIndex]}
               </span>
             </h2>
 
-            <p className="text-lg md:text-xl max-w-xl">
-              Specialized accounting & compliance services for Amazon, Flipkart,
-              and other marketplace sellers.
+            <p className="text-lg max-w-xl text-light">
+              Specialized accounting, GST & compliance for Amazon, Flipkart and
+              fast-growing online businesses.
             </p>
           </div>
 
-          {/* Bullet Points */}
-          <div className="space-y-3">
-            {[
-              "GST Registration & Filing",
-              "Marketplace Reconciliation",
-              "Tax & Business Compliance",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
-                <span className="">{item}</span>
-              </div>
-            ))}
+          {/* Proof points */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <ShieldCheck className="h-5 w-5 text-blue shrink-0" />
+              <span>CA-led compliance built for eCommerce</span>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <Users className="h-5 w-5 text-blue shrink-0" />
+              <span>Trusted by 500+ sellers across India</span>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <IndianRupee className="h-5 w-5 text-blue shrink-0" />
+              <span>₹5 Cr+ marketplace transactions handled</span>
+            </div>
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/book-consultation"
-              className="button primary flex items-center justify-center gap-2 ">
-              Start Free Consultation
-              <ArrowRight className="h-5 w-5" />
-            </Link>
+          <div className="space-y-3">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/book-consultation"
+                className="button success font-semibold flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="h-5 w-5" />
+                Check What You Need (2 mins)
+                <ArrowRight className="h-4 w-4" />
+              </Link>
 
-            <Link
-              href="/services"
-              className="button secondary text-center"            >
-              View Services
-            </Link>
+              <Link
+                href="/services"
+                className="button secondary flex items-center justify-center gap-2"
+              >
+                <List className="h-5 w-5" />
+                View Services
+              </Link>
+            </div>
+
+            <p className="text-sm text-light">
+              No spam • 2-minute flow • Talk to a real GST expert
+            </p>
           </div>
-
-
         </div>
 
-        {/* RIGHT: INTERACTIVE DASHBOARD */}
-        <div className="relative">
-
+        {/* RIGHT */}
+        <div className="relative mr-4 ">
           <div className="bg-background border border-[var(--border-color)] rounded-2xl shadow-xl p-6 sm:p-8">
+            {/* Context header */}
+            <div className="mb-6 space-y-1">
+              <h3 className="text-lg font-semibold">
+                Why Marketplace Reconciliation Matters
+              </h3>
+              <p className="text-sm text-light">
+                Understand deductions, GST & fees — and what actually reaches
+                your bank.
+              </p>
+            </div>
+
             {/* Tabs */}
-            <div className="flex gap-4 mb-6">
+            <div className="flex gap-3 mb-6">
               {tabs.map((tab) => (
-                <a
-                  href={`#${tab}`}
+                <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition button
-                    ${activeTab === tab
-                      ? "primary"
-                      : "secondary"
-                    }`}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition cursor-pointer button ${
+                    activeTab === tab ? "primary" : "secondary"
+                  }`}
                 >
                   {tab}
-                </a>
+                </button>
               ))}
             </div>
 
-            {/* Content */}
             <DashboardContent activeTab={activeTab} />
           </div>
 
-          {/* Success badge */}
+          {/* Accent badge */}
           <div className="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-full shadow-lg">
             <TrendingUp className="h-5 w-5" />
           </div>
@@ -121,17 +141,6 @@ export default function Hero() {
 }
 
 /* ---------------------------- */
-/* Sub Components               */
-/* ---------------------------- */
-
-function Stat({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-2xl font-bold ">{value}</div>
-      <div className="text-sm ">{label}</div>
-    </div>
-  );
-}
 
 function DashboardContent({ activeTab }: { activeTab: string }) {
   const data: Record<string, { label: string; value: string }[]> = {
@@ -156,8 +165,8 @@ function DashboardContent({ activeTab }: { activeTab: string }) {
     <div className="space-y-4">
       {data[activeTab].map((row) => (
         <div key={row.label} className="flex justify-between">
-          <span className="">{row.label}</span>
-          <span className="font-semibold ">{row.value}</span>
+          <span className="text-light">{row.label}</span>
+          <span className="font-semibold">{row.value}</span>
         </div>
       ))}
     </div>

@@ -3,6 +3,8 @@ import { ServiceItem } from "@/data/types";
 import Link from "next/link";
 import { FileText } from "lucide-react";
 import * as LucideIcons from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 export default function Services({ services }: { services: ServiceItem[] }) {
 
@@ -27,6 +29,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
         {/* --- Service Cards Grid --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.filter((service) => service.id.length > 2).map((service) => {
+            const [open, setOpen] = useState(false);
             const Icon = service.icon
               ? (LucideIcons[service.icon as keyof typeof LucideIcons] as React.ComponentType<React.SVGProps<SVGSVGElement>>)
               : FileText;
@@ -34,11 +37,14 @@ export default function Services({ services }: { services: ServiceItem[] }) {
             return (
               <div
                 key={service.name}
-                // ADDED: flex flex-col
-                className="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group flex flex-col h-full"
+                className="bg-background p-6 rounded-xl shadow-md transition-all border border-border"
               >
-                <div className="mb-6">
-                  <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                {/* HEADER */}
+                <button
+                  onClick={() => setOpen(!open)}
+                  className="w-full text-left flex items-start gap-4"
+                >
+                  <div className="bg-accent-light w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
                     {Icon ? (
                       <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                     ) : (
@@ -46,31 +52,55 @@ export default function Services({ services }: { services: ServiceItem[] }) {
                     )}
                   </div>
 
-                  <h3 className="">{service.name}</h3>
-                  {service.shortDescription && (
-                    <p className="mb-4 line-clamp-3">{service.shortDescription}</p>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold leading-snug">
+                      {service.name}
+                    </h3>
+
+                    {/* Outcome-driven, NOT descriptive */}
+                    <p className="text-sm text-muted mt-1">
+                      {service.shortDescription ?? "Avoid compliance mistakes & stay audit-ready"}
+                    </p>
+                  </div>
+
+                  {open ? (
+                    <ChevronUp className="mt-1 text-muted" />
+                  ) : (
+                    <ChevronDown className="mt-1 text-muted" />
                   )}
-                </div>
+                </button>
 
-                <div className="space-y-2">
-                  <ul className="list-disc pl-5 marker:text-accent">
-                    {service.highlights.slice(0, 3).map((item: string, i: number) => (
-                      <li key={i} className="leading-relaxed">{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                {/* EXPANDABLE CONTENT */}
+                {open && (
+                  <div className="mt-4 space-y-4 animate-in fade-in slide-in-from-top-1">
+                    <ul className="space-y-2 text-sm">
+                      {service.highlights.slice(0, 3).map((item, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-accent">✓</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
 
-                {/* MODIFIED: mt-auto pushes this div to the bottom */}
-                <div className="mt-auto pt-6">
-                  <Link
-                    href={`/services/${service.id}`}
-                    className="primary text-center block py-2 px-4 rounded-lg transition-colors"
-                    title={`Click to learn more about ${service.name} service`}
-                  >
-                    Learn More
-                  </Link>
-                </div>
+                    <div className="grid grid-cols-2 gap-3 pt-2">
+                      <Link
+                        href="/book-consultation"
+                        className="success text-center py-2 px-3 rounded-lg text-sm font-semibold"
+                      >
+                        Free Consultation
+                      </Link>
+
+                      <Link
+                        href={`/services/${service.id}`}
+                        className="primary text-center py-2 px-3 rounded-lg text-sm"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  </div>
+                )}
               </div>
+
             );
           })}
         </div>
