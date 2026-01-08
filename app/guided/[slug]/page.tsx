@@ -16,6 +16,48 @@ export async function generateStaticParams() {
   }));
 }
 
+// --- Generate SEO metadata dynamically ---
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const guide = data.mapping.find((s) => s.slug === slug);
+
+  if (!guide) return { title: "Service Not Found" };
+
+  return {
+    title: `Explore ${guide.title} | task360 – Simple Finance for eCommerce Businesses`,
+    description: guide.description,
+    keywords: guide.keywords.split(",").map((kw: string) => kw.trim()),       
+
+    openGraph: {
+      title: `Explore ${guide.heading} | task360`,
+      description: guide.description,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${guide.slug}`,
+      siteName: "task360",
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
+          width: 1200,
+          height: 630,
+          alt: "Book Free Consultation – task360",
+        },
+      ],
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `Explore ${guide.heading} | task360`,
+      description: guide.description,
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
+
 export default async function GuidedUserPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;  
   console.log(slug);

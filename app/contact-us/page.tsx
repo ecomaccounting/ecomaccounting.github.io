@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: "Contact Us | task360",
     description:
       "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",
-    url: "https://task360.co/contact-us",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact-us`,
     siteName: "task360",
     images: [
       {
-        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
         width: 1200,
         height: 630,
         alt: "Contact Us – task360",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Contact Us | task360",
     description:
       "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",
-    images: ["https://task360.in/og/og-book-consultation.png"],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
   },
 
   robots: {

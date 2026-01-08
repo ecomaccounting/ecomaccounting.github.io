@@ -31,11 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `Explore ${service.name} | task360`,
       description: service.shortDescription,
-      url: `https://task360.co/services/${service.id}`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${service.id}`,
       siteName: "task360",
       images: [
         {
-          url: "https://task360.co/img/og/og-book-free-consultation.png",
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
           width: 1200,
           height: 630,
           alt: "Book Free Consultation – task360",
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: `Explore ${service.name} | task360`,
       description: service.shortDescription,
-      images: ["https://task360.in/og/og-book-consultation.png"],
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
     },
 
     robots: {

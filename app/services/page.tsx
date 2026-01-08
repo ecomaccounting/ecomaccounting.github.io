@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Explore task360 Services | task360",
     description:
       "Talk to trusted finance & compliance experts for eCommerce businesses. Get clarity on GST, accounting, reconciliation, and growth strategy.",
-    url: "https://task360.co/services",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/services`,
     siteName: "task360",
     images: [
       {
-        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
         width: 1200,
         height: 630,
         alt: "Book Free Consultation – task360",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Explore task360 Services | task360",
     description:
       "Simplify finance, GST, and compliance for your eCommerce business. Explore task360 services.",
-    images: ["https://task360.in/og/og-book-consultation.png"],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
   },
 
   robots: {

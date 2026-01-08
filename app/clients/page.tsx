@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Our Clients | task360",
     description:
       "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-    url: "https://task360.co/clients",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/clients`,
     siteName: "task360",
     images: [
       {
-        url: "https://task360.co/img/or/og-book-free-consultation.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/or/og-book-free-consultation.png`,
         width: 1200,
         height: 630,
         alt: "Our Clients – task360",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Our Clients | task360",
     description:
       "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-    images: ["https://task360.in/og/og-book-consultation.png"],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
   },
 
   robots: {

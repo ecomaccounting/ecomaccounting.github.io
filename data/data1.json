@@ -1671,50 +1671,54 @@
     {
       "title": "New Seller",
       "slug": "new-seller",
-      "faqIds": "2,3,5,6,7,10,13,19,21,23,27,32,35",
-      "serviceIds": "launch, incorporation, sole-propreitorship, partnership-registration, private-limited-company, one-person-company-opc, registrations, gst-registration, msme-registrations, startup-india-recognition, accounting-book-keeping, gst-filings, income-tax-returns",
-      "description": "Just starting out or planning to launch online",
+      "serviceIds": "launch, incorporation, sole-propreitorship, partnership-registration, private-limited-company, opc, gst-registration, msme, startup-india, accounting, gst-filings, itr",
+      "description": "Expert assistance for new entrepreneurs to register companies, obtain GST/MSME certificates, and launch legally compliant online businesses.",
+      "keywords": "company registration, GST for sellers, Startup India recognition, OPC registration, MSME certificate",
       "icon": "Rocket",
-      "heading": "Services Built for New Seller",
-      "text": "Based on your stage, here are the services and answers most relevant to you — no noise, just clarity.",
-      "ctaTitle": "Time Matters. Let’s Act Now.",
-      "ctaText": "Delays or incorrect replies can worsen penalties. Speak to an expert today."
+      "heading": "Launch Your Business with a Solid Foundation",
+      "text": "From incorporation to first-sale compliance, we handle the paperwork so you can focus on building your brand.",
+      "ctaTitle": "Ready to Go Legal?",
+      "ctaText": "Register Your Business Today",
+      "faqIds": "2,3,5,6,7,10,13,19,21,23,27,32,35"
     },
     {
       "title": "Scaling Brand",
       "slug": "scaling-brand",
-      "faqIds": "1,4,6,8,10,12,13,15,17,18,20,24,25,26,27,33",
-      "serviceIds": "operate, accounting-taxation, accounting-book-keeping, gst-services, gst-filings, tds-with-holding-tax, income-tax-returns, virtual-cfo, startup-fundraise, valuation-advisory, financial-modeling, business-consultancy",
-      "description": "Growing revenue and need structured compliance",
+      "serviceIds": "operate, accounting-taxation, gst-services, tds, itr, virtual-cfo, fundraise, valuation, financial-modeling, consultancy",
+      "description": "Comprehensive financial management for growing brands, including Virtual CFO services, fundraising support, and advanced tax planning.",
+      "keywords": "Virtual CFO, startup fundraising, business valuation, financial modeling, tax advisory for brands",
       "icon": "TrendingUp",
-      "heading": "Services Built for Scaling Brand",
-      "text": "Based on your stage, here are the services and answers most relevant to you — no noise, just clarity.",
-      "ctaTitle": "Time Matters. Let’s Act Now.",
-      "ctaText": "Delays or incorrect replies can worsen penalties. Speak to an expert today."
+      "heading": "Professionalize Your Growth & Governance",
+      "text": "As revenue grows, so does complexity. Transition from basic bookkeeping to strategic financial leadership and investor readiness.",
+      "ctaTitle": "Elevate Your Strategy",
+      "ctaText": "Book a CFO Consultation",
+      "faqIds": "1,4,6,8,10,12,13,15,17,18,20,24,25,26,27,33"
     },
     {
       "title": "Multi-Marketplace",
       "slug": "multi-marketplace",
-      "faqIds": "6,8,10,12,15,16,17,18,27,30",
-      "serviceIds": "operate, accounting-taxation, accounting-book-keeping, gst-services, gst-filings, gst-indirect-taxes, international-trade, virtual-cfo",
-      "description": "Selling on Amazon, Flipkart, Meesho & more",
+      "serviceIds": "operate, accounting-taxation, gst-services, gst-filings, indirect-taxes, international-trade, virtual-cfo",
+      "description": "Specialized accounting and reconciliation services for sellers operating across Amazon, Flipkart, Meesho, and international borders.",
+      "keywords": "e-commerce reconciliation, marketplace GST, international trade compliance, Amazon seller accounting",
       "icon": "Layers",
-      "heading": "Services Built for Multi-Marketplace",
-      "text": "Based on your stage, here are the services and answers most relevant to you — no noise, just clarity.",
-      "ctaTitle": "Time Matters. Let’s Act Now.",
-      "ctaText": "Delays or incorrect replies can worsen penalties. Speak to an expert today."
+      "heading": "Unified Compliance for Multi-Channel Sales",
+      "text": "Don't let cross-platform reconciliation slow you down. We sync your compliance across every marketplace you sell on.",
+      "ctaTitle": "Sync Your Operations",
+      "ctaText": "Simplify My Marketplace Taxes",
+      "faqIds": "6,8,10,12,15,16,17,18,27,30"
     },
     {
       "title": "Facing a Notice",
       "slug": "facing-a-notice",
-      "faqIds": "9,28,29,30,31",
-      "serviceIds": "gst-indirect-taxes, litigation-support-services, gst-services, accounting-taxation, legal-services",
-      "description": "Received GST, income tax or compliance notice",
+      "serviceIds": "gst-indirect-taxes, litigation-support, gst-services, accounting-taxation, legal-services",
+      "description": "Professional legal and tax representation to resolve GST, Income Tax, or departmental notices with accurate, timely responses.",
+      "keywords": "GST notice response, tax litigation support, income tax notice help, legal representation for tax",
       "icon": "AlertTriangle",
-      "heading": "You Don’t Have to Handle This Alone",
-      "text": "Notices are time-sensitive. We’ll help you understand, respond, and resolve it correctly.",
-      "ctaTitle": "Want This Handled Properly?",
-      "ctaText": "We’ll assess your situation and guide you clearly — no pressure, no jargon."
+      "heading": "Protect Your Business from Legal Risks",
+      "text": "A notice is a deadline, not a disaster. Our experts provide precise litigation support to resolve disputes and minimize penalties.",
+      "ctaTitle": "Resolve This Now",
+      "ctaText": "Get Expert Notice Defense",
+      "faqIds": "9,28,29,30,31"
     }
   ]
 }

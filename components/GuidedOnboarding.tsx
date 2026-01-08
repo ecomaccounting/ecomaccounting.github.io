@@ -2,41 +2,7 @@
 import data from "@/data/data1.json"
 import * as LucideIcons from "lucide-react";
 import Link from "next/link";
-import {
-  Rocket,
-  TrendingUp,
-  Layers,
-  AlertTriangle,
-  ArrowRight,
-} from "lucide-react";
-
-const profiles = [
-  {
-    title: "New Seller",
-    description: "Just starting out or planning to launch online",
-    icon: Rocket,
-    href: "/guided/new-seller",
-  },
-  {
-    title: "Scaling Brand",
-    description: "Growing revenue and need structured compliance",
-    icon: TrendingUp,
-    href: "/guided/scaling-brand",
-  },
-  {
-    title: "Multi-Marketplace",
-    description: "Selling on Amazon, Flipkart, Meesho & more",
-    icon: Layers,
-    href: "/guided/multi-marketplace",
-  },
-  {
-    title: "Facing a Notice",
-    description: "Received GST, income tax or compliance notice",
-    icon: AlertTriangle,
-    href: "/guided/facing-a-notice",
-    danger: true,
-  },
-];
+import { ArrowRight } from "lucide-react";
 
 export default function GuidedOnboarding() {
   return (
@@ -64,7 +30,7 @@ export default function GuidedOnboarding() {
                 key={item.title}
                 href={`/guided/${item.slug}`}
                 className={`
-                  group rounded-2xl border bg-white p-6 
+                  group rounded-2xl border p-6 
                   transition-all duration-300
                   hover:-translate-y-1 hover:shadow-xl
                   ${item.slug === "facing-a-notice" ? "border-red-200 hover:border-red-400" : "border-border"}

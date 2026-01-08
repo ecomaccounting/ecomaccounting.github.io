@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     title: "Our Story | task360",
     description:
       "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
-    url: "https://task360.co/our-story",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/our-story`,
     siteName: "task360",  
     images: [
       {
-        url: "https://task360.co/img/og/og-book-free-consultation.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
         width: 1200,
         height: 630,
         alt: "Contact Us – task360",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Contact Us | task360",
     description:
       "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
-    images: ["https://task360.in/og/og-book-consultation.png"],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/og-book-free-consultation.png`],
   },
 
   robots: {

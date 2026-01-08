@@ -34,7 +34,7 @@ const geistMono = Geist_Mono({
    🧠 SEO Metadata
 --------------------------------*/
 export const metadata: Metadata = {
-  metadataBase: new URL("https://task360.co"),
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   title: {
     default: "task360 – Simple Finance for eCommerce & Growing Businesses",
     template: "%s | task360",
@@ -80,10 +80,10 @@ export const metadata: Metadata = {
     title: "task360 – Simple Finance for eCommerce & Growing Businesses",
     description:
       "Professional accounting, GST, tax & compliance services for eCommerce sellers and startups.",
-    url: "https://task360.co",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
     images: [
       {
-        url: "/img/og-image.png",
+        url: "/img/og/og-image.png",
         width: 1200,
         height: 630,
         alt: "task360 – Finance & Compliance Made Simple",

@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   assetPrefix: "",
   basePath: "",
   env: {
-    NEXT_PUBLIC_BASE_URL: 'https://task360.co',
+    NEXT_PUBLIC_BASE_URL: 'https://ecomaccounting.github.io',
   },
 };
 
