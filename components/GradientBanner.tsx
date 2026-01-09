@@ -16,7 +16,8 @@ export function ServiceHero({
     service,    
     className
 }: ServiceHeroProps) {
-    const Icon = AppIconMap[service.icon];    
+    let Icon = AppIconMap[service.icon];    
+    Icon = Icon?? AppIconMap["Rocket"];    
     const instanceSeed = service.name.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
     return (
         <section
@@ -55,7 +56,7 @@ export function ServiceHero({
 
             {/* ===== CONTENT ===== */}
             <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-                <div className="mb-4 flex h-24 w-24 items-center justify-center">
+                <div className="mb-4 flex h-24 w-24 items-center justify-center">                    
                     <Icon className="h-16 w-16 " />
                 </div>
 
@@ -133,6 +134,6 @@ function seeded(seed: number) {
     return ((t ^ t >>> 14) >>> 0) / 4294967296;
 }
 
-function pickRandom(arr: string[], seed: number) {
+function pickRandom(arr: readonly string[], seed: number) {
     return arr[Math.floor(seeded(seed) * arr.length)];
 }

@@ -78,7 +78,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         { name: service.name }]} />
 
         {/* Hero Banner Section */}
-        <div className="py-5 h-96">
+        <div className="py-5 h-120">
           {/* <ServiceHero
             service={service}
             variant="primary"
@@ -145,7 +145,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                     className="group"
                   >
                     <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}>
-                      <div className="h-96 w-full">
+                      <div className="h-96 w-full lg:w-1/2">
                         <ServiceHero service={child} variant="child" className="" key={service.id} />
                       </div>
                       {/* Content Section */}
