@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import FooterTrust from "@/components/FooterTrust";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import RegisterSW from "@/components/sw";
-
+import GoToTop from "@/components/GoToTop";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   manifest: "/manifest.webmanifest",
-  
+
   appleWebApp: {
     capable: true,
     title: "task360",
@@ -149,10 +149,10 @@ export default function RootLayout({
           target="_blank" title="Powered by Mehtalogy LABS">
           Mehtalogy LABS
         </a>
-
+        <GoToTop />
         <Script src="https://mehtalogy.in/pb/v1.js"
           strategy="afterInteractive" />
-          <RegisterSW />
+        <RegisterSW />
       </body>
     </html>
   );

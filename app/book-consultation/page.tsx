@@ -59,7 +59,7 @@ Requirement:
 ${message}
     `.trim();
 
-    const url = `https://wa.me/919424932197?text=${encodeURIComponent(
+    const url = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
