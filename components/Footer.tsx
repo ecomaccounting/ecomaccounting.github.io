@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import Image from "next/image";
 import { navLinks } from "@/data/navLinks.json";
 import data from "@/data/data1.json";
+import BrandLogo from "./BrandLogo";
 
 export default function Footer() {
   
@@ -12,18 +12,8 @@ export default function Footer() {
 
         {/* Brand + Description */}
         <div className="space-y-4">
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/img/logo/task360-logo-r.png"
-              alt="Task360 Logo"
-              width={160}
-              height={60}
-              className="object-contain"
-              title="task360"
-            />
-            
-          </Link>
-
+          <BrandLogo size="xl" textBreakpoint="always" />
+          
           <p className="text-sm leading-relaxed">
             Focus on growing your online business while we handle your books, taxes, and compliance.
             Specialized services for Amazon, Flipkart, and other marketplace sellers.

@@ -18,11 +18,11 @@ export default function SearchBar({ initialQuery = "" }: SearchBarProps) {
   /* -------------------------------------------
      Sync once from URL (on mount / URL change)
   ------------------------------------------- */
-useEffect(() => {
-  if (urlQuery !== null && urlQuery !== query) {
-    setQuery(urlQuery);
-  }
-}, [urlQuery]);
+  useEffect(() => {
+    if (urlQuery !== null && urlQuery !== query) {
+      setQuery(urlQuery);
+    }
+  }, [urlQuery]);
 
 
   /* -------------------------------------------
@@ -83,16 +83,8 @@ useEffect(() => {
   ------------------------------------------- */
   return (
     <div className="relative min-w-0">
-      <div
-        className="
-          flex items-center gap-0
-          rounded-xl bg-highlight
-          px-1 py-1 min-w-0
-          ring-1 ring-black/10
-          focus-within:ring-2 focus-within:ring-primary
-          transition
-        "
-      >
+      <div className="flex items-center gap-0 rounded-xl bg-[var(--accent-soft)]
+px-1 py-1 min-w-0 ring-1 ring-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)] transition">
         <input
           type="search"
           value={query}
@@ -100,13 +92,7 @@ useEffect(() => {
           onKeyDown={handleKeyDown}
           placeholder="Search services..."
           inputMode="search"
-          className="
-            flex-1 min-w-0
-            bg-transparent outline-none
-            text-normal placeholder:text-normal
-            p-1
-          "
-        />
+          className="flex-1 min-w-0 bg-transparent outline-none text-normal placeholder:text-normal p-1" />
 
         <button
           type="button"

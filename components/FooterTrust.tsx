@@ -8,10 +8,9 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { label: "Happy Clients", value: 500, suffix: "+" },
-  { label: "Years Experience", value: 5, suffix: "+" },
-  { label: "Success Rate", value: 99, suffix: "%" },
-  { label: "Certifications", value: 50, suffix: "+" },
+  { label: "Happy Clients", value: 1000, suffix: "+" },
+  { label: "Years Experience", value: 13, suffix: "+" },
+  { label: "Success Rate", value: 99, suffix: "%" },  
   { label: "Client Rating", value: 4.9, suffix: "" },
 ];
 
@@ -67,7 +66,7 @@ export default function FooterTrust() {
       aria-label="Firm achievements and client trust metrics"
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={stat.label} className="flex flex-col items-center">
               <div className="text-4xl md:text-5xl drop-shadow-md">
