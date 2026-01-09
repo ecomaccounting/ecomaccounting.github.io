@@ -58,7 +58,9 @@
       "shortDescription": "Private Limited Company (PLC) registration enables entrepreneurs to establish a company that offers limited liability, a distinct legal identity, and enhanced capabilities to raise capital effectively.",
       "longDescription": "Forming a Private Limited Company includes selecting a company name, preparing the Memorandum of Association (MOA) and Articles of Association (AOA), applying for DSC and DIN for directors, and submitting incorporation forms to the Registrar of Companies. This structure offers limited liability protection, attracts investors, and enhances market credibility. It is perfect for startups and growth-oriented businesses, ensuring compliance with corporate laws while providing flexibility in ownership and management.",
       "longHighlights": [
-        "Legal Structure Selection: Professional advice to help you choose the perfect entity (PLC, LLP, etc.) that ensures optimal growth and liability protection."
+        "Limited Liability Protection: Safeguard personal assets by establishing a distinct legal entity.",
+        "Enhanced Capital Raising: Structure designed to attract venture capital and angel investors.",
+        "Market Credibility: Improve brand trust with a formalized structure compliant with corporate laws."
       ],
       "footer": false,
       "home": false,
@@ -77,7 +79,11 @@
       "name": "Limited Liability Partnership LLP",
       "shortDescription": "LLP registration combines the benefits of a partnership and a company, offering limited liability to partners and simplified compliance.",
       "longDescription": "Limited Liability Partnership (LLP) registration is suited for professionals and small businesses. It provides a legal entity separate from its partners, limiting personal liability. The process includes obtaining DSCs, DINs, naming the LLP, filing incorporation forms with the MCA, and executing the LLP agreement. LLPs enjoy operational flexibility, simplified taxation, and credibility with clients. This structure ensures both partners are protected from business debts while maintaining an easy governance model compared to traditional companies.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Operational Flexibility: Enjoy the benefits of a partnership with the legal protections of a corporation.",
+        "Simplified Taxation: Efficient tax structure with fewer compliance burdens compared to a PLC.",
+        "Protected Partnership: Individual partners are shielded from the liabilities and debts of other partners."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -96,7 +102,9 @@
       "shortDescription": "OPC allows a single entrepreneur to start a company with limited liability and full control over management.",
       "longDescription": "OPC registration enables a sole entrepreneur to create a company with limited liability, combining the benefits of a private company with the simplicity of sole proprietorship. The registration process includes obtaining DSC, DIN, reserving a unique company name, and filing incorporation documents with the Registrar of Companies. OPCs are ideal for solo entrepreneurs looking for a formal business structure, easier access to funding, and compliance advantages. This structure allows scaling the business later by converting to a private limited company while protecting personal assets.",
       "longHighlights": [
-        "Rapid Registration & Setup: Streamlined process for quick DIN/DSC and incorporation filing."
+        "Sole Control & Limited Liability: Maintain 100% management control while protecting personal wealth.",
+        "Easier Funding Access: Establish a formal corporate identity that is more credible to banks than a proprietorship.",
+        "Seamless Scalability: Simple legal pathway to convert into a Private Limited Company as the business grows."
       ],
       "footer": false,
       "home": false,
@@ -115,7 +123,11 @@
       "name": "Foreign Subsidiary",
       "shortDescription": "A Foreign Subsidiary registration allows international companies to establish an Indian legal entity for business operations.",
       "longDescription": "Establishing a Foreign Subsidiary in India requires compliance with the Companies Act and RBI regulations. The process includes approval of the company name, filing incorporation forms with the Registrar of Companies, and meeting foreign investment regulations. This structure allows foreign companies to operate locally, manage finances efficiently, comply with Indian laws, and expand market presence. It provides limited liability protection and credibility among local clients and partners.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Local Market Presence: Establish a legitimate Indian entity to manage domestic operations and finances.",
+        "Regulatory Navigation: Expert assistance in complying with both the Companies Act and RBI/FEMA regulations.",
+        "Global-Local Synergy: Bridge the gap between international parent standards and Indian statutory requirements."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -134,7 +146,9 @@
       "shortDescription": "Section 8 Company registration helps create non-profit organizations with legal status and credibility.",
       "longDescription": "Section 8 Company registration is designed for charitable, social, or non-profit initiatives. It involves drafting MOA and AOA, applying for DSC and DIN for directors, obtaining licenses under Section 8 of the Companies Act, and filing incorporation documents with the Registrar of Companies. This structure allows the organization to operate legally, receive donations, enjoy tax exemptions, and demonstrate transparency and credibility to stakeholders while pursuing non-profit objectives.",
       "longHighlights": [
-        "Compliance Certainty: Zero-stress assurance that all initial regulatory hurdles are successfully cleared."
+        "Non-Profit Legitimacy: Gain a legal corporate status specifically designed for social and charitable objectives.",
+        "Tax Exemptions & Benefits: Access various government grants and tax-saving provisions for non-profit entities.",
+        "Enhanced Stakeholder Trust: Demonstrate transparency and accountability to donors through a formal legal framework."
       ],
       "footer": false,
       "home": false,
@@ -153,7 +167,11 @@
       "name": "Partnership Registration",
       "shortDescription": "Partnership registration formalizes a business partnership, providing legal recognition and clarity in roles.",
       "longDescription": "Registering a partnership involves drafting a partnership deed outlining rights, responsibilities, profit sharing, and management roles among partners. Filing the deed with the Registrar of Firms ensures legal recognition and enables the partnership to operate formally. Registration provides credibility, protects partners’ interests, facilitates opening business accounts, and helps resolve disputes efficiently. This process ensures structured governance and smooth operation of the partnership business.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Formalized Governance: Clear legal definitions of roles, profit sharing, and responsibilities via a drafted deed.",
+        "Conflict Resolution: Established legal framework to resolve disputes and manage partner exits efficiently.",
+        "Banking & Credit Ease: Legally recognized partnership status facilitates easier opening of business accounts."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -171,7 +189,11 @@
       "name": "Sole Propreitorship",
       "shortDescription": "Sole proprietorship registration allows an individual to operate a business with minimal compliance and full control.",
       "longDescription": "A sole proprietorship is the simplest form of business registration, where a single owner manages all operations. Registration is optional but can include GST, local licenses, or trade permits. This structure offers full control, quick setup, and minimal compliance requirements. It is ideal for small businesses or startups, enabling the proprietor to handle operations, finances, and taxation while benefiting from direct decision-making and easy management of business activities.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Minimal Compliance Burden: The fastest and simplest way to start operating with very few statutory filings.",
+        "Full Decision-Making Power: Complete autonomy over business operations, finances, and strategic direction.",
+        "Cost-Effective Setup: Lowest initial registration costs, making it ideal for micro-businesses and solo freelancers."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -214,7 +236,11 @@
       "name": "GST Registration",
       "shortDescription": "GST Registration helps businesses comply with tax laws and claim input credits efficiently.",
       "longDescription": "GST Registration involves obtaining a unique GSTIN, understanding applicable tax rates, and filing regular returns to the government. Compliance ensures businesses can legally charge and collect GST, claim input tax credits, and avoid penalties. This process is crucial for eCommerce sellers, enabling smooth financial operations, proper accounting, and maintaining legal and tax compliance across multiple states and marketplaces. Professional guidance ensures timely filing, reconciliation, and accurate tax reporting.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Tax Compliance & ITC: Legally collect GST and claim Input Tax Credits to reduce your overall tax liability.",
+        "E-commerce Enablement: Mandatory requirement to sell goods and services across state lines and online platforms.",
+        "Professional Reconciliation: Ensure your sales and purchase data align perfectly with government records."
+      ],
       "footer": true,
       "home": false,
       "highlights": [
@@ -232,7 +258,11 @@
       "name": "Startup India Recognition",
       "shortDescription": "Startup India Recognition provides benefits and incentives to registered startups under government schemes.",
       "longDescription": "Obtaining Startup India Recognition involves applying through the official portal, providing business details, innovation descriptions, and incorporation documents. Recognized startups gain access to government benefits such as tax exemptions, funding support, easier compliance procedures, and mentorship opportunities. This status increases credibility with investors, partners, and customers, helping the startup grow efficiently while enjoying regulatory and financial support.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Access to Funding & Grants: Unlock government-backed schemes and priority access to various capital sources.",
+        "Tax Holiday Benefits: Leverage eligibility for significant tax exemptions during the initial years of operation.",
+        "Regulatory Simplification: Enjoy self-certification and faster patent examinations under the startup initiative."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -250,7 +280,11 @@
       "name": "MSME Registrations",
       "shortDescription": "MSME registration enables small businesses to access government schemes and financial benefits.",
       "longDescription": "MSME Registration involves submitting business details to the Udyam portal, including ownership, activity, and investment information. Once registered, businesses can avail benefits like easier access to loans, subsidies, tax incentives, and credit support. The process ensures legal recognition, enhances credibility with clients and lenders, and provides support for growth, technology adoption, and competitive advantage in the market.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Priority Sector Lending: Gain easier access to bank loans with lower interest rates and collateral requirements.",
+        "Government Tender Preferences: Qualify for exclusive benefits and reservations in government procurement processes.",
+        "Subsidies & Rebates: Claim reimbursements for patent registrations and discounts on electricity and ISO certification."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -268,7 +302,11 @@
       "name": "PF Registration",
       "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
       "longDescription": "PF registration involves enrolling the business with the Employees' Provident Fund Organization (EPFO), maintaining employee records, contributing monthly to the fund, and filing returns. This ensures employees receive retirement benefits, tax savings, and social security while the employer maintains compliance with labor laws. Professional handling guarantees accurate calculations, timely deposits, and adherence to statutory requirements, providing financial security and trust for employees.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Employee Social Security: Provide long-term retirement benefits and financial safety nets for your workforce.",
+        "Statutory Adherence: Stay 100% compliant with labor laws to avoid heavy penalties and legal disputes.",
+        "Talent Retention: Build employer brand trust by offering standard statutory benefits to employees."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -286,7 +324,11 @@
       "name": "ESIC Registration",
       "shortDescription": "PF registration ensures employee provident fund contributions are compliant and secure.",
       "longDescription": "ESIC registration involves applying to the Employees' State Insurance Corporation, submitting employee and business details, contributing monthly premiums, and filing returns. This enables employees to access health and social security benefits such as medical care, maternity, and sickness allowances. Businesses comply with labor laws and enhance employee satisfaction and retention by providing statutory benefits efficiently through structured processes and regular reporting.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Medical & Health Benefits: Ensure employees have access to medical care, maternity, and sickness allowances.",
+        "Risk Mitigation: Shield the business from the financial burden of employee workplace injuries or illnesses.",
+        "Statutory Compliance: Meet mandatory health insurance requirements for businesses with a specific headcount."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -304,7 +346,11 @@
       "name": "Shop & Establishment Registration",
       "shortDescription": "Shop & Establishment registration legally recognizes a business for commercial operations.",
       "longDescription": "Registration under the Shops & Establishment Act involves submitting business details, owner information, and operational hours to the local municipal authority. Once registered, the business complies with labor laws, maintains proper employee records, and avoids legal penalties. This formal recognition helps eCommerce and retail operations establish credibility, manage workforce effectively, and ensures adherence to statutory requirements for smooth commercial functioning.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Legal Operating Authority: Necessary permit for operating a commercial office, shop, or warehouse locally.",
+        "Labor Law Compliance: Establishes regulated working hours, leave policies, and employee record standards.",
+        "Business Proof: Serves as a primary document for opening bank accounts and obtaining other local licenses."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -322,7 +368,11 @@
       "name": "Professional Tax",
       "shortDescription": "Professional Tax registration ensures proper tax deduction for employees according to state laws.",
       "longDescription": "Professional Tax registration involves enrolling the business under the relevant state authority, calculating monthly deductions from employees' salaries, submitting returns, and depositing taxes. Compliance ensures employees' professional tax obligations are met, avoiding penalties, and maintaining smooth payroll management. Businesses benefit from structured deduction processes and accurate reporting, supporting statutory compliance and operational efficiency.",
-      "longHighlights": [],
+      "longHighlights": [
+        "State-Wise Compliance: Accurate calculation and deduction of tax based on specific state-level legislation.",
+        "Payroll Integration: Seamlessly incorporate tax deductions into your monthly salary disbursement cycles.",
+        "Penalty Prevention: Timely filing and payment to ensure the business remains in good standing with state authorities."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -340,7 +390,11 @@
       "name": "FSSAI Registration",
       "shortDescription": "FSSAI registration certifies food businesses to comply with safety and hygiene standards.",
       "longDescription": "FSSAI Registration involves applying through the Food Safety Authority, submitting business and product details, meeting hygiene and operational standards, and obtaining the license. This certification ensures food safety, builds customer trust, and allows legal operation. Compliance helps avoid penalties, ensures periodic inspections, and facilitates expansion into multiple regions or eCommerce platforms, establishing credibility and adherence to food regulations.",
-      "longHighlights": [],
+      "longHighlights": [
+        "Food Safety Assurance: Certify that your products meet the hygiene and safety standards required by law.",
+        "Consumer Trust: Use the FSSAI logo on packaging to build immediate credibility with health-conscious buyers.",
+        "Market Expansion: Mandatory license to list food products on major e-commerce and delivery platforms."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -358,7 +412,11 @@
       "name": "Import Export Code",
       "shortDescription": "IEC registration is mandatory for businesses engaging in international trade.",
       "longDescription": "Import Export Code (IEC) registration involves applying to the Directorate General of Foreign Trade with business details, bank account information, and supporting documents. IEC is required for exporting and importing goods and services. Registration enables smooth customs clearance, access to government incentives, compliance with trade regulations, and legal recognition for international operations. This process ensures hassle-free cross-border transactions and smooth business expansion globally.",
-      "longHighlights": [],
+      "longHighlights": [
+        "International Market Access: Mandatory registration for any business looking to trade goods or services globally.",
+        "Lifetime Validity: Once obtained, the IEC does not require renewal, simplifying long-term trade operations.",
+        "Customs Clearance: Ensure smooth transit of goods through ports with a recognized DGFT identifier."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -402,10 +460,9 @@
       "shortDescription": "Secure your brand identity and distinguish your products or services legally.",
       "longDescription": "Trademark registration provides legal protection for your brand name, logo, or slogan, preventing unauthorized use by competitors. The process involves conducting a comprehensive search, preparing and filing the application with the Trade Marks Registry, responding to official objections (if any), and finally, securing the registration certificate. A registered trademark is a valuable asset that offers exclusive rights across India, enhancing brand equity, building consumer trust, and enabling you to take legal action against infringement. It is a critical step for any business focused on long-term growth and brand recognition.",
       "longHighlights": [
-        "Exclusive brand rights",
-        "Legal protection from infringement",
-        "Increased brand equity",
-        "National validity."
+        "Exclusive Brand Rights: Secure the sole legal right to use your brand name, logo, or slogan across India.",
+        "Infringement Protection: Powerful legal standing to prevent competitors from profiting from your brand identity.",
+        "Intangible Asset Value: Create a transferable business asset that adds significant value to the company’s balance sheet."
       ],
       "footer": false,
       "home": false,
@@ -424,7 +481,11 @@
       "name": "Operate",
       "shortDescription": "Channel your energy into growth while we manage the intricacies of operational efficiency. At Task360, our approach is tailored for startups, ensuring compliance is straightforward and aligned with your growth trajectory.",
       "longDescription": "",
-      "longHighlights": [],
+      "longHighlights": [
+        "Tailored compliance roadmaps aligned with startup growth trajectories.",
+        "Focus-driven delegation allowing founders to prioritize core business activities.",
+        "Strategic operational efficiency through streamlined regulatory management."
+      ],
       "footer": false,
       "home": false,
       "highlights": [
@@ -469,10 +530,9 @@
       "shortDescription": "Systematic management of all financial records to ensure compliance and accurate reporting.",
       "longDescription": "Professional Accounting and Book Keeping services involve recording all financial transactions, maintaining ledgers, reconciling bank statements, managing accounts payable and receivable, and preparing periodic financial statements (Profit & Loss, Balance Sheet). Our services ensure your records are accurate, up-to-date, and fully compliant with generally accepted accounting principles (GAAP). This service is essential for effective financial analysis, budgeting, managing cash flow, and providing accurate data needed for tax filings and investor reporting.",
       "longHighlights": [
-        "Accurate financial records",
-        "Statutory compliance",
-        "Cash flow visibility",
-        "Audit readiness."
+        "Real-Time Financial Clarity: Maintain up-to-date ledgers for an accurate view of your profit, loss, and cash flow.",
+        "Audit Readiness: Ensure all financial records are structured and documented to meet statutory audit requirements.",
+        "Informed Decision Making: Use periodic MIS reports to identify cost-saving opportunities and growth trends."
       ],
       "footer": true,
       "home": false,
@@ -1357,22 +1417,26 @@
       "position": "Co Founder",
       "feedback": "Starting our cosmetics brand on Amazon and Flipkart was exciting, but the back-end compliance was overwhelming. Task360 handled everything—from business registration to daily marketplace reconciliation and GST filing. Their specialized knowledge of eCommerce taxation saved us from costly mistakes. They truly understand the marketplace ecosystem.",
       "shortFeedback": "Task360 managed our registrations, GST, and reconciliations seamlessly. Their eCommerce expertise saved us from costly mistakes.",
-      "logo": "image6.png",
+      "icon": "",
+      "logo": "rise.webp",
       "description": "Handled business registration, complete marketplace reconciliation and tax compliance.",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "2",
       "name": "Bwise Solutions Pvt Ltd",
       "industry": "Recruitment",
-      "brandName": "Bwise Solutions Pvt Ltd",
+      "brandName": "Bwise Solutions",
       "title": "Praneet Singh Sisodiya",
       "position": "Managing Director",
       "feedback": "As a recruitment firm, our focus needed to be on placing candidates, not managing books. Task360 took complete ownership of our GST compliance, bookkeeping, and business registration. Their proactive approach is remarkable—they identify issues before they become problems and always meet deadlines. We've had zero penalties since partnering with them three years ago. Highly recommend for any service business!",
       "shortFeedback": "Task360 handles our compliance proactively. Zero penalties in three years—highly reliable and deadline-driven.",
-      "logo": "image8.png",
+      "icon": "",
+      "logo": "bwise.png",
       "description": "Partnered for GST compliance, bookkeeping, and business registration.",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "3",
@@ -1383,9 +1447,11 @@
       "position": "Founder",
       "feedback": "We were selling bedsheets on Amazon, Flipkart, and Meesho but had no clear picture of our profitability. Task360 provided end-to-end accounting and compliance solutions that gave us complete visibility. Their multi-channel sales reconciliation is exceptional—they track every deduction, every return, every fee. Now we can see which platform and which product line is actually profitable. Their service has transformed how we run our business.",
       "shortFeedback": "Task360 gave us complete profitability clarity across marketplaces. Their reconciliation is truly exceptional.",
-      "logo": "trigun-sales",
+      "icon": "Sofa",
+      "logo": "",
       "description": "Supported with financial structuring, accounting, and GST management.",
-      "home": false
+      "home": false,
+      "bgColor": ""
     },
     {
       "id": "4",
@@ -1396,100 +1462,116 @@
       "position": "Founder",
       "feedback": "Medical equipment has complex GST implications, and selling across multiple platforms made our accounting a nightmare. Task360's team not only sorted out our financial structuring but also optimized our entire accounting system. Their marketplace reconciliation is flawless—we now know exactly what we're earning from each platform. The monthly P&L reports they provide help us make data-driven inventory decisions. Best investment we made!",
       "shortFeedback": "Flawless marketplace reconciliation and clear P&L reporting. Best accounting investment we made.",
-      "logo": "credence-meditech",
+      "icon": "Stethoscope",
+      "logo": "",
       "description": "End-to-end accounting and compliance solutions for multi-channel sales.",
-      "home": false
+      "home": false,
+      "bgColor": ""
     },
     {
       "id": "5",
       "name": "BLU",
       "industry": "eCommerce-Readymade Garments",
-      "brandName": "BLU - eCommerce - Readymade Garments",
+      "brandName": "BLU",
       "title": "Akhil Tanted",
       "position": "Founder",
       "feedback": "Fashion eCommerce moves fast, and we needed financial partners who could keep pace. Task360's team handles our complete accounting and compliance across all marketplaces. They're always available when we need them—whether it's a GST query or urgent marketplace reconciliation. Their understanding of fashion retail and seasonal trends helps us plan better. They're not just service providers; they're true business partners.",
       "shortFeedback": "Always available, deeply knowledgeable, and proactive. Task360 feels like a true business partner.",
-      "logo": "image7.png",
+      "icon": "",
+      "logo": "blu.png",
       "description": "End-to-end accounting and compliance solutions for multi-channel sales.",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "6",
       "name": "Vasu Lifestyle Pvt Ltd",
       "industry": "Readymade Garments",
-      "brandName": "Vasu Lifestyle Private Limited- Readymade Garments Manufacturing",
+      "brandName": "Vasu Lifestyle",
       "title": "Amit Tanted",
       "position": "CEO",
       "feedback": "Task360 helped us from day one—company registration, setting up invoicing automation, and ensuring tax compliance. But what really stood out was their expertise in securing Industrial Subsidy in Madhya Pradesh. They navigated the entire process, prepared documentation, and followed up with authorities. We received ₹54 lakhs in subsidy that significantly boosted our working capital. Their knowledge of state incentives is exceptional!",
       "shortFeedback": "Task360 secured us ₹54 lakhs in industrial subsidy. Exceptional expertise in government incentives.",
-      "logo": "image10.png",
+      "icon": "",
+      "logo": "vasu.jpg",
       "description": "Advised on company registration, invoicing automation, and tax filing, Supported with Industrial Subsidy in Madhya Pradesh",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "7",
       "name": "AVS Group",
       "industry": "Automobile Anciliary",
-      "brandName": "AVS Group-Automobile Ancillary",
+      "brandName": "AVS Group",
       "title": "Arvind Jain",
       "position": "Founder",
       "feedback": "As an automobile component dealer, our accounting needs are complex. Task360 advised us on the right company structure, automated our accounting system, and ensure seamless tax compliance. What I appreciate most is their responsiveness—I can call them anytime with a query and get expert answers immediately. Fantastic team!",
       "shortFeedback": "Highly responsive team with strong compliance expertise. Always available with expert guidance.",
-      "logo": "image9.png",
+      "icon": "",
+      "logo": "avs.png",
       "description": "Advised on company registration, accounting automation, and tax Compliance",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "8",
       "name": "Little Dolly",
       "industry": "Readymade Garments",
-      "brandName": "Little Dolly - Children's Garments Manufacturing",
+      "brandName": "Little Dolly",
       "title": "Nitin Bothra",
       "position": "Foudner",
       "feedback": "We manufacture children's clothing in Madhya Pradesh, and Task360 helped us secure Industrial Subsidy. They handled the entire application process—from documentation to follow-ups with the department. The ₹84 lakhs subsidy we received helped us expand our production capacity. Their knowledge of government schemes and subsidy programs is incredible. Thank you, Task360!",
       "shortFeedback": "Task360 helped us secure ₹84 lakhs subsidy. Outstanding knowledge of government schemes.",
-      "logo": "image2.png",
+      "icon": "",
+      "logo": "ld.png",
       "description": "Supported with Industrial Subsidy in Madhya Pradesh",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "9",
       "name": "Eco Hawk",
       "industry": "Readymade Garments",
-      "brandName": "Eco Hawk- Sustainable Fashion",
+      "brandName": "Eco Hawk",
       "title": "Dhiraj Lal",
       "position": "Founder",
       "feedback": "Starting our sustainable fashion brand required understanding various compliance requirements. Task360 guided us through Industrial Subsidy applications in MP, which gave us the financial cushion we needed during our initial phase. Their team is knowledgeable, patient, and genuinely interested in our success. They explained everything clearly and made the entire process smooth. Highly recommended for new manufacturing businesses!",
       "shortFeedback": "Smooth subsidy support and clear guidance. Perfect partner for new manufacturing businesses.",
-      "logo": "image1.png",
+      "icon": "",
+      "logo": "ecohawk.png",
       "description": "Supported with Industrial Subsidy in Madhya Pradesh",
-      "home": true
+      "home": true,
+      "bgColor": "#000000"
     },
     {
       "id": "10",
       "name": "Shree Sai Extrusion Technik Private Limited",
-      "industry": "Machinery Manufacturing Unit",
-      "brandName": "Shree Sai Extrusion Technik Private Limited- Machinery Manufacturing",
+      "industry": "Machinery Manufacturing",
+      "brandName": "Shree Sai Extrusion Technik",
       "title": "Sudhir Jaiswal",
       "position": "Director",
       "feedback": "Setting up a machinery manufacturing unit involves substantial compliance and documentation. Task360 advised us on company registration, helped us choose the right entity structure, implemented accounting automation, and ensured we stay tax compliant from day one. Their systematic approach to handling our financials gives us peace of mind. We can focus on manufacturing while they handle all the financial and compliance matters professionally.",
       "shortFeedback": "End-to-end compliance and automation handled professionally. Total peace of mind from day one.",
-      "logo": "image4.jpg",
+      "icon": "",
+      "logo": "set.jpg",
       "description": "Advised on company registration, accounting automation, and tax Compliance",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "11",
       "name": "Enact Formulation",
       "industry": "Chemical Manufacturing Unit",
-      "brandName": "Enact Formulations - Chemical Manufacturing",
+      "brandName": "Enact Formulations",
       "title": "Anil Shukla",
       "position": "Founder",
       "feedback": "Chemical manufacturing has stringent compliance requirements. Task360 partnered with us for GST compliance, bookkeeping, and business registration. They understand the complexities of our industry—input tax credits on raw materials, compliance with chemical regulations, and proper documentation. Their monthly financial reports are comprehensive and help us track profitability by product line. Excellent service and deep expertise!",
       "shortFeedback": "Deep industry knowledge with strong GST and reporting support. Excellent and reliable service.",
+      "icon": "",
       "logo": "image3.png",
       "description": "Partnered for GST compliance, bookkeeping, and business registration.",
-      "home": true
+      "home": true,
+      "bgColor": ""
     },
     {
       "id": "12",
@@ -1500,9 +1582,11 @@
       "position": "",
       "feedback": "",
       "shortFeedback": "",
-      "logo": "image5.png",
+      "icon": "",
+      "logo": "techsimba.png",
       "description": "Partnered for GST compliance, bookkeeping, business registration and Start up India Registration.",
-      "home": true
+      "home": true,
+      "bgColor": "white"
     },
     {
       "id": "13",
@@ -1513,9 +1597,11 @@
       "position": "",
       "feedback": "I have known Arpit for last 10 years. I would like to mention that Arpit is very hardworking and dedicated person towards his profession and clients. He is self made professional with always a problem solving and helping attitude, which at the end benefits the stakeholders.",
       "shortFeedback": "Extremely dedicated, hardworking, and solution-oriented professional who always puts clients first.",
+      "icon": "",
       "logo": "",
       "description": "",
-      "home": false
+      "home": false,
+      "bgColor": ""
     }
   ],
   "locations": [
@@ -1680,7 +1766,7 @@
       "id": 26,
       "question": "Can you help with getting business loans?",
       "answer": "Yes, via financial statement prep, business plans, and liaison with banks/NBFCs.",
-      "serviceIds": "\"registrations, launch\""
+      "serviceIds": "registrations, launch"
     },
     {
       "id": 27,
@@ -1741,7 +1827,7 @@
     {
       "slug": "new-seller",
       "title": "New Seller",
-      "serviceIds": "launch, incorporation, sole-propreitorship, partnership-registration, private-limited-company, opc, gst-registration, msme, startup-india, accounting, gst-filings, itr",
+      "serviceIds": "launch, incorporation, sole-propreitorship, partnership-registration, private-limited-company",
       "description": "Expert assistance for new entrepreneurs to register companies, obtain GST/MSME certificates, and launch legally compliant online businesses.",
       "keywords": "company registration, GST for sellers, Startup India recognition, OPC registration, MSME certificate",
       "icon": "Rocket",
@@ -1749,12 +1835,12 @@
       "text": "From incorporation to first-sale compliance, we handle the paperwork so you can focus on building your brand.",
       "ctaTitle": "Ready to Go Legal?",
       "ctaText": "Register Your Business Today",
-      "faqIds": "2,3,5,6,7,10,13,19,21,23,27,32,35"
+      "faqIds": "2,3,5,6,7,10,13,19,21,23,27,32, 35"
     },
     {
       "slug": "scaling-brand",
       "title": "Scaling Brand",
-      "serviceIds": "operate, accounting-taxation, gst-services, tds, itr, virtual-cfo, fundraise, valuation, financial-modeling, consultancy",
+      "serviceIds": "operate, accounting-taxation, gst-services,  virtual-cfo",
       "description": "Comprehensive financial management for growing brands, including Virtual CFO services, fundraising support, and advanced tax planning.",
       "keywords": "Virtual CFO, startup fundraising, business valuation, financial modeling, tax advisory for brands",
       "icon": "TrendingUp",
@@ -1767,7 +1853,7 @@
     {
       "slug": "multi-marketplace",
       "title": "Multi-Marketplace",
-      "serviceIds": "operate, accounting-taxation, gst-services, gst-filings, indirect-taxes, international-trade, virtual-cfo",
+      "serviceIds": "operate, accounting-taxation, gst-services, international-trade, virtual-cfo",
       "description": "Specialized accounting and reconciliation services for sellers operating across Amazon, Flipkart, Meesho, and international borders.",
       "keywords": "e-commerce reconciliation, marketplace GST, international trade compliance, Amazon seller accounting",
       "icon": "Layers",
@@ -1780,7 +1866,7 @@
     {
       "slug": "facing-a-notice",
       "title": "Facing a Notice",
-      "serviceIds": "gst-indirect-taxes, litigation-support, gst-services, accounting-taxation, legal-services",
+      "serviceIds": "gst-indirect-taxes, gst-services, accounting-taxation",
       "description": "Professional legal and tax representation to resolve GST, Income Tax, or departmental notices with accurate, timely responses.",
       "keywords": "GST notice response, tax litigation support, income tax notice help, legal representation for tax",
       "icon": "AlertTriangle",

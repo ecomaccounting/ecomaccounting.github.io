@@ -30,4 +30,14 @@ Todo:
   ☐ [Arpit] Policies, subscription plans, Team photos and Blogs are pending from Arpit side.  
   ☐ [Arpit] Testimonials Are Too Passive: Your testimonials are:Real,Well written,Completely skippable. They don’t:Tie to specific services, Show transformation, Anchor outcomes (₹, time saved, penalties avoided).They feel like compliance, not persuasion.
   ☐ [Arpit] Make Testimonials Service-Linked Example: “Used Task360 for GST + reconciliation → Saved ₹4.2L in penalties”
-  Animation on logo & trending up on Hero
+  ☐ [Arpit] Populate more FAQs and map it against each service
+  ☐ Trusted client ticker optional bg color for client logo if required
+  ☐ Fix testimonials component for user scrolling
+  ☐ Change whatsApp phone number and take it from mext.config.js
+  ☐ Client name can be fixed in clients ticker
+  ☐ Dynamic service banner so that it work in light and dark mode...
+  ☐ Fix breadcrumb for Service slug
+  ☐ OG test successful but was not working with whatsapp
+  ☐ Fix logos specially Vasu lifestyle
+  ☐ Go to top button
+  ✔ Animation on logo & trending up on Hero @done(26-01-09 15:42)

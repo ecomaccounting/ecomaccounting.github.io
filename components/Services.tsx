@@ -20,15 +20,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
         className="cursor-pointer w-full text-left flex items-start gap-4"
       >
         <div className="bg-accent-light w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-          <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
-          {/* {Icon ? (
-            <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
-          ) : (
-            (() => {
-              console.log("Missing icon for:", service.name, "Attempted key:", service.icon);
-              return <FileText className="h-8 w-8 text-blue-600" />;
-            })()
-          )} */}
+          <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />          
         </div>
         <div className="flex-1">
           <h3 className="text-lg font-semibold leading-snug">{service.name}</h3>

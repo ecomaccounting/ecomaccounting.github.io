@@ -67,6 +67,8 @@ export interface Client {
   shortFeedback: string;   
   description: string; 
   home: boolean;
+  bgColor:string;
+  icon:string;
 }
 
 export interface FAQItem {
