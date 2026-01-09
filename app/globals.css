@@ -10,9 +10,9 @@
 
   --primary: #1e40af;
   /* Trustworthy finance blue */
-  --accent: #2563eb;
+  --accent: #1455e3;
   /* CTA / hover */
-  --accent-soft: #f4f8ff;
+  --accent-soft: #b4cefe;
   /* Soft professional blue bg */
 
   --muted: #64748b;
@@ -209,3 +209,24 @@ footer a {
 footer a:hover {
   color: var(--fg);
 }
+
+/*  Service Hero  */
+@keyframes halo-breathe {
+  0% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(0.98);
+  }
+  50% {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  100% {
+    opacity: 0.55;
+    transform: translate(-50%, -50%) scale(0.98);
+  }
+}
+
+.animate-halo-breathe {
+  animation: halo-breathe 2.8s ease-in-out infinite;
+}
+/* Service Hero */

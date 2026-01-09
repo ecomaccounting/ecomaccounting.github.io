@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import MiniSearch from 'minisearch'
-import { miniSearchIndexOptions, normalize } from "../search/shared.js";
+import { miniSearchIndexOptions, normalize } from "../lib/shared.js";
 
 export default async function buildSearchIndex() {
 

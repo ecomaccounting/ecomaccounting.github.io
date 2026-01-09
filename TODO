@@ -38,6 +38,6 @@ Todo:
   ✔ Go to top button @done(26-01-09 21:15)
   ✔ Animation on logo & trending up on Hero @done(26-01-09 15:42)
   ☐ Fix testimonials component for user scrolling
-  ☐ Dynamic service banner so that it work in light and dark mode...
+  ✔ Dynamic service banner so that it work in light and dark mode... @done(26-01-10 03:04)
   ☐ Fix breadcrumb for Service slug
   ☐ OG test successful but was not working with whatsapp

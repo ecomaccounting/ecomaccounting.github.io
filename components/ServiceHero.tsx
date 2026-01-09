@@ -50,6 +50,8 @@ export default function ServiceHero({
                 aria-hidden
             />
 
+            
+
             {/* Overlay – intentionally LIGHT, image must show */}
             <div className="absolute inset-0 aria-hidden" />            
 

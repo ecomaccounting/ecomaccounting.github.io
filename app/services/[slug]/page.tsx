@@ -5,7 +5,8 @@ import { ServiceItem } from "@/data/types";
 import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import FAQ from "@/components/FAQ";
-import ServiceHero from "@/components/ServiceHero";
+// import ServiceHero from "@/components/ServiceHero";
+import { ServiceHero } from "@/components/GradientBanner";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Explore ${service.name} | task360 – Simple Finance for eCommerce Businesses`,
     description: service.metaDescription,
-    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),       
+    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),
 
     openGraph: {
       title: `Explore ${service.name} services | task360`,
@@ -77,10 +78,16 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         { name: service.name }]} />
 
         {/* Hero Banner Section */}
-        <div className="py-5">
-          <ServiceHero
+        <div className="py-5 h-96">
+          {/* <ServiceHero
             service={service}
             variant="primary"
+          /> */}
+          <ServiceHero
+            service={service}
+            variant="parent"
+            className=""
+            key={service.id}
           />
         </div>
 
@@ -138,8 +145,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                     className="group"
                   >
                     <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}>
-
-                      <ServiceHero service={child} variant="compact" />
+                      <div className="h-96 w-full">
+                        <ServiceHero service={child} variant="child" className="" key={service.id} />
+                      </div>
                       {/* Content Section */}
                       <div className="w-full lg:w-1/2 space-y-6">
 

@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import MiniSearch from "minisearch";
 import Service from "@/components/Services";
 import Breadcrumb from "@/components/BreadcrumbItem";
-import { miniSearchIndexOptions, miniSearchQueryOptions } from "@/search/shared";
+import { miniSearchIndexOptions, miniSearchQueryOptions } from "@/lib/shared";
 import { ServiceItem } from "@/data/types";
 
 export default function ServiceSearch() {
