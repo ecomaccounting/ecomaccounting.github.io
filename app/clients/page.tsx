@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "task360",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
         alt: "Our Clients – task360",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Our Clients | task360",
     description:
       "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
   },
 
   robots: {

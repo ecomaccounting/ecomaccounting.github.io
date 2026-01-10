@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
     images: [
       {
-        url: "/img/og/og-image.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
         alt: "task360 – Finance & Compliance Made Simple",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     title: "task360 – Simple Finance for eCommerce & Growing Businesses",
     description:
       "Accounting, GST, tax & compliance services for eCommerce sellers and startups.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
   },
 
   icons: {

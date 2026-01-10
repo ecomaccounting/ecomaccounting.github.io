@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       siteName: "task360",
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
           width: 1200,
           height: 630,
           alt: "Book Free Consultation – task360",
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: `${guide.heading} | task360`,
       description: guide.description,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
     },
 
     robots: {

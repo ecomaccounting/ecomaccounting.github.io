@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "task360",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`,
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
         alt: "Book Free Consultation – task360",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Explore task360 Services | task360",
     description:
       "Simplify finance, GST, and compliance for your eCommerce business. Explore task360 services.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-book-free-consultation.png`],
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
   },
 
   robots: {
