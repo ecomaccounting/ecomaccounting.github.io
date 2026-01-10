@@ -67,8 +67,8 @@ ${message}
   };
 
   return (
-    <section className="min-h-screen bg-background text-foreground">
-      <div className="max-w-3xl mx-auto px-4 py-16">
+    <section className="">
+      <div className="">
         {/* Hero */}
         <header className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold">
@@ -82,7 +82,7 @@ ${message}
         </header>
 
         {/* Form */}
-        <div className="bg-card border border-border rounded-2xl p-6 md:p-8">
+        <div className="bg-card  p-6 md:p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>

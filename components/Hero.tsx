@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/book-consultation"
+                href="/contact-us"
                 className="button success px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
               >
                 <MessageCircle className="h-7 w-7" />

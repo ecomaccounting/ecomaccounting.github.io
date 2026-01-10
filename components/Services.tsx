@@ -42,7 +42,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
             ))}
           </ul>
           <div className="grid grid-cols-2 gap-3 pt-2">
-            <Link href="/book-consultation" className="success text-center py-2 px-3 rounded-lg text-sm font-semibold">
+            <Link href="/contact-us" className="success text-center py-2 px-3 rounded-lg text-sm font-semibold">
               Free Consultation
             </Link>
             <Link href={`/services/${service.id}`} className="primary text-center py-2 px-3 rounded-lg text-sm">

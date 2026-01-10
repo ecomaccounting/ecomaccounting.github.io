@@ -109,7 +109,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
           {/* PRIMARY CTA */}
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
             <Link
-              href="/book-consultation"
+              href="/contact-us"
               className={`primary inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium
                 ${isUrgent ? "bg-red-600 hover:bg-red-700" : "bg-primary hover:bg-accent"}
               `}
@@ -164,7 +164,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
           </p>
 
           <Link
-            href="/book-consultation"
+            href="/contact-us"
             className="success mt-8 inline-flex items-center gap-2   px-6 py-3 rounded-xl font-semibold "
           >
             Book Free Consultation
