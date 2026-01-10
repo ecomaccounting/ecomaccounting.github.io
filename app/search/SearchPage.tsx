@@ -17,14 +17,59 @@ export default function ServiceSearch() {
   );
 
   const [submittedQuery, setSubmittedQuery] = useState(queryFromUrl);
-
   const [allServices, setAllServices] = useState<ServiceItem[]>([]);
   const [searchIndex, setSearchIndex] = useState<MiniSearch<any> | null>(null);
-
   const [isLoading, setIsLoading] = useState(true);
   const [searchResults, setSearchResults] = useState<
     { id: string; score: number }[] | null
   >(null);
+
+  const SEARCH_SYNONYMS: Record<string, string> = {
+    "pvt": "private",
+    "ltd": "limited",
+    "pvt ltd": "private limited",
+    "plc": "private limited company",
+    "llp": "limited liability partnership",
+    "opc": "one person company",
+    "prop": "proprietorship",
+    "gst": "goods and services tax",
+    "msme": "micro small medium enterprise",
+    "sme": "small medium enterprise",
+    "sec 8": "section 8 company",
+    "ngo": "section 8 company",
+    "udyam": "msme registration",
+    "pf": "provident fund",
+    "epf": "employee provident fund",
+    "esic": "employee state insurance",
+    "pt": "professional tax",
+    "fssai": "food safety and standards authority of india",
+    "iec": "import export code",
+    "roc": "registrar of companies",
+    "tds": "tax deducted at source",
+    "itr": "income tax return",
+    "cfo": "chief financial officer",
+    "vcfo": "virtual cfo",
+    "esop": "employee stock option plan",
+    "sar": "stock appreciation rights",
+    "ipo": "initial public offering",
+    "fema": "foreign exchange management act",
+    "dgft": "directorate general of foreign trade",
+    "m&a": "mergers and acquisitions",
+  };
+
+  function normalizeQuery(query: string) {
+    const tokens = query
+      .toLowerCase()
+      .trim()
+      .split(/\s+/);
+
+    const expandedTokens = tokens.flatMap((token) => {
+      const mapped = SEARCH_SYNONYMS[token];
+      return mapped ? [token, mapped] : [token];
+    });
+
+    return Array.from(new Set(expandedTokens)).join(" ");
+  }
 
   /* -----------------------------------------
    Sync query from URL
@@ -99,11 +144,7 @@ export default function ServiceSearch() {
       return;
     }
 
-    const cleanedQuery = submittedQuery
-      .toLowerCase()
-      .trim()
-      .split(/\s+/)
-      .join(" ");
+    const cleanedQuery = normalizeQuery(submittedQuery);
 
     const results = searchIndex.search(
       cleanedQuery,
@@ -128,12 +169,12 @@ export default function ServiceSearch() {
     }
 
     const serviceMap = new Map(
-    allServices.map((s) => [s.id.toLowerCase(), s])
-  );
-  
-  return searchResults
-    .map((result) => serviceMap.get(result.id))
-    .filter((service): service is ServiceItem => !!service);     
+      allServices.map((s) => [s.id.toLowerCase(), s])
+    );
+
+    return searchResults
+      .map((result) => serviceMap.get(result.id))
+      .filter((service): service is ServiceItem => !!service);
 
   }, [searchResults, allServices]);
 
