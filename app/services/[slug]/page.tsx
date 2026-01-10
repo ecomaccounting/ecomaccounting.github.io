@@ -1,14 +1,14 @@
 
 import { notFound } from "next/navigation";
-import data from "@/data/data1.json";
-import { ServiceItem } from "@/data/types";
-import Link from "next/link";
-import Breadcrumb from "@/components/BreadcrumbItem";
-import FAQ from "@/components/FAQ";
-// import ServiceHero from "@/components/ServiceHero";
 import { ServiceHero } from "@/components/ServiceHero";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import { ServiceItem } from "@/data/types";
+import data from "@/data/data1.json";
+import Link from "next/link";
+import Breadcrumb from "@/components/BreadcrumbItem";
+import FAQ from "@/components/FAQ";
+
 
 // --- Generate static params for SSG ---
 export async function generateStaticParams() {
@@ -63,8 +63,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = data.services.find((s: ServiceItem) => s.id === slug);
-
   if (!service) return notFound();
+
+  const getLineage = (currentId: string | undefined, allServices: ServiceItem[]): ServiceItem[] => {
+    if (!currentId) return [];
+    const found = allServices.find(s => s.id === currentId);
+    if (!found) return [];
+
+    // Recursively find parents and combine them
+    return [...getLineage(found.parentId, allServices), found];
+  };  
+  const lineage = getLineage(slug, data.services);    
+  const breadcrumbItems = [
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    ...lineage.map(srv => ({
+      name: srv.name,
+      href: srv.id === slug ? undefined : `/services/${srv.id}` // Disable link for current page
+    }))
+  ];
+
   const faqs = data.faqs.filter(faq => faq.serviceIds.includes(service.id));
   // Children services
   const childrenServices = data.services.filter(s => s.parentId === service.id);
@@ -72,17 +90,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   return (
     <section className="relative">
       <div className="container mx-auto px-4">
-        {/* Breadcrumb */}
-        <Breadcrumb items={[{ name: "Home", href: "/" },
-        { name: "Services", href: "/services" },
-        { name: service.name }]} />
+        <Breadcrumb items={breadcrumbItems} />
 
-        {/* Hero Banner Section */}
         <div className="py-5 h-120">
-          {/* <ServiceHero
-            service={service}
-            variant="primary"
-          /> */}
+
           <ServiceHero
             service={service}
             variant="parent"
