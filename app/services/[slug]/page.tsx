@@ -6,7 +6,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import FAQ from "@/components/FAQ";
 // import ServiceHero from "@/components/ServiceHero";
-import { ServiceHero } from "@/components/GradientBanner";
+import { ServiceHero } from "@/components/ServiceHero";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
