@@ -47,6 +47,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: `/contact-us`,
+  },
 };
 
 export default function ContactPage() {
@@ -54,8 +57,8 @@ export default function ContactPage() {
     <div className="container mx-auto">
       <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Contact" }]} />
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <Contact/>
-        <Consultation />        
+        <Contact />
+        <Consultation />
       </div>
     </div>
   );

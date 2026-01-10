@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: `/services`,
+  },
 };
 
 export default function ServicesPage() {

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/our-story`,
-    siteName: "task360",  
+    siteName: "task360",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
@@ -50,6 +50,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: `/our-story`,
   },
 };
 
@@ -211,57 +214,57 @@ export default function OurStoryPage() {
 
           {/* --- Team Grid --- */}
           <div className="mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lace-items-center">
-            {team.map((member) => (
-              <article
-                key={member.memberName}
-                className="
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lace-items-center">
+              {team.map((member) => (
+                <article
+                  key={member.memberName}
+                  className="
     bg-accent rounded-xl shadow-lg hover:shadow-xl transition-shadow
     flex flex-col overflow-hidden
     w-full max-w-md
   "
-                itemScope
-                itemType="https://schema.org/Person"
-              >
-                {/* --- Image --- */}
-                <div className="relative w-full aspect-[4/5] md:aspect-[1/1] overflow-hidden rounded-t-xl">
-                  <Image
-                    src={`/img/ot/${member.image}`}
-                    alt={`Photo of ${member.memberName}`}
-                    fill
-                    className="
+                  itemScope
+                  itemType="https://schema.org/Person"
+                >
+                  {/* --- Image --- */}
+                  <div className="relative w-full aspect-[4/5] md:aspect-[1/1] overflow-hidden rounded-t-xl">
+                    <Image
+                      src={`/img/ot/${member.image}`}
+                      alt={`Photo of ${member.memberName}`}
+                      fill
+                      className="
       object-cover
       object-top
       scale-[1.02]
     "
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
 
-                  {/* subtle edge softener */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/5 pointer-events-none" />
-                </div>
+                    {/* subtle edge softener */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/5 pointer-events-none" />
+                  </div>
 
-                {/* --- Content --- */}
-                <div className="flex flex-col flex-grow p-6 text-center md:text-left">
-                  <h2
-                    className="text-2xl font-semibold mb-3"
-                    itemProp="name"
-                  >
-                    {member.memberName}
-                  </h2>
-                  <p
-                    className="text-base leading-relaxed"
-                    itemProp="description"
-                  >
-                    {member.description.length > 400
-                      ? member.description.slice(0, 400) + "..."
-                      : member.description}
-                  </p>
-                </div>
-              </article>
-            ))}
+                  {/* --- Content --- */}
+                  <div className="flex flex-col flex-grow p-6 text-center md:text-left">
+                    <h2
+                      className="text-2xl font-semibold mb-3"
+                      itemProp="name"
+                    >
+                      {member.memberName}
+                    </h2>
+                    <p
+                      className="text-base leading-relaxed"
+                      itemProp="description"
+                    >
+                      {member.description.length > 400
+                        ? member.description.slice(0, 400) + "..."
+                        : member.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-</div>
         </div>
       </section>
       <TestimonialsTicker />

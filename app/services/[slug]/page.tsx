@@ -56,6 +56,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
   };
 }
 
@@ -72,8 +75,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
     // Recursively find parents and combine them
     return [...getLineage(found.parentId, allServices), found];
-  };  
-  const lineage = getLineage(slug, data.services);    
+  };
+  const lineage = getLineage(slug, data.services);
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
@@ -203,14 +206,14 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           </div>
         )}
         <header className="text-center mb-10">
-        <h2 className="">
-          Frequently Asked Questions
-        </h2>
-        <p className=" max-w-2xl mx-auto">
-          Answers to common questions eCommerce sellers ask about accounting, GST,
-          compliance, and business growth.
-        </p>
-      </header>
+          <h2 className="">
+            Frequently Asked Questions
+          </h2>
+          <p className=" max-w-2xl mx-auto">
+            Answers to common questions eCommerce sellers ask about accounting, GST,
+            compliance, and business growth.
+          </p>
+        </header>
         <FAQ faqs={faqs} />
 
         {/* CTA Section */}

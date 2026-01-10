@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: `/clients`,
+  },
 };
 const clients = ClientData.clients;
 
@@ -105,36 +108,36 @@ export default function ClientsPage() {
     </section>
   );
 }
-function ClientItem({ client }: { client: Client }) {  
-  const displayName = client.brandName || client.name;  
+function ClientItem({ client }: { client: Client }) {
+  const displayName = client.brandName || client.name;
   const clientIconMap: Record<string, React.ElementType> = {
     "Sofa": Sofa,
     "Stethoscope": Stethoscope,
-    "User":User,
+    "User": User,
     default: Building2,
   };
   const Icon =
     clientIconMap[client.icon ?? "default"] ?? clientIconMap.default;
-  
+
   return (
     <div
       className="group relative bg border border-default rounded-2xl p-8 transition-all hover:border-highlight hover:shadow-2xl hover:-translate-y-1"
       itemScope itemType="https://schema.org/Review"
     >
-      
+
       <span className="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold text-muted border border-default px-2 py-1 rounded">
         {client.industry}
       </span>
 
       {/* 2. Visual Anchor (Logo or Icon) */}
-      <div 
+      <div
         className="w-24 h-24 rounded-full flex items-center justify-center mb-6 overflow-hidden bg border-4 border-bg shadow-sm group-hover:scale-110 transition-transform"
-        style={{ backgroundColor: client.bgColor  }}
+        style={{ backgroundColor: client.bgColor }}
       >
         {client.logo ? (
-          <Image 
-            src={`/img/clients/${client.logo}`} 
-            alt={`${displayName} success story`} 
+          <Image
+            src={`/img/clients/${client.logo}`}
+            alt={`${displayName} success story`}
             width={80} height={80} className="object-contain p-2"
           />
         ) : (
