@@ -8,7 +8,7 @@ import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Story | task360 – Simple Finance for eCommerce Businesses",
+  title: "Our Story",
 
   description:
     "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
-        alt: "Contact Us – task360",
+        alt: "Our Story – task360",
       },
     ],
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | task360",
+    title: "Our Story | task360",
     description:
       "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
     images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
@@ -200,9 +200,9 @@ export default function OurStoryPage() {
         <div className="container mx-auto">
 
           <div className="text-center mb-16">
-            <h1 className="">
+            <h2 className="">
               Our Team
-            </h1>
+            </h2>
             <p className="text-lg max-w-2xl mx-auto">
               Experienced professionals committed to simplifying finance, taxation,
               and compliance for businesses across India.

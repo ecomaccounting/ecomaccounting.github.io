@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!service) return { title: "Service Not Found" };
 
   return {
-    title: `Explore ${service.name} | task360 – Simple Finance for eCommerce Businesses`,
+    title: `Explore ${service.name} Service`,
     description: service.metaDescription,
     keywords: service.keywords.split(",").map((kw: string) => kw.trim()),
 
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
           width: 1200,
           height: 630,
-          alt: "Book Free Consultation – task360",
+          alt: `${service.name} | task360`,
         },
       ],
       type: "website",
@@ -202,6 +202,15 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             </div>
           </div>
         )}
+        <header className="text-center mb-10">
+        <h2 className="">
+          Frequently Asked Questions
+        </h2>
+        <p className=" max-w-2xl mx-auto">
+          Answers to common questions eCommerce sellers ask about accounting, GST,
+          compliance, and business growth.
+        </p>
+      </header>
         <FAQ faqs={faqs} />
 
         {/* CTA Section */}

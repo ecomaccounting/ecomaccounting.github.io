@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/BreadcrumbItem";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Explore Services | task360 – Simple Finance for eCommerce Businesses",
+  title: "Explore task360 Services | task360",
 
   description:
     "Explore services to simplify accounting, GST, compliance, and financial management for your eCommerce business. Trusted finance experts for online sellers.",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Explore task360 Services | task360",
+    title: "Explore task360 Services",
     description:
       "Talk to trusted finance & compliance experts for eCommerce businesses. Get clarity on GST, accounting, reconciliation, and growth strategy.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/services`,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
-        alt: "Book Free Consultation – task360",
+        alt: "Explore task360 Services – task360",
       },
     ],
     type: "website",

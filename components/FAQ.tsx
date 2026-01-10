@@ -28,16 +28,7 @@ export default function FAQ({faqs}: { faqs: FAQItem[] }   ) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             <section className="max-w-5xl mx-auto p-4 ">
-                <header className="text-center mb-10">
-                    <h1 className="">
-                        Frequently Asked Questions
-                    </h1>
-                    <p className=" max-w-2xl mx-auto">
-                        Answers to common questions eCommerce sellers ask about accounting, GST,
-                        compliance, and business growth.
-                    </p>
-                </header>
-
+                
                 <div className="space-y-4">
                     {faqs.map((faq: FAQItem, index:number) => (
                         <div

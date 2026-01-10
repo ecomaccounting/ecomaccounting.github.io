@@ -7,7 +7,7 @@ import type { Client } from "@/data/types";
 import { Building2, Sofa, Stethoscope, User } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Clients | task360 – Simple Finance for eCommerce Businesses",
+  title: "Our Clients",
 
   description:
     "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",

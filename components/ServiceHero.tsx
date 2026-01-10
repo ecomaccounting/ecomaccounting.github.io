@@ -7,17 +7,17 @@ import { ServiceItem } from "@/data/types";
 
 interface ServiceHeroProps {
     variant: "parent" | "child";
-    service: ServiceItem;    
+    service: ServiceItem;
     className?: string;
 }
 
 export function ServiceHero({
     variant,
-    service,    
+    service,
     className
 }: ServiceHeroProps) {
-    let Icon = AppIconMap[service.icon];    
-    Icon = Icon?? AppIconMap["Rocket"];    
+    let Icon = AppIconMap[service.icon];
+    Icon = Icon ?? AppIconMap["Rocket"];
     const instanceSeed = service.name.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
     return (
         <section
@@ -56,14 +56,18 @@ export function ServiceHero({
 
             {/* ===== CONTENT ===== */}
             <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-                <div className="mb-4 flex h-24 w-24 items-center justify-center">                    
+                <div className="mb-4 flex h-24 w-24 items-center justify-center">
                     <Icon className="h-16 w-16 " />
                 </div>
 
-
-                <h1 className="mb-2 text-xl md:text-2xl font-semibold">
-                    {service.name}
-                </h1>
+                {variant === "parent" ? (
+                    <h1 className="mb-2 text-xl md:text-2xl font-semibold">
+                        {service.name}
+                    </h1>) : (
+                    <h2 className="mb-2 text-xl md:text-2xl font-semibold">
+                        {service.name}
+                    </h2>
+                )}
 
 
                 {variant === "parent" && service.shortDescription && (

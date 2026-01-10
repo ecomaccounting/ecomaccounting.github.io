@@ -4,7 +4,7 @@ import Contact from "@/components/Contact"
 import Consultation from "@/components/Consultation"
 
 export const metadata: Metadata = {
-  title: "Contact Us | task360 – Simple Finance for eCommerce Businesses",
+  title: "Contact Us",
 
   description:
     "Get in touch with task360 for accounting, GST, and compliance services. Call, email, or visit our office.",

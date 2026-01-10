@@ -86,7 +86,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
-        alt: "task360 – Finance & Compliance Made Simple",
+        alt: "task360 – Simple Finance for eCommerce & Growing Businesses",
       },
     ],
   },

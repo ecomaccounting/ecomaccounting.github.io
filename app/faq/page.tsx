@@ -5,7 +5,7 @@ import FAQ from "@/components/FAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions (FAQs) | task360 – Simple Finance for eCommerce Businesses",
+  title: "Frequently Asked Questions (FAQs)",
 
   description:
     "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
         width: 1200,
         height: 630,
-        alt: "Contact Us – task360",
+        alt: "Frequently Asked Questions – task360",
       },
     ],
     type: "website",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | task360",
+    title: "Frequently Asked Questions | task360",
     description:
       "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
     images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 const faqs = data.faqs;
 
 export default function FAQPage() {
-  
+
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -83,7 +83,17 @@ export default function FAQPage() {
         />
       </Head>
       <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "FAQs" }]} />
-      <FAQ faqs={faqs} /> 
+      <header className="text-center mb-10">
+        <h1 className="">
+          Frequently Asked Questions
+        </h1>
+        <p className=" max-w-2xl mx-auto">
+          Answers to common questions eCommerce sellers ask about accounting, GST,
+          compliance, and business growth.
+        </p>
+      </header>
+
+      <FAQ faqs={faqs} />
     </>
   );
 }

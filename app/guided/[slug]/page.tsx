@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!guide) return { title: "Service Not Found" };
 
   return {
-    title: `Explore ${guide.title} | task360 – Simple Finance for eCommerce Businesses`,
+    title: `${guide.heading}`,
     description: guide.description,
     keywords: guide.keywords.split(",").map((kw: string) => kw.trim()),
 
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
           width: 1200,
           height: 630,
-          alt: "Book Free Consultation – task360",
+          alt: `${guide.heading} | task360`,
         },
       ],
       type: "website",
@@ -144,6 +144,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
               These are the questions we’re most often asked by businesses like yours.
             </p>
           </div>
+          
 
           <FAQ faqs={faqs} />
         </div>

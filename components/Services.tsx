@@ -61,7 +61,7 @@ export default function Services({ services }: { services: ServiceItem[] }) {
     <section id="services" className="py-5" aria-label="Accounting and tax services">
       <div className="container mx-auto">
         <div className="text-center mb-14">
-          <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
+          <h1 className="">Services for eCommerce Sellers & Growing Businesses</h1>
           <p className="text-lg max-w-2xl mx-auto">
             From startup to scale-up, we handle accounting, GST, compliance, and advisory.
           </p>
