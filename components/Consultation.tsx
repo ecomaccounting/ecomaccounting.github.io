@@ -71,9 +71,9 @@ ${message}
       <div className="">
         {/* Hero */}
         <header className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Book a Free Consultation
-          </h1>
+          </h2>
           <p className="mt-4 text-muted-foreground">
             Talk directly with a finance & compliance expert on WhatsApp.
             <br />

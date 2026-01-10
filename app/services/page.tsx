@@ -53,8 +53,14 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="container mx-auto">
-    <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
-   <Services services={data.services} />
-   </div>
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Services" }]} />
+      <div className="text-center mb-14">
+        <h1 className="">Services for eCommerce Sellers & Growing Businesses</h1>
+        <p className="text-lg max-w-2xl mx-auto">
+          From startup to scale-up, we handle accounting, GST, compliance, and advisory.
+        </p>
+      </div>
+      <Services services={data.services} />
+    </div>
   );
 }

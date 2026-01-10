@@ -130,6 +130,12 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
 
       {/* SERVICES */}
       <section className="mt-20">
+        <div className="text-center mb-14">
+          <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
+          <p className="text-lg max-w-2xl mx-auto">
+            From startup to scale-up, we handle accounting, GST, compliance, and advisory.
+          </p>
+        </div>
         <Services services={services} />
       </section>
 
@@ -137,15 +143,13 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
       <section className="mt-24 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="mb-10 text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold">
+            <h2 className="">
               Common Questions at This Stage
             </h2>
             <p className="mt-4 text-light">
               These are the questions we’re most often asked by businesses like yours.
             </p>
           </div>
-          
-
           <FAQ faqs={faqs} />
         </div>
       </section>

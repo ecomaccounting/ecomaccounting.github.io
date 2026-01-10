@@ -20,7 +20,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
         className="cursor-pointer w-full text-left flex items-start gap-4"
       >
         <div className="bg-accent-light w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-          <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />          
+          <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
         </div>
         <div className="flex-1">
           <h3 className="text-lg font-semibold leading-snug">{service.name}</h3>
@@ -60,13 +60,6 @@ export default function Services({ services }: { services: ServiceItem[] }) {
   return (
     <section id="services" className="py-5" aria-label="Accounting and tax services">
       <div className="container mx-auto">
-        <div className="text-center mb-14">
-          <h1 className="">Services for eCommerce Sellers & Growing Businesses</h1>
-          <p className="text-lg max-w-2xl mx-auto">
-            From startup to scale-up, we handle accounting, GST, compliance, and advisory.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {services
             .filter((service) => service.id.length > 2)

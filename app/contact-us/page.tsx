@@ -54,8 +54,8 @@ export default function ContactPage() {
     <div className="container mx-auto">
       <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Contact" }]} />
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <Consultation></Consultation>
         <Contact/>
+        <Consultation />        
       </div>
     </div>
   );

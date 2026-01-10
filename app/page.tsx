@@ -15,14 +15,19 @@ export default function HomePage() {
     <div className="max-w-7xl mx-auto container">
       <Hero />
       <HowItWorksStrip />
-      <TopClients/>
+      <TopClients />
       <GuidedOnboarding />
-      {/* <ServiceStacks/> */}
+      <div className="text-center mb-14">
+        <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
+        <p className="text-lg max-w-2xl mx-auto">
+          From startup to scale-up, we handle accounting, GST, compliance, and advisory.
+        </p>
+      </div>
       <Services services={services} />
       <WhyChooseUs />
-       <TestimonialsTicker />
-      
-       
+      <TestimonialsTicker />
+
+
     </div >
   );
 }
