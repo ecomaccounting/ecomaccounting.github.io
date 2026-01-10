@@ -45,13 +45,13 @@ export default function HowItWorksStrip() {
     return () => clearTimeout(id);
   }, [active, paused]);
 
-  const onUserAction = () => setPaused(true);
+  
 
   return (
     <section
       className="bg-accent-light py-16 md:py-20 px-4"
-      onTouchStart={onUserAction}
-      onMouseEnter={onUserAction}
+
+
     >
       <div className="mx-auto max-w-6xl">
         {/* Header */}
@@ -71,12 +71,11 @@ export default function HowItWorksStrip() {
             return (
               <button
                 key={step.title}
-                onClick={() => setActive(index)}
-                className={`rounded-2xl border p-6 text-left transition-all
-                  ${
-                    isActive
-                      ? "bg-accent shadow-xl border-accent scale-[1.02]"
-                      : "bg-light hover:bg-accent"
+                onClick={() => { setActive(index); setPaused(true); }}
+                className={`rounded-2xl border p-6 text-left transition-all scale-[1.02]
+                  ${isActive
+                    ? "bg-accent shadow-xl border-accent "
+                    : "bg-light hover:bg-accent"
                   }`}
               >
                 <span className={`absolute right-4 top-4 text-sm font-semibold transition`} > Step {index + 1} </span>
@@ -129,13 +128,13 @@ export default function HowItWorksStrip() {
         {/* MOBILE CONTROLS ONLY */}
         <div className="mt-8 flex justify-center gap-4 md:hidden">
           <button
-            onClick={prev}
+            onClick={() => { prev(); setPaused(true); }}
             className="rounded-full border bg-light p-2"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
           <button
-            onClick={next}
+            onClick={() => { next(); setPaused(true); }}
             className="rounded-full border bg-light p-2"
           >
             <ChevronRight className="h-5 w-5" />
