@@ -187,7 +187,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                         {/* CTA */}
                         <Link
                           href={`/services/${child.id}`}
-                          className="primary inline-flex items-center gap-2 mt-6 px-6 py-3  hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+                          className="primary inline-flex rounded-xl items-center gap-2 mt-6 px-6 py-3  hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
                         >
                           Learn More
                           <ArrowRight className="w-4 h-4" />

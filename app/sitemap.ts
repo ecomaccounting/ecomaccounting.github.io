@@ -26,8 +26,7 @@ export default async function sitemap() {
     "/",
     "/our-team",    
     "/contact-us",    
-    "/clients",
-    "/our-team",
+    "/clients",    
     "/services",
     "/faq"
 

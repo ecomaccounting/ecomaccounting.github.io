@@ -210,16 +210,21 @@ export default function OurStoryPage() {
           </div>
 
           {/* --- Team Grid --- */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 lace-items-center">
             {team.map((member) => (
               <article
                 key={member.memberName}
-                className="bg-accent rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col overflow-hidden"
+                className="
+    bg-accent rounded-xl shadow-lg hover:shadow-xl transition-shadow
+    flex flex-col overflow-hidden
+    w-full max-w-md
+  "
                 itemScope
                 itemType="https://schema.org/Person"
               >
                 {/* --- Image --- */}
-                <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
+                <div className="relative w-full aspect-[4/5] md:aspect-[1/1] overflow-hidden rounded-t-xl">
                   <Image
                     src={`/img/ot/${member.image}`}
                     alt={`Photo of ${member.memberName}`}
@@ -256,6 +261,7 @@ export default function OurStoryPage() {
               </article>
             ))}
           </div>
+</div>
         </div>
       </section>
       <TestimonialsTicker />
