@@ -39,7 +39,7 @@ Todo:
   ✔ Animation on logo & trending up on Hero @done(26-01-09 15:42)  
   ✔ Dynamic service banner so that it work in light and dark mode... @done(26-01-10 03:04)
   ✔ Fix breadcrumb for Service slug @done(26-01-10 12:42)
-  ☐ OG test successful but was not working with whatsapp
+  ✔ OG test successful but was not working with whatsapp @done(26-01-10 16:53)
   ✔ Merge Contact us and book consultation @done(26-01-10 12:27)
   ☐ Fix testimonials component for user scrolling
   ✔ Fix How it works strip and auto rotation @done(26-01-10 15:06)

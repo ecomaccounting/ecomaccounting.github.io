@@ -3,6 +3,8 @@ import Image from "next/image";
 import ClientData from "@/data/data1.json";
 import Breadcrumb from "@/components/BreadcrumbItem";
 import type { Metadata } from "next";
+import type { Client } from "@/data/types";
+import { Building2, Sofa, Stethoscope, User } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Clients | task360 – Simple Finance for eCommerce Businesses",
@@ -52,6 +54,7 @@ export const metadata: Metadata = {
 const clients = ClientData.clients;
 
 export default function ClientsPage() {
+
   return (
     <section
       id="clients"
@@ -78,38 +81,10 @@ export default function ClientsPage() {
 
         {/* --- Clients Grid --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
           {clients.map((client) => (
-            <div
-              key={client.id}
-              className="bg-accent rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center group"
-              itemScope
-              itemType="https://schema.org/Organization"
-            >
-              {/* Logo */}
-              <div className="w-24 h-24 mx-auto mb-5 relative">
-                <Image
-                  src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}`}
-                  alt={`${client.name} logo`}
-                  fill
-                  className="object-contain transition-transform duration-300 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  loading="lazy"
-                />
-              </div>
 
-              {/* Name + Industry */}
-              <h3 className="" itemProp="name">
-                {client.name}
-              </h3>
-              <p className="text-blue-600 font-medium mb-3">
-                {client.industry}
-              </p>
-
-              {/* Description */}
-              <p className="" itemProp="description">
-                {client.description}
-              </p>
-            </div>
+            <ClientItem client={client} key={client.id} />
           ))}
         </div>
 
@@ -128,5 +103,63 @@ export default function ClientsPage() {
         </div>
       </div>
     </section>
+  );
+}
+function ClientItem({ client }: { client: Client }) {
+  const hasLogo = client.logo && client.logo.length > 0;
+  const clientIconMap: Record<string, React.ElementType> = {
+    "Sofa": Sofa,
+    "Stethoscope": Stethoscope,
+    "User":User,
+    default: Building2,
+  };
+  const Icon =
+    clientIconMap[client.icon ?? "default"] ?? clientIconMap.default;
+  return (
+    <div
+      key={client.id}
+      className="bg-accent rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center group"
+      itemScope
+      itemType="https://schema.org/Organization"
+    >
+      {/* Logo */}
+      <div className="w-full rounded-xl h-24 mx-auto mb-5 relative"
+      style={{
+          backgroundColor: client.bgColor.length <= 1 ? "transparent" : client.bgColor // ✅ selective bg
+        }}>
+        {hasLogo ? (
+          <Image
+            src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}`}
+            alt={`${client.name} logo`}
+            fill
+            className="object-contain transition-transform duration-300 group-hover:scale-110"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            loading="lazy"
+          />) : (
+          <div className="flex flex-col items-center justify-center text-muted-foreground pt-10">
+            <Icon
+              size={48}
+              className="opacity-70 group-hover:opacity-100 transition-opacity
+              transition-transform duration-300 group-hover:scale-110"
+              aria-hidden
+            />
+            <span className="sr-only">{client.name}</span>
+          </div>
+        )}
+      </div>
+
+      {/* Name + Industry */}
+      <h3 className="" itemProp="name">
+        {client.name}
+      </h3>
+      <p className="text-blue-600 font-medium mb-3">
+        {client.industry}
+      </p>
+
+      {/* Description */}
+      <p className="" itemProp="description">
+        {client.description}
+      </p>
+    </div>
   );
 }
