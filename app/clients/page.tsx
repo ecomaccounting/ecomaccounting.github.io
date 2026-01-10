@@ -105,8 +105,8 @@ export default function ClientsPage() {
     </section>
   );
 }
-function ClientItem({ client }: { client: Client }) {
-  const hasLogo = client.logo && client.logo.length > 0;
+function ClientItem({ client }: { client: Client }) {  
+  const displayName = client.brandName || client.name;  
   const clientIconMap: Record<string, React.ElementType> = {
     "Sofa": Sofa,
     "Stethoscope": Stethoscope,
@@ -115,51 +115,55 @@ function ClientItem({ client }: { client: Client }) {
   };
   const Icon =
     clientIconMap[client.icon ?? "default"] ?? clientIconMap.default;
+  
   return (
     <div
-      key={client.id}
-      className="bg-accent rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 text-center group"
-      itemScope
-      itemType="https://schema.org/Organization"
+      className="group relative bg border border-default rounded-2xl p-8 transition-all hover:border-highlight hover:shadow-2xl hover:-translate-y-1"
+      itemScope itemType="https://schema.org/Review"
     >
-      {/* Logo */}
-      <div className="w-full rounded-xl h-24 mx-auto mb-5 relative"
-      style={{
-          backgroundColor: client.bgColor.length <= 1 ? "transparent" : client.bgColor // ✅ selective bg
-        }}>
-        {hasLogo ? (
-          <Image
-            src={client.title.trim().toLowerCase() === "individual" ? `/img/clients/user.png` : `/img/clients/${client.logo}`}
-            alt={`${client.name} logo`}
-            fill
-            className="object-contain transition-transform duration-300 group-hover:scale-110"
-            sizes="(max-width: 768px) 100vw, 33vw"
-            loading="lazy"
-          />) : (
-          <div className="flex flex-col items-center justify-center text-muted-foreground pt-10">
-            <Icon
-              size={48}
-              className="opacity-70 group-hover:opacity-100 transition-opacity
-              transition-transform duration-300 group-hover:scale-110"
-              aria-hidden
-            />
-            <span className="sr-only">{client.name}</span>
-          </div>
+      
+      <span className="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold text-muted border border-default px-2 py-1 rounded">
+        {client.industry}
+      </span>
+
+      {/* 2. Visual Anchor (Logo or Icon) */}
+      <div 
+        className="w-24 h-24 rounded-full flex items-center justify-center mb-6 overflow-hidden bg border-4 border-bg shadow-sm group-hover:scale-110 transition-transform"
+        style={{ backgroundColor: client.bgColor  }}
+      >
+        {client.logo ? (
+          <Image 
+            src={`/img/clients/${client.logo}`} 
+            alt={`${displayName} success story`} 
+            width={80} height={80} className="object-contain p-2"
+          />
+        ) : (
+          <Icon className="text-primary" size={40} />
         )}
       </div>
 
-      {/* Name + Industry */}
-      <h3 className="" itemProp="name">
-        {client.name}
-      </h3>
-      <p className="text-blue-600 font-medium mb-3">
-        {client.industry}
+      {/* 3. Social Proof Content */}
+      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization">
+        <h3 className="text-xl font-bold " itemProp="name">{displayName}</h3>
+        <meta itemProp="legalName" content={client.name} />
+      </div>
+
+      {/* Short, punchy description for SEO keywords */}
+      <p className="text-sm text-highlight font-semibold mb-4 italic">
+        "{client.feedback}"
       </p>
 
-      {/* Description */}
-      <p className="" itemProp="description">
+      <p className="text-muted text-sm leading-relaxed mb-6">
         {client.description}
       </p>
+
+      {/* 4. The Person Behind the Brand (Trust Factor) */}
+      <div className="flex items-center gap-3 pt-6 border-t border-default">
+        <div className="text-left">
+          <p className="text-sm font-bold">{client.title}</p>
+          <p className="text-xs text-muted">{client.position}</p>
+        </div>
+      </div>
     </div>
   );
 }
