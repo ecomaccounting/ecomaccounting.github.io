@@ -71,6 +71,40 @@ export interface Client {
   icon:string;
 }
 
+export type PricingType = 'Monthly' | 'One Time' | 'Retainer' | string;
+
+/**
+ * Main interface for a Service Package.
+ * Optional fields are marked with '?' to accommodate the empty strings in your data.
+ */
+export interface ServicePackage {
+  id: number;
+  categoryName: string;
+  heading: string;
+  description: string;
+  packageName: string;
+  subtitle: string;
+  price: string; // Kept as string to handle ranges like "50,000 - 1,50,000"
+  pricingType: PricingType;
+  bestFor: string;
+  features: string[];
+  
+  // Optional fields based on the empty values in the sample
+  services?: string;
+  caseStudy?: string;
+  timeline?: string;
+  timelineDetails?: string | string[]; // Allow for both single string and array
+  
+  cta: string;
+  
+  // Supplementary notes/highlights
+  note1?: string;
+  note2?: string;
+  highlight?: string;
+}
+
+
+
 export interface FAQItem {
   question: string;
   answer: string;

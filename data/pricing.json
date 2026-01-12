@@ -1,0 +1,353 @@
+{
+  "services": [
+    {
+      "category": "eCommerce Sellers",
+      "heading": "eCommerce Seller Packages",
+      "description": "Specialized accounting, GST, and advisory for Amazon, Flipkart, Meesho, and D2C sellers. Proven with 100+ marketplace sellers.",
+      "packages": [
+        {
+          "packageName": "Starter",
+          "subtitle": "For growing sellers",
+          "price": 8999,
+          "pricingType": "Monthly",
+          "bestFor": "₹10-30L annual sales",
+          "features": [
+            "Multi-platform accounting (Amazon, Flipkart, Meesho)",
+            "Platform-wise sales reconciliation",
+            "TCS/TDS management for marketplaces",
+            "GST filing (GSTR-1, 3B)",
+            "Monthly ITC reconciliation",
+            "E-way bill management",
+            "Monthly P&L by platform",
+            "Single state GST compliance"
+          ],
+          "services": "WhatsApp + Email support",
+          "cta": "Get Started",
+          "highlight":"",
+          "note1":"",
+          "note2":""
+        },
+        {
+          "package_name": "Growth",
+          "subtitle": "For scaling sellers",
+          "monthly_price_inr": 15999,
+          "pricing_type": "Monthly",
+          "best_for": "₹30-80L annual sales",
+          "features": [
+            "Everything in Starter, plus:",
+            "Multi-state GST compliance (up to 5 states)",
+            "Quarterly GST reconciliation (2A, 2B, 9R)",
+            "Detailed monthly management reports",
+            "Category-wise and SKU-wise analysis",
+            "Platform fee optimization insights",
+            "Working capital planning",
+            "Quarterly business reviews",
+            "Account finalization + ITR filing"
+          ],
+          "included_services": "Voice support + Dedicated manager",
+          "cta": "Get Started"
+        },
+        {
+          "package_name": "Scale",
+          "subtitle": "For established brands",
+          "monthly_price_inr": 29999,
+          "pricing_type": "Monthly",
+          "best_for": "₹80L-3Cr annual sales",
+          "features": [
+            "Everything in Growth, plus:",
+            "Virtual CFO services (8 hours/month)",
+            "Unlimited state GST compliance",
+            "Monthly financial modeling",
+            "Custom KPI dashboards",
+            "Inventory analytics and optimization",
+            "Pricing strategy support",
+            "Advanced tax planning advisory",
+            "Audit support (if applicable)",
+            "Quarterly strategic planning sessions",
+            "Fundraising readiness support"
+          ],
+          "included_services": "Priority support + Dedicated AM",
+          "cta": "Get Started"
+        }
+      ]
+    },
+    {
+      "category_name": "Traditional Business",
+      "heading": "Traditional Business Packages",
+      "description": "Complete accounting, GST, and tax compliance for service businesses, manufacturers, and traders.",
+      "packages": [
+        {
+          "package_name": "Micro",
+          "subtitle": "Small businesses",
+          "monthly_price_inr": 4999,
+          "pricing_type": "Monthly",
+          "best_for": "Up to ₹20L turnover",
+          "features": [
+            "Monthly accounting (sales, purchase, expenses)",
+            "Bank reconciliation",
+            "GST filing (GSTR-1, 3B)",
+            "TCS/TDS compliance",
+            "Annual GSTR-9",
+            "Basic monthly financial statements"
+          ],
+          "cta": "Get Started"
+        },
+        {
+          "package_name": "Small",
+          "subtitle": "Growing businesses",
+          "monthly_price_inr": 7999,
+          "pricing_type": "Monthly",
+          "best_for": "₹20-50L turnover",
+          "features": [
+            "All Micro features, plus:",
+            "Enhanced financial statements",
+            "Vendor payment tracking",
+            "Customer receivables management",
+            "Quarterly financial reviews"
+          ],
+          "included_services": "Voice support available",
+          "cta": "Get Started"
+        },
+        {
+          "package_name": "Medium",
+          "subtitle": "Established businesses",
+          "monthly_price_inr": 12999,
+          "pricing_type": "Monthly",
+          "best_for": "₹50L-1Cr turnover",
+          "features": [
+            "All Small features, plus:",
+            "Multi-location accounting",
+            "Inventory management tracking",
+            "Budget vs. actual analysis",
+            "Monthly management reports"
+          ],
+          "included_services": "Dedicated account manager, Priority voice support",
+          "cta": "Get Started"
+        },
+        {
+          "package_name": "Large",
+          "subtitle": "Scaling enterprises",
+          "monthly_price_inr": 18999,
+          "pricing_type": "Monthly",
+          "best_for": "₹1-2Cr turnover",
+          "features": [
+            "All Medium features, plus:",
+            "Multi-entity consolidation",
+            "Advanced financial analytics",
+            "Cash flow forecasting",
+            "Tax planning advisory",
+            "Audit coordination support",
+            "Strategic CFO consultations"
+          ],
+          "cta": "Get Started"
+        }
+      ]
+    },
+    {
+      "category_name": "Startup Launch",
+      "heading": "Startup Launch Packages",
+      "description": "Everything you need to launch your business legally and start selling on Day 1. Get 6 weeks from idea to revenue.",
+      "packages": [
+        {
+          "package_name": "Essential Launch",
+          "subtitle": "Complete incorporation",
+          "price": 49999,
+          "pricing_type": "One Time",
+          "best_for": "First-time entrepreneurs, solopreneurs, small teams (2-3 founders) starting eCommerce or service businesses",
+          "features": [
+            "Company Incorporation (PLC/LLP)",
+            "DIN & DSC for directors",
+            "MOA/AOA preparation",
+            "GST registration (1 state)",
+            "MSME Udyam registration",
+            "PAN, TAN for company",
+            "Trademark application filing (1 class)",
+            "Founders agreement (2-3 founders)",
+            "Basic reverse vesting structure",
+            "Employment contract templates (5)",
+            "Basic NDA template",
+            "First year basic ROC filings",
+            "Amazon/Flipkart setup guidance"
+          ],
+          "included_services": "2 hours consultation",
+          "timeline": "6 weeks from start to fully operational",
+          "timeline_details": [
+            "Week 1-2: Company incorporation, DIN/DSC, name approval",
+            "Week 3: GST, MSME, PAN/TAN registrations",
+            "Week 4: Founders agreement, employment templates, NDAs",
+            "Week 5-6: Trademark filing, marketplace setup support"
+          ],
+          "cta": "Launch Your Startup"
+        },
+        {
+          "package_name": "Premium Launch",
+          "subtitle": "Protection & Support",
+          "price": 149999,
+          "pricing_type": "One Time",
+          "best_for": "Serious founders planning to scale, raise funding, or build valuable brands. Tech startups, D2C brands, funded ventures.",
+          "features": [
+            "Everything in Essential Launch, PLUS:",
+            "Comprehensive trademark service (3 classes)",
+            "Full trademark prosecution (18-24 months)",
+            "Amazon Brand Registry support",
+            "Detailed share purchase agreements",
+            "Advanced reverse vesting implementation",
+            "Basic ESOP scheme design",
+            "6 months of monthly accounting included"
+          ],
+          "included_services": "Quarterly financial reviews (2 sessions), 4 hours strategic consultation, Priority support for 1 year",
+          "cta": "Get Premium Protection"
+        }
+      ]
+    },
+    {
+      "category_name": "Strategic Advisory",
+      "heading": "Strategic Advisory Services",
+      "description": "High-value services for scaling, fundraising, and strategic growth. For businesses ready for the next level.",
+      "packages": [
+        {
+          "package_name": "Basic",
+          "subtitle": "C-level financial leadership",
+          "monthly_price_inr": 25000,
+          "pricing_type": "Monthly",
+          "features": [
+            "Monthly financial review",
+            "P&L, Balance Sheet analysis",
+            "Basic KPI tracking"
+          ],
+          "included_services": "Email + call support, 4 hours/month",
+          "cta": "Strategic Advisory"
+        },
+        {
+          "package_name": "Standard",
+          "subtitle": "C-level financial leadership",
+          "monthly_price_inr": 40000,
+          "pricing_type": "Monthly",
+          "features": [
+            "Everything in Basic",
+            "Monthly financial modeling",
+            "Cash flow forecasting",
+            "Custom KPI dashboards",
+            "Tax planning advisory"
+          ],
+          "included_services": "Dedicated CFO support, 8 hours/month",
+          "cta": "Strategic Advisory"
+        },
+        {
+          "package_name": "Premium",
+          "subtitle": "C-level financial leadership",
+          "monthly_price_inr": 55000,
+          "pricing_type": "Monthly",
+          "features": [
+            "Everything in Standard",
+            "Weekly review calls",
+            "Board-ready reports",
+            "Fundraising support",
+            "Strategic planning sessions"
+          ],
+          "included_services": "Priority support, 12 hours/month",
+          "cta": "Strategic Advisory"
+        },
+        {
+          "package_name": "Fundraising Advisory",
+          "subtitle": "Complete Series A/B support",
+          "price_range": "₹2,50,000 - ₹5,00,000",
+          "pricing_type": "One Time",
+          "features": [
+            "Professional business valuation",
+            "Financial due diligence",
+            "Investor-grade pitch deck",
+            "3-5 year financial model",
+            "Data room preparation",
+            "Investor targeting & outreach",
+            "Term sheet negotiation",
+            "Closing support"
+          ],
+          "cta": "Start Fundraising Journey"
+        },
+        {
+          "package_name": "ESOP Design & Implementation",
+          "price": 125000,
+          "pricing_type": "One Time",
+          "features": [
+            "ESOP pool sizing strategy",
+            "Vesting schedule design",
+            "Exercise price calculation",
+            "Complete policy documentation",
+            "Board resolutions & approvals",
+            "Grant letter templates",
+            "Rule 3(8) valuation report",
+            "MCA filings & compliance",
+            "Employee communication support"
+          ],
+          "cta": "Design ESOP Program"
+        },
+        {
+          "package_name": "Trademark - Full Service",
+          "price_range": "₹75,000 - ₹1,50,000",
+          "pricing_type": "One Time",
+          "features": [
+            "Comprehensive trademark search",
+            "Application preparation & filing",
+            "Examination response handling",
+            "Publication monitoring",
+            "Opposition handling (if any)",
+            "Registration certificate",
+            "Amazon Brand Registry guidance"
+          ],
+          "included_services": "18-24 month full support",
+          "note": "Trademark filing only (₹3,000) available separately",
+          "cta": "protect Your Brand"
+        },
+        {
+          "package_name": "GST Litigation Support",
+          "price": 50000,
+          "pricing_type": "Retainer",
+          "note1": "Success Rate: Reduced ₹18L GST demand to ₹4.25L settlement (76% reduction)",
+          "note2": "Success Fee: 10-15% of amount saved vs. original demand",
+          "features": [
+            "GST notice analysis",
+            "Comprehensive reply preparation",
+            "Supporting documentation",
+            "Personal hearing representation",
+            "Appeal filing support",
+            "Settlement negotiation",
+            "Case strategy & planning"
+          ],
+          "cta": "Get Help with Notice"
+        },
+        {
+          "package_name": "Business Valuation",
+          "price_range": "₹75,000 - ₹2,00,000",
+          "pricing_type": "One Time",
+          "features": [
+            "Multiple methodologies (DCF, Comps)",
+            "Comprehensive valuation report",
+            "Assumption documentation",
+            "Sensitivity analysis",
+            "Compliance with applicable laws",
+            "Companies Act compliant",
+            "IT Act / FEMA compliant"
+          ],
+          "cta": "Get Valuation Quote"
+        },
+        {
+          "package_name": "Financial Modeling",
+          "price_range": "₹50,000 - ₹1,50,000",
+          "pricing_type": "One Time",
+          "features": [
+            "3-5 year financial projections",
+            "Revenue & cost modeling",
+            "Cash flow forecasting",
+            "Scenario analysis (3 cases)",
+            "Sensitivity analysis",
+            "Unit economics breakdown",
+            "Dynamic Excel model (editable)",
+            "Investor-ready presentation"
+          ],
+          "cta": "Build Your Model"
+        }
+      ]
+    }
+  ]
+}

@@ -83,7 +83,7 @@ export default function SearchBar({ initialQuery = "" }: SearchBarProps) {
   ------------------------------------------- */
   return (
     <div className="relative min-w-0">
-      <div className="flex items-center gap-0 rounded-xl bg-[var(--accent-soft)]
+      <div className="flex items-center gap-0 rounded-xl bg-light
 px-1 py-1 min-w-0 ring-1 ring-[var(--border)] focus-within:ring-2 focus-within:ring-[var(--primary)] transition">
         <input
           type="search"

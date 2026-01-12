@@ -57,8 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       follow: true,
     },
     alternates: {
-    canonical: `/guided/${slug}`,
-  },
+      canonical: `/guided/${slug}`,
+    },
   };
 }
 

@@ -39,7 +39,7 @@ const testimonials = data.clients.filter(t=>t.home && t.shortFeedback.length>10)
           {[...testimonials, ...testimonials].map((item, index) => (
             <div
               key={index}
-              className="min-w-[300px] max-w-xs bg-accent  rounded-xl shadow-sm p-5 flex flex-col justify-between ticket-card whitespace-normal"
+              className="min-w-[300px] max-w-xs bg-light  rounded-xl shadow-sm p-5 flex flex-col justify-between ticket-card whitespace-normal"
             >
               <div className="italic whitespace-normal break-words">
                 “{item.shortFeedback}”

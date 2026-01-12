@@ -1,0 +1,487 @@
+{
+    "categories": [
+        {
+            "id": "ecommerce",
+            "name": "eCommerce Sellers",
+            "slug": "ecommerce-sellers",
+            "title": "eCommerce Seller Packages",
+            "description": "Specialized accounting, GST, and advisory for Amazon, Flipkart, Meesho, and D2C sellers. Proven with 100+ marketplace sellers.",
+            "type": "recurring",
+            "packages": [
+                {
+                    "id": "ecommerce-starter",
+                    "name": "Starter",
+                    "slug": "starter",
+                    "subtitle": "For growing sellers",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 8999,
+                        "annual": 89590,
+                        "annualSavings": 18398,
+                        "currency": "INR",
+                        "displayPrice": "₹8,999",
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹10-30L annual sales",
+                        "turnoverMin": 1000000,
+                        "turnoverMax": 3000000
+                    },
+                    "features": [
+                        "Multi-platform accounting (Amazon, Flipkart, Meesho)",
+                        "Platform-wise sales reconciliation",
+                        "TCS/TDS management for marketplaces",
+                        "GST filing (GSTR-1, 3B)",
+                        "Monthly ITC reconciliation",
+                        "E-way bill management",
+                        "Monthly P&L by platform",
+                        "Single state GST compliance",
+                        "WhatsApp + Email support",
+                        "Multi-state GST (5 states)",
+                        "Quarterly business reviews",
+                        "Virtual CFO services"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "tds-with-holding-tax"
+                    ]
+                },
+                {
+                    "id": "ecommerce-growth",
+                    "name": "Growth",
+                    "slug": "growth",
+                    "subtitle": "For scaling sellers",
+                    "badge": "⭐ MOST POPULAR",
+                    "featured": true,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 15999,
+                        "annual": 159350,
+                        "annualSavings": 32638,
+                        "currency": "INR",
+                        "displayPrice": "₹15,999",
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹30-80L annual sales",
+                        "turnoverMin": 3000000,
+                        "turnoverMax": 8000000
+                    },
+                    "features": [
+                        "Everything in Starter, plus:",
+                        "Multi-state GST compliance (up to 5 states)",
+                        "Quarterly GST reconciliation (2A, 2B, 9R)",
+                        "Detailed monthly management reports",
+                        "Category-wise and SKU-wise analysis",
+                        "Platform fee optimization insights",
+                        "Working capital planning",
+                        "Quarterly business reviews",
+                        "Account finalization + ITR filing",
+                        "Voice support + Dedicated manager",
+                        "Virtual CFO (8 hrs/month)",
+                        "Financial modeling"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "gst-services",
+                        "tds-with-holding-tax",
+                        "income-tax-returns"
+                    ]
+                },
+                {
+                    "id": "ecommerce-scale",
+                    "name": "Scale",
+                    "slug": "scale",
+                    "subtitle": "For established brands",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 29999,
+                        "annual": 298790,
+                        "annualSavings": 61198,
+                        "currency": "INR",
+                        "displayPrice": "₹29,999",
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹80L-3Cr annual sales",
+                        "turnoverMin": 8000000,
+                        "turnoverMax": 30000000
+                    },
+                    "features": [
+                        "Everything in Growth, plus:",
+                        "Virtual CFO services (8 hours/month)",
+                        "Unlimited state GST compliance",
+                        "Monthly financial modeling",
+                        "Custom KPI dashboards",
+                        "Inventory analytics and optimization",
+                        "Pricing strategy support",
+                        "Advanced tax planning advisory",
+                        "Audit support (if applicable)",
+                        "Priority support + Dedicated AM",
+                        "Quarterly strategic planning sessions",
+                        "Fundraising readiness support"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "gst-services",
+                        "tds-with-holding-tax",
+                        "income-tax-returns",
+                        "virtual-cfo",
+                        "financial-modeling"
+                    ]
+                }
+            ],            
+            "caseStudy": "handicrafts-seller"
+        },
+        {
+            "id": "traditional",
+            "name": "Traditional Business",
+            "slug": "traditional-business",
+            "title": "Traditional Business Packages",
+            "description": "Complete accounting, GST, and tax compliance for service businesses, manufacturers, and traders.",
+            "type": "recurring",
+            "packages": [
+                {
+                    "id": "traditional-micro",
+                    "name": "Micro",
+                    "slug": "micro",
+                    "subtitle": "Small businesses",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 4999,
+                        "annual": 49790,
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "Up to ₹20L turnover",
+                        "turnoverMin": 0,
+                        "turnoverMax": 2000000
+                    },
+                    "features": [
+                        "Monthly accounting (sales, purchase, expenses)",
+                        "Bank reconciliation",
+                        "GST filing (GSTR-1, 3B)",
+                        "TCS/TDS compliance",
+                        "Annual GSTR-9",
+                        "Basic monthly financial statements",
+                        "Email + WhatsApp support"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "tds-with-holding-tax"
+                    ]
+                },
+                {
+                    "id": "traditional-small",
+                    "name": "Small",
+                    "slug": "small",
+                    "subtitle": "Growing businesses",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 7999,
+                        "annual": 79710,
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹20-50L turnover",
+                        "turnoverMin": 2000000,
+                        "turnoverMax": 5000000
+                    },
+                    "features": [
+                        "All Micro features, plus:",
+                        "Enhanced financial statements",
+                        "Vendor payment tracking",
+                        "Customer receivables management",
+                        "Quarterly financial reviews",
+                        "Voice support available"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "tds-with-holding-tax"
+                    ]
+                },
+                {
+                    "id": "traditional-medium",
+                    "name": "Medium",
+                    "slug": "medium",
+                    "subtitle": "Established businesses",
+                    "badge": "RECOMMENDED",
+                    "featured": true,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 12999,
+                        "annual": 129590,
+                        "annualSavings": 26498,
+                        "currency": "INR",
+                        "displayPrice": "₹12,999",
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹50L-1Cr turnover",
+                        "turnoverMin": 5000000,
+                        "turnoverMax": 10000000
+                    },
+                    "features": [
+                        "All Small features, plus:",
+                        "Multi-location accounting",
+                        "Inventory management tracking",
+                        "Budget vs. actual analysis",
+                        "Monthly management reports",
+                        "Dedicated account manager",
+                        "Priority voice support"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "tds-with-holding-tax"
+                    ]
+                },
+                {
+                    "id": "traditional-large",
+                    "name": "Large",
+                    "slug": "large",
+                    "subtitle": "Scaling enterprises",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "recurring",
+                        "monthly": 18999,
+                        "annual": 189390,
+                        "annualSavings": 38598,
+                        "currency": "INR",
+                        "displayPrice": "₹18,999",
+                        "billingPeriod": "per month"
+                    },
+                    "bestFor": {
+                        "description": "₹1-2Cr turnover",
+                        "turnoverMin": 10000000,
+                        "turnoverMax": 20000000
+                    },
+                    "features": [
+                        "All Medium features, plus:",
+                        "Multi-entity consolidation",
+                        "Advanced financial analytics",
+                        "Cash flow forecasting",
+                        "Tax planning advisory",
+                        "Audit coordination support",
+                        "Strategic CFO consultations"
+                    ],
+                    "includedServices": [
+                        "accounting-book-keeping",
+                        "gst-filings",
+                        "tds-with-holding-tax",
+                        "income-tax-consultancy"
+                    ],
+                    "cta": {
+                        "label": "Get Started",
+                        "link": "/contact?package=traditional-large",
+                        "type": "secondary"
+                    }
+                }
+            ],
+            "addOns": [
+                {
+                    "id": "complete-solution-package",
+                    "name": "Complete Solution Package",
+                    "slug": "complete-solution",
+                    "subtitle": "Comprehensive year-end services",
+                    "badge": null,
+                    "featured": false,
+                    "pricing": {
+                        "type": "one-time",
+                        "min": 30000,
+                        "max": 60000,
+                        "currency": "INR",
+                        "displayPrice": "₹30,000 - ₹60,000",
+                        "billingPeriod": "annually"
+                    },
+                    "bestFor": {
+                        "description": "Businesses needing comprehensive year-end compliance",
+                        "turnoverMin": null,
+                        "turnoverMax": null
+                    },
+                    "features": [
+                        "Quarterly GST reconciliation (2A, 2B, 9R)",
+                        "ITC optimization",
+                        "Complete account finalization",
+                        "Tax planning advisory",
+                        "ITR filing (ITR-3 or ITR-4)",
+                        "Ratio analysis and insights",
+                        "Quarterly business reviews"
+                    ],
+                    "includedServices": [
+                        "gst-services",
+                        "income-tax-returns",
+                        "income-tax-consultancy"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "launch",
+            "name": "Startup Launch",
+            "slug": "startup-launch",
+            "title": "Startup Launch Packages",
+            "description": "Everything you need to launch your business legally and start selling on Day 1. Get 6 weeks from idea to revenue.",
+            "type": "one-time",
+            "packages": [
+                {
+                    "id": "essential-launch",
+                    "name": "Essential Launch",
+                    "slug": "essential-launch",
+                    "subtitle": "Complete incorporation and registration for new startups",
+                    "badge": "🚀",
+                    "featured": false,
+                    "pricing": {
+                        "type": "one-time",
+                        "amount": 49999,
+                        "billingPeriod": "one-time",
+                        "savingsNote": "Save ₹15,000 vs. à la carte"
+                    },
+                    "bestFor": {
+                        "description": "First-time entrepreneurs, solopreneurs, small teams (2-3 founders) starting eCommerce or service businesses",
+                        "turnoverMin": null,
+                        "turnoverMax": null
+                    },
+                    "timeline": {
+                        "total": "6 weeks from start to fully operational",
+                        "breakdown": [
+                            {
+                                "week": "1-2",
+                                "activities": "Company incorporation, DIN/DSC, name approval"
+                            },
+                            {
+                                "week": "3",
+                                "activities": "GST, MSME, PAN/TAN registrations"
+                            },
+                            {
+                                "week": "4",
+                                "activities": "Founders agreement, employment templates, NDAs"
+                            },
+                            {
+                                "week": "5-6",
+                                "activities": "Trademark filing, marketplace setup support"
+                            }
+                        ]
+                    },
+                    "features": [
+                        "Company Incorporation (PLC/LLP)",
+                        "DIN & DSC for directors",
+                        "MOA/AOA preparation",
+                        "GST registration (1 state)",
+                        "MSME Udyam registration",
+                        "PAN, TAN for company",
+                        "Trademark application filing (1 class)",
+                        "Founders agreement (2-3 founders)",
+                        "Basic reverse vesting structure",
+                        "Employment contract templates (5)",
+                        "Basic NDA template",
+                        "First year basic ROC filings",
+                        "Amazon/Flipkart setup guidance",
+                        "2 hours consultation"
+                    ],
+                    "includedServices": [
+                        "private-limited-company",
+                        "limited-liability-partnership-llp",
+                        "gst-registration",
+                        "msme-registrations",
+                        "trademark-application",
+                        "cofounders-agreement",
+                        "reverse-vesting",
+                        "employment-contract",
+                        "secretarial-compliances"
+                    ],
+                    "caseStudy": "fashion-brand-launch",
+                },
+                {
+                    "id": "premium-launch",
+                    "name": "Premium Launch + Protection",
+                    "slug": "premium-launch",
+                    "subtitle": "Complete launch with comprehensive IP protection and 6 months support",
+                    "badge": "⭐",
+                    "featured": true,
+                    "pricing": {
+                        "type": "one-time",
+                        "amount": 149999,
+                        "currency": "INR",
+                        "displayPrice": "₹1,49,999",
+                        "billingPeriod": "one-time",
+                        "savings": 50000,
+                        "savingsNote": "Save ₹50,000+ vs. à la carte"
+                    },
+                    "bestFor": {
+                        "description": "Serious founders planning to scale, raise funding, or build valuable brands. Tech startups, D2C brands, funded ventures.",
+                        "turnoverMin": null,
+                        "turnoverMax": null
+                    },
+                    "timeline": {
+                        "total": "6 weeks launch + 18 months trademark support",
+                        "breakdown": []
+                    },
+                    "features": [
+                        "Everything in Essential Launch, PLUS:",
+                        "Comprehensive trademark service (3 classes)",
+                        "Full trademark prosecution (18-24 months)",
+                        "Amazon Brand Registry support",
+                        "Detailed share purchase agreements",
+                        "Advanced reverse vesting implementation",
+                        "Basic ESOP scheme design",
+                        "6 months of monthly accounting included",
+                        "Quarterly financial reviews (2 sessions)",
+                        "4 hours strategic consultation",
+                        "Priority support for 1 year"
+                    ],
+                    "includedServices": [
+                        "private-limited-company",
+                        "limited-liability-partnership-llp",
+                        "gst-registration",
+                        "msme-registrations",
+                        "trademark-registration",
+                        "cofounders-agreement",
+                        "reverse-vesting",
+                        "share-purchase-agreement",
+                        "employment-contract",
+                        "startup-esops",
+                        "accounting-book-keeping",
+                        "secretarial-compliances"
+                    ],
+                    "valueBreakdown": {
+                        "trademarkValue": 125000,
+                        "accountingValue": 54000,
+                        "totalValue": 200000,
+                        "actualPrice": 149999
+                    },
+                    "benefits": [
+                        {
+                            "title": "🛡️ Brand Protection",
+                            "description": "Full trademark service prevents copycats. One client avoided ₹40L in potential sales loss and brand damage."
+                        },
+                        {
+                            "title": "💰 6 Months Accounting",
+                            "description": "Build clean financial records from day 1. Essential for future fundraising."
+                        },
+                        {
+                            "title": "📈 ESOP Ready",
+                            "description": "Basic structure in place for when you need to hire and retain top talent."
+                        }
+                    ],
+                    "caseStudy": ""
+                }
+            ],
+            "caseStudy": null
+        }
+    ]
+}

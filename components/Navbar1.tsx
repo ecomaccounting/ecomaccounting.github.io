@@ -72,6 +72,9 @@ export default function Navbar() {
           <Link href="/services" className="font-medium">
             Services
           </Link>
+          <Link href="/pricing" className="font-medium">
+            Pricing
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
