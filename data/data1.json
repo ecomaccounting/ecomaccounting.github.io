@@ -2525,31 +2525,35 @@
       "title": "Fashion Brand Launch on Amazon",
       "description1": "2 sisters launched their ethnic wear brand, incorporated to ₹72L revenue in 12 months",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Fashion Brand Launch on Amazon](/img/case-study/fashion-brand-launch-on-amazon.png)"
     },
     {
       "slug": "food-products-seller-multi-state-gst-setup",
       "Service": "Launch",
       "title": "Food Products Seller – Multi-State GST Setup",
-      "description1": "",
+      "description1": "Resolved ₹3.2L GST notice & secured 4+ state registrations for a food startup. Scaled compliance across 5 states with FSSAI & tax-ready systems.",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Food Products Seller – Multi-State GST Setup](/img/case-study/food-products-seller-multi-state-gst-setup.png)"
     },
     {
       "slug": "three-co-founders-starting-electronics-brand",
       "Service": "Launch",
       "title": "Three Co-founders Starting Electronics Brand",
-      "description1": "",
+      "description1": "Secured equity for an electronics startup via Reverse Vesting & SPAs. Established clear governance for 3 co-founders to ensure 100% investor-readiness.",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Three Co-founders Starting Electronics Brand](/img/case-study/three-co-founders-starting-electronics-brand.png)"
     },
     {
       "slug": "mother-daughter-home-decor-business",
       "Service": "Launch",
       "title": "Mother-Daughter Home Decor Business",
-      "description1": "",
+      "description1": "Converted a ₹1.2Cr family partnership to Pvt Ltd. Eliminated personal liability & cut tax burdens to prep a mother-daughter brand for major funding.",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Mother-Daughter Home Decor Business](/img/case-study/mother-daughter-home-decor-business.png)"
     },
     {
       "slug": "cosmetics-seller-gst-compliance-crisis",
@@ -2557,7 +2561,8 @@
       "title": "Cosmetics Seller – GST Compliance Crisis",
       "description1": "Reduced ₹18L GST demand to ₹4.25L settlement (76% reduction) for cosmetics client",
       "bgColor": "#d4edda",
-      "description2": ""
+      "description2": "",
+      "image": "![Cosmetics Seller – GST Compliance Crisis](/img/case-study/cosmetics-seller-gst-compliance-crisis.png)"
     },
     {
       "slug": "handicrafts-seller-multi-marketplace-reconciliation",
@@ -2565,7 +2570,8 @@
       "title": "Handicrafts Seller – Multi-Marketplace Reconciliation",
       "description1": "Our eCommerce Growth package helped a handicrafts seller grow from ₹3 Cr to ₹4.2 Cr (40% increase) while improving margins by 3%.",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Handicrafts Seller – Multi-Marketplace Reconciliation](/img/case-study/handicrafts-seller-multi-marketplace-reconciliation.png)"
     },
     {
       "slug": "electronics-brand-esop-for-key-team-members",
@@ -2573,7 +2579,8 @@
       "title": "Electronics Brand – ESOP for Key Team Members",
       "description1": "ESOP program achieved zero attrition, created ₹2.6Cr employee wealth. ROI: 74x on program cost",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Electronics Brand – ESOP for Key Team Members](/img/case-study/electronics-brand-esop-for-key-team-members.png)"
     },
     {
       "slug": "apparel-seller-proactive-trademark-protection",
@@ -2581,7 +2588,8 @@
       "title": "Apparel Seller – Proactive Trademark Protection",
       "description1": "Trademark filing only (₹3,000) available separately - covers application submission only, no prosecution support",
       "bgColor": "#fff3cd",
-      "description2": ""
+      "description2": "",
+      "image": "![Apparel Seller – Proactive Trademark Protection](/img/case-study/apparel-seller-proactive-trademark-protection.png)"
     },
     {
       "slug": "growing-seller-virtual-cfo-transformation",
@@ -2589,7 +2597,8 @@
       "title": "Growing Seller – Virtual CFO Transformation",
       "description1": "Virtual CFO helped a home products seller improve margins by 3.3% (₹55L annually) and raise ₹2.5Cr funding. ROI: 12.5x",
       "bgColor": "#d4edda",
-      "description2": ""
+      "description2": "",
+      "image": "![Growing Seller – Virtual CFO Transformation](/img/case-study/growing-seller-virtual-cfo-transformation.png)"
     },
     {
       "slug": "home-kitchen-brand-series-a-fundraising",
@@ -2597,7 +2606,8 @@
       "title": "Home Kitchen Brand – Series A Fundraising",
       "description1": "Helped client raise ₹10Cr at ₹50Cr valuation, saved 20% dilution = ₹12Cr value. ROI: 126x",
       "bgColor": "#e3f2fd",
-      "description2": ""
+      "description2": "",
+      "image": "![Home Kitchen Brand – Series A Fundraising](/img/case-study/home-kitchen-brand-series-a-fundraising.png)"
     },
     {
       "slug": "beauty-products-flipkart-to-international-expansion",
@@ -2605,7 +2615,8 @@
       "title": "Beauty Products – Flipkart to International Expansion",
       "description1": "",
       "bgColor": "",
-      "description2": ""
+      "description2": "",
+      "image": "![Beauty Products – Flipkart to International Expansion](/img/case-study/beauty-products-flipkart-to-international-expansion.png)"
     },
     {
       "slug": "toy-manufacturer-merger-with-competitor",
@@ -2613,7 +2624,8 @@
       "title": "Toy Manufacturer – Merger with Competitor",
       "description1": "",
       "bgColor": "",
-      "description2": ""
+      "description2": "",
+      "image": "![Toy Manufacturer – Merger with Competitor](/img/case-study/toy-manufacturer-merger-with-competitor.png)"
     },
     {
       "slug": "organic-food-brand-sme-ipo-journey",
@@ -2621,7 +2633,8 @@
       "title": "Organic Food Brand – SME IPO Journey",
       "description1": "",
       "bgColor": "",
-      "description2": ""
+      "description2": "",
+      "image": "![Organic Food Brand – SME IPO Journey](/img/case-study/organic-food-brand-sme-ipo-journey.png)"
     }
   ]
 }

@@ -7,6 +7,8 @@ import { ServiceItem } from "@/data/types";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import HowItWorksStrip from "@/components/HowItWorksStrip";
 import GuidedOnboarding from "@/components/GuidedOnboarding";
+import CaseStudyCarousel from "@/components/CaseStudyCarousel1";
+import Link from "next/link";
 
 
 export default function HomePage() {
@@ -26,6 +28,29 @@ export default function HomePage() {
       <Services services={services} />
       <WhyChooseUs />
       <TestimonialsTicker />
+      <section className="py-10">
+        <div className="max-w-6xl mx-auto px-4 mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              How We’ve Helped Businesses Win
+            </h2>
+            <p className="text-light mt-2 max-w-2xl">
+              Real case studies showing how startups and eCommerce sellers solved
+              critical problems and scaled with confidence.
+            </p>
+          </div>
+
+          <Link
+            href="/case-studies"
+            className="text-accent font-semibold hover:underline whitespace-nowrap"
+          >
+            View all case studies →
+          </Link>
+        </div>
+
+        <CaseStudyCarousel />
+        
+      </section>
 
 
     </div >

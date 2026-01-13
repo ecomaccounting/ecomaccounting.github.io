@@ -14,10 +14,7 @@ export default function CaseStudiesPage() {
         <p className="text-lg text-muted max-w-3xl">
           Real-world success stories showcasing how Task360 helps Amazon, Flipkart,
           Meesho, and D2C sellers launch, operate, and scale with confidence.
-        </p>
-        <p className="mt-4 text-sm text-muted">
-          <strong>Format:</strong> Problem → Solution → Results
-        </p>
+        </p>        
       </header>
 
       {/* Launch */}
@@ -32,26 +29,40 @@ export default function CaseStudiesPage() {
   );
 }
 
-function Section({ title, items }: { title: string; items: { title: string; slug: string }[] }) {
+function Section({ title, items }: { title: string; items: { title: string; slug: string; imageUrl: string }[] }) {
   return (
-    <section className="mb-16">
-      <h2 className="text-2xl font-semibold mb-6">{title}</h2>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="mb-20">
+      <h2 className="text-3xl font-bold mb-8 tracking-tight">{title}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {items.map((item) => (
-          <li
-            key={item.slug}
-            className="border border-border-color rounded-xl p-6 hover:shadow-md transition"
+          <Link 
+            key={item.slug} 
+            href={`/case-studies/${item.slug}`}
+            className="group block no-underline"
           >
-            <h3 className="text-lg font-medium mb-3">{item.title}</h3>
-            <Link
-              href={`/case-studies/${item.slug}`}
-              className="text-accent font-medium"
-            >
-              Read Case Study →
-            </Link>
-          </li>
+            {/* Image Container */}
+            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-gray-100 mb-4">
+              <img
+                src={`/img/case-study/${item.slug}.png`}
+                alt={item.title}
+                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold leading-tight text-foreground group-hover:text-accent transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-muted text-sm">{item.description1}</p>
+              <span className="inline-flex items-center text-sm font-medium text-accent">
+                Read full case Study
+                <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+            </div>
+          </Link>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
