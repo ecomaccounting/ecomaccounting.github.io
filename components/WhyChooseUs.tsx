@@ -58,7 +58,7 @@ function ReasonCard({ item }: any) {
   const Icon = item.icon;
 
   return (
-    <div className="border border-[var(--border-color)] rounded-xl p-5 bg-light shadow-sm m-2">
+    <div className="bg border border-default rounded-xl p-4 shadow-sm m-2">
       {/* Header */}
       <button
         onClick={() => setOpen(!open)}
@@ -70,7 +70,7 @@ function ReasonCard({ item }: any) {
 
         <div className="flex-1">
           <h3 className="font-medium text-accent">{item.title}</h3>
-          <p className="text-sm text-light">{item.summary}</p>
+          <p className="">{item.summary}</p>
         </div>
 
         <ChevronDown
@@ -83,7 +83,7 @@ function ReasonCard({ item }: any) {
 
       {/* Expanded content */}
       {open && (
-        <div className="m-4 pl-9 text-sm space-y-3">
+        <div className="m-4 pl-9 space-y-3">
           <p>{item.description}</p>
 
           {/* Optional deep exploration */}
@@ -91,7 +91,7 @@ function ReasonCard({ item }: any) {
             <div>
               <button
                 onClick={() => setDeepOpen(!deepOpen)}
-                className="text-accent text-sm font-medium inline-flex items-center gap-1"
+                className="text-accent font-medium inline-flex items-center gap-1"
               >
                 Explore focus areas
                 <ChevronDown
@@ -132,7 +132,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-2 md:grid-cols-2">
           {reasons.map((item, index) => (
             <ReasonCard key={index} item={item} />
           ))}

@@ -72,10 +72,10 @@ export default function HowItWorksStrip() {
               <button
                 key={step.title}
                 onClick={() => { setActive(index); setPaused(true); }}
-                className={`rounded-2xl border p-6 text-left transition-all scale-[1.02]
+                className={`rounded-2xl shadow-2xl p-6 text-left transition-all scale-[1.02]
                   ${isActive
                     ? "bg-accent shadow-xl border-accent "
-                    : "bg-light hover:bg-accent"
+                    : "bg hover:bg-accent"
                   }`}
               >
                 <span className={`absolute right-4 top-4 text-sm font-semibold transition`} > Step {index + 1} </span>

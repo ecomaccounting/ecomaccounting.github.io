@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 const words = ["books", "taxes", "compliance"];
-const tabs = ["Amazon", "Flipkart", "GST"];
+const tabs = ["Amazon", "Flipkart", "Website"];
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -75,7 +75,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact-us"
-                className="button success px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
+                className="button ok pulse px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
               >
                 <MessageCircle className="h-7 w-7" />
                 Check What You Need (2 mins)
@@ -99,7 +99,7 @@ export default function Hero() {
 
         {/* RIGHT */}
         <div className="relative mr-4">
-          <div className="bg-background border border-[var(--border-color)] rounded-2xl shadow-xl p-6 sm:p-8">
+          <div className="bg border-default  rounded-2xl shadow-xl p-6 sm:p-8">
             {/* Context header */}
             <div className="mb-6 space-y-1">
               <h3 className="text-lg font-semibold">
@@ -129,9 +129,25 @@ export default function Hero() {
           </div>
 
           {/* Accent badge */}
-          <div className="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-full shadow-lg">
-            <TrendingUp className="h-5 w-5" />
+          <div className="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-full shadow-lg overflow-hidden">
+            <TrendingUp
+              className="h-5 w-5 animate-[trending-up_2s_infinite_ease-in-out]"
+            />
           </div>
+
+          {/* Add this to your Global CSS or a Tailwind config file */}
+          <style jsx global>{`
+  @keyframes trending-up {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(2px, -4px);
+      opacity: 0.8;
+    }
+  }
+`}</style>
         </div>
       </div>
     </section>
@@ -143,20 +159,36 @@ export default function Hero() {
 function DashboardContent({ activeTab }: { activeTab: string }) {
   const data: Record<string, { label: string; value: string }[]> = {
     Amazon: [
-      { label: "Amazon Sales", value: "₹2,45,000" },
-      { label: "Fees & Ads", value: "₹38,000" },
-      { label: "Net Settlement", value: "₹2,07,000" },
+      { label: "Sales", value: "₹1.5 Cr" },
+      { label: "Commission", value: "₹22.5L (15%)" },
+      { label: "Shipping", value: "₹9L" },
+      { label: "Promotion", value: "₹4L" },
+      { label: "Net Revenue", value: "₹1.145Cr" },
+      { label: "Margin", value: "₹76.3%" },
     ],
     Flipkart: [
-      { label: "Flipkart Sales", value: "₹1,89,000" },
-      { label: "Marketplace Fees", value: "₹29,000" },
-      { label: "Net Settlement", value: "₹1,60,000" },
+      { label: "Sales", value: "₹90L" },
+      { label: "Commission", value: "₹10.8L (12%)" },
+      { label: "Shipping", value: "₹5.4L" },
+      { label: "Promotion", value: "₹2L" },
+      { label: "Net Revenue", value: "₹71.8L" },
+      { label: "Margin", value: "₹79.8%" },
     ],
-    GST: [
-      { label: "GST Collected", value: "₹54,000" },
-      { label: "ITC Available", value: "₹21,000" },
-      { label: "GST Payable", value: "₹33,000" },
+    Meesho: [
+      { label: "Sales", value: "₹45L" },
+      { label: "Commission", value: "₹4.5L (10%)" },
+      { label: "Shipping", value: "₹2.7L" },
+      { label: "Promotion", value: "₹1.5L" },
+      { label: "Net Revenue", value: "₹36.3L" },
+      { label: "Margin", value: "₹80.7%" },
     ],
+    "Website": [
+      { label: "Sales", value: "₹15L" },
+      { label: "Payment Gateway", value: "₹1.5L (3%)" },
+      { label: "Shipping", value: "₹0.9L" },
+      { label: "Net Revenue", value: "₹12.6L" },
+      { label: "Margin", value: "₹84%" },
+    ]
   };
 
   return (

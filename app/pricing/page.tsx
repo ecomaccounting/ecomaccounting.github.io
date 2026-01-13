@@ -149,7 +149,7 @@ function Plan({ pkg }: { pkg: ServicePackage }) {
 
       <a
         href={`/contact?plan=${pkg.packageName}`}
-        className={`block text-center rounded-xl py-3 font-semibold transition ${hasHighlight ? "button ok okPulse pulse" : "button success"
+        className={`block text-center rounded-xl py-3 font-semibold transition ${hasHighlight ? "button ok pulse" : "button success"
           }`}
       >
         {pkg.cta || "Get Started"}

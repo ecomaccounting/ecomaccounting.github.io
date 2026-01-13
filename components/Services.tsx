@@ -14,26 +14,35 @@ function ServiceCard({ service }: { service: ServiceItem }) {
     : FileText;
 
   return (
-    <div className="bg-background p-6 rounded-xl shadow-md transition-all border border-border">
+    <div className="bg p-6 rounded-xl shadow-md transition-all border border-default">
       <button
         onClick={() => setOpen(!open)}
-        className="cursor-pointer w-full text-left flex items-start gap-4"
+        className="cursor-pointer w-full text-left p-4 group" // Added padding for better hit area
       >
-        <div className="bg-accent-light w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-          <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+        {/* TOP ROW: Icon + Heading + Chevron */}
+        <div className="flex items-center gap-4 w-full">
+          <div className="w-12 h-12 rounded-lg flex items-center justify-center shrink-0 bg-blue-50 group-hover:bg-blue-600 transition-colors">
+            <Icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
+          </div>
+
+          <h3 className="flex-1 text-lg font-semibold leading-snug">
+            {service.name}
+          </h3>
+
+          {open ? <ChevronUp className="text-muted" /> : <ChevronDown className="text-muted" />}
         </div>
-        <div className="flex-1">
-          <h3 className="text-lg font-semibold leading-snug">{service.name}</h3>
-          <p className="text-sm text-muted mt-1">
+
+        {/* BOTTOM ROW: Full Width Description */}
+        <div className="mt-3 w-full">
+          <p className="leading-relaxed">
             {service.shortDescription ?? "Avoid compliance mistakes & stay audit-ready"}
           </p>
         </div>
-        {open ? <ChevronUp className="mt-1 text-muted" /> : <ChevronDown className="mt-1 text-muted" />}
       </button>
 
       {open && (
         <div className="mt-4 space-y-4 animate-in fade-in slide-in-from-top-1">
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2">
             {service.highlights.slice(0, 3).map((item, i) => (
               <li key={i} className="flex gap-2">
                 <span className="text-accent">✓</span>
