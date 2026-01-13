@@ -1,5 +1,6 @@
 1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/08ab32183832864c.js"],"OutletBoundary"]
+2:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"t16C4KAeNS-ZbIlaAhZRF","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"max-w-3xl mx-auto px-4 py-16","children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4"}],["$","p",null,{"className":"text-muted max-w-xl"}]]}],["$","article",null,{"className":"prose prose-neutral dark:prose-invert max-w-none","children":"$undefined"}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+:HL["/img/case-study/home-kitchen-brand-series-a-fundraising.png","image"]
+0:{"buildId":"1nR5nrw9w0W0MeWFh3LTy","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"max-w-5xl mx-auto px-4 py-16","children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4"}],["$","p",null,{"className":"text-muted max-w-xl"}]]}],["$","article",null,{"className":"prose prose-neutral dark:prose-invert max-w-none","children":["$","p",null,{"children":["$","img",null,{"src":"/img/case-study/home-kitchen-brand-series-a-fundraising.png","alt":"Home Kitchen Brand – Series A Fundraising"}]}]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
