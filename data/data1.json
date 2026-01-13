@@ -2214,7 +2214,7 @@
         "2 hours consultation"
       ],
       "services": "launch",
-      "caseStudy": "",
+      "caseStudy": "fashion-brand-launch-on-amazon",
       "parentCaseStudy": "",
       "timeline": "6 weeks from start to fully operational",
       "timelineDetails": "Week 1-2:\nCompany incorporation, DIN/DSC, name approval\n\nWeek 3:\nGST, MSME, PAN/TAN registrations\n\nWeek 4:\nFounders agreement, employment templates, NDAs\n\nWeek 5-6:\nTrademark filing, marketplace setup support",
@@ -2247,7 +2247,7 @@
         "Priority support for 1 year"
       ],
       "services": "trademark-registration, startup-esops",
-      "caseStudy": "",
+      "caseStudy": "apparel-seller-proactive-trademark-protection",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2273,7 +2273,7 @@
         "Email + call support"
       ],
       "services": "virtual-cfo",
-      "caseStudy": "",
+      "caseStudy": "growing-seller-virtual-cfo-transformation",
       "parentCaseStudy": "",
       "timeline": "4 hours/month",
       "timelineDetails": "",
@@ -2301,8 +2301,8 @@
         "Dedicated CFO support"
       ],
       "services": "accounting-taxation",
-      "caseStudy": "",
-      "parentCaseStudy": "",
+      "caseStudy": "growing-seller-virtual-cfo-transformation",
+      "parentCaseStudy": "growing-seller-virtual-cfo-transformation",
       "timeline": "8 hours/month",
       "timelineDetails": "",
       "cta": "",
@@ -2329,7 +2329,7 @@
         "Priority support"
       ],
       "services": "startup-fundraise",
-      "caseStudy": "",
+      "caseStudy": "home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
       "timeline": "12 hours/month",
       "timelineDetails": "",
@@ -2359,7 +2359,7 @@
         "Closing support"
       ],
       "services": "startup-fundraise",
-      "caseStudy": "",
+      "caseStudy": "home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2375,7 +2375,7 @@
       "description": "",
       "packageName": "🎯 ESOP Design & Implementation",
       "subtitle": "Complete ESOP scheme for employee retention and motivation",
-      "price": "₹1,25,000",
+      "price": "125000",
       "pricingType": "One Time",
       "bestFor": "",
       "features": [
@@ -2390,7 +2390,7 @@
         "Employee communication support"
       ],
       "services": "startup-esops",
-      "caseStudy": "",
+      "caseStudy": "electronics-brand-esop-for-key-team-members",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2420,7 +2420,7 @@
         "18-24 month full support"
       ],
       "services": "trademark-registration",
-      "caseStudy": "",
+      "caseStudy": "apparel-seller-proactive-trademark-protection",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2449,7 +2449,7 @@
         "Case strategy & planning"
       ],
       "services": "gst-services",
-      "caseStudy": "",
+      "caseStudy": "cosmetics-seller-gst-compliance-crisis",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2478,7 +2478,7 @@
         "IT Act / FEMA compliant"
       ],
       "services": "valuation-advisory",
-      "caseStudy": "",
+      "caseStudy": "electronics-brand-esop-for-key-team-members, home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
       "timeline": "",
       "timelineDetails": "",
@@ -2495,7 +2495,7 @@
       "packageName": "📈 Financial Modeling",
       "subtitle": "Dynamic 3-5 year projections for planning and investor presentations",
       "price": "₹50,000 - ₹1,50,000",
-      "pricingType": "One Time",
+      "pricingType": "Range",
       "bestFor": "",
       "features": [
         "3-5 year financial projections",
@@ -2513,7 +2513,7 @@
       "timeline": "",
       "timelineDetails": "",
       "cta": "Build Your Model",
-      "note1": "",
+      "note1": "Deliverable: Fully editable Excel model with clear assumptions and dynamic scenarios",
       "note2": "",
       "highlight": ""
     }
