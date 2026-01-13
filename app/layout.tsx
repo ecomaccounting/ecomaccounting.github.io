@@ -35,19 +35,11 @@ const geistMono = Geist_Mono({
 --------------------------------*/
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-  title: {
-    default: "task360 – Simple Finance for eCommerce & Growing Businesses",
-    template: "%s | task360",
-  },
-
-  description:
-    "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",
-
+  title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+  description: "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",
   applicationName: "task360",
-
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
-
   keywords: [
     "eCommerce accounting",
     "GST services",

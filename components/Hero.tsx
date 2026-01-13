@@ -98,57 +98,31 @@ export default function Hero() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative mr-4">
-          <div className="bg border-default  rounded-2xl shadow-xl p-6 sm:p-8">
-            {/* Context header */}
-            <div className="mb-6 space-y-1">
-              <h3 className="text-lg font-semibold">
-                Why Marketplace Reconciliation Matters
-              </h3>
-              <p className="text-sm text-light">
-                Understand deductions, GST & fees — and what actually reaches
-                your bank.
-              </p>
-            </div>
+        <div className="relative mt-8 sm:mt-0"> {/* Removed mr-4, added top margin for mobile spacing */}
+    <div className="bg border-default rounded-2xl shadow-xl p-5 sm:p-8 w-full max-w-full">
+      {/* ... Header & Tabs ... */}
+      <div className="flex flex-wrap gap-2 mb-6"> {/* Added flex-wrap so tabs don't overflow on small screens */}
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition cursor-pointer button ${
+              activeTab === tab ? "primary" : "secondary"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
 
-            {/* Tabs */}
-            <div className="flex gap-3 mb-6">
-              {tabs.map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition cursor-pointer button ${activeTab === tab ? "primary" : "secondary"
-                    }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+      <DashboardContent activeTab={activeTab} />
+    </div>
 
-            <DashboardContent activeTab={activeTab} />
-          </div>
-
-          {/* Accent badge */}
-          <div className="absolute -top-4 -right-4 bg-green-500 text-white p-3 rounded-full shadow-lg overflow-hidden">
-            <TrendingUp
-              className="h-5 w-5 animate-[trending-up_2s_infinite_ease-in-out]"
-            />
-          </div>
-
-          {/* Add this to your Global CSS or a Tailwind config file */}
-          <style jsx global>{`
-  @keyframes trending-up {
-    0%, 100% {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-    50% {
-      transform: translate(2px, -4px);
-      opacity: 0.8;
-    }
-  }
-`}</style>
-        </div>
+    {/* Accent badge - FIX: Move it slightly inside or hide on tiny screens */}
+    <div className="absolute -top-3 right-0 sm:-right-4 bg-green-500 text-white p-3 rounded-full shadow-lg">
+      <TrendingUp className="h-5 w-5 animate-[trending-up_2s_infinite_ease-in-out]" />
+    </div>
+  </div>
       </div>
     </section>
   );

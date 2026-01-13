@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Our Clients | task360",
+    title: "task360 - Our Clients ",
     description:
       "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/clients`,

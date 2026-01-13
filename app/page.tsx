@@ -9,6 +9,82 @@ import HowItWorksStrip from "@/components/HowItWorksStrip";
 import GuidedOnboarding from "@/components/GuidedOnboarding";
 import CaseStudyCarousel from "@/components/CaseStudyCarousel1";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
+  title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+  description: "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",
+
+  applicationName: "task360",
+
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+
+  keywords: [
+    "eCommerce accounting",
+    "GST services",
+    "CA for online sellers",
+    "bookkeeping services",
+    "tax compliance India",
+    "startup finance",
+  ],
+
+  authors: [{ name: "task360" }],
+  creator: "task360",
+  publisher: "task360",
+
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  manifest: "/manifest.webmanifest",
+
+  appleWebApp: {
+    capable: true,
+    title: "task360",
+    statusBarStyle: "default",
+  },
+
+  openGraph: {
+    type: "website",
+    siteName: "task360",
+    title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+    description:
+      "Professional accounting, GST, tax & compliance services for eCommerce sellers and startups.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
+        width: 1200,
+        height: 630,
+        alt: "task360 – Simple Finance for eCommerce & Growing Businesses",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+    description:
+      "Accounting, GST, tax & compliance services for eCommerce sellers and startups.",
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
+  },
+
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  robots: { index: true, follow: true },
+  alternates: {
+    canonical: `/`,
+  },
+};
 
 
 export default function HomePage() {
@@ -49,7 +125,7 @@ export default function HomePage() {
         </div>
 
         <CaseStudyCarousel />
-        
+
       </section>
 
 

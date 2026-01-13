@@ -86,14 +86,14 @@ const CaseStudyCarousel = () => {
         </button>
 
         {/* Progress Indicators */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+        {/* <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
           {data.map((_, idx) => (
             <div
               key={idx}
               className={`h-1.5 rounded-full transition-all duration-300 ${idx === currentIndex ? 'w-6 highlight' : 'w-2 bg-accent'}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

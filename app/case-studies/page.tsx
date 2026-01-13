@@ -4,7 +4,7 @@ import { CaseStudy } from "@/data/types"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Client Success Stories & Business Growth Case Studies | task360",
+  title: "Client Success Stories & Business Growth Case Studies",
 
   description:
     "See how task360 helps startups and eCommerce brands scale through expert GST resolution, fundraising support, Virtual CFO services, and strategic compliance.",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Client Success Stories & Business Growth Case Studies | task360",
+    title: "Client Success Stories & Business Growth Case Studies",
     description:
       "Real results for real brands. Explore how we’ve helped businesses save millions in GST, raise Series A funding, and optimize profit margins.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Client Success Stories & Business Growth Case Studies | task360",
+    title: "Client Success Stories & Business Growth Case Studies",
     description:
       "From GST crisis resolution to ₹10Cr fundraising: See the impact task360 has on growing startups and eCommerce brands.",
     images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
@@ -83,7 +83,7 @@ function Section({ title, items }: { title: string; items: CaseStudy[] }) {
   return (
     <section className="mb-20">
       <h2 className="text-3xl font-bold mb-8 tracking-tight">{title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {items.map((item) => (
           <Link
             key={item.slug}
@@ -91,7 +91,7 @@ function Section({ title, items }: { title: string; items: CaseStudy[] }) {
             className="group block no-underline"
           >
             {/* Image Container */}
-            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-gray-100 mb-4">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-light mb-4">
               <img
                 src={`/img/case-study/${item.slug}.png`}
                 alt={item.title}

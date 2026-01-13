@@ -21,31 +21,31 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
   };
 
   return (
-    <nav
-      aria-label="Breadcrumb"
-      className="flex items-center space-x-1 text-sm text-muted-foreground mb-4 p-4"
-    >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
-      />
-      {items.map((item, i) => (
-        <span key={i} className="flex items-center">
-          {item.href ? (
-            <Link
-              href={item.href}
-              className="hover:text-accent transition-colors"
-            >
-              {item.name}
-            </Link>
-          ) : (
-            <span className="text-accent font-medium">{item.name}</span>
-          )}
-          {i < items.length - 1 && (
-            <ChevronRight size={14} className="mx-1 text-gray-400" />
-          )}
-        </span>
-      ))}
-    </nav>
+   <nav
+  aria-label="Breadcrumb"
+  className="flex flex-wrap items-center gap-y-2 text-sm text-muted-foreground mb-4 p-4"
+>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(ldjson) }}
+  />
+  {items.map((item, i) => (
+    <span key={i} className="flex items-center whitespace-nowrap">
+      {item.href ? (
+        <Link
+          href={item.href}
+          className="hover:text-accent transition-colors"
+        >
+          {item.name}
+        </Link>
+      ) : (
+        <span className="text-accent font-medium">{item.name}</span>
+      )}
+      {i < items.length - 1 && (
+        <ChevronRight size={14} className="mx-1 text-gray-400 shrink-0" />
+      )}
+    </span>
+  ))}
+</nav>
   );
 }

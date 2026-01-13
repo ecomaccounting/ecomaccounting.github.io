@@ -32,32 +32,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between gap-3 p-4">
 
         {/* Logo */}
-        {/* <Link
-  href="/"
-  aria-label="Task360 home"
-  className="flex items-center gap-1 shrink-0"
->
-  <Image
-  src="/img/logo/task360-logo-s.png"
-  width={40}
-  height={40}
-  alt="Task360 logo"
-  priority
-  className="
-    h-8 w-8 md:h-9 md:w-9 lg:h-10 lg:w-10
-    transition-transform duration-300 ease-out
-    hover:rotate-6 hover:scale-[1.03]
-    active:rotate-0
-    motion-reduce:transform-none
-  "
-/>
-  <span className="text-2xl font-semibold hidden md:inline text-[var(--brand)]">
-    task360
-  </span>
-</Link> */}
-
-<BrandLogo size="lg" textBreakpoint="md" />
-
+        <BrandLogo size="lg" textBreakpoint="md" />
 
         {/* Search */}
         <div className="flex-1 min-w-0 sm:max-w-xl">
@@ -96,6 +71,9 @@ export default function Navbar() {
             <Link href="/services" onClick={() => setMobileMenuOpen(false)}>
               Services
             </Link>
+            <Link href="/pricing" className="font-medium">
+            Pricing
+          </Link>
           </div>
         </div>
       )}
