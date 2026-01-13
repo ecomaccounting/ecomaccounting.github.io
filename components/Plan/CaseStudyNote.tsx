@@ -12,7 +12,7 @@ export default function CaseStudyNote({ pkg }: { pkg: ServicePackage }) {
                 return study ? (
                     <p key={cleanSlug} className="bg-green-200 text-black p-2 my-4 rounded-2xl">
                         <b>Case Study:</b><br/>
-                        {study.description1}
+                        {study.description}
                         <br />
                         <Link href={`/case-studies/${cleanSlug}`}>
                             Read full case study →

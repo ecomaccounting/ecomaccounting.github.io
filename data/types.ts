@@ -26,19 +26,6 @@ export interface ServiceItem {
     footer: boolean;
     
 }
-export interface BlogPost {
-  id: string;
-  title: string;
-  slug: string;
-  //date: string;
-  author: string;
-  image: string;
-  excerpt: string;
-  content: string;
-  topic: string;
-  home:boolean
-}
-
 export interface TeamMember {
   memberName: string;
   description: string;
@@ -108,4 +95,12 @@ export interface ServicePackage {
 export interface FAQItem {
   question: string;
   answer: string;
+}
+
+export interface CaseStudy {
+  slug: string;
+  Service: string;
+  title: string;
+  description: string;       
+  keywords: string; 
 }

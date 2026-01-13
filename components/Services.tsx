@@ -50,11 +50,11 @@ function ServiceCard({ service }: { service: ServiceItem }) {
               </li>
             ))}
           </ul>
-          <div className="grid grid-cols-2 gap-3 pt-2">
-            <Link href="/contact-us" className="success text-center py-2 px-3 rounded-lg text-sm font-semibold">
+          <div className="grid grid-cols-1 gap-2 pt-2">
+            <Link href="/contact-us" className="success text-center py-2 px-3 rounded-lg font-semibold">
               Free Consultation
             </Link>
-            <Link href={`/services/${service.id}`} className="primary text-center py-2 px-3 rounded-lg text-sm">
+            <Link href={`/services/${service.id}`} className="primary text-center py-2 px-3 rounded-lg">
               Learn More
             </Link>
           </div>

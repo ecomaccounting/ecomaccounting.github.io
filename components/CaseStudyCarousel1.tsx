@@ -5,19 +5,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react"; // install lucide-reac
 import { motion, AnimatePresence } from "framer-motion";
 import data1 from "@/data/data1.json";
 
-interface CaseStudy {
-  slug: string;
-  Service: string;
-  title: string;
-  description1: string;
-  bgColor: string;
-  image: string; // Expecting a URL or path here
-}
-
 const CaseStudyCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const data = data1.caseStudies.filter(c=> c.description1.length>0);
+  const data = data1.caseStudies.filter(c=> c.description.length>0);
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
   }, [data.length]);
@@ -68,7 +59,7 @@ const CaseStudyCarousel = () => {
                 {data[currentIndex].title}
               </h3>
               <p className="mt-4 text-lg leading-relaxed">
-                {data[currentIndex].description1}
+                {data[currentIndex].description}
               </p>
               <a
                 href={`/case-studies/${data[currentIndex].slug}`}

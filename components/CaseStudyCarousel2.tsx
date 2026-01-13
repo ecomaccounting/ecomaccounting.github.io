@@ -8,7 +8,7 @@ import data1 from "@/data/data1.json";
 const CaseStudyStack = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const data = data1.caseStudies.filter(c => c.description1.length > 0);
+  const data = data1.caseStudies.filter(c => c.description.length > 0);
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
   }, [data.length]);
@@ -69,7 +69,7 @@ const CaseStudyStack = () => {
                 <h4 className="uppercase mb-2">{item.Service}</h4>
                 <h2 className="text-highlight">{item.title}</h2>
                 <p className="mb-6 italic leading-relaxed">
-                  "{item.description1}"
+                  "{item.description}"
                 </p>
 
                 <a href={`/case-studies/${item.slug}`} className="mt-auto px-6 py-2 bg-accent rounded-full font-semibold shadow-sm hover:shadow-md transition-shadow">

@@ -1,9 +1,55 @@
-"use client"
-import { useState } from "react";
 import data from "@/data/data1.json";
 import { ServicePackage } from "@/data/types";
-import Plan from "@/components/Plan/Plan";
-import CaseStudyNote from "@/components/Plan/CaseStudyNote";
+
+import FAQ from "@/components/FAQ";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+import PricingSwitcher from "@/components/Plan/PricingSwitcher";
+
+export const metadata: Metadata = {
+  title: "Transparent Pricing for Business & Compliance Services",
+
+  description:
+    "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
+
+  keywords: [
+    "professional services pricing", "business compliance pricing", "tax advisory pricing", "accounting service cost", "startup compliance plans"
+  ],
+
+  openGraph: {
+    title: "Transparent Pricing for Business & Compliance Services",
+    description:
+      "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/services`,
+    siteName: "task360",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
+        width: 1200,
+        height: 630,
+        alt: "Explore task360 Services – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Transparent Pricing for Business & Compliance Services",
+    description:
+      "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `/pricing`,
+  },
+};
 
 const groupedData = data.pricing.reduce((acc, current) => {
   // Check if we have already processed this category
@@ -21,10 +67,10 @@ const groupedData = data.pricing.reduce((acc, current) => {
 // Convert the object back into an array of unique categories
 const categories = Object.values(groupedData);
 
-//const categories = pricing.;
 
-export default function PlansPage() {
-  const [active, setActive] = useState(0);
+
+export default function PlansPage() {  
+  const faqs = data.faqs.filter(faq => faq.relatedTo == "Pricing");
 
   return (
     <main className="">
@@ -36,56 +82,36 @@ export default function PlansPage() {
         </p>
       </section>
 
-      {/* Tabs */}
-      {/* Mobile */}
-      <div className="md:hidden sticky top-0 z-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 py-3">
-          <select
-            value={active}
-            onChange={(e) => setActive(Number(e.target.value))}
-            className="w-full rounded-lg border px-4 py-3 text-sm bg-secondary"
+      <PricingSwitcher categories={categories} pricingData={data.pricing} />
+
+      {/* CTA Section */}
+      <div className="max-w-4xl mx-auto mb-20">
+        <div className="bg-accent rounded-2xl p-8 md:p-12 text-center">
+          <h2 className="">Need multiple Services?</h2>
+          <p className="text-lg opacity-80 mb-6 max-w-2xl mx-auto">
+            We can create a custom package combining multiple strategic services at a bundled price.
+          </p>
+          <Link
+            href="/contact-us"
+            className="primary inline-flex items-center gap-2 px-8 py-4 bg-primary rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
           >
-            {categories.map((cat, i) => (
-              <option key={cat.categoryName} value={i}>
-                {cat.categoryName}
-              </option>
-            ))}
-          </select>
+            Request Custom Quote
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </div>
 
-      {/* Desktop */}
-      <section className="hidden md:block sticky top-0 z-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex gap-2">
-          {categories.map((cat, i) => (
-            <button
-              key={cat.categoryName}
-              onClick={() => setActive(i)}
-              className={`button px-6 py-2 text-sm font-medium ${active === i ? "primary" : "secondary"
-                }`}
-            >
-              {cat.categoryName}
-            </button>
-          ))}
-        </div>
-      </section>
-
-
-      {/* Content */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <header className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-semibold mb-3">{categories[active].heading}</h2>
-          <p className="text-light">{categories[active].description}</p>
-        </header>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {data.pricing.filter(p => p.categoryName == categories[active].categoryName)
-            .map((pkg) => (
-              <Plan pkg={pkg} key={pkg.id} />
-            ))}
-        </div>
-        <CaseStudyNote pkg={data.pricing.filter(p => p.categoryName == categories[active].categoryName)[0]} key={1}/>
-      </section>
+      {/*FAQs*/}
+      <header className="text-center mb-10">
+        <h2 className="">
+          Frequently Asked Questions
+        </h2>
+        <p className=" max-w-2xl mx-auto">
+          Answers to common questions eCommerce sellers ask about accounting, GST,
+          compliance, and business growth.
+        </p>
+      </header>
+      <FAQ faqs={faqs} />
     </main>
   );
 }

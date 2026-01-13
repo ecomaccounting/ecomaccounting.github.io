@@ -53,13 +53,13 @@ export default function GuidedOnboarding() {
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-light leading-relaxed">
+                <p className="mt-2 text-light leading-relaxed">
                   {item.description}
                 </p>
 
                 <span
                   className={`
-                    mt-6 inline-block text-sm font-medium
+                    mt-6 inline-block font-medium
                     ${item.slug === "facing-a-slug" ? "text-red-600" : "text-accent"}
                   `}
                 >

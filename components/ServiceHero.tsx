@@ -73,7 +73,7 @@ export function ServiceHero({
                 {variant === "parent" && service.shortDescription && (
                     <p
                         className={clsx(
-                            "max-w-xl text-sm md:text-base",
+                            "max-w-xl md:text-base",
                         )}
                     >
                         {service.shortDescription}

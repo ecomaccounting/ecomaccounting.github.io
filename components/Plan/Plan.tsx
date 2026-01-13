@@ -28,7 +28,7 @@ export default function Plan({ pkg }: { pkg: ServicePackage }) {
             <div className="mb-4">
                 <h3 className="text-xl font-semibold">{pkg.packageName}</h3>
                 {pkg.subtitle && (
-                    <p className="text-sm text-light py-2">{pkg.subtitle}</p>
+                    <p className="text-light py-2">{pkg.subtitle}</p>
                 )}
             </div>
 

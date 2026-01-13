@@ -152,19 +152,19 @@ function ClientItem({ client }: { client: Client }) {
       </div>
 
       {/* Short, punchy description for SEO keywords */}
-      <p className="text-sm text-highlight font-semibold mb-4 italic">
+      <p className="text-highlight font-semibold mb-4 italic">
         "{client.feedback}"
       </p>
 
-      <p className="text-muted text-sm leading-relaxed mb-6">
+      <p className="text-muted leading-relaxed mb-6">
         {client.description}
       </p>
 
       {/* 4. The Person Behind the Brand (Trust Factor) */}
       <div className="flex items-center gap-3 pt-6 border-t border-default">
         <div className="text-left">
-          <p className="text-sm font-bold">{client.title}</p>
-          <p className="text-xs text-muted">{client.position}</p>
+          <p className="font-bold">{client.title}</p>
+          <p className="text-muted">{client.position}</p>
         </div>
       </div>
     </div>

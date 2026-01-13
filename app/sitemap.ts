@@ -11,24 +11,33 @@ export default async function sitemap() {
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
-  }));  
+  }));
 
-    const userTypeUrls = data.mapping.map((srv) => ({
+  const userTypeUrls = data.mapping.map((srv) => ({
     url: `${baseUrl}/guided/${srv.slug}`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
-  }));  
- 
+  }));
+
+  const caseStudiesUrls = data.caseStudies.map((c) => ({
+    url: `${baseUrl}/case-studies/${c.slug}`,
+    lastModified: new Date().toISOString(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
 
   // --- Static pages ---
   const staticUrls = [
     "/",
-    "/our-team",    
-    "/contact-us",    
-    "/clients",    
+    "/our-team",
+    "/contact-us",
+    "/clients",
     "/services",
-    "/faq"
+    "/faq",
+    "/pricing",
+    "/case-studies"
 
   ].map((path) => ({
     url: `${baseUrl}${path}`,
@@ -38,5 +47,5 @@ export default async function sitemap() {
   }));
 
   // --- Combine all ---
-  return [...staticUrls, ...serviceUrls, ...userTypeUrls];
+  return [...staticUrls, ...serviceUrls, ...userTypeUrls, ...caseStudiesUrls];
 }

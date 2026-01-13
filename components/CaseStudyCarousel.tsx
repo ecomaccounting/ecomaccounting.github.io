@@ -5,14 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import data1 from "@/data/data1.json";
 
-interface CaseStudy {
-  slug: string;
-  Service: string;
-  title: string;
-  description1: string;
-  bgColor?: string;
-  image: string;
-}
+
 
 
 
@@ -52,9 +45,7 @@ export default function CaseStudyCarousel() {
   return (
     <section className="relative max-w-6xl mx-auto px-2">
       <div
-        className="rounded-2xl overflow-hidden shadow-xl transition-all duration-500"
-        style={{ backgroundColor: item.bgColor || "var(--accent-bg)" }}
-      >
+        className="rounded-2xl overflow-hidden shadow-xl transition-all duration-500">
         <div className="grid md:grid-cols-2 gap-6 items-center p-2 md:p-4">
           {/* Image */}
           <div className="relative w-full h-64 md:h-80">
@@ -78,7 +69,7 @@ export default function CaseStudyCarousel() {
             </h3>
 
             <p className="text-lg text-light">
-              {item.description1}
+              {item.description}
             </p>
 
             <Link
@@ -94,61 +85,60 @@ export default function CaseStudyCarousel() {
 
       {/* Controls */}
       <div className="mt-4 space-y-3">
-  {/* Desktop controls */}
-  <div className="hidden md:flex items-center justify-between">
-    <button
-      onClick={goPrev}
-      aria-label="Previous case study"
-      className="px-4 py-2 rounded-lg bg-accent-light text-accent font-medium"
-    >
-      ← Prev
-    </button>
+        {/* Desktop controls */}
+        <div className="hidden md:flex items-center justify-between">
+          <button
+            onClick={goPrev}
+            aria-label="Previous case study"
+            className="px-4 py-2 rounded-lg bg-accent-light text-accent font-medium"
+          >
+            ← Prev
+          </button>
 
-    <div className="flex gap-2">
-      {data.map((_, i) => (
-        <span
-          key={i}
-          className={`h-2 w-2 rounded-full transition-all ${
-            i === index
-              ? "highlight scale-125"
-              : "bg-accent opacity-40"
-          }`}
-        />
-      ))}
-    </div>
+          <div className="flex gap-2">
+            {data.map((_, i) => (
+              <span
+                key={i}
+                className={`h-2 w-2 rounded-full transition-all ${i === index
+                    ? "highlight scale-125"
+                    : "bg-accent opacity-40"
+                  }`}
+              />
+            ))}
+          </div>
 
-    <button
-      onClick={goNext}
-      aria-label="Next case study"
-      className="px-4 py-2 rounded-lg bg-accent-light text-accent font-medium"
-    >
-      Next →
-    </button>
-  </div>
+          <button
+            onClick={goNext}
+            aria-label="Next case study"
+            className="px-4 py-2 rounded-lg bg-accent-light text-accent font-medium"
+          >
+            Next →
+          </button>
+        </div>
 
-  {/* Mobile controls */}
-  <div className="flex md:hidden items-center justify-between">
-    <button
-      onClick={goPrev}
-      aria-label="Previous case study"
-      className="button secondary px-3 py-2 rounded-full bg-accent font-medium"
-    >
-      ←
-    </button>
+        {/* Mobile controls */}
+        <div className="flex md:hidden items-center justify-between">
+          <button
+            onClick={goPrev}
+            aria-label="Previous case study"
+            className="button secondary px-3 py-2 rounded-full bg-accent font-medium"
+          >
+            ←
+          </button>
 
-    <span className="text-sm text-light font-medium">
-      {index + 1} / {data.length}
-    </span>
+          <span className="text-sm text-light font-medium">
+            {index + 1} / {data.length}
+          </span>
 
-    <button
-      onClick={goNext}
-      aria-label="Next case study"
-      className="button secondary px-3 py-2 rounded-full bg-accent font-medium"
-    >
-      →
-    </button>
-  </div>
-</div>
+          <button
+            onClick={goNext}
+            aria-label="Next case study"
+            className="button secondary px-3 py-2 rounded-full bg-accent font-medium"
+          >
+            →
+          </button>
+        </div>
+      </div>
 
     </section>
   );

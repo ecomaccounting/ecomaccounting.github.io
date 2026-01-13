@@ -1,11 +1,61 @@
 import Link from "next/link";
 import data from "@/data/data1.json"
-const launchCaseStudies  = data.caseStudies.filter(c => c.Service==="Launch");
-const operateCaseStudies  = data.caseStudies.filter(c => c.Service==="Operate");
-const growCaseStudies  = data.caseStudies.filter(c => c.Service==="Grow");
+import { CaseStudy } from "@/data/types"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Client Success Stories & Business Growth Case Studies | task360",
+
+  description:
+    "See how task360 helps startups and eCommerce brands scale through expert GST resolution, fundraising support, Virtual CFO services, and strategic compliance.",
+
+  keywords: [
+    "business success stories", 
+    "eCommerce growth case studies", 
+    "startup fundraising results", 
+    "GST dispute resolution stories", 
+    "Virtual CFO impact India",
+    "business compliance success"
+  ],
+
+  openGraph: {
+    title: "Client Success Stories & Business Growth Case Studies | task360",
+    description:
+      "Real results for real brands. Explore how we’ve helped businesses save millions in GST, raise Series A funding, and optimize profit margins.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`,
+    siteName: "task360",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
+        width: 1200,
+        height: 630,
+        alt: "Explore task360 Success Stories – task360",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Client Success Stories & Business Growth Case Studies | task360",
+    description:
+      "From GST crisis resolution to ₹10Cr fundraising: See the impact task360 has on growing startups and eCommerce brands.",
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `/case-studies`,
+  },
+};
 
 export default function CaseStudiesPage() {
+  const launchCaseStudies = data.caseStudies.filter(c => c.Service === "Launch");
+  const operateCaseStudies = data.caseStudies.filter(c => c.Service === "Operate");
+  const growCaseStudies = data.caseStudies.filter(c => c.Service === "Grow");
   return (
     <main className="max-w-7xl mx-auto px-4 py-16">
       {/* Hero */}
@@ -14,7 +64,7 @@ export default function CaseStudiesPage() {
         <p className="text-lg text-muted max-w-3xl">
           Real-world success stories showcasing how Task360 helps Amazon, Flipkart,
           Meesho, and D2C sellers launch, operate, and scale with confidence.
-        </p>        
+        </p>
       </header>
 
       {/* Launch */}
@@ -29,14 +79,14 @@ export default function CaseStudiesPage() {
   );
 }
 
-function Section({ title, items }: { title: string; items: { title: string; slug: string; imageUrl: string }[] }) {
+function Section({ title, items }: { title: string; items: CaseStudy[] }) {
   return (
     <section className="mb-20">
       <h2 className="text-3xl font-bold mb-8 tracking-tight">{title}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
         {items.map((item) => (
-          <Link 
-            key={item.slug} 
+          <Link
+            key={item.slug}
             href={`/case-studies/${item.slug}`}
             className="group block no-underline"
           >
@@ -54,8 +104,8 @@ function Section({ title, items }: { title: string; items: { title: string; slug
               <h3 className="text-xl font-semibold leading-tight text-foreground group-hover:text-accent transition-colors">
                 {item.title}
               </h3>
-              <p className="text-muted text-sm">{item.description1}</p>
-              <span className="inline-flex items-center text-sm font-medium text-accent">
+              <p className="text-muted text-sm">{item.description}</p>
+              <span className="inline-flex items-center font-medium text-accent">
                 Read full case Study
                 <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>

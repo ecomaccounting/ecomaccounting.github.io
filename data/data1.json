@@ -1858,13 +1858,6 @@
       "relatedTo": "Services"
     },
     {
-      "id": 36,
-      "question": "Question",
-      "answer": "Answer",
-      "serviceIds": "",
-      "relatedTo": "Pricing"
-    },
-    {
       "id": 37,
       "question": "What's included in the monthly price?",
       "answer": "All monthly packages include complete accounting, GST compliance, regular financial statements, and dedicated support. Specific features vary by package tier - review the detailed breakdown in each package card above. All prices are exclusive of government fees and GST.",
@@ -2000,8 +1993,6 @@
       "services": "gst-filings",
       "caseStudy": "",
       "parentCaseStudy": "handicrafts-seller-–-multi-marketplace-reconciliation",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2032,8 +2023,6 @@
       "services": "accounting-taxation, gst-filings, income-tax-returns",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2066,8 +2055,6 @@
       "services": "gst-filings, accounting-taxation, virtual-cfo, launch, income-tax-returns",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2094,8 +2081,6 @@
       "services": "gst-services, accounting-taxation",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2122,8 +2107,6 @@
       "services": "grow",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2151,8 +2134,6 @@
       "services": "accounting-taxation",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2180,8 +2161,6 @@
       "services": "virtual-cfo",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Started",
       "note1": "",
       "note2": "",
@@ -2216,8 +2195,6 @@
       "services": "launch",
       "caseStudy": "fashion-brand-launch-on-amazon",
       "parentCaseStudy": "",
-      "timeline": "6 weeks from start to fully operational",
-      "timelineDetails": "Week 1-2:\nCompany incorporation, DIN/DSC, name approval\n\nWeek 3:\nGST, MSME, PAN/TAN registrations\n\nWeek 4:\nFounders agreement, employment templates, NDAs\n\nWeek 5-6:\nTrademark filing, marketplace setup support",
       "cta": "Launch Your Startup",
       "note1": "",
       "note2": "",
@@ -2249,8 +2226,6 @@
       "services": "trademark-registration, startup-esops",
       "caseStudy": "apparel-seller-proactive-trademark-protection",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Premium Protection",
       "note1": "",
       "note2": "",
@@ -2275,8 +2250,6 @@
       "services": "virtual-cfo",
       "caseStudy": "growing-seller-virtual-cfo-transformation",
       "parentCaseStudy": "",
-      "timeline": "4 hours/month",
-      "timelineDetails": "",
       "cta": "",
       "note1": "",
       "note2": "",
@@ -2303,8 +2276,6 @@
       "services": "accounting-taxation",
       "caseStudy": "growing-seller-virtual-cfo-transformation",
       "parentCaseStudy": "growing-seller-virtual-cfo-transformation",
-      "timeline": "8 hours/month",
-      "timelineDetails": "",
       "cta": "",
       "note1": "",
       "note2": "",
@@ -2331,8 +2302,6 @@
       "services": "startup-fundraise",
       "caseStudy": "home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
-      "timeline": "12 hours/month",
-      "timelineDetails": "",
       "cta": "",
       "note1": "",
       "note2": "",
@@ -2361,8 +2330,6 @@
       "services": "startup-fundraise",
       "caseStudy": "home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Start Fundraising Journey",
       "note1": "",
       "note2": "",
@@ -2392,8 +2359,6 @@
       "services": "startup-esops",
       "caseStudy": "electronics-brand-esop-for-key-team-members",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Design ESOP Program",
       "note1": "",
       "note2": "",
@@ -2422,8 +2387,6 @@
       "services": "trademark-registration",
       "caseStudy": "apparel-seller-proactive-trademark-protection",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "protect Your Brand",
       "note1": "Note: Trademark filing only (₹3,000) available separately - covers application submission only, no prosecution support",
       "note2": "",
@@ -2451,8 +2414,6 @@
       "services": "gst-services",
       "caseStudy": "cosmetics-seller-gst-compliance-crisis",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Help with Notice",
       "note1": "Success Rate: Reduced ₹18L GST demand to ₹4.25L settlement (76% reduction) for cosmetics client",
       "note2": "Success Fee: 10-15% of amount saved vs. original demand (in addition to retainer)",
@@ -2480,10 +2441,8 @@
       "services": "valuation-advisory",
       "caseStudy": "electronics-brand-esop-for-key-team-members, home-kitchen-brand-series-a-fundraising",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Get Valuation Quote",
-      "note1": "",
+      "note1": "Use Cases: Fundraising, ESOP pricing, M&A transactions, partner entry/exit, compliance requirements",
       "note2": "",
       "highlight": ""
     },
@@ -2510,8 +2469,6 @@
       "services": "financial-modeling",
       "caseStudy": "",
       "parentCaseStudy": "",
-      "timeline": "",
-      "timelineDetails": "",
       "cta": "Build Your Model",
       "note1": "Deliverable: Fully editable Excel model with clear assumptions and dynamic scenarios",
       "note2": "",
@@ -2523,118 +2480,71 @@
       "slug": "fashion-brand-launch-on-amazon",
       "Service": "Launch",
       "title": "Fashion Brand Launch on Amazon",
-      "description1": "2 sisters launched their ethnic wear brand, incorporated to ₹72L revenue in 12 months",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Fashion Brand Launch on Amazon](/img/case-study/fashion-brand-launch-on-amazon.png)"
+      "description": "2 sisters launched their ethnic wear brand, incorporated to ₹72L revenue in 12 months",
+      "keywords": "Amazon brand launch India, eCommerce business incorporation, ethnic wear business growth, start Amazon fashion brand"
     },
     {
       "slug": "food-products-seller-multi-state-gst-setup",
       "Service": "Launch",
       "title": "Food Products Seller – Multi-State GST Setup",
-      "description1": "Resolved ₹3.2L GST notice & secured 4+ state registrations for a food startup. Scaled compliance across 5 states with FSSAI & tax-ready systems.",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Food Products Seller – Multi-State GST Setup](/img/case-study/food-products-seller-multi-state-gst-setup.png)"
+      "description": "Resolved ₹3.2L GST notice & secured 4+ state registrations for a food startup. Scaled compliance across 5 states with FSSAI & tax-ready systems.",
+      "keywords": "Multi-state GST registration, GST notice resolution, FSSAI compliance for startups, food business tax consultant"
     },
     {
       "slug": "three-co-founders-starting-electronics-brand",
       "Service": "Launch",
       "title": "Three Co-founders Starting Electronics Brand",
-      "description1": "Secured equity for an electronics startup via Reverse Vesting & SPAs. Established clear governance for 3 co-founders to ensure 100% investor-readiness.",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Three Co-founders Starting Electronics Brand](/img/case-study/three-co-founders-starting-electronics-brand.png)"
+      "description": "Secured equity for an electronics startup via Reverse Vesting & SPAs. Established clear governance for 3 co-founders to ensure 100% investor-readiness.",
+      "keywords": "Co-founder equity vesting, Share Purchase Agreement (SPA), startup governance structure, investor readiness services"
     },
     {
       "slug": "mother-daughter-home-decor-business",
       "Service": "Launch",
       "title": "Mother-Daughter Home Decor Business",
-      "description1": "Converted a ₹1.2Cr family partnership to Pvt Ltd. Eliminated personal liability & cut tax burdens to prep a mother-daughter brand for major funding.",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Mother-Daughter Home Decor Business](/img/case-study/mother-daughter-home-decor-business.png)"
+      "description": "Converted a ₹1.2Cr family partnership to Pvt Ltd. Eliminated personal liability & cut tax burdens to prep a mother-daughter brand for major funding.",
+      "keywords": "Partnership to Pvt Ltd conversion, reduce personal liability business, tax planning for home decor brand, company restructuring for funding"
     },
     {
       "slug": "cosmetics-seller-gst-compliance-crisis",
       "Service": "Operate",
       "title": "Cosmetics Seller – GST Compliance Crisis",
-      "description1": "Reduced ₹18L GST demand to ₹4.25L settlement (76% reduction) for cosmetics client",
-      "bgColor": "#d4edda",
-      "description2": "",
-      "image": "![Cosmetics Seller – GST Compliance Crisis](/img/case-study/cosmetics-seller-gst-compliance-crisis.png)"
+      "description": "Reduced ₹18L GST demand to ₹4.25L settlement (76% reduction) for cosmetics client",
+      "keywords": "GST demand settlement, tax dispute resolution, GST audit support, reduce GST penalty"
     },
     {
       "slug": "handicrafts-seller-multi-marketplace-reconciliation",
       "Service": "Operate",
       "title": "Handicrafts Seller – Multi-Marketplace Reconciliation",
-      "description1": "Our eCommerce Growth package helped a handicrafts seller grow from ₹3 Cr to ₹4.2 Cr (40% increase) while improving margins by 3%.",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Handicrafts Seller – Multi-Marketplace Reconciliation](/img/case-study/handicrafts-seller-multi-marketplace-reconciliation.png)"
+      "description": "Our eCommerce Growth package helped a handicrafts seller grow from ₹3 Cr to ₹4.2 Cr (40% increase) while improving margins by 3%.",
+      "keywords": "eCommerce marketplace reconciliation, improve eCommerce margins, handicraft business scaling, marketplace profit optimization"
     },
     {
       "slug": "electronics-brand-esop-for-key-team-members",
       "Service": "Operate",
       "title": "Electronics Brand – ESOP for Key Team Members",
-      "description1": "ESOP program achieved zero attrition, created ₹2.6Cr employee wealth. ROI: 74x on program cost",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Electronics Brand – ESOP for Key Team Members](/img/case-study/electronics-brand-esop-for-key-team-members.png)"
+      "description": "ESOP program achieved zero attrition, created ₹2.6Cr employee wealth. ROI: 74x on program cost",
+      "keywords": "ESOP plan for startups, employee stock options India, talent retention for electronics brands, employee wealth creation"
     },
     {
       "slug": "apparel-seller-proactive-trademark-protection",
       "Service": "Operate",
       "title": "Apparel Seller – Proactive Trademark Protection",
-      "description1": "Trademark filing only (₹3,000) available separately - covers application submission only, no prosecution support",
-      "bgColor": "#fff3cd",
-      "description2": "",
-      "image": "![Apparel Seller – Proactive Trademark Protection](/img/case-study/apparel-seller-proactive-trademark-protection.png)"
+      "description": "Trademark filing only (₹3,000) available separately - covers application submission only, no prosecution support",
+      "keywords": "Trademark registration India, brand name protection, apparel brand trademark, logo registration services"
     },
     {
       "slug": "growing-seller-virtual-cfo-transformation",
       "Service": "Operate",
       "title": "Growing Seller – Virtual CFO Transformation",
-      "description1": "Virtual CFO helped a home products seller improve margins by 3.3% (₹55L annually) and raise ₹2.5Cr funding. ROI: 12.5x",
-      "bgColor": "#d4edda",
-      "description2": "",
-      "image": "![Growing Seller – Virtual CFO Transformation](/img/case-study/growing-seller-virtual-cfo-transformation.png)"
+      "description": "Virtual CFO helped a home products seller improve margins by 3.3% (₹55L annually) and raise ₹2.5Cr funding. ROI: 12.5x",
+      "keywords": "Virtual CFO for eCommerce, outsourced CFO services, profit margin improvement, startup fundraising assistance"
     },
     {
       "slug": "home-kitchen-brand-series-a-fundraising",
       "Service": "Grow",
       "title": "Home Kitchen Brand – Series A Fundraising",
-      "description1": "Helped client raise ₹10Cr at ₹50Cr valuation, saved 20% dilution = ₹12Cr value. ROI: 126x",
-      "bgColor": "#e3f2fd",
-      "description2": "",
-      "image": "![Home Kitchen Brand – Series A Fundraising](/img/case-study/home-kitchen-brand-series-a-fundraising.png)"
-    },
-    {
-      "slug": "beauty-products-flipkart-to-international-expansion",
-      "Service": "Grow",
-      "title": "Beauty Products – Flipkart to International Expansion",
-      "description1": "",
-      "bgColor": "",
-      "description2": "",
-      "image": "![Beauty Products – Flipkart to International Expansion](/img/case-study/beauty-products-flipkart-to-international-expansion.png)"
-    },
-    {
-      "slug": "toy-manufacturer-merger-with-competitor",
-      "Service": "Grow",
-      "title": "Toy Manufacturer – Merger with Competitor",
-      "description1": "",
-      "bgColor": "",
-      "description2": "",
-      "image": "![Toy Manufacturer – Merger with Competitor](/img/case-study/toy-manufacturer-merger-with-competitor.png)"
-    },
-    {
-      "slug": "organic-food-brand-sme-ipo-journey",
-      "Service": "Grow",
-      "title": "Organic Food Brand – SME IPO Journey",
-      "description1": "",
-      "bgColor": "",
-      "description2": "",
-      "image": "![Organic Food Brand – SME IPO Journey](/img/case-study/organic-food-brand-sme-ipo-journey.png)"
+      "description": "Helped client raise ₹10Cr at ₹50Cr valuation, saved 20% dilution = ₹12Cr value. ROI: 126x",
+      "keywords": "Series A fundraising consultant, startup valuation services, equity dilution management, venture capital advisory"
     }
   ]
 }
