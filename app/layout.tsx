@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   keywords: [
     "eCommerce accounting",
     "GST services",
-    "CA for online sellers",
+    "Financial services for online sellers",
     "bookkeeping services",
     "tax compliance India",
     "startup finance",

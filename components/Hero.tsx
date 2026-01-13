@@ -99,7 +99,7 @@ export default function Hero() {
 
         {/* RIGHT */}
         <div className="relative mt-8 sm:mt-0"> {/* Removed mr-4, added top margin for mobile spacing */}
-    <div className="bg border-default rounded-2xl shadow-xl p-5 sm:p-8 w-full max-w-full">
+    <div className="bg border border-default rounded-2xl shadow-xl p-5 sm:p-8 w-full max-w-full">
       {/* ... Header & Tabs ... */}
       <div className="flex flex-wrap gap-2 mb-6"> {/* Added flex-wrap so tabs don't overflow on small screens */}
         {tabs.map((tab) => (

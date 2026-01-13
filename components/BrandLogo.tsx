@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 interface BrandLogoProps {
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
   showText?: boolean;
-  textBreakpoint?: "always" | "sm" |"md" | "lg" | "never";
+  textBreakpoint?: "always" | "sm" | "md" | "lg" | "never";
   animate?: boolean;
   href?: string;
   priority?: boolean;
@@ -22,6 +22,14 @@ const sizeMap = {
   xxl: { img: "h-14 w-14", text: "text-5xl" },
 };
 
+const visibilityMap = {
+  always: "inline-block",
+  never: "hidden",
+  sm: "hidden sm:inline-block",
+  md: "hidden md:inline-block",
+  lg: "hidden lg:inline-block",
+};
+
 export default function BrandLogo({
   size = "md",
   showText = true,
@@ -31,7 +39,7 @@ export default function BrandLogo({
   priority = true,
 }: BrandLogoProps) {
   const [introSpin, setIntroSpin] = useState(false);
-
+  const textVisibility = visibilityMap[textBreakpoint as keyof typeof visibilityMap] || "hidden md:inline-block";
   useEffect(() => {
     if (!animate) return;
 
@@ -43,12 +51,12 @@ export default function BrandLogo({
     }
   }, [animate]);
 
-  const textVisibility =
-    textBreakpoint === "always"
-      ? "inline"
-      : textBreakpoint === "never"
-      ? "hidden"
-      : `hidden ${textBreakpoint}:inline`;
+  // const textVisibility =
+  //   textBreakpoint === "always"
+  //     ? "inline-block"
+  //     : textBreakpoint === "never"
+  //       ? "hidden"
+  //       : `hidden ${textBreakpoint}:inline-block`;
 
   return (
     <Link
@@ -73,15 +81,7 @@ export default function BrandLogo({
       />
 
       {showText && (
-        <span
-          className={`
-            ${textVisibility}
-            ${sizeMap[size].text}
-            font-semibold
-            text-[var(--brand)]
-            leading-none
-          `}
-        >
+        <span className={`${textVisibility} ${sizeMap[size].text} font-semibold leading-none items-center`}>
           task360
         </span>
       )}
