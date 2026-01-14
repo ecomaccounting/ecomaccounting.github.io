@@ -49,7 +49,7 @@ export default function HowItWorksStrip() {
 
   return (
     <section
-      className="bg-accent-light py-16 md:py-20 px-4"
+      className="bg-accent-light py-10 px-4"
 
 
     >
@@ -72,7 +72,7 @@ export default function HowItWorksStrip() {
               <button
                 key={step.title}
                 onClick={() => { setActive(index); setPaused(true); }}
-                className={`rounded-2xl shadow-2xl p-6 text-left transition-all scale-[1.02]
+                className={`border border-default rounded-2xl shadow-2xl p-6 text-left transition-all scale-[1.02]
                   ${isActive
                     ? "bg-accent shadow-xl border-accent "
                     : "bg hover:bg-accent"

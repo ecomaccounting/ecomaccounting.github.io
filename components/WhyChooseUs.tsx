@@ -119,13 +119,13 @@ function ReasonCard({ item }: any) {
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-light p-8 md:p-12">
+    <section className="bg-light py-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-10">
-          <h2>Why Choose task360?</h2>
-          <p className="max-w-2xl">
-            We chose depth over breadth. By specialising exclusively in
+          <h2 className="text-center">Why Choose task360?</h2>
+          <p className="max-w-2xl text-center">
+            We chose depth over breadth. By specializing exclusively in
             eCommerce, we deliver clarity, control, and confidence to online
             sellers.
           </p>

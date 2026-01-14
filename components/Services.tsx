@@ -14,7 +14,7 @@ function ServiceCard({ service }: { service: ServiceItem }) {
     : FileText;
 
   return (
-    <div className="bg p-6 rounded-xl shadow-md transition-all border border-default">
+    <div className="bg p-2 rounded-xl shadow-md transition-all border border-default">
       <button
         onClick={() => setOpen(!open)}
         className="cursor-pointer w-full text-left p-4 group" // Added padding for better hit area
@@ -67,15 +67,13 @@ function ServiceCard({ service }: { service: ServiceItem }) {
 // 2. The Main Services Component
 export default function Services({ services }: { services: ServiceItem[] }) {
   return (
-    <section id="services" className="py-5" aria-label="Accounting and tax services">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services
-            .filter((service) => service.id.length > 2)
-            .map((service) => (
-              <ServiceCard key={service.id} service={service} />
-            ))}
-        </div>
+    <section id="services" className="pb-6 px-4" aria-label="Accounting and tax services">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services
+          .filter((service) => service.id.length > 2)
+          .map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
       </div>
     </section>
   );

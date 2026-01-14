@@ -55,18 +55,18 @@ export default function Hero() {
           {/* Proof points */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <ShieldCheck className="h-5 w-5 text-blue shrink-0" />
+              <ShieldCheck className="h-5 w-5 text-highlight shrink-0" />
               <span>CA-led compliance built for eCommerce</span>
             </div>
 
             <div className="flex items-center gap-3">
-              <Users className="h-5 w-5 text-blue shrink-0" />
+              <Users className="h-5 w-5 text-highlight shrink-0" />
               <span>Trusted by 500+ sellers across India</span>
             </div>
 
             <div className="flex items-center gap-3">
-              <IndianRupee className="h-5 w-5 text-blue shrink-0" />
-              <span>₹5 Cr+ marketplace transactions handled</span>
+              <IndianRupee className="h-5 w-5 text-highlight shrink-0" />
+              <span>₹300 Cr+ transactions handled</span>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function Hero() {
 
         {/* RIGHT */}
         <div className="relative mt-8 sm:mt-0"> {/* Removed mr-4, added top margin for mobile spacing */}
-    <div className="bg border border-default rounded-2xl shadow-xl p-5 sm:p-8 w-full max-w-full">
+    <div className="card bg-light border border-default rounded-2xl shadow-xl p-5 sm:p-8 w-full max-w-full">
       {/* ... Header & Tabs ... */}
       <div className="flex flex-wrap gap-2 mb-6"> {/* Added flex-wrap so tabs don't overflow on small screens */}
         {tabs.map((tab) => (

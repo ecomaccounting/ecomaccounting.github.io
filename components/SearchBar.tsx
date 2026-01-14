@@ -92,7 +92,7 @@ px-1 py-1 min-w-0 ring-1 ring-[var(--border)] focus-within:ring-2 focus-within:r
           onKeyDown={handleKeyDown}
           placeholder="Search services..."
           inputMode="search"
-          className="flex-1 min-w-0 bg-transparent outline-none text-normal placeholder:text-normal p-1" />
+          className="flex-1 min-w-0 bg-transparent outline-none placeholder:text-muted p-1" />
 
         <button
           type="button"

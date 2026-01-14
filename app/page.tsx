@@ -92,20 +92,9 @@ export default function HomePage() {
   return (
     <div className="max-w-7xl mx-auto container">
       <Hero />
-      <HowItWorksStrip />
       <TopClients />
-      <GuidedOnboarding />
-      <div className="text-center mb-14">
-        <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
-        <p className="text-lg max-w-2xl mx-auto">
-          From startup to scale-up, we handle accounting, GST, compliance, and advisory.
-        </p>
-      </div>
-      <Services services={services} />
-      <WhyChooseUs />
-      <TestimonialsTicker />
       <section className="py-10">
-        <div className="max-w-6xl mx-auto px-4 mb-10 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <div className="mx-auto px-4 mb-1 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold">
               How We’ve Helped Businesses Win
@@ -123,10 +112,20 @@ export default function HomePage() {
             View all case studies →
           </Link>
         </div>
-
         <CaseStudyCarousel />
-
       </section>
+      <HowItWorksStrip />
+      <div className="text-center mb-14 py-10">
+        <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
+        <p className="text-lg max-w-2xl ">
+          From startup to scale-up, we handle accounting, GST, compliance, and advisory.
+        </p>
+      </div>
+      <Services services={services} />
+      <GuidedOnboarding />
+      <WhyChooseUs />
+      <TestimonialsTicker />
+
 
 
     </div >

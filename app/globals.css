@@ -353,3 +353,14 @@ footer a:hover {
 }
 
 /*MDX*/
+/*Logo Animation*/
+@keyframes custom-intro-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-intro-spin {
+  /* Runs once, for 0.7s, on load */
+  animation: custom-intro-spin 0.7s ease-out forwards;
+}
+/*--LOGO animation-----------*/

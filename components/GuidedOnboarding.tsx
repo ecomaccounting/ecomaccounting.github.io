@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function GuidedOnboarding() {
   return (
-    <section className="py-20 px-4 bg-accent-light">
+    <section className="py-6 px-4 bg-accent-light">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">

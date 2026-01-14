@@ -1,9 +1,7 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
 interface BrandLogoProps {
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
   showText?: boolean;
@@ -38,46 +36,28 @@ export default function BrandLogo({
   href = "/",
   priority = true,
 }: BrandLogoProps) {
-  const [introSpin, setIntroSpin] = useState(false);
   const textVisibility = visibilityMap[textBreakpoint as keyof typeof visibilityMap] || "hidden md:inline-block";
-  useEffect(() => {
-    if (!animate) return;
-
-    const seen = sessionStorage.getItem("brandLogoAnimated");
-    if (!seen) {
-      setIntroSpin(true);
-      sessionStorage.setItem("brandLogoAnimated", "true");
-      setTimeout(() => setIntroSpin(false), 700);
-    }
-  }, [animate]);
-
-  // const textVisibility =
-  //   textBreakpoint === "always"
-  //     ? "inline-block"
-  //     : textBreakpoint === "never"
-  //       ? "hidden"
-  //       : `hidden ${textBreakpoint}:inline-block`;
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   return (
     <Link
       href={href}
       aria-label="Task360 home"
-      className="flex items-center gap-1 shrink-0"
+      className="group flex items-center gap-1 shrink-0"
     >
       <Image
+        suppressHydrationWarning
         src="/img/logo/task360-logo-s.png"
         width={40}
         height={40}
         alt="Task360 logo"
         priority={priority}
         className={`
-          ${sizeMap[size].img}
-          transition-transform duration-300 ease-out
-          ${animate ? "hover:rotate-6 hover:scale-[1.03]" : ""}
-          ${introSpin ? "rotate-[360deg]" : ""}
-          dark:brightness-110 dark:contrast-125
-          motion-reduce:transform-none
-        `}
+          ${sizeMap[size].img}          
+          ${!mounted && animate ? "animate-intro-spin hover:rotate-12 hover:scale-[1.10]" : ""}
+          transition-transform duration-300 dark:brightness-110
+          group-hover:rotate-12 group-hover:scale-[1.10]`}
       />
 
       {showText && (

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // install lucide-react or use SVGs
 import { motion, AnimatePresence } from "framer-motion";
 import data1 from "@/data/data1.json";
+import Image from "next/image"
 
 const CaseStudyCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +26,7 @@ const CaseStudyCarousel = () => {
   }, [isAutoPlaying, nextSlide]);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto  py-12">
+    <div className="relative w-full max-w-4xl mx-auto">
       <div
         className="relative overflow-hidden rounded-2xl shadow-xl"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -38,20 +39,19 @@ const CaseStudyCarousel = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}            
-            className="flex flex-col md:flex-row items-center  min-h-[400px]"
-          >
-            {/* Image Section */}
-            <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-              {/* Note: In production, use Next.js <Image /> component for optimization */}
-              <img
+            className="flex flex-col md:flex-row items-center  min-h-[400px]">            
+            <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">              
+              <Image
                 src={`/img/case-study/${data[currentIndex].slug}.png`}
                 alt={data[currentIndex].title}
-                className="rounded-lg object-cover max-h-64 shadow-md"
+                className="rounded-lg object-cover max-h-72 w-auto shadow-md"
+                width={400}
+                height={400}
               />
             </div>
 
             {/* Content Section */}
-            <div className="w-full md:w-1/2 p-2 md:pl-10 text-left">
+            <div className="w-full md:w-1/2 p-4 md:pl-10 text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-highlight">
                 {data[currentIndex].Service}
               </span>
@@ -80,7 +80,7 @@ const CaseStudyCarousel = () => {
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg rounded-full shadow-md transition-all"
+          className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-[var(--bg)]]/50 rounded-full shadow-md transition-all"
         >
           <ChevronRight className="w-6 h-6 " />
         </button>
