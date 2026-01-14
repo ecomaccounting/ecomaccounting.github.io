@@ -2,26 +2,38 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Highlight from "@/components/mdx/Highlight";
 import Metrics from "@/components/mdx/Metrics";
 import Testimonial from "@/components/mdx/Testimonial";
-import data from "@/data/data1.json";
 import SectionCard from "@/components/mdx/SectionCard";
 import Timeline from "@/components/mdx/Timeline";
 import Comparison from "@/components/mdx/Comparison";
 import KeyTakeaways from "@/components/mdx/KeyTakeaways";
 import { Metadata } from "next";
-import { CaseStudy } from "@/data/types";
+import {getContent} from "@/lib/content"
 import { notFound } from "next/navigation";
-import { getContent } from "@/lib/content";
+
+const policies = [
+  {
+    slug:"privacy-policy",    
+    title:"Pricy Policy",    
+    description: "At task360, your data security is our priority. Explore our Privacy Policy to understand our commitment to protecting your business and financial information."
+  },
+  {
+    slug:"terms-of-service",    
+    title:"Terms of Use",    
+    description: "Legal terms and conditions for task360 services. Read our Terms of Use to understand your rights and responsibilities when scaling your business with us."
+  }
+]
+
 
 export async function generateStaticParams() {
-    return data.caseStudies.map(c => ({
+    return policies.map(c => ({
         slug: c.slug,
     }));
 }
 
 // --- Generate SEO metadata dynamically ---
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params;
-  const cs = data.caseStudies.find((s: CaseStudy) => s.slug === slug);
+  const { slug } = await params;  
+  const cs = policies.find((s) => s.slug === slug);
 
   if (!cs) return notFound();
 
@@ -31,10 +43,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${cs.title}`,
       description: cs.description,
-      url: `/case-studies/${cs.slug}`,      
+      url: `/policies/${cs.slug}`,      
     },    
     alternates: {
-      canonical: `/case-studies/${slug}`,
+      canonical: `/policies/${slug}`,
     },
   };
 }
@@ -49,12 +61,13 @@ const components = {
     KeyTakeaways,
 };
 
-export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function PrivacyPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
+    console.log(slug);
     const data = getContent(slug);
 
     if (!data) {
-        return <div className="p-16">Case study not found</div>;
+        return <div className="p-16">Privacy Policy not found</div>;
     }
 
     const { content, data: frontmatter } = data;

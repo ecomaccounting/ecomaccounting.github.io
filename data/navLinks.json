@@ -31,6 +31,14 @@
         {
             "text": "Pricing",
             "link": "/pricing"
+        },
+        {
+            "text": "Privacy Policy",
+            "link": "/policies/privacy-policy"
+        },
+        {
+            "text": "Terms of Service",
+            "link": "/policies/terms-of-service"
         }        
     ]    
 }
