@@ -1862,6 +1862,8 @@
       "slug": "new-seller",
       "title": "New Seller",
       "serviceIds": "launch, incorporation, sole-propreitorship, partnership-registration, private-limited-company",
+      "Plans": "",
+      "phrasing": "I’m launching a brand — help me start compliant",
       "description": "Expert assistance for new entrepreneurs to register companies, obtain GST/MSME certificates, and launch legally compliant online businesses.",
       "icon": "Rocket",
       "heading": "Launch Your Business with a Solid Foundation",
@@ -1874,6 +1876,8 @@
       "slug": "scaling-brand",
       "title": "Scaling Brand",
       "serviceIds": "operate, accounting-taxation, gst-services,  virtual-cfo",
+      "Plans": "",
+      "phrasing": "I need growth support (+ CFO / advisory)",
       "description": "Comprehensive financial management for growing brands, including Virtual CFO services, fundraising support, and advanced tax planning.",
       "icon": "TrendingUp",
       "heading": "Professionalize Your Growth & Governance",
@@ -1886,6 +1890,8 @@
       "slug": "multi-marketplace",
       "title": "Multi-Marketplace",
       "serviceIds": "operate, accounting-taxation, gst-services, international-trade, virtual-cfo",
+      "Plans": "",
+      "phrasing": "I sell across multiple platforms — streamline my books",
       "description": "Specialized accounting and reconciliation services for sellers operating across Amazon, Flipkart, Meesho, and international borders.",
       "icon": "Layers",
       "heading": "Unified Compliance for Multi-Channel Sales",
@@ -1898,6 +1904,8 @@
       "slug": "facing-a-notice",
       "title": "Facing a Notice",
       "serviceIds": "gst-indirect-taxes, gst-services, accounting-taxation",
+      "Plans": "",
+      "phrasing": "I’m dealing with an urgent notice — fix it fast",
       "description": "Professional legal and tax representation to resolve GST, Income Tax, or departmental notices with accurate, timely responses.",
       "icon": "AlertTriangle",
       "heading": "Protect Your Business from Legal Risks",
@@ -2484,6 +2492,32 @@
       "title": "Home Kitchen Brand – Series A Fundraising",
       "description": "Helped client raise ₹10Cr at ₹50Cr valuation, saved 20% dilution = ₹12Cr value. ROI: 126x",
       "keywords": "Series A fundraising consultant, startup valuation services, equity dilution management, venture capital advisory"
+    }
+  ],
+  "howItWorks": [
+    {
+      "title": "Diagnosis",
+      "subLabel": "Risk & clarity",
+      "icon": "SearchCheck",
+      "description": "We audit your books, GST, marketplaces, and cash flows to uncover risks, leakages, and compliance gaps early."
+    },
+    {
+      "title": "System Setup",
+      "subLabel": "Accuracy & automation",
+      "icon": "Settings2",
+      "description": "We fix accounting, GST, and reconciliation systems to ensure accuracy, automation, and audit-ready financials."
+    },
+    {
+      "title": "Ongoing Governance",
+      "subLabel": "Control & compliance",
+      "icon": "ShieldCheck",
+      "description": "We continuously monitor filings, reports, and controls so your finance operations stay clean, compliant, and predictable."
+    },
+    {
+      "title": "Growth Readiness",
+      "subLabel": "Scale & confidence",
+      "icon": "TrendingUp",
+      "description": "We prepare reliable financials, insights, and advisory support to help you scale confidently, raise capital, or expand."
     }
   ]
 }

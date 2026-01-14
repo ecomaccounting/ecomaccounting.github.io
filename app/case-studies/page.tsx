@@ -25,11 +25,11 @@ export default function CaseStudiesPage() {
     <main className="max-w-7xl mx-auto px-4 py-16">
       {/* Hero */}
       <header className="mb-16">
-        <h1 className="text-4xl font-bold mb-4">eCommerce Seller Case Studies</h1>
-        <p className="text-lg text-muted max-w-3xl">
-          Real-world success stories showcasing how Task360 helps Amazon, Flipkart,
-          Meesho, and D2C sellers launch, operate, and scale with confidence.
+        <h1 className="text-4xl font-bold mb-4">How eCommerce Businesses Win with Task360</h1>
+        <p className="text-lg max-w-3xl">
+          Real-world engagements where Task360 helped eCommerce sellers eliminate risk, regain financial control, and build systems ready for growth across Amazon, Flipkart, Meesho, and D2C channels.
         </p>
+        <p className="text-sm text-muted text-end">Each case highlights the problem, the intervention, and the measurable outcome.</p>
       </header>
 
       {/* Launch */}

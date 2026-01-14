@@ -36,7 +36,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   title: {
-    default: "task360 – Simple Finance for eCommerce",
+    default: "task360 – Simple Finance for eCommerce | Best financial services India",
     template: "%s | task360" // This allows Page.tsx to just provide "Explore Services"
   },
   description: "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",

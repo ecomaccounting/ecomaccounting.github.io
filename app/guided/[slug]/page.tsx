@@ -66,7 +66,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
     <main className="pb-24">
       {/* HERO */}
       <section
-        className={`py-20 px-4`}
+        className={`py-10 px-4`}
       >
         <div className="max-w-5xl mx-auto text-center">
           <div
@@ -108,7 +108,7 @@ export default async function GuidedUserPage({ params }: { params: Promise<{ slu
       </section>
 
       {/* SERVICES */}
-      <section className="mt-20">
+      <section className="mt-10">
         <div className="text-center mb-14">
           <h2 className="">Services for eCommerce Sellers & Growing Businesses</h2>
           <p className="text-lg max-w-2xl mx-auto">

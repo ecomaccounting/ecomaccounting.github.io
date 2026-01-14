@@ -63,13 +63,14 @@ const CaseStudyCarousel = () => {
               </p>
               <a
                 href={`/case-studies/${data[currentIndex].slug}`}
-                className="inline-block mt-6 font-semibold underline decoration-2 underline-offset-4 transition-colors"
+                className="inline-block mt-6 font-semibold transition-colors"
               >
                 Read full case study →
               </a>
             </div>
           </motion.div>
         </AnimatePresence>
+        
 
         {/* Navigation Arrows */}
         <button
