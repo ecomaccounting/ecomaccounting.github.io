@@ -13,6 +13,7 @@ import Comparison from "@/components/mdx/Comparison";
 import KeyTakeaways from "@/components/mdx/KeyTakeaways";
 import { Metadata } from "next";
 import { CaseStudy } from "@/data/types";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
     return data.caseStudies.map(c => ({
@@ -25,40 +26,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const cs = data.caseStudies.find((s: CaseStudy) => s.slug === slug);
 
-  if (!cs) return { title: "Case Study Not Found" };
+  if (!cs) return notFound();
 
   return {
     title: `${cs.title}`,
     description: cs.description,
-    keywords: cs.keywords.split(",").map((kw: string) => kw.trim()),
-
     openGraph: {
       title: `${cs.title}`,
       description: cs.description,
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies/${cs.slug}`,
-      siteName: "task360",
-      images: [
-        {
-          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-          width: 1200,
-          height: 630,
-          alt: `${cs.title}`,
-        },
-      ],
-      type: "website",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      title: `${cs.title}`,
-      description: cs.description,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-    },
-
-    robots: {
-      index: true,
-      follow: true,
-    },
+      url: `/case-studies/${cs.slug}`,      
+    },    
     alternates: {
       canonical: `/case-studies/${slug}`,
     },

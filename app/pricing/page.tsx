@@ -9,42 +9,11 @@ import PricingSwitcher from "@/components/Plan/PricingSwitcher";
 
 export const metadata: Metadata = {
   title: "Transparent Pricing for Business & Compliance Services",
-
-  description:
-    "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
-
-  keywords: [
-    "professional services pricing", "business compliance pricing", "tax advisory pricing", "accounting service cost", "startup compliance plans"
-  ],
-
+  description: "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
   openGraph: {
     title: "Transparent Pricing for Business & Compliance Services",
-    description:
-      "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/services`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Explore task360 Services – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Transparent Pricing for Business & Compliance Services",
-    description:
-      "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+    description: "Simple, transparent pricing for business setup, tax filings, accounting, and compliance services. No hidden fees. Built for startups and online sellers.",
+    url: `/services`,
   },
   alternates: {
     canonical: `/pricing`,
@@ -69,7 +38,7 @@ const categories = Object.values(groupedData);
 
 
 
-export default function PlansPage() {  
+export default function PlansPage() {
   const faqs = data.faqs.filter(faq => faq.relatedTo == "Pricing");
 
   return (

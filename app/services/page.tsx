@@ -5,48 +5,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Explore task360 Services | task360",
-
-  description:
-    "Explore services to simplify accounting, GST, compliance, and financial management for your eCommerce business. Trusted finance experts for online sellers.",
-
-  keywords: [
-    "book consultation",
-    "free finance consultation",
-    "ecommerce accounting",
-    "gst compliance for ecommerce",
-    "online seller accounting",
-    "virtual cfo ecommerce",
-    "task360",
-  ],
-
+  description: "Explore services to simplify accounting, GST, compliance, and financial management for your eCommerce business. Trusted finance experts for online sellers.",
   openGraph: {
     title: "Explore task360 Services",
     description:
       "Talk to trusted finance & compliance experts for eCommerce businesses. Get clarity on GST, accounting, reconciliation, and growth strategy.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/services`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Explore task360 Services – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Explore task360 Services | task360",
-    description:
-      "Simplify finance, GST, and compliance for your eCommerce business. Explore task360 services.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+    url: `/services`,
   },
   alternates: {
     canonical: `/services`,

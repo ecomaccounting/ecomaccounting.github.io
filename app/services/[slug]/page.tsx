@@ -22,39 +22,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const service = data.services.find((s: ServiceItem) => s.id === slug);
 
-  if (!service) return { title: "Service Not Found" };
+  if (!service) return notFound();
 
   return {
-    title: `Explore ${service.name} Service`,
+    title: `${service.title}`,
     description: service.metaDescription,
-    keywords: service.keywords.split(",").map((kw: string) => kw.trim()),
-
     openGraph: {
       title: `Explore ${service.name} services | task360`,
       description: service.shortDescription,
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${service.id}`,
-      siteName: "task360",
-      images: [
-        {
-          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-          width: 1200,
-          height: 630,
-          alt: `${service.name} | task360`,
-        },
-      ],
-      type: "website",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      title: `Explore ${service.name} services | task360`,
-      description: service.shortDescription,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-    },
-
-    robots: {
-      index: true,
-      follow: true,
+      url: `/services/${service.id}`      
     },
     alternates: {
       canonical: `/services/${slug}`,

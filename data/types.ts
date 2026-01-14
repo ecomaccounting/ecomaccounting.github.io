@@ -20,11 +20,10 @@ export interface ServiceItem {
     shortDescription: string; 
     longDescription: string;
     highlights: string[];
-    longHighlights: string[];
-    keywords: string;
+    longHighlights: string[];    
     metaDescription: string;
     footer: boolean;
-    
+    title:string;    
 }
 export interface TeamMember {
   memberName: string;
@@ -101,6 +100,5 @@ export interface CaseStudy {
   slug: string;
   Service: string;
   title: string;
-  description: string;       
-  keywords: string; 
+  description: string;         
 }

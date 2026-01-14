@@ -35,24 +35,17 @@ const geistMono = Geist_Mono({
 --------------------------------*/
 export const metadata: Metadata = {
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-  title: "task360 – Simple Finance for eCommerce & Growing Businesses",
+  title: {
+    default: "task360 – Simple Finance for eCommerce",
+    template: "%s | task360" // This allows Page.tsx to just provide "Explore Services"
+  },
   description: "Accounting, GST, tax & compliance services for eCommerce sellers and growing businesses. Focus on growth while we handle finance.",
   applicationName: "task360",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
-  keywords: [
-    "eCommerce accounting",
-    "GST services",
-    "Financial services for online sellers",
-    "bookkeeping services",
-    "tax compliance India",
-    "startup finance",
-  ],
-
   authors: [{ name: "task360" }],
   creator: "task360",
   publisher: "task360",
-
   formatDetection: {
     email: false,
     address: false,
@@ -72,23 +65,15 @@ export const metadata: Metadata = {
     title: "task360 – Simple Finance for eCommerce & Growing Businesses",
     description:
       "Professional accounting, GST, tax & compliance services for eCommerce sellers and startups.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "task360 – Simple Finance for eCommerce & Growing Businesses",
-      },
-    ],
+    url: `/`,
+    images: ["/img/og-task360.png"],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "task360 – Simple Finance for eCommerce & Growing Businesses",
     description:
       "Accounting, GST, tax & compliance services for eCommerce sellers and startups.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
+    images: [`/img/og-task360.png`],
   },
 
   icons: {
@@ -100,6 +85,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: `/`,
+  }
 };
 
 

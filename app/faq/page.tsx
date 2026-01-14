@@ -6,47 +6,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions (FAQs)",
-
-  description:
-    "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
-
-  keywords: [
-    "clients",
-    "task360",
-    "accounting clients",
-    "eCommerce accounting",
-    "tax clients",
-    "business partners",
-  ],
-
+  description: "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
   openGraph: {
     title: "Frequently Asked Questions (FAQs) | task360",
-    description:
-      "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/faq`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Frequently Asked Questions – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Frequently Asked Questions | task360",
-    description:
-      "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+    description: "Get answers to your questions about accounting, GST, and compliance services for eCommerce businesses.",
+    url: `/faq`
   },
   alternates: {
     canonical: `/faq`,

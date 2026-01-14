@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build  && echo 'task360.info' > out/CNAME &&  touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "npm run build  && echo 'task360.co' > out/CNAME &&  touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",

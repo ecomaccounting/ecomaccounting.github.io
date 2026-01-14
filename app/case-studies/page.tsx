@@ -4,49 +4,14 @@ import { CaseStudy } from "@/data/types"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Client Success Stories & Business Growth Case Studies",
-
-  description:
-    "See how task360 helps startups and eCommerce brands scale through expert GST resolution, fundraising support, Virtual CFO services, and strategic compliance.",
-
-  keywords: [
-    "business success stories", 
-    "eCommerce growth case studies", 
-    "startup fundraising results", 
-    "GST dispute resolution stories", 
-    "Virtual CFO impact India",
-    "business compliance success"
-  ],
-
+  title: "Client Success Stories & Growth",
+  description:    "See how task360 helps startups and eCommerce brands scale through expert GST resolution, fundraising support, Virtual CFO services, and strategic compliance.",  
   openGraph: {
     title: "Client Success Stories & Business Growth Case Studies",
     description:
       "Real results for real brands. Explore how we’ve helped businesses save millions in GST, raise Series A funding, and optimize profit margins.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/case-studies`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Explore task360 Success Stories – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Client Success Stories & Business Growth Case Studies",
-    description:
-      "From GST crisis resolution to ₹10Cr fundraising: See the impact task360 has on growing startups and eCommerce brands.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
+    url: `/case-studies`,    
+  },  
   alternates: {
     canonical: `/case-studies`,
   },

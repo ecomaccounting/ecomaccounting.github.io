@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   assetPrefix: "",
   basePath: "",
   env: {
-    NEXT_PUBLIC_BASE_URL: 'https://task.info',
+    NEXT_PUBLIC_BASE_URL: 'https://task.co',
     NEXT_PUBLIC_WHATSAPP: '918989459947',
 
   },

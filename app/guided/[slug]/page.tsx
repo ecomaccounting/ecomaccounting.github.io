@@ -3,8 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import {
   ArrowRight,
-  Sparkles,
-  ShieldAlert,
+  Sparkles,  
 } from "lucide-react";
 
 import Services from "@/components/Services";
@@ -22,39 +21,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = data.mapping.find((s) => s.slug === slug);
 
-  if (!guide) return { title: "Service Not Found" };
+  if (!guide) return notFound();
 
   return {
     title: `${guide.heading}`,
-    description: guide.description,
-    keywords: guide.keywords.split(",").map((kw: string) => kw.trim()),
+    description: guide.description,    
 
     openGraph: {
       title: `${guide.heading} | task360`,
       description: guide.description,
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/services/${guide.slug}`,
-      siteName: "task360",
-      images: [
-        {
-          url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-          width: 1200,
-          height: 630,
-          alt: `${guide.heading} | task360`,
-        },
-      ],
-      type: "website",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      title: `${guide.heading} | task360`,
-      description: guide.description,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-    },
-
-    robots: {
-      index: true,
-      follow: true,
+      url: `/services/${guide.slug}`,      
     },
     alternates: {
       canonical: `/guided/${slug}`,

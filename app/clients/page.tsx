@@ -8,47 +8,12 @@ import { Building2, Sofa, Stethoscope, User } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Clients",
-
-  description:
-    "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-
-  keywords: [
-    "clients",
-    "task360",
-    "accounting clients",
-    "eCommerce accounting",
-    "tax clients",
-    "business partners",
-  ],
-
+  description: "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
   openGraph: {
     title: "task360 - Our Clients ",
     description:
       "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/clients`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Our Clients – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Our Clients | task360",
-    description:
-      "Discover some of the amazing clients we've worked with — from eCommerce startups to established businesses across industries.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+    url: `/clients`
   },
   alternates: {
     canonical: `/clients`,

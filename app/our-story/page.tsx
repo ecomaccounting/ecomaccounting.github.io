@@ -9,47 +9,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Story",
-
-  description:
-    "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
-
-  keywords: [
-    "clients",
-    "task360",
-    "accounting clients",
-    "eCommerce accounting",
-    "tax clients",
-    "business partners",
-  ],
-
+  description: "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
   openGraph: {
     title: "Our Story | task360",
-    description:
-      "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/our-story`,
-    siteName: "task360",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`,
-        width: 1200,
-        height: 630,
-        alt: "Our Story – task360",
-      },
-    ],
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Our Story | task360",
-    description:
-      "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/img/og/og-task360.png`],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+    description: "Discover the journey of task360 and how we became experts in eCommerce accounting, GST, and compliance.",
+    url: `/our-story`,
   },
   alternates: {
     canonical: `/our-story`,

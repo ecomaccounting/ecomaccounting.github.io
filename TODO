@@ -27,10 +27,7 @@ Todo:
   ✔ OG not working on Service Slug @done(26-01-08 18:12)
   ✔ App screen shots pending from Vipul side. @done(26-01-08 22:31)
   ✔ OG testing @done(26-01-08 18:50)
-  ☐ [Arpit] Policies, subscription plans, Team photos are pending.  
-  ☐ [Arpit] Testimonials Are Too Passive: Your testimonials are:Real,Well written,Completely skippable. They don’t:Tie to specific services, Show transformation, Anchor outcomes (₹, time saved, penalties avoided).They feel like compliance, not persuasion.
-  ☐ [Arpit] Make Testimonials Service-Linked Example: “Used Task360 for GST + reconciliation → Saved ₹4.2L in penalties”
-  ☐ [Arpit] Populate more FAQs and map it against each service. Excel sheet is update refer FAQ sheet
+  ☐ [Arpit] Policies, Team photos are pending.        
   ✔ Trusted client ticker optional bg color for client logo if required, default icon if logo is not available @done(26-01-09 21:16)
   ✔ Change whatsApp phone number and take it from mext.config.js @done(26-01-09 21:19)
   ✔ Client name can be fixed in clients ticker @done(26-01-09 21:07)
@@ -41,10 +38,15 @@ Todo:
   ✔ Fix breadcrumb for Service slug @done(26-01-10 12:42)
   ✔ OG test successful but was not working with whatsapp @done(26-01-10 16:53)
   ✔ Merge Contact us and book consultation @done(26-01-10 12:27)
-  ☐ Fix testimonials component for user scrolling
+  ✔ Fix testimonials component for user scrolling @done(26-01-14 14:31)
   ✔ Fix How it works strip and auto rotation @done(26-01-10 15:06)
   ✔ Fix Out Team image those are too big mobile onwards @done(26-01-10 13:29)
   ✔ Search Pvt --> private @done(26-01-10 15:32)
+  ☐ environment variable file not in nextConfig.js
+  ☐ notFound UI
+  ☐ Case Study og image
+  ☐ Fix service, guide and case studies title under 50 chars
+
   how to improve clients page content
   
 
