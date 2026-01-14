@@ -1,7 +1,7 @@
 import Head from "next/head";
 import data from "@/data/data1.json";
-import Breadcrumb from "@/components/BreadcrumbItem";
-import FAQ from "@/components/FAQ";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
+import FAQ from "@/components/common/FAQ";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -3,8 +3,8 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import MiniSearch from "minisearch";
-import Service from "@/components/Services";
-import Breadcrumb from "@/components/BreadcrumbItem";
+import Service from "@/components/Services/Services";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
 import { miniSearchIndexOptions, miniSearchQueryOptions } from "@/lib/shared";
 import { ServiceItem } from "@/data/types";
 

@@ -1,7 +1,7 @@
 import data from "@/data/data1.json";
 import { ServicePackage } from "@/data/types";
 
-import FAQ from "@/components/FAQ";
+import FAQ from "@/components/common/FAQ";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";

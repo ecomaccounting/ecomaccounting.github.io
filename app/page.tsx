@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import TopClients from "@/components/TopClients"
-import TestimonialsTicker from "@/components/Testimonials";
+import Hero from "@/components/home/Hero";
+import Services from "@/components/Services/Services";
+import TopClients from "@/components/home/TopClients"
+import TestimonialsTicker from "@/components/home/Testimonials";
 import data from "@/data/data1.json";
 import { ServiceItem } from "@/data/types";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import HowItWorksStrip from "@/components/HowItWorksStrip";
-import GuidedOnboarding from "@/components/GuidedOnboarding";
-import CaseStudyCarousel from "@/components/CaseStudyCarousel1";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import HowItWorksStrip from "@/components/home/HowItWorksStrip";
+import GuidedOnboarding from "@/components/home/GuidedOnboarding";
+import CaseStudyCarousel from "@/components/home/CaseStudyCarousel1";
 import Link from "next/link";
 
 export default function HomePage() {

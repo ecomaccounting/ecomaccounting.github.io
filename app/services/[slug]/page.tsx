@@ -1,13 +1,13 @@
 
 import { notFound } from "next/navigation";
-import { ServiceHero } from "@/components/ServiceHero";
+import { ServiceHero } from "@/components/Services/ServiceHero";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { ServiceItem } from "@/data/types";
 import data from "@/data/data1.json";
 import Link from "next/link";
-import Breadcrumb from "@/components/BreadcrumbItem";
-import FAQ from "@/components/FAQ";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
+import FAQ from "@/components/common/FAQ";
 
 
 // --- Generate static params for SSG ---

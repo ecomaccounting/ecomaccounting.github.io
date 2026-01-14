@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import BrandLogo from "./BrandLogo";
 
-const SearchBar = dynamic(() => import("@/components/SearchBar"), {
+const SearchBar = dynamic(() => import("@/components/layout/SearchBar"), {
   ssr: false,
 });
 

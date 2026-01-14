@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar1";
-import Footer from "@/components/Footer";
-import FooterTrust from "@/components/FooterTrust";
-import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
-import RegisterSW from "@/components/sw";
-import GoToTop from "@/components/GoToTop";
+import Navbar from "@/components/layout/Navbar1";
+import Footer from "@/components/layout/Footer";
+import FooterTrust from "@/components/layout/FooterTrust";
+import FloatingWhatsAppButton from "@/components/layout/FloatingWhatsAppButton";
+import RegisterSW from "@/components/layout/sw";
+import GoToTop from "@/components/layout/GoToTop";
 
 export const viewport: Viewport = {
   width: "device-width",

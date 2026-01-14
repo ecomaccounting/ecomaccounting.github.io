@@ -6,8 +6,8 @@ import {
   Sparkles,  
 } from "lucide-react";
 
-import Services from "@/components/Services";
-import FAQ from "@/components/FAQ";
+import Services from "@/components/Services/Services";
+import FAQ from "@/components/common/FAQ";
 import data from "@/data/data1.json";
 
 export async function generateStaticParams() {

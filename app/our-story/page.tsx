@@ -1,6 +1,6 @@
 
-import TestimonialsTicker from "@/components/Testimonials";
-import Breadcrumb from "@/components/BreadcrumbItem";
+import TestimonialsTicker from "@/components/home/Testimonials";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
 import Image from "next/image";
 import data from "@/data/data1.json"
 import { TeamMember } from "@/data/types";

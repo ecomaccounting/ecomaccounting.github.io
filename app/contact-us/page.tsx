@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/BreadcrumbItem";
-import Contact from "@/components/Contact"
-import Consultation from "@/components/Consultation"
+import Breadcrumb from "@/components/common/BreadcrumbItem";
+import Contact from "@/components/contact/Contact"
+import Consultation from "@/components/contact/Consultation"
 
 export const metadata: Metadata = {
   title: "Contact Us | task360",

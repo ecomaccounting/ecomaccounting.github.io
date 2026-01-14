@@ -1,6 +1,6 @@
-import Services from "@/components/Services"
+import Services from "@/components/Services/Services"
 import data from "@/data/data1.json";
-import Breadcrumb from "@/components/BreadcrumbItem";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import ClientData from "@/data/data1.json";
-import Breadcrumb from "@/components/BreadcrumbItem";
+import Breadcrumb from "@/components/common/BreadcrumbItem";
 import type { Metadata } from "next";
 import type { Client } from "@/data/types";
 import { Building2, Sofa, Stethoscope, User } from "lucide-react";
