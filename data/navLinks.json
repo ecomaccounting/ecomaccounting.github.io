@@ -1,9 +1,5 @@
 {
-    "navLinks": [
-        {
-            "text": "Home",
-            "link": "/"
-        },
+    "navLinks": [        
         {
             "text": "Services",
             "link": "/services"

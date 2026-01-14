@@ -42,10 +42,8 @@ Todo:
   ✔ Fix How it works strip and auto rotation @done(26-01-10 15:06)
   ✔ Fix Out Team image those are too big mobile onwards @done(26-01-10 13:29)
   ✔ Search Pvt --> private @done(26-01-10 15:32)
-  ☐ environment variable file not in nextConfig.js
-  ☐ notFound UI
-  ☐ Case Study og image
-  ☐ Fix service, guide and case studies title under 50 chars
+  ☐ environment variable file not in nextConfig.js  
+  ✔ Fix service, guide and case studies title under 50 chars @done(26-01-14 17:58)
 
   how to improve clients page content
   

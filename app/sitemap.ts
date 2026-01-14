@@ -37,7 +37,9 @@ export default async function sitemap() {
     "/services",
     "/faq",
     "/pricing",
-    "/case-studies"
+    "/case-studies",
+    "/privacy-policy",
+    "/terms-of-service"
 
   ].map((path) => ({
     url: `${baseUrl}${path}`,
