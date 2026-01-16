@@ -96,25 +96,25 @@ export default function OurStoryPage() {
             <div className="max-w-5xl mx-auto px-6">
               <h2 className="text-center">Our Edge: Focused Expertise</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="p-6 bg-accent rounded-2xl">
+                <div className="p-6 bg shadow-md border-l-4  rounded-2xl">
                   <h3 className="">Pure eCommerce Focus</h3>
                   <p className="">
                     100% of our practice is dedicated to online sellers. Every system, process, and team member is optimized for eCommerce.
                   </p>
                 </div>
-                <div className="p-6 bg-accent rounded-2xl">
+                <div className="p-6 bg shadow-md border-l-4 rounded-2xl">
                   <h3 className="">Deep Platform Knowledge</h3>
                   <p className="">
                     Amazon fee changes. Flipkart payment cycles. Meesho commission structures. We track it all.
                   </p>
                 </div>
-                <div className="p-6 bg-accent rounded-2xl">
+                <div className="p-6 bg shadow-md border-l-4 rounded-2xl">
                   <h3 className="">Technology Integration</h3>
                   <p className="">
                     Automated marketplace integrations, real‑time dashboards, and cloud‑based access across platforms.
                   </p>
                 </div>
-                <div className="p-6 bg-accent rounded-2xl">
+                <div className="p-6 bg shadow-md border-l-4 rounded-2xl">
                   <h3 className="text-xl font-semibold mb-2">Proactive Partnership</h3>
                   <p className="">
                     We identify opportunities early, flag compliance risks in advance, and plan growth before you ask.
@@ -183,7 +183,7 @@ export default function OurStoryPage() {
                 <article
                   key={member.memberName}
                   className="
-    bg-accent rounded-xl shadow-lg hover:shadow-xl transition-shadow
+    bg-light rounded-xl shadow-lg hover:shadow-xl transition-shadow
     flex flex-col overflow-hidden
     w-full max-w-md
   "

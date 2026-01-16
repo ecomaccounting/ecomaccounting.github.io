@@ -1,13 +1,15 @@
 import Link from "next/link";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaClock } from "react-icons/fa";
 import { navLinks } from "@/data/navLinks.json";
 import data from "@/data/data1.json";
 import BrandLogo from "./BrandLogo";
 
+
 export default function Footer() {
   
   return (
-    <footer className="px-4 py-12 bg-accent">
+    <footer className="footer1 px-4 py-12 border-t ">
+
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_2fr] gap-10 p-2">
 
         {/* Brand + Description */}
@@ -83,7 +85,7 @@ export default function Footer() {
 
             <li className="flex items-center gap-3">
               <FaPhone className="text-muted text-lg" />
-              <a href="tel:+918989459947" className="transition">
+              <a href="tel:+918989459947" className="transition font-bold">
                 +91 89894-59947
               </a>
             </li>
@@ -94,6 +96,11 @@ export default function Footer() {
               <address className="text-muted">
                 186 Goyal Nagar, Indore, <br />MP, India, 452018
               </address>
+            </li>
+            <li className="flex items-start gap-3">
+              <FaClock className="text-muted text-lg mt-1" />              
+              <p className="text-muted">Mon - Sat: 9:00 AM - 7:00 PM</p>
+
             </li>
           </ul>
 

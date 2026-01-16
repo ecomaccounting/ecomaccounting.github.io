@@ -15,16 +15,17 @@
   /* CTA / hover */
   --accent-soft: #c6d2e8;
   /* Soft professional blue bg */
-  --accent-gradient: linear-gradient(
-    135deg,
-    #dbe4f5 0%,
-    var(--accent-soft) 50%,
-    #b7c6e6 100%
-  );
+  --accent-gradient: linear-gradient(135deg,
+      #dbe4f5 0%,
+      var(--accent-soft) 50%,
+      #b7c6e6 100%);
 
-  --ok-start: #2563eb;   /* Blue 600 */
-  --ok-mid:   #6366f1;   /* Indigo 500 */
-  --ok-end:   #22d3ee;   /* Cyan 400 */
+  --ok-start: #2563eb;
+  /* Blue 600 */
+  --ok-mid: #6366f1;
+  /* Indigo 500 */
+  --ok-end: #22d3ee;
+  /* Cyan 400 */
 
   --ok-text: #ffffff;
 
@@ -32,6 +33,10 @@
   --border: #e2e8f0;
   --brand: var(--fg);
   --light: #f8f9fa;
+
+  --footer-bg: #0f172a;
+  --footer-fg: #e5e7eb;
+  --footer-muted: #9ca3af;
 }
 
 /* ===============================
@@ -45,29 +50,34 @@
     --primary: #60a5fa;
     --accent: #3b82f6;
     --accent-soft: #0b1a33;
-    --accent-gradient: linear-gradient(
-      135deg,
-      #0f2348 0%,
-      var(--accent-soft) 50%,
-      #08152a 100%
-    );
-     --ok-start: #60a5fa; /* Blue 400 */
-    --ok-mid:   #818cf8; /* Indigo 400 */
-    --ok-end:   #38bdf8; /* Cyan 400 */
+    --accent-gradient: linear-gradient(135deg,
+        #0f2348 0%,
+        var(--accent-soft) 50%,
+        #08152a 100%);
+    --ok-start: #60a5fa;
+    /* Blue 400 */
+    --ok-mid: #818cf8;
+    /* Indigo 400 */
+    --ok-end: #38bdf8;
+    /* Cyan 400 */
 
     --ok-text: #020617;
 
     --muted: #9ca3af;
-    --border: #1f2933;    
-    --light:#111827;
+    --border: #1f2933;
+    --light: #111827;
+
+    --footer-bg: #020617;
+    --footer-fg: #e5e7eb;
+    --footer-muted: #9ca3af;   
+
   }
+
   .nav-3d::after {
-    background: linear-gradient(
-      to right,
-      transparent,
-      rgba(255, 255, 255, 0.12),
-      transparent
-    );
+    background: linear-gradient(to right,
+        transparent,
+        rgba(255, 255, 255, 0.12),
+        transparent);
   }
 }
 
@@ -153,13 +163,16 @@ a.primary:hover {
 
 button.success,
 a.success {
-  background: #10b981; /* Emerald 500 - more modern */
-  color: #000000;      /* Black text usually looks crisper on bright green */
+  background: #10b981;
+  /* Emerald 500 - more modern */
+  color: #000000;
+  /* Black text usually looks crisper on bright green */
 }
 
 button.success:hover,
 a.success:hover {
-  background: #34d399; /* Lightens slightly */
+  background: #34d399;
+  /* Lightens slightly */
 }
 
 button.secondary,
@@ -179,12 +192,10 @@ a.secondary:hover {
 button.ok,
 a.ok {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    var(--ok-start),
-    var(--ok-mid),
-    var(--ok-end)
-  );
+  background: linear-gradient(135deg,
+      var(--ok-start),
+      var(--ok-mid),
+      var(--ok-end));
   background-size: 200% 200%;
   color: var(--ok-text);
   font-weight: 600;
@@ -222,15 +233,19 @@ a.ok.pulse {
 }
 
 @keyframes okPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow:
       0 8px 24px rgba(37, 99, 235, 0.35);
   }
+
   50% {
     box-shadow:
       0 12px 32px rgba(34, 211, 238, 0.55);
   }
 }
+
 /* ===============================
    🧭 UTILITY HELPERS
    =============================== */
@@ -242,9 +257,10 @@ a.ok.pulse {
   background: var(--accent-gradient);
   border: 1px solid var(--border);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.4),
-    0 8px 24px rgba(15,23,42,0.06);
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    0 8px 24px rgba(15, 23, 42, 0.06);
 }
+
 .bg-light {
   background-color: var(--light);
 }
@@ -265,15 +281,19 @@ a.ok.pulse {
 .border-default {
   border-color: var(--border);
 }
+
 .border-muted {
   border-color: var(--muted);
 }
+
 .border-bg {
   border-color: var(--bg);
 }
+
 .border-highlight {
   border-color: var(--primary);
 }
+
 /* ===============================
    ✨ HIGHLIGHT
    =============================== */
@@ -294,24 +314,27 @@ a.ok.pulse {
   height: 1px;
   pointer-events: none;
 
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.25),
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      rgba(255, 255, 255, 0.25),
+      transparent);
 }
 
 
 /* ===============================
    🦶 FOOTER
    =============================== */
+.footer1 {
+  background-color: var(--footer-bg);
+  color: var(--footer-fg);
+}
+
 footer a {
-  color: var(--muted);
+  color: var(--footer-muted);
 }
 
 footer a:hover {
-  color: var(--fg);
+  color: var(--footer-fg);
 }
 
 /*  Service Hero  */
@@ -320,10 +343,12 @@ footer a:hover {
     opacity: 0.55;
     transform: translate(-50%, -50%) scale(0.98);
   }
+
   50% {
     opacity: 0.75;
     transform: translate(-50%, -50%) scale(1.02);
   }
+
   100% {
     opacity: 0.55;
     transform: translate(-50%, -50%) scale(0.98);
@@ -333,6 +358,7 @@ footer a:hover {
 .animate-halo-breathe {
   animation: halo-breathe 2.8s ease-in-out infinite;
 }
+
 /* Service Hero */
 
 /* MDX*/
@@ -355,12 +381,18 @@ footer a:hover {
 /*MDX*/
 /*Logo Animation*/
 @keyframes custom-intro-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .animate-intro-spin {
   /* Runs once, for 0.7s, on load */
   animation: custom-intro-spin 0.7s ease-out forwards;
 }
+
 /*--LOGO animation-----------*/
