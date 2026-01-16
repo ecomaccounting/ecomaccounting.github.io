@@ -44,7 +44,7 @@ export default async function sitemap() {
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date().toISOString(),
-    changeFrequency: "weekly",
+    changeFrequency: "daily",
     priority: 0.9,
   }));
 
