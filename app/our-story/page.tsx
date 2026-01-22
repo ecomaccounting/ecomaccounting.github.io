@@ -220,9 +220,7 @@ export default function OurStoryPage() {
                       className="text-base leading-relaxed"
                       itemProp="description"
                     >
-                      {member.description.length > 400
-                        ? member.description.slice(0, 400) + "..."
-                        : member.description}
+                      {member.description}
                     </p>
                   </div>
                 </article>

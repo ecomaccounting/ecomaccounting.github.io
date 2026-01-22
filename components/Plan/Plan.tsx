@@ -32,7 +32,7 @@ export default function Plan({ pkg }: { pkg: ServicePackage }) {
                 )}
             </div>
 
-            <div className="mb-6">
+            {/* <div className="mb-6">
                 {(pkg.pricingType === "Monthly" || pkg.pricingType === "One Time") && (
                     <p className="text-4xl font-semibold text-highlight">
                         ₹{Number(pkg.price).toLocaleString('en-IN')}
@@ -45,7 +45,7 @@ export default function Plan({ pkg }: { pkg: ServicePackage }) {
                 {pkg.pricingType === "Range" && (
                     <p className="text-4xl text-highlight font-semibold">{pkg.price}</p>
                 )}
-            </div>
+            </div> */}
 
             <ul className="space-y-2 mb-6">
                 {pkg.features.map((f, idx) => (
@@ -67,7 +67,7 @@ export default function Plan({ pkg }: { pkg: ServicePackage }) {
                 className={`block text-center rounded-xl py-3 font-semibold transition ${hasHighlight ? "button ok pulse" : "button success"
                     }`}
             >
-                {pkg.cta || "Get Started"}
+                {pkg.cta || "Get a Custom Quote"}
             </a>
             <PlanNote pkg={pkg} key={`Note-${pkg.id}`} />
             <CaseStudyNote pkg={pkg} key={`Case-${pkg.id}`} />
