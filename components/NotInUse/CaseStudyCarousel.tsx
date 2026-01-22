@@ -73,7 +73,7 @@ export default function CaseStudyCarousel() {
             </p>
 
             <Link
-              href={`/case-studies/${item.slug}`}
+              href={`/case-studies/${item.slug}/`}
               className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
               onClick={() => (userInteracted.current = true)}
             >

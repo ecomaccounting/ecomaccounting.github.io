@@ -2,39 +2,39 @@
     "navLinks": [        
         {
             "text": "Services",
-            "link": "/services"
+            "link": "/services/"
         },        
         {
             "text": "Our Story",
-            "link": "/our-story"
+            "link": "/our-story/"
         },
         {
             "text": "Contact Us",
-            "link": "/contact-us"
+            "link": "/contact-us/"
         },        
         {
             "text": "Clients",
-            "link": "/clients"
+            "link": "/clients/"
         },
         {
             "text": "FAQ",
-            "link": "/faq"
+            "link": "/faq/"
         },
         {
             "text": "Case Studies",
-            "link": "/case-studies"
+            "link": "/case-studies/"
         },
         {
             "text": "Pricing",
-            "link": "/pricing"
+            "link": "/pricing/"
         },
         {
             "text": "Privacy Policy",
-            "link": "/policies/privacy-policy"
+            "link": "/policies/privacy-policy/"
         },
         {
             "text": "Terms of Service",
-            "link": "/policies/terms-of-service"
+            "link": "/policies/terms-of-service/"
         }        
     ]    
 }

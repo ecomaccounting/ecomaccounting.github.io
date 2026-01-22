@@ -28,7 +28,7 @@ export default function GuidedOnboarding() {
             return (
               <Link
                 key={item.title}
-                href={`/guided/${item.slug}`}
+                href={`/guided/${item.slug}/`}
                 className={`
                   group rounded-2xl border p-6 
                   transition-all duration-300

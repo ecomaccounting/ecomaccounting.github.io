@@ -60,7 +60,7 @@ export default function Footer() {
                   return (
                     <div className="flex items-center gap-3" key={idx}>
                       <li>
-                        <Link href={`/services/${child.id}`} className="transition">
+                        <Link href={`/services/${child.id}/`} className="transition">
                           {child.name}
                         </Link>
                       </li>

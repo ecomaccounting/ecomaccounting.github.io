@@ -14,7 +14,7 @@ export default function CaseStudyNote({ pkg }: { pkg: ServicePackage }) {
                         <b>Case Study:</b><br/>
                         {study.description}
                         <br />
-                        <Link href={`/case-studies/${cleanSlug}`}>
+                        <Link href={`/case-studies/${cleanSlug}/`}>
                             Read full case study →
                         </Link>
                     </p>

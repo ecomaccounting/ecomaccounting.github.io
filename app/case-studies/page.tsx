@@ -52,7 +52,7 @@ function Section({ title, items }: { title: string; items: CaseStudy[] }) {
         {items.map((item) => (
           <Link
             key={item.slug}
-            href={`/case-studies/${item.slug}`}
+            href={`/case-studies/${item.slug}/`}
             className="group block no-underline"
           >
             {/* Image Container */}

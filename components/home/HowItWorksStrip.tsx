@@ -140,7 +140,7 @@ export default function HowItWorksStrip() {
   <p className="text-sm md:text-base text-light max-w-2xl mx-auto">
     Each step above is drawn from real client engagements —{" "}
     <Link
-      href="/case-studies"
+      href="/case-studies/"
       className="font-semibold text-accent hover:underline underline-offset-4"
     >
       see how it plays out in practice

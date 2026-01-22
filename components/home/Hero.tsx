@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="space-y-3">
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact-us"
+                href="/contact-us/"
                 className="button ok pulse px-6 py-4 rounded-2xl font-semibold flex items-center justify-center gap-2"
               >
                 <MessageCircle className="h-7 w-7" />
@@ -83,7 +83,7 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="/services"
+                href="/services/"
                 className="button secondary px-6 py-4 rounded-2xl flex items-center justify-center gap-2"
               >
                 <List className="h-5 w-5" />

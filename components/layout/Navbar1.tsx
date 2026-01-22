@@ -41,13 +41,13 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden sm:flex items-center gap-6">
-          <Link href="/our-story" className="font-medium">
+          <Link href="/our-story/" className="font-medium">
             Our Story
           </Link>
-          <Link href="/services" className="font-medium">
+          <Link href="/services/" className="font-medium">
             Services
           </Link>
-          <Link href="/pricing" className="font-medium">
+          <Link href="/pricing/" className="font-medium">
             Pricing
           </Link>
         </div>
@@ -65,13 +65,13 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="sm:hidden border-t bg-light">
           <div className="flex flex-col p-4 gap-4">
-            <Link href="/our-story" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/our-story/" onClick={() => setMobileMenuOpen(false)}>
               Our Story
             </Link>
-            <Link href="/services" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/services/" onClick={() => setMobileMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/pricing" className="font-medium">
+            <Link href="/pricing/" className="font-medium">
             Pricing
           </Link>
           </div>

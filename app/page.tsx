@@ -33,7 +33,7 @@ export default function HomePage() {
         <CaseStudyCarousel />
         <div className="my-2 items-center mx-auto flex w-full justify-center">
           <Link
-            href="/case-studies"
+            href="/case-studies/"
             className="my-4 py-4 text-center text-accent font-semibold hover:underline whitespace-nowrap"
           >
             View all case studies →

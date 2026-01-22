@@ -165,7 +165,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
                         {/* CTA */}
                         <Link
-                          href={`/services/${child.id}`}
+                          href={`/services/${child.id}/`}
                           className="primary inline-flex rounded-xl items-center gap-2 mt-6 px-6 py-3  hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
                         >
                           Learn More
@@ -200,7 +200,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               Let's discuss how our {service.name.toLowerCase()} services can help your business grow
             </p>
             <Link
-              href="/contact-us"
+              href="/contact-us/"
               className="primary inline-flex items-center gap-2 px-8 py-4 bg-primary rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
             >
               Contact Us Today

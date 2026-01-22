@@ -61,7 +61,7 @@ export default function PlansPage() {
             We can create a custom package combining multiple strategic services at a bundled price.
           </p>
           <Link
-            href="/contact-us"
+            href="/contact-us/"
             className="primary inline-flex items-center gap-2 px-8 py-4 bg-primary rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
           >
             Request Custom Quote
