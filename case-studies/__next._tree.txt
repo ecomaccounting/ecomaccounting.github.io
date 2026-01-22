@@ -11,4 +11,4 @@
 :HL["/img/case-study/home-kitchen-brand-series-a-fundraising.png","image"]
 :HL["/img/case-study/apparel-seller-proactive-trademark-protection.png","image"]
 :HL["/img/case-study/growing-seller-virtual-cfo-transformation.png","image"]
-0:{"buildId":"-23TKtNcFZJE0oQF_o1Aw","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"case-studies","paramType":null,"paramKey":"case-studies","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"_S7OtZaWbCKXrSyVvKSqm","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"case-studies","paramType":null,"paramKey":"case-studies","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
