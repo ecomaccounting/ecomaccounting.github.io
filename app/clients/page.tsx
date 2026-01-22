@@ -85,53 +85,52 @@ function ClientItem({ client }: { client: Client }) {
     clientIconMap[client.icon ?? "default"] ?? clientIconMap.default;
 
   return (
-    <div
-      className="group relative bg border border-default rounded-2xl p-8 transition-all hover:border-highlight hover:shadow-2xl hover:-translate-y-1"
-      itemScope itemType="https://schema.org/Review"
-    >
+  <div
+  className="group relative bg border border-default rounded-2xl p-8 transition-all hover:border-highlight hover:shadow-2xl hover:-translate-y-1"
+>
+  {/* 1. Industry Label */}
+  <span className="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold text-muted border border-default px-2 py-1 rounded">
+    {client.industry}
+  </span>
 
-      <span className="absolute top-4 right-4 text-[10px] uppercase tracking-widest font-bold text-muted border border-default px-2 py-1 rounded">
-        {client.industry}
-      </span>
+  {/* 2. Visual Anchor (Logo or Icon) */}
+  <div
+    className="w-24 h-24 rounded-full flex items-center justify-center mb-6 overflow-hidden bg border-4 border-bg shadow-sm group-hover:scale-110 transition-transform"
+    style={{ backgroundColor: client.bgColor }}
+  >
+    {client.logo ? (
+      <Image
+        src={`/img/clients/${client.logo}`}
+        alt={`${displayName} success story`}
+        width={80} height={80} className="object-contain p-2"
+      />
+    ) : (
+      <Icon className="text-primary" size={40} />
+    )}
+  </div>
 
-      {/* 2. Visual Anchor (Logo or Icon) */}
-      <div
-        className="w-24 h-24 rounded-full flex items-center justify-center mb-6 overflow-hidden bg border-4 border-bg shadow-sm group-hover:scale-110 transition-transform"
-        style={{ backgroundColor: client.bgColor }}
-      >
-        {client.logo ? (
-          <Image
-            src={`/img/clients/${client.logo}`}
-            alt={`${displayName} success story`}
-            width={80} height={80} className="object-contain p-2"
-          />
-        ) : (
-          <Icon className="text-primary" size={40} />
-        )}
-      </div>
+  {/* 3. Social Proof Content */}
+  <div>
+    <h3 className="text-xl font-bold ">{displayName}</h3>
+    {/* Removed meta legalName as it's only useful for Schema */}
+  </div>
 
-      {/* 3. Social Proof Content */}
-      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization">
-        <h3 className="text-xl font-bold " itemProp="name">{displayName}</h3>
-        <meta itemProp="legalName" content={client.name} />
-      </div>
+  {/* Short, punchy description */}
+  <p className="text-highlight font-semibold mb-4 italic">
+    "{client.feedback}"
+  </p>
 
-      {/* Short, punchy description for SEO keywords */}
-      <p className="text-highlight font-semibold mb-4 italic">
-        "{client.feedback}"
-      </p>
+  <p className="text-muted leading-relaxed mb-6">
+    {client.description}
+  </p>
 
-      <p className="text-muted leading-relaxed mb-6">
-        {client.description}
-      </p>
-
-      {/* 4. The Person Behind the Brand (Trust Factor) */}
-      <div className="flex items-center gap-3 pt-6 border-t border-default">
-        <div className="text-left">
-          <p className="font-bold">{client.title}</p>
-          <p className="text-muted">{client.position}</p>
-        </div>
-      </div>
+  {/* 4. The Person Behind the Brand */}
+  <div className="flex items-center gap-3 pt-6 border-t border-default">
+    <div className="text-left">
+      <p className="font-bold">{client.title}</p>
+      <p className="text-muted">{client.position}</p>
     </div>
+  </div>
+</div>
   );
 }

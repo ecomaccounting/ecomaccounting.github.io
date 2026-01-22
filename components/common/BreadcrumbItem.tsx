@@ -9,16 +9,24 @@ interface BreadcrumbItem {
 }
 
 export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
-  const ldjson = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, i) => ({
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL; 
+
+const ldjson = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, i) => {    
+    const absoluteUrl = item.href 
+      ? `${baseUrl}${item.href.startsWith('/') ? '' : '/'}${item.href}`
+      : undefined;
+
+    return {
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.href ? item.href : undefined,
-    })),
-  };
+      item: absoluteUrl, 
+    };
+  }).filter(element => element.item !== undefined), 
+};
 
   return (
    <nav
