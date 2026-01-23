@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `/our-story`,
   },
   alternates: {
-    canonical: `/our-story`,
+    canonical: `/our-story/`,
   },
 };
 

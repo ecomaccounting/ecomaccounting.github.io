@@ -62,7 +62,7 @@ const CaseStudyCarousel = () => {
                 {data[currentIndex].description}
               </p>
               <a
-                href={`/case-studies/${data[currentIndex].slug}`}
+                href={`/case-studies/${data[currentIndex].slug}/`}
                 className="inline-block mt-6 font-semibold transition-colors"
               >
                 Read full case study →

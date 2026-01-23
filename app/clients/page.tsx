@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: `/clients`
   },
   alternates: {
-    canonical: `/clients`,
+    canonical: `/clients/`,
   },
 };
 const clients = ClientData.clients;
@@ -61,7 +61,7 @@ export default function ClientsPage() {
           <p>
             Want to join our growing list of happy clients?{" "}
             <a
-              href="/contact-us"
+              href="/contact-us/"
               className="text-blue-600 font-medium hover:underline"
             >
               Get in touch

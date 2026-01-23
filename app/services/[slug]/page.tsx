@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `/services/${service.id}`      
     },
     alternates: {
-      canonical: `/services/${slug}`,
+      canonical: `/services/${slug}/`,
     },
   };
 }
@@ -55,10 +55,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const lineage = getLineage(slug, data.services);
   const breadcrumbItems = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Services", href: "/services/" },
     ...lineage.map(srv => ({
       name: srv.name,
-      href: srv.id === slug ? undefined : `/services/${srv.id}` // Disable link for current page
+      href: srv.id === slug ? undefined : `/services/${srv.id}/` // Disable link for current page
     }))
   ];
 

@@ -72,7 +72,7 @@ const CaseStudyStack = () => {
                   "{item.description}"
                 </p>
 
-                <a href={`/case-studies/${item.slug}`} className="mt-auto px-6 py-2 bg-accent rounded-full font-semibold shadow-sm hover:shadow-md transition-shadow">
+                <a href={`/case-studies/${item.slug}/`} className="mt-auto px-6 py-2 bg-accent rounded-full font-semibold shadow-sm hover:shadow-md transition-shadow">
                   Read full case study
                 </a>
               </motion.div>

@@ -16,7 +16,7 @@ const ldjson = {
   "@type": "BreadcrumbList",
   itemListElement: items.map((item, i) => {    
     const absoluteUrl = item.href 
-      ? `${baseUrl}${item.href.startsWith('/') ? '' : '/'}${item.href}`
+      ? `${baseUrl}${item.href.startsWith('/') ? '' : '/'}${item.href}/`
       : undefined;
 
     return {

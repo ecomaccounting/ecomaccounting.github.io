@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `/services/${guide.slug}`,      
     },
     alternates: {
-      canonical: `/guided/${slug}`,
+      canonical: `/guided/${slug}/`,
     },
   };
 }

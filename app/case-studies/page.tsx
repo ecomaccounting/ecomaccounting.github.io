@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: `/case-studies`,    
   },  
   alternates: {
-    canonical: `/case-studies`,
+    canonical: `/case-studies/`,
   },
 };
 

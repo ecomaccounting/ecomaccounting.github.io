@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: `/contact-us`,
   },
   alternates: {
-    canonical: `/contact-us`,
+    canonical: `/contact-us/`,
   },
 };
 

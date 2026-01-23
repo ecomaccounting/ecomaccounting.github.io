@@ -7,21 +7,21 @@ export default async function sitemap() {
 
   // --- Category URLs ---
   const serviceUrls = data.services.map((srv: ServiceItem) => ({
-    url: `${baseUrl}/services/${srv.id}`,
+    url: `${baseUrl}/services/${srv.id}/`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   const userTypeUrls = data.mapping.map((srv) => ({
-    url: `${baseUrl}/guided/${srv.slug}`,
+    url: `${baseUrl}/guided/${srv.slug}/`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
   const caseStudiesUrls = data.caseStudies.map((c) => ({
-    url: `${baseUrl}/case-studies/${c.slug}`,
+    url: `${baseUrl}/case-studies/${c.slug}/`,
     lastModified: new Date().toISOString(),
     changeFrequency: "monthly",
     priority: 0.7,
@@ -30,16 +30,16 @@ export default async function sitemap() {
 
   // --- Static pages ---
   const staticUrls = [
-    "/",
-    "/our-team",
-    "/contact-us",
-    "/clients",
-    "/services",
-    "/faq",
-    "/pricing",
-    "/case-studies",
-    "/privacy-policy",
-    "/terms-of-service"
+    "",
+    "/our-story/",
+    "/contact-us/",
+    "/clients/",
+    "/services/",
+    "/faq/",
+    "/pricing/",
+    "/case-studies/",
+    "/policies/privacy-policy/",
+    "/policies/terms-of-service/"
 
   ].map((path) => ({
     url: `${baseUrl}${path}`,
